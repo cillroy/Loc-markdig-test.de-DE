@@ -1,0 +1,1 @@
+Barrierefreiheitsfunktionen von Windows

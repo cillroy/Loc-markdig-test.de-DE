@@ -16,10 +16,10 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Android-Gerät
 

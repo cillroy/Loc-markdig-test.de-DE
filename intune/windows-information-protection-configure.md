@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 8719e778c7f6b146625b82a63c1ff93c7936d294
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Konfigurieren von Windows Information Protection in Microsoft Intune
 

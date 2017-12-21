@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: d495046a990817e73fcee385b3a1482229aac721
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Einrichten der Skycure-Integration in Intune
 

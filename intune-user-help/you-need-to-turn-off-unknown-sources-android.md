@@ -15,10 +15,10 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: e3177d6cd7684662d26e827aa8640abb0ed1317c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Sie müssen unbekannte Quellen deaktivieren.
 

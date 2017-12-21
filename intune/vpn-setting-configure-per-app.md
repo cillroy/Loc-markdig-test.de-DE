@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: c883ab2b96618502be20583908a4caa52ac5432b
-ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Microsoft Intune für iOS-Geräte
 

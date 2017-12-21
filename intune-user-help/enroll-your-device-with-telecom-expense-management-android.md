@@ -17,10 +17,10 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 4d8bf1304d0a7b1f007c85befa3565b519719dbd
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrieren Ihres Android-Gerät im Telecom Expense Management
 

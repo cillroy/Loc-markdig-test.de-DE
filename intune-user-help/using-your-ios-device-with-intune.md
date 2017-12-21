@@ -17,10 +17,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 1a7e47b92a2b10996ba9312713234b0d0af9468e
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-your-ios-device-with-intune"></a>Verwenden Ihres iOS-Geräts mit Intune
 

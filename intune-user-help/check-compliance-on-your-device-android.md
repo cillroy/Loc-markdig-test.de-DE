@@ -17,10 +17,10 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: b1836b0b910d597a78e936e6ac1ba7956fe3fe19
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 

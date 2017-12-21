@@ -16,10 +16,10 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 466522364664726ef8dcb77590b8da23fe6c4845
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für Android
 Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.

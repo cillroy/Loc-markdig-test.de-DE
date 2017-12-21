@@ -14,10 +14,10 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 
@@ -30,13 +30,13 @@ Wir empfehlen den folgenden E-Mail-Kommunikationsplan. Wir haben für Sie Vorlag
 -   **E-Mail \#1:** Erläutern Sie die Vorteile, Erwartungen und den Zeitplan. Nutzen Sie die Gelegenheit, um andere neue Dienste vorzustellen, deren Zugriff auf durch Intune verwalteten Geräten gewährt wird.<br/><br/>
 
 
-    -   [E-Mail herunterladen\#1 Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Herunterladen von e-Mail \#1-Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **E-Mail \#2:** Geben Sie bekannt, dass Dienste nun für den Zugriff über Intune bereit sind. Fordern Sie die Benutzer auf, sich nun zu registrieren. Erinnern Sie die Benutzer an die Vorteile und strategischen Gründe für die Migration.<br/><br/>
 
 
-    -   [E-Mail herunterladen\#2 Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Herunterladen von e-Mail \#2-Vorlage](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **E-Mail \#3:** Stellen Sie Benutzern eine Zeitachse bereit, bevor deren Zugriff betroffen ist. Erinnern Sie die Benutzer nochmals an die Vorteile und strategischen Gründe für die Migration. Das Zeitfenster für die Versendung der E-Mails sollte gleitend sein, sodass dies mit den Phasen übereinstimmt. Beispielsweise im Juni E-Mail \#1 an die Benutzer von Phase 1, E-Mail \#2 an die Benutzer von Phase 2 und E-Mail \#3 an die Benutzer von Phase 3.<br/><br/>

@@ -1,1 +1,1 @@
-Webadressen können sich ändern. Daher ist möglicherweise keine Verbindung zur/zu den hier erwähnten Website(s) möglich.
+<span data-ttu-id="88e8f-101">Webadressen können sich ändern. Daher ist möglicherweise keine Verbindung zur/zu den hier erwähnten Website(s) möglich.</span><span class="sxs-lookup"><span data-stu-id="88e8f-101">Web addresses can change, so you might be unable to connect to the website or sites mentioned here.</span></span>

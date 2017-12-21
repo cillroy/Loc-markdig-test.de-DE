@@ -16,234 +16,234 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a><span data-ttu-id="12395-103">Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="12395-103">Manage Internet access using Managed Browser policies with Microsoft Intune</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Managed Browser ist eine Webbrowser-App, die Sie aus öffentlichen App-Stores für die Verwendung in Ihrer Organisation herunterladen können. Nach der Konfiguration mit Intune kann Managed Browser:
-- Auf Unternehmenswebsites und SaaS-Apps mit einmaliger Anmeldung über den MyApps-Dienst zugreifen, während Webdaten geschützt bleiben.
-- Mit einer Liste von URLs und Domänen vorkonfiguriert werden, um die Möglichkeit des Zugriffs des Benutzers auf Websites im Unternehmenskontext zu beschränken.
-- Mit einer Startseite und von Ihnen angegebenen Lesezeichen vorkonfiguriert werden.
+<span data-ttu-id="12395-104">Managed Browser ist eine Webbrowser-App, die Sie aus öffentlichen App-Stores für die Verwendung in Ihrer Organisation herunterladen können.</span><span class="sxs-lookup"><span data-stu-id="12395-104">The Managed Browser is a web browsing app that you can download from public app stores for use in your organization.</span></span> <span data-ttu-id="12395-105">Nach der Konfiguration mit Intune kann Managed Browser:</span><span class="sxs-lookup"><span data-stu-id="12395-105">When configured with Intune, the Managed Browser can be:</span></span>
+- <span data-ttu-id="12395-106">Auf Unternehmenswebsites und SaaS-Apps mit einmaliger Anmeldung über den MyApps-Dienst zugreifen, während Webdaten geschützt bleiben.</span><span class="sxs-lookup"><span data-stu-id="12395-106">Used to access corporate sites and SaaS apps with Single Sign-On via the MyApps service, while keeping web data protected.</span></span>
+- <span data-ttu-id="12395-107">Mit einer Liste von URLs und Domänen vorkonfiguriert werden, um die Möglichkeit des Zugriffs des Benutzers auf Websites im Unternehmenskontext zu beschränken.</span><span class="sxs-lookup"><span data-stu-id="12395-107">Pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.</span></span>
+- <span data-ttu-id="12395-108">Mit einer Startseite und von Ihnen angegebenen Lesezeichen vorkonfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="12395-108">Pre-configured with a homepage, and bookmarks you specify.</span></span>
 
-Da diese App die Integration mit dem Intune SDK aufweist, können Sie auch App-Schutzrichtlinien auf sie anwenden, wie beispielsweise:
-- Steuern der Verwendung von Ausschneiden, Kopieren und Einfügen
-- Verhindern von Bildschirmaufnahmen
-- Sicherstellen, dass Links zu Inhalten, die von Benutzern ausgewählt werden, nur in anderen verwalteten Apps geöffnet werden
+<span data-ttu-id="12395-109">Da diese App die Integration mit dem Intune SDK aufweist, können Sie auch App-Schutzrichtlinien auf sie anwenden, wie beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="12395-109">Because this app has integration with the Intune SDK, you can also apply app protection policies to it, including:</span></span>
+- <span data-ttu-id="12395-110">Steuern der Verwendung von Ausschneiden, Kopieren und Einfügen</span><span class="sxs-lookup"><span data-stu-id="12395-110">Controlling the use of cut, copy, and paste</span></span>
+- <span data-ttu-id="12395-111">Verhindern von Bildschirmaufnahmen</span><span class="sxs-lookup"><span data-stu-id="12395-111">Preventing screen captures</span></span>
+- <span data-ttu-id="12395-112">Sicherstellen, dass Links zu Inhalten, die von Benutzern ausgewählt werden, nur in anderen verwalteten Apps geöffnet werden</span><span class="sxs-lookup"><span data-stu-id="12395-112">Ensuring that links to content that users select open only in other managed apps.</span></span>
 
-Weitere Information finden Sie unter [Was sind App-Schutzrichtlinien?](/intune/app-protection-policy).
+<span data-ttu-id="12395-113">Weitere Information finden Sie unter [Was sind App-Schutzrichtlinien?](/intune/app-protection-policy).</span><span class="sxs-lookup"><span data-stu-id="12395-113">For details, see [What are app protection policies?](/intune/app-protection-policy)</span></span>
 
-Sie können diese Einstellungen auf Folgendes anwenden:
+<span data-ttu-id="12395-114">Sie können diese Einstellungen auf Folgendes anwenden:</span><span class="sxs-lookup"><span data-stu-id="12395-114">You can apply these settings to:</span></span>
 
-- Geräte, die bei Intune registriert sind
-- Geräte, die bei einem anderen MDM-Produkt registriert sind
-- Nicht verwaltete Geräte
+- <span data-ttu-id="12395-115">Geräte, die bei Intune registriert sind</span><span class="sxs-lookup"><span data-stu-id="12395-115">Devices that are enrolled with Intune</span></span>
+- <span data-ttu-id="12395-116">Geräte, die bei einem anderen MDM-Produkt registriert sind</span><span class="sxs-lookup"><span data-stu-id="12395-116">Enrolled with another MDM product</span></span>
+- <span data-ttu-id="12395-117">Nicht verwaltete Geräte</span><span class="sxs-lookup"><span data-stu-id="12395-117">Unmanaged devices</span></span>
 
-Wenn Benutzer Managed Browser aus dem App Store installieren und die App nicht von Intune verwaltet wird, kann sie als einfacher Webbrowser mit Unterstützung für einmaliges Anmelden über die Microsoft MyApps-Website verwendet werden. Benutzer werden direkt an die MyApps-Website weitergeleitet, wo alle ihre bereitgestellten SaaS-Anwendungen angezeigt werden.
-Während Managed Browser nicht von Intune verwaltet wird, kann nicht auf Daten aus anderen von Intune verwalteten Anwendungen zugegriffen werden. 
+<span data-ttu-id="12395-118">Wenn Benutzer Managed Browser aus dem App Store installieren und die App nicht von Intune verwaltet wird, kann sie als einfacher Webbrowser mit Unterstützung für einmaliges Anmelden über die Microsoft MyApps-Website verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-118">If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site.</span></span> <span data-ttu-id="12395-119">Benutzer werden direkt an die MyApps-Website weitergeleitet, wo alle ihre bereitgestellten SaaS-Anwendungen angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="12395-119">Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.</span></span>
+<span data-ttu-id="12395-120">Während Managed Browser nicht von Intune verwaltet wird, kann nicht auf Daten aus anderen von Intune verwalteten Anwendungen zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="12395-120">While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications.</span></span> 
 
-Managed Browser unterstützt nicht das Kryptografieprotokoll von Secure Sockets Layer-Version 3 (SSLv3).
+<span data-ttu-id="12395-121">Managed Browser unterstützt nicht das Kryptografieprotokoll von Secure Sockets Layer-Version 3 (SSLv3).</span><span class="sxs-lookup"><span data-stu-id="12395-121">The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.</span></span>
 
-Sie können Managed Browser-Richtlinien für die folgenden Gerätetypen erstellen:
+<span data-ttu-id="12395-122">Sie können Managed Browser-Richtlinien für die folgenden Gerätetypen erstellen:</span><span class="sxs-lookup"><span data-stu-id="12395-122">You can create Managed Browser policies for the following device types:</span></span>
 
--   Geräte unter Android 4 und höher
+-   <span data-ttu-id="12395-123">Geräte unter Android 4 und höher</span><span class="sxs-lookup"><span data-stu-id="12395-123">Devices that run Android 4 and later</span></span>
 
--   Geräte unter iOS 8.0 und höher
-
->[!IMPORTANT]
->Ab Oktober 2017 unterstützt die Intune Managed Browser-App für Android nur noch Geräte mit Android 4.4 oder höher. Die Intune Managed Browser-App unter iOS unterstützt nur noch Geräte mit iOS 9.0 oder höher.
->Frühere Versionen von Android und iOS können Managed Browser weiterhin verwenden, allerdings können keine neuen Versionen der App installiert werden, und einige App-Funktionen sind möglicherweise nicht verfügbar. Es wird empfohlen, dass Sie diese Geräte auf eine unterstützte Betriebssystemversion aktualisieren.
-
-
-Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
-
-## <a name="create-a-managed-browser-app-configuration"></a>Erstellen einer Managed Browser-App-Konfiguration
-
-1.  Melden Sie sich beim Azure-Portal an.
-2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3.  Gehen Sie zur Liste „Verwalten“ auf dem Blatt **Mobile Apps**, und wählen Sie die Option **App-Konfigurationsrichtlinien** aus.
-4.  Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.
-5.  Geben Sie auf dem Blatt **App-Konfiguration hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
-6.  Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.
-7.  Wählen Sie **Erforderliche Apps auswählen** aus, und wählen Sie auf dem Blatt **Ziel-Apps** die Option **Managed Browser** für iOS, für Android oder für beides aus.
-8.  Wählen Sie **OK** aus, um zum Blatt **App-Konfiguration hinzufügen** zurückzukehren.
-9.  Wählen Sie **Konfigurationseinstellungen** aus. Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Managed Browser bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
-10. Wählen Sie abschließend **OK** aus.
-11. Wählen Sie auf dem Blatt **App-Konfiguration hinzufügen** die Option **Erstellen** aus.
-12. Die neue Konfiguration wird erstellt und auf dem Blatt **App-Konfiguration** angezeigt.
+-   <span data-ttu-id="12395-124">Geräte unter iOS 8.0 und höher</span><span class="sxs-lookup"><span data-stu-id="12395-124">Devices that run iOS 8.0 and later</span></span>
 
 >[!IMPORTANT]
->Derzeit verwendet Managed Browser die automatische Registrierung. Damit die App-Konfigurationen angewendet werden können, muss eine andere Anwendung auf dem Gerät bereits mit den Intune-App-Schutzrichtlinien verwaltet werden.
-
-## <a name="assign-the-configuration-settings-you-created"></a>Zuweisen der erstellten Konfigurationseinstellungen
-
-Sie weisen die Einstellungen Azure AD-Gruppen von Benutzern zu. Haben diese Benutzer die Managed Browser-App installiert, wird die App durch die angegebenen Einstellungen verwaltet.
-
-1. Wählen Sie auf dem Blatt **Einstellungen** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen **App-Konfiguration** aus.
-2. Wählen Sie aus der Liste der App-Konfigurationen diejenige aus, die Sie zuweisen möchten.
-3. Wählen Sie auf dem nächsten Blatt **Benutzergruppen** aus.
-4. Wählen Sie auf dem Blatt **Benutzergruppen** die Azure AD-Gruppe aus, die Sie der App-Konfiguration zuweisen möchten, und wählen Sie dann **OK** aus.
+><span data-ttu-id="12395-125">Ab Oktober 2017 unterstützt die Intune Managed Browser-App für Android nur noch Geräte mit Android 4.4 oder höher.</span><span class="sxs-lookup"><span data-stu-id="12395-125">As of October 2017, the Intune Managed Browser app on Android app supports only devices running Android 4.4 and later.</span></span> <span data-ttu-id="12395-126">Die Intune Managed Browser-App unter iOS unterstützt nur noch Geräte mit iOS 9.0 oder höher.</span><span class="sxs-lookup"><span data-stu-id="12395-126">The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.</span></span>
+><span data-ttu-id="12395-127">Frühere Versionen von Android und iOS können Managed Browser weiterhin verwenden, allerdings können keine neuen Versionen der App installiert werden, und einige App-Funktionen sind möglicherweise nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="12395-127">Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities.</span></span> <span data-ttu-id="12395-128">Es wird empfohlen, dass Sie diese Geräte auf eine unterstützte Betriebssystemversion aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="12395-128">We encourage you to update these devices to a supported operating system version.</span></span>
 
 
-## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Konfigurieren von Anwendungsproxyeinstellungen für Managed Browser
+<span data-ttu-id="12395-129">Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft Intune-Anwendungspartnern](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).</span><span class="sxs-lookup"><span data-stu-id="12395-129">The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).</span></span>
 
-Intune Managed Browser und [Azure AD-Anwendungsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) können gemeinsam verwendet werden, um die folgenden Szenarios für Benutzer von iOS- und Android-Geräten zu unterstützen:
+## <a name="create-a-managed-browser-app-configuration"></a><span data-ttu-id="12395-130">Erstellen einer Managed Browser-App-Konfiguration</span><span class="sxs-lookup"><span data-stu-id="12395-130">Create a Managed Browser app configuration</span></span>
 
-- Ein Benutzer lädt die Microsoft Outlook-App herunter und meldet sich an. Die Intune-App-Schutzrichtlinien werden automatisch angewendet. Diese verschlüsseln gespeicherte Daten und hindern den Benutzer daran, Unternehmensdateien auf nicht verwaltete Apps oder Speicherorte auf dem Gerät zu übertragen. Klickt der Benutzer dann auf einen Link zu einem Intranetwebsite in Outlook, können Sie angeben, dass der Link in der Managed Browser-App anstatt in einem anderen Browser geöffnet wird. Managed Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Benutzer werden automatisch über den Anwendungsproxy zur Authentifizierung mit jeder anwendbaren Multi-Factor Authentication und bedingtem Zugriff weitergeleitet, bevor sie die Intranetwebsite erreichen. Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden, und der Link funktioniert in Outlook erwartungsgemäß.
-- Ein Remotebenutzer öffnet die Managed Browser-Anwendung und navigiert mit der internen URL zu einer Intranetwebsite. Managed Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Benutzer werden automatisch über den Anwendungsproxy zur Authentifizierung mit jeder anwendbaren Multi-Factor Authentication und bedingtem Zugriff weitergeleitet, bevor sie die Intranetwebsite erreichen. Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden.
-
-### <a name="before-you-start"></a>Vorbereitung
-
-- Richten Sie Ihre internen Anwendungen über den Azure AD-Anwendungsproxy ein.
-    - Informationen zum Konfigurieren des Anwendungsproxys und zum Veröffentlichen von Anwendungen finden Sie in der [Setup-Dokumentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-- Die Managed Browser-App muss in der Version 1.2.0 oder höher ausgeführt werden.
-- Benutzer der Managed Browser-App verfügen über eine der App zugewiesene [Intune-App-Schutzrichtlinie]( app-protection-policy.md).
-Hinweis: Es kann bis zu 24 Stunden dauern, bis aktualisierte Anwendungsproxy-Umleitungsdaten in Managed Browser in Kraft treten.
-
-#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Schritt 1: Aktivieren der automatischen Umleitung zu Managed Browser aus Outlook
-Outlook muss mit einer App-Schutzrichtlinie konfiguriert werden, mit der Einstellung **Anzeige von Webinhalten auf den Managed Browser beschränken** möglich ist.
-
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Schritt 2: Zuweisen einer App-Konfigurationsrichtlinie für Managed Browser
-Dieses Verfahren konfiguriert die Managed Browser-App, damit die App-Proxyumleitung verwendet wird. Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
-
-|||
-|-|-|
-|Key|Wert|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**TRUE**|
-
-
-## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Konfigurieren der Homepage für Managed Browser
-
-Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten von Managed Browser oder beim Erstellen einer neuen Registerkarte angezeigt wird. Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
-
-|||
-|-|-|
-|Key|Wert|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Geben Sie eine gültige URL ein. Ungültige URLs werden zur Sicherheit gesperrt.<br>Beispiel: **https://www.bing.com**|
-
-
-## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Konfigurieren von Lesezeichen für Managed Browser
-
-Mit dieser Einstellung können Sie einen Satz Lesezeichen konfigurieren, der den Benutzern von Managed Browser zur Verfügung steht.
-
-- Diese Lesezeichen können von den Benutzern nicht gelöscht oder bearbeitet werden.
-- Diese Lesezeichen werden oben in der Liste angezeigt. Alle von den Benutzern erstellten Lesezeichen werden unterhalb dieser Lesezeichen angezeigt.
-- Wenn Sie die App-Proxyumleitung aktiviert haben, können Sie App-Proxy-Web-Apps mit deren interner oder externer URL hinzufügen.
-
-Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
-
-|||
-|-|-|
-|Key|Wert|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|Der Wert für diese Konfiguration ist eine Liste von Lesezeichen. Jedes Lesezeichen besteht aus dem Lesezeichentitel und der Lesezeichen-URL. Trennen Sie Titel und URL mit dem **&#124;**-Zeichen.<br><br>Beispiel: **Microsoft Bing&#124;https://www.bing.com**<br><br>Zum Konfigurieren von mehreren Lesezeichen trennen Sie jedes Paar mit einem doppelten **&#124;&#124;**-Zeichen.<br><br>Beispiel: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
-
-## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Angeben von zugelassenen und blockierten URLs für Managed Browser
-
-Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
-
-|||
-|-|-|
-|Key|Wert|
-|Wählen Sie aus:<br><br>- Angeben von zugelassenen URLs (nur diese URLs sind zugelassen, auf keine weiteren Websites kann zugegriffen werden): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs. Geben Sie alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich **&#124;** getrennt ist.<br><br>Beispiele:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+1.  <span data-ttu-id="12395-131">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="12395-131">Sign into the Azure portal.</span></span>
+2.  <span data-ttu-id="12395-132">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-132">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3.  <span data-ttu-id="12395-133">Gehen Sie zur Liste „Verwalten“ auf dem Blatt **Mobile Apps**, und wählen Sie die Option **App-Konfigurationsrichtlinien** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-133">On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.</span></span>
+4.  <span data-ttu-id="12395-134">Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-134">On the **App Configuration policies** blade, choose **Add**.</span></span>
+5.  <span data-ttu-id="12395-135">Geben Sie auf dem Blatt **App-Konfiguration hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.</span><span class="sxs-lookup"><span data-stu-id="12395-135">On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.</span></span>
+6.  <span data-ttu-id="12395-136">Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-136">For **Device enrollment** type, choose **Managed apps**.</span></span>
+7.  <span data-ttu-id="12395-137">Wählen Sie **Erforderliche Apps auswählen** aus, und wählen Sie auf dem Blatt **Ziel-Apps** die Option **Managed Browser** für iOS, für Android oder für beides aus.</span><span class="sxs-lookup"><span data-stu-id="12395-137">Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.</span></span>
+8.  <span data-ttu-id="12395-138">Wählen Sie **OK** aus, um zum Blatt **App-Konfiguration hinzufügen** zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="12395-138">Choose **OK** to return to the **Add app configuration** blade.</span></span>
+9.  <span data-ttu-id="12395-139">Wählen Sie **Konfigurationseinstellungen** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-139">Choose **Configuration Settings**.</span></span> <span data-ttu-id="12395-140">Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Managed Browser bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="12395-140">On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser.</span></span> <span data-ttu-id="12395-141">In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.</span><span class="sxs-lookup"><span data-stu-id="12395-141">Use the sections later in this article to learn about the different key and value pairs you can define.</span></span>
+10. <span data-ttu-id="12395-142">Wählen Sie abschließend **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-142">When you are done, choose **OK**.</span></span>
+11. <span data-ttu-id="12395-143">Wählen Sie auf dem Blatt **App-Konfiguration hinzufügen** die Option **Erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-143">On the **Add app configuration** blade, choose **Create**.</span></span>
+12. <span data-ttu-id="12395-144">Die neue Konfiguration wird erstellt und auf dem Blatt **App-Konfiguration** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="12395-144">The new configuration is created, and displayed on the **App configuration** blade.</span></span>
 
 >[!IMPORTANT]
->Geben Sie nicht beide Schlüssel an. Wenn beide Schlüssel für einen Benutzer eingerichtet sind, wird der Schlüssel für zugelassene URLs verwendet, da dies die restriktivste Option ist.
->Stellen Sie außerdem sicher, dass Sie keine wichtigen Seiten wie Ihre Unternehmenswebsites blockieren.
+><span data-ttu-id="12395-145">Derzeit verwendet Managed Browser die automatische Registrierung.</span><span class="sxs-lookup"><span data-stu-id="12395-145">Currently, the Managed Browser relies on auto-enrollment.</span></span> <span data-ttu-id="12395-146">Damit die App-Konfigurationen angewendet werden können, muss eine andere Anwendung auf dem Gerät bereits mit den Intune-App-Schutzrichtlinien verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-146">For app configurations to apply, another application on the device must already be managed by Intune app protection policies.</span></span>
 
-### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-Format für zulässige und blockierte URLs
-Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:
+## <a name="assign-the-configuration-settings-you-created"></a><span data-ttu-id="12395-147">Zuweisen der erstellten Konfigurationseinstellungen</span><span class="sxs-lookup"><span data-stu-id="12395-147">Assign the configuration settings you created</span></span>
 
--   Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden:
+<span data-ttu-id="12395-148">Sie weisen die Einstellungen Azure AD-Gruppen von Benutzern zu.</span><span class="sxs-lookup"><span data-stu-id="12395-148">You assign the settings to Azure AD groups of users.</span></span> <span data-ttu-id="12395-149">Haben diese Benutzer die Managed Browser-App installiert, wird die App durch die angegebenen Einstellungen verwaltet.</span><span class="sxs-lookup"><span data-stu-id="12395-149">If that user has the Managed Browser app installed, then the app is managed by the settings you specified.</span></span>
 
--   Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
+1. <span data-ttu-id="12395-150">Wählen Sie auf dem Blatt **Einstellungen** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen **App-Konfiguration** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-150">On the **Settings** blade of the Intune mobile application management dashboard, choose **App configuration**.</span></span>
+2. <span data-ttu-id="12395-151">Wählen Sie aus der Liste der App-Konfigurationen diejenige aus, die Sie zuweisen möchten.</span><span class="sxs-lookup"><span data-stu-id="12395-151">From the list of app configurations, select the one you want to assign.</span></span>
+3. <span data-ttu-id="12395-152">Wählen Sie auf dem nächsten Blatt **Benutzergruppen** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-152">On the next blade, choose **User Groups**.</span></span>
+4. <span data-ttu-id="12395-153">Wählen Sie auf dem Blatt **Benutzergruppen** die Azure AD-Gruppe aus, die Sie der App-Konfiguration zuweisen möchten, und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-153">On the **User groups** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.</span></span>
 
--   Sie können Portnummern in der Adresse angeben. Wenn Sie keine Portnummer angeben, werden folgende Werte verwendet:
 
-    -   Port 80 für http
+## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a><span data-ttu-id="12395-154">Konfigurieren von Anwendungsproxyeinstellungen für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-154">How to configure Application Proxy settings for the Managed Browser</span></span>
 
-    -   Port 443 für https
+<span data-ttu-id="12395-155">Intune Managed Browser und [Azure AD-Anwendungsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) können gemeinsam verwendet werden, um die folgenden Szenarios für Benutzer von iOS- und Android-Geräten zu unterstützen:</span><span class="sxs-lookup"><span data-stu-id="12395-155">The Intune Managed Browser and [Azure AD Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) can be used together to support the following scenarios for users of iOS and Android devices:</span></span>
 
-    Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. **http&colon;//www&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;** werden beispielsweise nicht unterstützt.
+- <span data-ttu-id="12395-156">Ein Benutzer lädt die Microsoft Outlook-App herunter und meldet sich an.</span><span class="sxs-lookup"><span data-stu-id="12395-156">A user downloads and signs in to the Microsoft Outlook app.</span></span> <span data-ttu-id="12395-157">Die Intune-App-Schutzrichtlinien werden automatisch angewendet.</span><span class="sxs-lookup"><span data-stu-id="12395-157">Intune app protection policies are automatically applied.</span></span> <span data-ttu-id="12395-158">Diese verschlüsseln gespeicherte Daten und hindern den Benutzer daran, Unternehmensdateien auf nicht verwaltete Apps oder Speicherorte auf dem Gerät zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="12395-158">They encrypt saved data and block the user from transferring corporate files to unmanaged apps or locations on the device.</span></span> <span data-ttu-id="12395-159">Klickt der Benutzer dann auf einen Link zu einem Intranetwebsite in Outlook, können Sie angeben, dass der Link in der Managed Browser-App anstatt in einem anderen Browser geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="12395-159">When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in the Managed Browser app, rather than another browser.</span></span> <span data-ttu-id="12395-160">Managed Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde.</span><span class="sxs-lookup"><span data-stu-id="12395-160">The Managed Browser recognizes that this intranet site has been exposed to the user through the Application Proxy.</span></span> <span data-ttu-id="12395-161">Benutzer werden automatisch über den Anwendungsproxy zur Authentifizierung mit jeder anwendbaren Multi-Factor Authentication und bedingtem Zugriff weitergeleitet, bevor sie die Intranetwebsite erreichen.</span><span class="sxs-lookup"><span data-stu-id="12395-161">The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site.</span></span> <span data-ttu-id="12395-162">Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden, und der Link funktioniert in Outlook erwartungsgemäß.</span><span class="sxs-lookup"><span data-stu-id="12395-162">This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.</span></span>
+- <span data-ttu-id="12395-163">Ein Remotebenutzer öffnet die Managed Browser-Anwendung und navigiert mit der internen URL zu einer Intranetwebsite.</span><span class="sxs-lookup"><span data-stu-id="12395-163">A remote user opens the Managed Browser application and navigates to an intranet site using the internal URL.</span></span> <span data-ttu-id="12395-164">Managed Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde.</span><span class="sxs-lookup"><span data-stu-id="12395-164">The Managed Browser recognizes that this intranet site has been exposed to the user via the Application Proxy.</span></span> <span data-ttu-id="12395-165">Benutzer werden automatisch über den Anwendungsproxy zur Authentifizierung mit jeder anwendbaren Multi-Factor Authentication und bedingtem Zugriff weitergeleitet, bevor sie die Intranetwebsite erreichen.</span><span class="sxs-lookup"><span data-stu-id="12395-165">The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site.</span></span> <span data-ttu-id="12395-166">Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="12395-166">This site, which could previously not be found while the user was remote, is now accessible.</span></span>
 
--   In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
+### <a name="before-you-start"></a><span data-ttu-id="12395-167">Vorbereitung</span><span class="sxs-lookup"><span data-stu-id="12395-167">Before you start</span></span>
 
-|URL|Details|Treffer|Stimmt nicht überein mit|
+- <span data-ttu-id="12395-168">Richten Sie Ihre internen Anwendungen über den Azure AD-Anwendungsproxy ein.</span><span class="sxs-lookup"><span data-stu-id="12395-168">Set up your internal applications through the Azure AD Application Proxy.</span></span>
+    - <span data-ttu-id="12395-169">Informationen zum Konfigurieren des Anwendungsproxys und zum Veröffentlichen von Anwendungen finden Sie in der [Setup-Dokumentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started).</span><span class="sxs-lookup"><span data-stu-id="12395-169">To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started).</span></span> 
+- <span data-ttu-id="12395-170">Die Managed Browser-App muss in der Version 1.2.0 oder höher ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="12395-170">You must be using minimum version 1.2.0 of the Managed Browser app.</span></span>
+- <span data-ttu-id="12395-171">Benutzer der Managed Browser-App verfügen über eine der App zugewiesene [Intune-App-Schutzrichtlinie]( app-protection-policy.md).</span><span class="sxs-lookup"><span data-stu-id="12395-171">Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.</span></span>
+<span data-ttu-id="12395-172">Hinweis: Es kann bis zu 24 Stunden dauern, bis aktualisierte Anwendungsproxy-Umleitungsdaten in Managed Browser in Kraft treten.</span><span class="sxs-lookup"><span data-stu-id="12395-172">Note: Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser.</span></span>
+
+#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a><span data-ttu-id="12395-173">Schritt 1: Aktivieren der automatischen Umleitung zu Managed Browser aus Outlook</span><span class="sxs-lookup"><span data-stu-id="12395-173">Step 1: Enable automatic redirection to the Managed Browser from Outlook</span></span>
+<span data-ttu-id="12395-174">Outlook muss mit einer App-Schutzrichtlinie konfiguriert werden, mit der Einstellung **Anzeige von Webinhalten auf den Managed Browser beschränken** möglich ist.</span><span class="sxs-lookup"><span data-stu-id="12395-174">Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.</span></span>
+
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a><span data-ttu-id="12395-175">Schritt 2: Zuweisen einer App-Konfigurationsrichtlinie für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-175">Step 2: Assign an app configuration policy assigned for the Managed Browser.</span></span>
+<span data-ttu-id="12395-176">Dieses Verfahren konfiguriert die Managed Browser-App, damit die App-Proxyumleitung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="12395-176">This procedure configures the Managed Browser app to use app proxy redirection.</span></span> <span data-ttu-id="12395-177">Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:</span><span class="sxs-lookup"><span data-stu-id="12395-177">Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:</span></span>
+
+|||
+|-|-|
+|<span data-ttu-id="12395-178">Key</span><span class="sxs-lookup"><span data-stu-id="12395-178">Key</span></span>|<span data-ttu-id="12395-179">Wert</span><span class="sxs-lookup"><span data-stu-id="12395-179">Value</span></span>|
+|<span data-ttu-id="12395-180">**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**</span><span class="sxs-lookup"><span data-stu-id="12395-180">**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**</span></span>|<span data-ttu-id="12395-181">**TRUE**</span><span class="sxs-lookup"><span data-stu-id="12395-181">**true**</span></span>|
+
+
+## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a><span data-ttu-id="12395-182">Konfigurieren der Homepage für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-182">How to configure the homepage for the Managed Browser</span></span>
+
+<span data-ttu-id="12395-183">Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten von Managed Browser oder beim Erstellen einer neuen Registerkarte angezeigt wird. Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:</span><span class="sxs-lookup"><span data-stu-id="12395-183">This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:</span></span>
+
+|||
+|-|-|
+|<span data-ttu-id="12395-184">Key</span><span class="sxs-lookup"><span data-stu-id="12395-184">Key</span></span>|<span data-ttu-id="12395-185">Wert</span><span class="sxs-lookup"><span data-stu-id="12395-185">Value</span></span>|
+|<span data-ttu-id="12395-186">**com.microsoft.intune.mam.managedbrowser.homepage**</span><span class="sxs-lookup"><span data-stu-id="12395-186">**com.microsoft.intune.mam.managedbrowser.homepage**</span></span>|<span data-ttu-id="12395-187">Geben Sie eine gültige URL ein.</span><span class="sxs-lookup"><span data-stu-id="12395-187">Specify a valid URL.</span></span> <span data-ttu-id="12395-188">Ungültige URLs werden zur Sicherheit gesperrt.</span><span class="sxs-lookup"><span data-stu-id="12395-188">Incorrect URLs are blocked as a security measure.</span></span><br><span data-ttu-id="12395-189">Beispiel: **https://www.bing.com**</span><span class="sxs-lookup"><span data-stu-id="12395-189">Example: **https://www.bing.com**</span></span>|
+
+
+## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a><span data-ttu-id="12395-190">Konfigurieren von Lesezeichen für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-190">How to configure bookmarks for the Managed Browser</span></span>
+
+<span data-ttu-id="12395-191">Mit dieser Einstellung können Sie einen Satz Lesezeichen konfigurieren, der den Benutzern von Managed Browser zur Verfügung steht.</span><span class="sxs-lookup"><span data-stu-id="12395-191">This setting allows you to configure a set of bookmarks that is available to users of the Managed Browser.</span></span>
+
+- <span data-ttu-id="12395-192">Diese Lesezeichen können von den Benutzern nicht gelöscht oder bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-192">These bookmarks cannot be deleted or modified by users</span></span>
+- <span data-ttu-id="12395-193">Diese Lesezeichen werden oben in der Liste angezeigt.</span><span class="sxs-lookup"><span data-stu-id="12395-193">These bookmarks display at the top of the list.</span></span> <span data-ttu-id="12395-194">Alle von den Benutzern erstellten Lesezeichen werden unterhalb dieser Lesezeichen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="12395-194">Any bookmarks that users create are displayed below these bookmarks.</span></span>
+- <span data-ttu-id="12395-195">Wenn Sie die App-Proxyumleitung aktiviert haben, können Sie App-Proxy-Web-Apps mit deren interner oder externer URL hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="12395-195">If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.</span></span>
+
+<span data-ttu-id="12395-196">Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:</span><span class="sxs-lookup"><span data-stu-id="12395-196">Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:</span></span>
+
+|||
+|-|-|
+|<span data-ttu-id="12395-197">Key</span><span class="sxs-lookup"><span data-stu-id="12395-197">Key</span></span>|<span data-ttu-id="12395-198">Wert</span><span class="sxs-lookup"><span data-stu-id="12395-198">Value</span></span>|
+|<span data-ttu-id="12395-199">**com.microsoft.intune.mam.managedbrowser.bookmarks**</span><span class="sxs-lookup"><span data-stu-id="12395-199">**com.microsoft.intune.mam.managedbrowser.bookmarks**</span></span>|<span data-ttu-id="12395-200">Der Wert für diese Konfiguration ist eine Liste von Lesezeichen.</span><span class="sxs-lookup"><span data-stu-id="12395-200">The value for this configuration is a list of bookmarks.</span></span> <span data-ttu-id="12395-201">Jedes Lesezeichen besteht aus dem Lesezeichentitel und der Lesezeichen-URL.</span><span class="sxs-lookup"><span data-stu-id="12395-201">Each bookmark consists of the bookmark title, and the bookmark URL.</span></span> <span data-ttu-id="12395-202">Trennen Sie Titel und URL mit dem **&#124;**-Zeichen.</span><span class="sxs-lookup"><span data-stu-id="12395-202">Separate the title, and URL with the **&#124;** character.</span></span><br><br><span data-ttu-id="12395-203">Beispiel: **Microsoft Bing&#124;https://www.bing.com**</span><span class="sxs-lookup"><span data-stu-id="12395-203">Example: **Microsoft Bing&#124;https://www.bing.com**</span></span><br><br><span data-ttu-id="12395-204">Zum Konfigurieren von mehreren Lesezeichen trennen Sie jedes Paar mit einem doppelten **&#124;&#124;**-Zeichen.</span><span class="sxs-lookup"><span data-stu-id="12395-204">To configure multiple bookmarks, separate each pair with the double character, **&#124;&#124;**</span></span><br><br><span data-ttu-id="12395-205">Beispiel: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**</span><span class="sxs-lookup"><span data-stu-id="12395-205">Example: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**</span></span>|
+
+## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a><span data-ttu-id="12395-206">Angeben von zugelassenen und blockierten URLs für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-206">How to specify allowed and blocked URLs for the Managed Browser</span></span>
+
+<span data-ttu-id="12395-207">Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:</span><span class="sxs-lookup"><span data-stu-id="12395-207">Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:</span></span>
+
+|||
+|-|-|
+|<span data-ttu-id="12395-208">Key</span><span class="sxs-lookup"><span data-stu-id="12395-208">Key</span></span>|<span data-ttu-id="12395-209">Wert</span><span class="sxs-lookup"><span data-stu-id="12395-209">Value</span></span>|
+|<span data-ttu-id="12395-210">Wählen Sie aus:</span><span class="sxs-lookup"><span data-stu-id="12395-210">Choose from:</span></span><br><br><span data-ttu-id="12395-211">- Angeben von zugelassenen URLs (nur diese URLs sind zugelassen, auf keine weiteren Websites kann zugegriffen werden): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**</span><span class="sxs-lookup"><span data-stu-id="12395-211">- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**</span></span><br><br><span data-ttu-id="12395-212">- Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden):</span><span class="sxs-lookup"><span data-stu-id="12395-212">- Specify blocked URLs (all other sites can be accessed):</span></span> <br><br><span data-ttu-id="12395-213">**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</span><span class="sxs-lookup"><span data-stu-id="12395-213">**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</span></span>|<span data-ttu-id="12395-214">Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs.</span><span class="sxs-lookup"><span data-stu-id="12395-214">The corresponding value for the key is a list of URLs.</span></span> <span data-ttu-id="12395-215">Geben Sie alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich **&#124;** getrennt ist.</span><span class="sxs-lookup"><span data-stu-id="12395-215">You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.</span></span><br><br><span data-ttu-id="12395-216">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="12395-216">Examples:</span></span><br><br><span data-ttu-id="12395-217">**URL1&#124;URL2&#124;URL3**</span><span class="sxs-lookup"><span data-stu-id="12395-217">**URL1&#124;URL2&#124;URL3**</span></span><br><span data-ttu-id="12395-218">**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**</span><span class="sxs-lookup"><span data-stu-id="12395-218">**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**</span></span>|
+
+>[!IMPORTANT]
+><span data-ttu-id="12395-219">Geben Sie nicht beide Schlüssel an.</span><span class="sxs-lookup"><span data-stu-id="12395-219">Do not specify both keys.</span></span> <span data-ttu-id="12395-220">Wenn beide Schlüssel für einen Benutzer eingerichtet sind, wird der Schlüssel für zugelassene URLs verwendet, da dies die restriktivste Option ist.</span><span class="sxs-lookup"><span data-stu-id="12395-220">If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.</span></span>
+><span data-ttu-id="12395-221">Stellen Sie außerdem sicher, dass Sie keine wichtigen Seiten wie Ihre Unternehmenswebsites blockieren.</span><span class="sxs-lookup"><span data-stu-id="12395-221">Additionally, make sure not to block important pages like your company websites.</span></span>
+
+### <a name="url-format-for-allowed-and-blocked-urls"></a><span data-ttu-id="12395-222">URL-Format für zulässige und blockierte URLs</span><span class="sxs-lookup"><span data-stu-id="12395-222">URL format for allowed and blocked URLs</span></span>
+<span data-ttu-id="12395-223">Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:</span><span class="sxs-lookup"><span data-stu-id="12395-223">Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:</span></span>
+
+-   <span data-ttu-id="12395-224">Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden:</span><span class="sxs-lookup"><span data-stu-id="12395-224">You can use the wildcard symbol (**&#42;**) according to the rules in the following permitted patterns list:</span></span>
+
+-   <span data-ttu-id="12395-225">Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.</span><span class="sxs-lookup"><span data-stu-id="12395-225">Ensure that you prefix all URLs with **http** or **https** when entering them into the list.</span></span>
+
+-   <span data-ttu-id="12395-226">Sie können Portnummern in der Adresse angeben.</span><span class="sxs-lookup"><span data-stu-id="12395-226">You can specify port numbers in the address.</span></span> <span data-ttu-id="12395-227">Wenn Sie keine Portnummer angeben, werden folgende Werte verwendet:</span><span class="sxs-lookup"><span data-stu-id="12395-227">If you do not specify a port number, the values used are:</span></span>
+
+    -   <span data-ttu-id="12395-228">Port 80 für http</span><span class="sxs-lookup"><span data-stu-id="12395-228">Port 80 for http</span></span>
+
+    -   <span data-ttu-id="12395-229">Port 443 für https</span><span class="sxs-lookup"><span data-stu-id="12395-229">Port 443 for https</span></span>
+
+    <span data-ttu-id="12395-230">Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="12395-230">Using wildcards for the port number is not supported.</span></span> <span data-ttu-id="12395-231">**http&colon;//www&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;** werden beispielsweise nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="12395-231">For example, **http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** are not supported.</span></span>
+
+-   <span data-ttu-id="12395-232">In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:</span><span class="sxs-lookup"><span data-stu-id="12395-232">Use the following table to learn about the permitted patterns that you can use when you specify URLs:</span></span>
+
+|<span data-ttu-id="12395-233">URL</span><span class="sxs-lookup"><span data-stu-id="12395-233">URL</span></span>|<span data-ttu-id="12395-234">Details</span><span class="sxs-lookup"><span data-stu-id="12395-234">Details</span></span>|<span data-ttu-id="12395-235">Treffer</span><span class="sxs-lookup"><span data-stu-id="12395-235">Matches</span></span>|<span data-ttu-id="12395-236">Stimmt nicht überein mit</span><span class="sxs-lookup"><span data-stu-id="12395-236">Does not match</span></span>|
 |-------|---------------|-----------|------------------|
-|http://www.contoso.com|Entspricht einer einzelnen Seite|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|Entspricht einer einzelnen Seite|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|Entspricht allen URLs, die mit „www.contoso.com“ beginnen|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|Entspricht allen Unterdomänen unter „contoso.com“|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|Entspricht einem einzelnen Ordner|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|Entspricht einer einzelnen Seite mit einer Portnummer|http://www.contoso.com:80|
-|https://www.contoso.com|Entspricht einer einzelnen, sicheren Seite|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Entspricht einem einzelnen Ordner und allen Unterordnern|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|<span data-ttu-id="12395-237">http://www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-237">http://www.contoso.com</span></span>|<span data-ttu-id="12395-238">Entspricht einer einzelnen Seite</span><span class="sxs-lookup"><span data-stu-id="12395-238">Matches a single page</span></span>|<span data-ttu-id="12395-239">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-239">www.contoso.com</span></span>|<span data-ttu-id="12395-240">host.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-240">host.contoso.com</span></span><br /><br /><span data-ttu-id="12395-241">www.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-241">www.contoso.com/images</span></span><br /><br /><span data-ttu-id="12395-242">contoso.com/</span><span class="sxs-lookup"><span data-stu-id="12395-242">contoso.com/</span></span>|
+|<span data-ttu-id="12395-243">http://contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-243">http://contoso.com</span></span>|<span data-ttu-id="12395-244">Entspricht einer einzelnen Seite</span><span class="sxs-lookup"><span data-stu-id="12395-244">Matches a single page</span></span>|<span data-ttu-id="12395-245">contoso.com/</span><span class="sxs-lookup"><span data-stu-id="12395-245">contoso.com/</span></span>|<span data-ttu-id="12395-246">host.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-246">host.contoso.com</span></span><br /><br /><span data-ttu-id="12395-247">www.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-247">www.contoso.com/images</span></span><br /><br /><span data-ttu-id="12395-248">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-248">www.contoso.com</span></span>|
+|<span data-ttu-id="12395-249">http://www.contoso.com/&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-249">http://www.contoso.com/&#42;</span></span>|<span data-ttu-id="12395-250">Entspricht allen URLs, die mit „www.contoso.com“ beginnen</span><span class="sxs-lookup"><span data-stu-id="12395-250">Matches all URLs that begin with www.contoso.com</span></span>|<span data-ttu-id="12395-251">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-251">www.contoso.com</span></span><br /><br /><span data-ttu-id="12395-252">www.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-252">www.contoso.com/images</span></span><br /><br /><span data-ttu-id="12395-253">www.contoso.com/videos/tvshows</span><span class="sxs-lookup"><span data-stu-id="12395-253">www.contoso.com/videos/tvshows</span></span>|<span data-ttu-id="12395-254">host.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-254">host.contoso.com</span></span><br /><br /><span data-ttu-id="12395-255">host.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-255">host.contoso.com/images</span></span>|
+|<span data-ttu-id="12395-256">http://&#42;.contoso.com/&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-256">http://&#42;.contoso.com/&#42;</span></span>|<span data-ttu-id="12395-257">Entspricht allen Unterdomänen unter „contoso.com“</span><span class="sxs-lookup"><span data-stu-id="12395-257">Matches all subdomains under contoso.com</span></span>|<span data-ttu-id="12395-258">developer.contoso.com/resources</span><span class="sxs-lookup"><span data-stu-id="12395-258">developer.contoso.com/resources</span></span><br /><br /><span data-ttu-id="12395-259">news.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-259">news.contoso.com/images</span></span><br /><br /><span data-ttu-id="12395-260">news.contoso.com/videos</span><span class="sxs-lookup"><span data-stu-id="12395-260">news.contoso.com/videos</span></span>|<span data-ttu-id="12395-261">contoso.host.com</span><span class="sxs-lookup"><span data-stu-id="12395-261">contoso.host.com</span></span>|
+|<span data-ttu-id="12395-262">http://www.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-262">http://www.contoso.com/images</span></span>|<span data-ttu-id="12395-263">Entspricht einem einzelnen Ordner</span><span class="sxs-lookup"><span data-stu-id="12395-263">Matches a single folder</span></span>|<span data-ttu-id="12395-264">www.contoso.com/images</span><span class="sxs-lookup"><span data-stu-id="12395-264">www.contoso.com/images</span></span>|<span data-ttu-id="12395-265">www.contoso.com/images/dogs</span><span class="sxs-lookup"><span data-stu-id="12395-265">www.contoso.com/images/dogs</span></span>|
+|<span data-ttu-id="12395-266">http://www.contoso.com:80</span><span class="sxs-lookup"><span data-stu-id="12395-266">http://www.contoso.com:80</span></span>|<span data-ttu-id="12395-267">Entspricht einer einzelnen Seite mit einer Portnummer</span><span class="sxs-lookup"><span data-stu-id="12395-267">Matches a single page, by using a port number</span></span>|<span data-ttu-id="12395-268">http://www.contoso.com:80</span><span class="sxs-lookup"><span data-stu-id="12395-268">http://www.contoso.com:80</span></span>|
+|<span data-ttu-id="12395-269">https://www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-269">https://www.contoso.com</span></span>|<span data-ttu-id="12395-270">Entspricht einer einzelnen, sicheren Seite</span><span class="sxs-lookup"><span data-stu-id="12395-270">Matches a single, secure page</span></span>|<span data-ttu-id="12395-271">https://www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-271">https://www.contoso.com</span></span>|<span data-ttu-id="12395-272">http://www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="12395-272">http://www.contoso.com</span></span>|
+|<span data-ttu-id="12395-273">http://www.contoso.com/images/&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-273">http://www.contoso.com/images/&#42;</span></span>|<span data-ttu-id="12395-274">Entspricht einem einzelnen Ordner und allen Unterordnern</span><span class="sxs-lookup"><span data-stu-id="12395-274">Matches a single folder and all subfolders</span></span>|<span data-ttu-id="12395-275">www.contoso.com/images/dogs</span><span class="sxs-lookup"><span data-stu-id="12395-275">www.contoso.com/images/dogs</span></span><br /><br /><span data-ttu-id="12395-276">www.contoso.com/images/cats</span><span class="sxs-lookup"><span data-stu-id="12395-276">www.contoso.com/images/cats</span></span>|<span data-ttu-id="12395-277">www.contoso.com/videos</span><span class="sxs-lookup"><span data-stu-id="12395-277">www.contoso.com/videos</span></span>|
 
--   Im Folgenden Beispiele für Eingaben, die nicht unterstützt werden:
+-   <span data-ttu-id="12395-278">Im Folgenden Beispiele für Eingaben, die nicht unterstützt werden:</span><span class="sxs-lookup"><span data-stu-id="12395-278">The following are examples of some of the inputs that you cannot specify:</span></span>
 
-    -   &#42;.com
+    -   <span data-ttu-id="12395-279">&#42;.com</span><span class="sxs-lookup"><span data-stu-id="12395-279">&#42;.com</span></span>
 
-    -   &#42;.contoso/&#42;
+    -   <span data-ttu-id="12395-280">&#42;.contoso/&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-280">&#42;.contoso/&#42;</span></span>
 
-    -   www.contoso.com/&#42;images
+    -   <span data-ttu-id="12395-281">www.contoso.com/&#42;images</span><span class="sxs-lookup"><span data-stu-id="12395-281">www.contoso.com/&#42;images</span></span>
 
-    -   www.contoso.com/&#42;images&#42;pigs
+    -   <span data-ttu-id="12395-282">www.contoso.com/&#42;images&#42;pigs</span><span class="sxs-lookup"><span data-stu-id="12395-282">www.contoso.com/&#42;images&#42;pigs</span></span>
 
-    -   www.contoso.com/page&#42;
+    -   <span data-ttu-id="12395-283">www.contoso.com/page&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-283">www.contoso.com/page&#42;</span></span>
 
-    -   IP-Adressen
+    -   <span data-ttu-id="12395-284">IP-Adressen</span><span class="sxs-lookup"><span data-stu-id="12395-284">IP addresses</span></span>
 
-    -   https://&#42;
+    -   <span data-ttu-id="12395-285">https://&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-285">https://&#42;</span></span>
 
-    -   http://&#42;
+    -   <span data-ttu-id="12395-286">http://&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-286">http://&#42;</span></span>
 
-    -   http://www.contoso.com:&#42;
+    -   <span data-ttu-id="12395-287">http://www.contoso.com:&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-287">http://www.contoso.com:&#42;</span></span>
 
-    -   http://www.contoso.com: /&#42;
+    -   <span data-ttu-id="12395-288">http://www.contoso.com: /&#42;</span><span class="sxs-lookup"><span data-stu-id="12395-288">http://www.contoso.com: /&#42;</span></span>
 
-## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Zugreifen auf Protokolle von verwalteten Apps mithilfe des Managed Browsers unter iOS
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a><span data-ttu-id="12395-289">Zugreifen auf Protokolle von verwalteten Apps mithilfe des Managed Browsers unter iOS</span><span class="sxs-lookup"><span data-stu-id="12395-289">How to access to managed app logs using the Managed Browser on iOS</span></span>
 
-Endbenutzer, auf deren iOS-Gerät der Managed Browser installiert ist, können den Verwaltungsstatus aller von Microsoft veröffentlichten Apps anzeigen. Sie können Protokolle für die Problembehandlung ihrer verwalteten iOS-Apps senden.
+<span data-ttu-id="12395-290">Endbenutzer, auf deren iOS-Gerät der Managed Browser installiert ist, können den Verwaltungsstatus aller von Microsoft veröffentlichten Apps anzeigen.</span><span class="sxs-lookup"><span data-stu-id="12395-290">End users with the managed Browser installed on their iOS device can view the management status of all Microsoft published apps.</span></span> <span data-ttu-id="12395-291">Sie können Protokolle für die Problembehandlung ihrer verwalteten iOS-Apps senden.</span><span class="sxs-lookup"><span data-stu-id="12395-291">They can send logs for troubleshooting their managed iOS apps.</span></span>
 
-1. Öffnen Sie die iOS-**Einstellungen**.
-2. Wählen Sie die Anwendungseinstellungen für den **Managed Browser** aus.
-3. Schalten Sie **Intune-Diagnose aktivieren** um, um den Browser in den Problembehandlungsmodus zu versetzen.
-4. Öffnen Sie den **Managed Browser**. Klicken Sie auf **Intune-App-Status anzeigen**, um die Richtlinieneinstellungen für einzelne Anwendungen zu überprüfen.
-5. Drücken Sie **Erste Schritte** und **Protokolle freigeben** oder **Protokolle an Microsoft senden**, um die Problembehandlungsprotokolle an Ihren IT-Administrator oder an Microsoft zu senden.
+1. <span data-ttu-id="12395-292">Öffnen Sie die iOS-**Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="12395-292">Open iOS **Settings**.</span></span>
+2. <span data-ttu-id="12395-293">Wählen Sie die Anwendungseinstellungen für den **Managed Browser** aus.</span><span class="sxs-lookup"><span data-stu-id="12395-293">Select the managed **Browser** application settings.</span></span>
+3. <span data-ttu-id="12395-294">Schalten Sie **Intune-Diagnose aktivieren** um, um den Browser in den Problembehandlungsmodus zu versetzen.</span><span class="sxs-lookup"><span data-stu-id="12395-294">Toggle **Enable Intune Diagnostics** to set the browser in troubleshooting mode.</span></span>
+4. <span data-ttu-id="12395-295">Öffnen Sie den **Managed Browser**.</span><span class="sxs-lookup"><span data-stu-id="12395-295">Open the managed **Browser**.</span></span> <span data-ttu-id="12395-296">Klicken Sie auf **Intune-App-Status anzeigen**, um die Richtlinieneinstellungen für einzelne Anwendungen zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="12395-296">Click **View Intune App Status** to review individual application policy settings.</span></span>
+5. <span data-ttu-id="12395-297">Drücken Sie **Erste Schritte** und **Protokolle freigeben** oder **Protokolle an Microsoft senden**, um die Problembehandlungsprotokolle an Ihren IT-Administrator oder an Microsoft zu senden.</span><span class="sxs-lookup"><span data-stu-id="12395-297">Press **Get Started** and **Share Logs** or **Send Logs to Microsoft** to send the troubleshooting logs to your IT administrator or Microsoft.</span></span>
 
-Sie können den Browser außerdem auch aus der App im Problembehandlungsmodus öffnen.
+<span data-ttu-id="12395-298">Sie können den Browser außerdem auch aus der App im Problembehandlungsmodus öffnen.</span><span class="sxs-lookup"><span data-stu-id="12395-298">You can also open the Browser in troubleshooting mode from within the app.</span></span>
 
-1. Öffnen Sie den Managed Browser.
-2. Geben Sie im Adressfeld `about:intunehelp` ein.
-Der Browser wird im Problembehandlungsmodus gestartet.
+1. <span data-ttu-id="12395-299">Öffnen Sie den Managed Browser.</span><span class="sxs-lookup"><span data-stu-id="12395-299">Open the Managed Browser.</span></span>
+2. <span data-ttu-id="12395-300">Geben Sie im Adressfeld `about:intunehelp` ein.</span><span class="sxs-lookup"><span data-stu-id="12395-300">Type `about:intunehelp` in the address box.</span></span>
+<span data-ttu-id="12395-301">Der Browser wird im Problembehandlungsmodus gestartet.</span><span class="sxs-lookup"><span data-stu-id="12395-301">The Browser launches troubleshooting mode.</span></span>
 
-Eine Liste der in den App-Protokollen gespeicherten Einstellungen finden Sie unter [Prüfung der App-Schutzprotokolle in Managed Browser](app-protection-policy-settings-log.md).
+<span data-ttu-id="12395-302">Eine Liste der in den App-Protokollen gespeicherten Einstellungen finden Sie unter [Prüfung der App-Schutzprotokolle in Managed Browser](app-protection-policy-settings-log.md).</span><span class="sxs-lookup"><span data-stu-id="12395-302">For a list of the settings stored in the app logs, see [Review app protection logs in the Managed Browser](app-protection-policy-settings-log.md).</span></span>
 
-## <a name="security-and-privacy-for-the-managed-browser"></a>Sicherheit und Datenschutz für Managed Browser
+## <a name="security-and-privacy-for-the-managed-browser"></a><span data-ttu-id="12395-303">Sicherheit und Datenschutz für Managed Browser</span><span class="sxs-lookup"><span data-stu-id="12395-303">Security and privacy for the Managed Browser</span></span>
 
--   Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden von Managed Browser nicht verwendet. Managed Browser kann auf diese Einstellungen nicht zugreifen.
+-   <span data-ttu-id="12395-304">Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden von Managed Browser nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="12395-304">The Managed Browser does not use settings that users make for the built-in browser on their devices.</span></span> <span data-ttu-id="12395-305">Managed Browser kann auf diese Einstellungen nicht zugreifen.</span><span class="sxs-lookup"><span data-stu-id="12395-305">The Managed Browser cannot access to these settings.</span></span>
 
--   Wenn Sie die Option **Einfache PIN für den Zugriff erforderlich** oder **Unternehmensanmeldeinformationen für den Zugriff erforderlich** in einer App-Schutzrichtlinie konfigurieren, die Managed Browser zugeordnet ist, und ein Benutzer auf der Authentifizierungsseite den Hilfelink auswählt, kann er beliebige Websites besuchen. Dies gilt unabhängig davon, ob sie in der Richtlinie einer Blockierungsliste hinzugefügt wurden.
+-   <span data-ttu-id="12395-306">Wenn Sie die Option **Einfache PIN für den Zugriff erforderlich** oder **Unternehmensanmeldeinformationen für den Zugriff erforderlich** in einer App-Schutzrichtlinie konfigurieren, die Managed Browser zugeordnet ist, und ein Benutzer auf der Authentifizierungsseite den Hilfelink auswählt, kann er beliebige Websites besuchen. Dies gilt unabhängig davon, ob sie in der Richtlinie einer Blockierungsliste hinzugefügt wurden.</span><span class="sxs-lookup"><span data-stu-id="12395-306">If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.</span></span>
 
--   Managed Browser kann den Zugriff auf Websites nur blockieren, wenn direkt darauf zugegriffen wird. Der Zugriff auf die Website wird nicht blockiert, wenn dafür Zwischendienste (z.B. ein Übersetzungsdienst) verwendet werden.
+-   <span data-ttu-id="12395-307">Managed Browser kann den Zugriff auf Websites nur blockieren, wenn direkt darauf zugegriffen wird.</span><span class="sxs-lookup"><span data-stu-id="12395-307">The Managed Browser can block access to sites only when they are accessed directly.</span></span> <span data-ttu-id="12395-308">Der Zugriff auf die Website wird nicht blockiert, wenn dafür Zwischendienste (z.B. ein Übersetzungsdienst) verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-308">It does not block access when intermediate services (such as a translation service) are used to access the site.</span></span>
 
--   Um die Authentifizierung und den Zugriff auf die Intune-Dokumentation zuzulassen, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen. und immer zulässig.
+-   <span data-ttu-id="12395-309">Um die Authentifizierung und den Zugriff auf die Intune-Dokumentation zuzulassen, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen.</span><span class="sxs-lookup"><span data-stu-id="12395-309">To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings.</span></span> <span data-ttu-id="12395-310">und immer zulässig.</span><span class="sxs-lookup"><span data-stu-id="12395-310">It is always allowed.</span></span>
 
-### <a name="turn-off-usage-data"></a>Deaktivieren von Nutzungsdaten
-Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
+### <a name="turn-off-usage-data"></a><span data-ttu-id="12395-311">Deaktivieren von Nutzungsdaten</span><span class="sxs-lookup"><span data-stu-id="12395-311">Turn off usage data</span></span>
+<span data-ttu-id="12395-312">Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="12395-312">Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services.</span></span> <span data-ttu-id="12395-313">Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="12395-313">Users can turn off data collection by using the **Usage Data** setting on their devices.</span></span> <span data-ttu-id="12395-314">Sie haben keine Kontrolle über die Erfassung dieser Daten.</span><span class="sxs-lookup"><span data-stu-id="12395-314">You have no control over the collection of this data.</span></span>
 
 
--   Auf iOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.
--   Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden von Managed Browser nicht verwendet. Managed Browser kann auf diese Einstellungen nicht zugreifen.
+-   <span data-ttu-id="12395-315">Auf iOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-315">On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.</span></span>
+-   <span data-ttu-id="12395-316">Einstellungen, die Benutzer für den integrierten Browser auf ihren Geräten vornehmen, werden von Managed Browser nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="12395-316">The Managed Browser does not use settings that users make for the built-in browser on their devices.</span></span> <span data-ttu-id="12395-317">Managed Browser kann auf diese Einstellungen nicht zugreifen.</span><span class="sxs-lookup"><span data-stu-id="12395-317">The Managed Browser cannot access to these settings.</span></span>
 
--   Wenn Sie die Option **Einfache PIN für den Zugriff erforderlich** oder **Unternehmensanmeldeinformationen für den Zugriff erforderlich** in einer App-Schutzrichtlinie konfigurieren, die Managed Browser zugeordnet ist, und ein Benutzer auf der Authentifizierungsseite den Hilfelink auswählt, kann er beliebige Websites besuchen. Dies gilt unabhängig davon, ob sie in der Richtlinie einer Blockierungsliste hinzugefügt wurden.
+-   <span data-ttu-id="12395-318">Wenn Sie die Option **Einfache PIN für den Zugriff erforderlich** oder **Unternehmensanmeldeinformationen für den Zugriff erforderlich** in einer App-Schutzrichtlinie konfigurieren, die Managed Browser zugeordnet ist, und ein Benutzer auf der Authentifizierungsseite den Hilfelink auswählt, kann er beliebige Websites besuchen. Dies gilt unabhängig davon, ob sie in der Richtlinie einer Blockierungsliste hinzugefügt wurden.</span><span class="sxs-lookup"><span data-stu-id="12395-318">If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.</span></span>
 
--   Managed Browser kann den Zugriff auf Websites nur blockieren, wenn direkt darauf zugegriffen wird. Der Zugriff auf die Website wird nicht blockiert, wenn dafür Zwischendienste (z.B. ein Übersetzungsdienst) verwendet werden.
+-   <span data-ttu-id="12395-319">Managed Browser kann den Zugriff auf Websites nur blockieren, wenn direkt darauf zugegriffen wird.</span><span class="sxs-lookup"><span data-stu-id="12395-319">The Managed Browser can block access to sites only when they are accessed directly.</span></span> <span data-ttu-id="12395-320">Der Zugriff auf die Website wird nicht blockiert, wenn dafür Zwischendienste (z.B. ein Übersetzungsdienst) verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="12395-320">It does not block access when intermediate services (such as a translation service) are used to access the site.</span></span>
 
--   Um die Authentifizierung und den Zugriff auf die Intune-Dokumentation zuzulassen, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen. und immer zulässig.
+-   <span data-ttu-id="12395-321">Um die Authentifizierung und den Zugriff auf die Intune-Dokumentation zuzulassen, ist **&#42;.microsoft.com** von den Zulassungs- oder Blockierungslisten ausgenommen.</span><span class="sxs-lookup"><span data-stu-id="12395-321">To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings.</span></span> <span data-ttu-id="12395-322">und immer zulässig.</span><span class="sxs-lookup"><span data-stu-id="12395-322">It is always allowed.</span></span>
 
-### <a name="turn-off-usage-data"></a>Deaktivieren von Nutzungsdaten
-Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
+### <a name="turn-off-usage-data"></a><span data-ttu-id="12395-323">Deaktivieren von Nutzungsdaten</span><span class="sxs-lookup"><span data-stu-id="12395-323">Turn off usage data</span></span>
+<span data-ttu-id="12395-324">Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="12395-324">Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services.</span></span> <span data-ttu-id="12395-325">Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="12395-325">Users can turn off data collection by using the **Usage Data** setting on their devices.</span></span> <span data-ttu-id="12395-326">Sie haben keine Kontrolle über die Erfassung dieser Daten.</span><span class="sxs-lookup"><span data-stu-id="12395-326">You have no control over the collection of this data.</span></span>

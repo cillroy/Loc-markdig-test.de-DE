@@ -1,1 +1,1 @@
-Dokumentation in alternativen Formaten
+<span data-ttu-id="e959d-101">Dokumentation in alternativen Formaten</span><span class="sxs-lookup"><span data-stu-id="e959d-101">Documentation in Alternative Formats</span></span>

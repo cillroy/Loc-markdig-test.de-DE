@@ -16,83 +16,83 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-Connector mit Intune
+# <a name="lookout-mobile-threat-defense-connector-with-intune"></a><span data-ttu-id="291df-103">Lookout Mobile Threat Defense-Connector mit Intune</span><span class="sxs-lookup"><span data-stu-id="291df-103">Lookout Mobile Threat Defense connector with Intune</span></span>
 
-Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen basierend auf Risikobewertungen steuern, die von Lookout vorgenommen werden, einer Mobile Threat Defense-Lösung, die in Microsoft Intune integriert ist. Das Risiko wird basierend auf Telemetriedaten bewertet, die vom Lookout-Dienst auf Geräten erfasst werden, wie z.B.:
-- Sicherheitsrisiken des Betriebssystems
-- Installierte Apps, die Schadsoftware enthalten
-- Netzwerkprofile mit böswilligen Absichten
+<span data-ttu-id="291df-104">Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen basierend auf Risikobewertungen steuern, die von Lookout vorgenommen werden, einer Mobile Threat Defense-Lösung, die in Microsoft Intune integriert ist.</span><span class="sxs-lookup"><span data-stu-id="291df-104">You can control mobile device access to corporate resources based on risk assessment conducted by Lookout, a Mobile Threat Defense solution integrated with Microsoft Intune.</span></span> <span data-ttu-id="291df-105">Das Risiko wird basierend auf Telemetriedaten bewertet, die vom Lookout-Dienst auf Geräten erfasst werden, wie z.B.:</span><span class="sxs-lookup"><span data-stu-id="291df-105">Risk is assessed based on telemetry collected from devices by the Lookout service including:</span></span>
+- <span data-ttu-id="291df-106">Sicherheitsrisiken des Betriebssystems</span><span class="sxs-lookup"><span data-stu-id="291df-106">Operating system vulnerabilities</span></span>
+- <span data-ttu-id="291df-107">Installierte Apps, die Schadsoftware enthalten</span><span class="sxs-lookup"><span data-stu-id="291df-107">Malicious apps installed</span></span>
+- <span data-ttu-id="291df-108">Netzwerkprofile mit böswilligen Absichten</span><span class="sxs-lookup"><span data-stu-id="291df-108">Malicious network profiles</span></span>
 
-Sie können Richtlinien für bedingten Zugriff basierend auf Risikobewertungen von Lookout konfigurieren, die mithilfe von Intune-Konformitätsrichtlinien aktiviert werden. Mithilfe von Einstellungen können Sie basierend auf den erkannten Bedrohungen nicht kompatible Geräte zulassen oder blockieren.
+<span data-ttu-id="291df-109">Sie können Richtlinien für bedingten Zugriff basierend auf Risikobewertungen von Lookout konfigurieren, die mithilfe von Intune-Konformitätsrichtlinien aktiviert werden.</span><span class="sxs-lookup"><span data-stu-id="291df-109">You can configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies.</span></span> <span data-ttu-id="291df-110">Mithilfe von Einstellungen können Sie basierend auf den erkannten Bedrohungen nicht kompatible Geräte zulassen oder blockieren.</span><span class="sxs-lookup"><span data-stu-id="291df-110">Settings let you allow or block non-compliant devices based on detected threats.</span></span>
 
-## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>In welcher Form unterstützen Intune und Lookout Mobile Threat Defense den Schutz von Unternehmensressourcen?
-Die mobile Lookout-App **Lookout for Work** wird auf Mobilgeräten installiert und ausgeführt. Diese App erfasst Telemetriedaten des Dateisystems, Netzwerkstapels sowie von Geräten und Anwendungen, sofern verfügbar, und sendet diese dann an den Lookout-Clouddienst, mit dessen Hilfe die Anfälligkeit des Geräts für mobile Bedrohungen bewertet wird. Sie können die Klassifizierung der Risikostufe für Bedrohungen in der Lookout-Konsole gemäß Ihren Anforderungen ändern.  
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a><span data-ttu-id="291df-111">In welcher Form unterstützen Intune und Lookout Mobile Threat Defense den Schutz von Unternehmensressourcen?</span><span class="sxs-lookup"><span data-stu-id="291df-111">How do Intune and Lookout Mobile Threat Defense help protect company resources?</span></span>
+<span data-ttu-id="291df-112">Die mobile Lookout-App **Lookout for Work** wird auf Mobilgeräten installiert und ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="291df-112">Lookout’s mobile app, **Lookout for work**, is installed and run on mobile devices.</span></span> <span data-ttu-id="291df-113">Diese App erfasst Telemetriedaten des Dateisystems, Netzwerkstapels sowie von Geräten und Anwendungen, sofern verfügbar, und sendet diese dann an den Lookout-Clouddienst, mit dessen Hilfe die Anfälligkeit des Geräts für mobile Bedrohungen bewertet wird.</span><span class="sxs-lookup"><span data-stu-id="291df-113">This app captures file system, network stack, and device and application telemetry where available, then sends it to the Lookout cloud service to assess the device's risk for mobile threats.</span></span> <span data-ttu-id="291df-114">Sie können die Klassifizierung der Risikostufe für Bedrohungen in der Lookout-Konsole gemäß Ihren Anforderungen ändern.</span><span class="sxs-lookup"><span data-stu-id="291df-114">You can change risk level classifications for threats in the Lookout console to suit your requirements.</span></span>  
 
-Die Konformitätsrichtlinie in Intune enthält eine Regel für Lookout Mobile Threat Defense, die auf der Risikobewertung durch Lookout basiert. Wenn diese Regel aktiviert ist, bewertet Intune die Gerätekompatibilität mit der von Ihnen aktivierten Richtlinie.
+<span data-ttu-id="291df-115">Die Konformitätsrichtlinie in Intune enthält eine Regel für Lookout Mobile Threat Defense, die auf der Risikobewertung durch Lookout basiert.</span><span class="sxs-lookup"><span data-stu-id="291df-115">The compliance policy in Intune includes a rule for Lookout Mobile Threat Defense based on Lookout risk assessment.</span></span> <span data-ttu-id="291df-116">Wenn diese Regel aktiviert ist, bewertet Intune die Gerätekompatibilität mit der von Ihnen aktivierten Richtlinie.</span><span class="sxs-lookup"><span data-stu-id="291df-116">When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.</span></span>
 
-Wird das Gerät als nicht kompatibel eingestuft, kann der Zugriff auf Ressourcen wie Exchange Online und SharePoint Online blockiert werden. Benutzer auf blockierten Geräten erhalten Anweisungen zum Beheben des Problems und erneuten Erlangen des Zugriffs. Die Anleitung wird in der Lookout for Work-App gestartet.
+<span data-ttu-id="291df-117">Wird das Gerät als nicht kompatibel eingestuft, kann der Zugriff auf Ressourcen wie Exchange Online und SharePoint Online blockiert werden.</span><span class="sxs-lookup"><span data-stu-id="291df-117">If the device is found non-compliant, access to resources like Exchange Online and SharePoint Online can blocked.</span></span> <span data-ttu-id="291df-118">Benutzer auf blockierten Geräten erhalten Anweisungen zum Beheben des Problems und erneuten Erlangen des Zugriffs.</span><span class="sxs-lookup"><span data-stu-id="291df-118">Users on blocked devices receive a steps to resolve the issue and regain access.</span></span> <span data-ttu-id="291df-119">Die Anleitung wird in der Lookout for Work-App gestartet.</span><span class="sxs-lookup"><span data-stu-id="291df-119">Guidance is launched from the Lookout for work app.</span></span>
 
-## <a name="supported-platforms"></a>Unterstützte Plattformen
-Bei Registrierung in Intune werden die folgenden Plattformen für Lookout unterstützt:
-* **Android 4.1 und höher**
-* **iOS 8 und höher** Weitere Informationen zur Unterstützung von Plattformen und Sprachen finden Sie auf der [Lookout-Website](https://personal.support.lookout.com/hc/articles/114094140253).
+## <a name="supported-platforms"></a><span data-ttu-id="291df-120">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="291df-120">Supported platforms</span></span>
+<span data-ttu-id="291df-121">Bei Registrierung in Intune werden die folgenden Plattformen für Lookout unterstützt:</span><span class="sxs-lookup"><span data-stu-id="291df-121">The following platforms are supported for Lookout when enrolled in Intune:</span></span>
+* <span data-ttu-id="291df-122">**Android 4.1 und höher**</span><span class="sxs-lookup"><span data-stu-id="291df-122">**Android 4.1 and later**</span></span>
+* <span data-ttu-id="291df-123">**iOS 8 und höher** Weitere Informationen zur Unterstützung von Plattformen und Sprachen finden Sie auf der [Lookout-Website](https://personal.support.lookout.com/hc/articles/114094140253).</span><span class="sxs-lookup"><span data-stu-id="291df-123">**iOS 8 and later** For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/articles/114094140253).</span></span>
 
-## <a name="prerequisites"></a>Voraussetzungen
-* Microsoft Intune-Abonnement
-* Azure Active Directory
-* Ein Enterprise-Abonnement für Lookout Mobile EndPoint Security.  
+## <a name="prerequisites"></a><span data-ttu-id="291df-124">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="291df-124">Prerequisites</span></span>
+* <span data-ttu-id="291df-125">Microsoft Intune-Abonnement</span><span class="sxs-lookup"><span data-stu-id="291df-125">Microsoft Intune subscription</span></span>
+* <span data-ttu-id="291df-126">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="291df-126">Azure Active Directory</span></span>
+* <span data-ttu-id="291df-127">Ein Enterprise-Abonnement für Lookout Mobile EndPoint Security.</span><span class="sxs-lookup"><span data-stu-id="291df-127">Lookout Mobile Endpoint Security enterprise subscription</span></span>  
 
-Weitere Informationen finden Sie unter [Lookout Mobile EndPoint Security](https://www.lookout.com/products/mobile-endpoint-security).
+<span data-ttu-id="291df-128">Weitere Informationen finden Sie unter [Lookout Mobile EndPoint Security](https://www.lookout.com/products/mobile-endpoint-security).</span><span class="sxs-lookup"><span data-stu-id="291df-128">For more information, see [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)</span></span>
 
-## <a name="sample-scenarios"></a>Beispielszenarien
+## <a name="sample-scenarios"></a><span data-ttu-id="291df-129">Beispielszenarien</span><span class="sxs-lookup"><span data-stu-id="291df-129">Sample scenarios</span></span>
 
-Nachstehend sind die allgemeinen Szenarien bei Verwenden von Lookout Mobile Threat Defense mit Intune aufgeführt.
+<span data-ttu-id="291df-130">Nachstehend sind die allgemeinen Szenarien bei Verwenden von Lookout Mobile Threat Defense mit Intune aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="291df-130">Here are the common scenarios when using Lookout Mobile Threat Defense with Intune.</span></span>
 
-### <a name="control-access-based-on-threats-from-malicious-apps"></a>Steuern des Zugriffs basierend auf Bedrohungen durch Apps, die Schadsoftware enthalten
-Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte an folgenden Aktionen hindern, bis die Bedrohung beseitigt ist:
-* Herstellen einer Verbindung mit Unternehmens-E-Mail
-* Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
-* Zugreifen auf Unternehmens-Apps
+### <a name="control-access-based-on-threats-from-malicious-apps"></a><span data-ttu-id="291df-131">Steuern des Zugriffs basierend auf Bedrohungen durch Apps, die Schadsoftware enthalten</span><span class="sxs-lookup"><span data-stu-id="291df-131">Control access based on threats from malicious apps</span></span>
+<span data-ttu-id="291df-132">Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte an folgenden Aktionen hindern, bis die Bedrohung beseitigt ist:</span><span class="sxs-lookup"><span data-stu-id="291df-132">When malicious apps such as malware are detected on devices, you can block devices from the following until the threat is resolved:</span></span>
+* <span data-ttu-id="291df-133">Herstellen einer Verbindung mit Unternehmens-E-Mail</span><span class="sxs-lookup"><span data-stu-id="291df-133">Connecting to corporate e-mail</span></span>
+* <span data-ttu-id="291df-134">Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App</span><span class="sxs-lookup"><span data-stu-id="291df-134">Syncing corporate files with the OneDrive for Work app</span></span>
+* <span data-ttu-id="291df-135">Zugreifen auf Unternehmens-Apps</span><span class="sxs-lookup"><span data-stu-id="291df-135">Accessing company apps</span></span>
 
-**Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
+<span data-ttu-id="291df-136">**Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**</span><span class="sxs-lookup"><span data-stu-id="291df-136">**Block when malicious apps are detected:**</span></span>
 
 ![Diagramm das zeigt, wie die Richtlinie für bedingten Zugriff den Zugriff blockiert, wenn das Gerät aufgrund von böswilligen Apps auf dem Gerät als nicht konform eingestuft wird](./media/malicious-apps-blocked.png)
 
-**Zugriff erteilt nach der Sanierung:**
+<span data-ttu-id="291df-138">**Zugriff erteilt nach der Sanierung:**</span><span class="sxs-lookup"><span data-stu-id="291df-138">**Access granted on remediation:**</span></span>
 
 ![Diagramm, das die Richtlinie für bedingten Zugriff darstellt, die den Zugriff erteilt, nachdem das Gerät nach der Sanierung als kompatibel bewertet wurde](./media/malicious-apps-unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
-Erkennen Sie Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und Schützen Sie den Zugriff auf WLANs auf der Grundlage des Geräterisikos.
+### <a name="control-access-based-on-threat-to-network"></a><span data-ttu-id="291df-140">Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk</span><span class="sxs-lookup"><span data-stu-id="291df-140">Control access based on threat to network</span></span>
+<span data-ttu-id="291df-141">Erkennen Sie Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und Schützen Sie den Zugriff auf WLANs auf der Grundlage des Geräterisikos.</span><span class="sxs-lookup"><span data-stu-id="291df-141">Detect threats to your network such as man-in-the-middle attacks and protect access to WiFi networks based on the device risk.</span></span>
 
-**Blockieren des Netzwerkzugriffs über WLAN:**
+<span data-ttu-id="291df-142">**Blockieren des Netzwerkzugriffs über WLAN:**</span><span class="sxs-lookup"><span data-stu-id="291df-142">**Block network access through WiFi:**</span></span>
 
 ![Diagramm das zeigt, wie bedingter Zugriff den Zugriff auf WLAN basierend auf Netzwerkbedrohungen blockiert](./media/network-wifi-blocked.png)
 
-**Zugriff nach Beseitigung gewährt:**
+<span data-ttu-id="291df-144">**Zugriff nach Beseitigung gewährt:**</span><span class="sxs-lookup"><span data-stu-id="291df-144">**Access granted on remediation:**</span></span>
 
 ![Diagramm, das den Zugriff durch bedingten Zugriff nach der Beseitigung der Bedrohung erteilt](./media/network-wifi-unblocked.png)
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a><span data-ttu-id="291df-146">Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk</span><span class="sxs-lookup"><span data-stu-id="291df-146">Control access to SharePoint Online based on threat to network</span></span>
 
-Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
+<span data-ttu-id="291df-147">Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.</span><span class="sxs-lookup"><span data-stu-id="291df-147">Detect threats to your network such as Man-in-the-middle attacks, and prevent synchronization of corporate files based on the device risk.</span></span>
 
-**Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**
+<span data-ttu-id="291df-148">**Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**</span><span class="sxs-lookup"><span data-stu-id="291df-148">**Block SharePoint Online when network threats are detected:**</span></span>
 
 ![Diagramm, das die Blockierung des Gerätezugriffs auf SharePoint Online mithilfe von bedingtem Zugriff basierend auf der Erkennung von Bedrohungen darstellt](./media/network-spo-blocked.png)
 
 
-**Zugriff erteilt nach der Sanierung:**
+<span data-ttu-id="291df-150">**Zugriff erteilt nach der Sanierung:**</span><span class="sxs-lookup"><span data-stu-id="291df-150">**Access granted on remediation:**</span></span>
 
 ![Diagramm, das den bedingten Zugriff nach dem Beheben der Netzwerkbedrohung darstellt](./media/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>Nächste Schritte
-Hier sind die wichtigsten Schritte, die Sie ausführen müssen, um diese Lösung zu implementieren:
-1.  [Einrichten Ihrer Lookout-Integration](lookout-mtd-connector-integration.md)
-2.  [Lookout Mobile Threat Defense in Intune aktivieren](mtd-connector-enable.md)
-3.  [Die Lookout for Work-App hinzufügen und zuweisen](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Die Lookout-Gerätekonformitätsrichtlinie konfigurieren](mtd-device-compliance-policy-create.md)
+## <a name="next-steps"></a><span data-ttu-id="291df-152">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="291df-152">Next steps</span></span>
+<span data-ttu-id="291df-153">Hier sind die wichtigsten Schritte, die Sie ausführen müssen, um diese Lösung zu implementieren:</span><span class="sxs-lookup"><span data-stu-id="291df-153">Here are the main steps you must do to implement this solution:</span></span>
+1.  [<span data-ttu-id="291df-154">Einrichten Ihrer Lookout-Integration</span><span class="sxs-lookup"><span data-stu-id="291df-154">Set up your Lookout integration</span></span>](lookout-mtd-connector-integration.md)
+2.  [<span data-ttu-id="291df-155">Lookout Mobile Threat Defense in Intune aktivieren</span><span class="sxs-lookup"><span data-stu-id="291df-155">Enable Lookout Mobile Threat Defense in Intune</span></span>](mtd-connector-enable.md)
+3.  [<span data-ttu-id="291df-156">Die Lookout for Work-App hinzufügen und zuweisen</span><span class="sxs-lookup"><span data-stu-id="291df-156">Add and assign the Lookout for Work app</span></span>](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4.  [<span data-ttu-id="291df-157">Die Lookout-Gerätekonformitätsrichtlinie konfigurieren</span><span class="sxs-lookup"><span data-stu-id="291df-157">Configure Lookout device compliance policy</span></span>](mtd-device-compliance-policy-create.md)

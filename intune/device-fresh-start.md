@@ -15,28 +15,28 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ff6198cb42d5c96ed4e4c4e0009a8bbd6f6a0dec
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune
+# <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a><span data-ttu-id="147c9-103">Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune</span><span class="sxs-lookup"><span data-stu-id="147c9-103">Use Fresh Start to reset Windows 10 devices with Intune</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem Windows 10-PC mit Creators Update installiert wurden, und aktualisiert den PC dann automatisch auf die neueste Windows-Version.
-Mit dieser Option können vorinstallierte OEM-Apps entfernt werden, die oft mit einem neuen PC geliefert werden. Sie können konfigurieren, ob Benutzerdaten beibehalten werden, wenn diese Geräteaktion ausgegeben wird. In diesem Fall werden alle Apps und Einstellungen entfernt, die Inhalte des Basisordners des Benutzers bleiben jedoch erhalten.
+<span data-ttu-id="147c9-104">Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem Windows 10-PC mit Creators Update installiert wurden, und aktualisiert den PC dann automatisch auf die neueste Windows-Version.</span><span class="sxs-lookup"><span data-stu-id="147c9-104">The **Fresh Start** device action removes any apps that were installed on a Windows 10 PC running the Creators Update, then automatically updates the PC to the latest version of Windows.</span></span>
+<span data-ttu-id="147c9-105">Mit dieser Option können vorinstallierte OEM-Apps entfernt werden, die oft mit einem neuen PC geliefert werden.</span><span class="sxs-lookup"><span data-stu-id="147c9-105">This can be used to help remove pre-installed (OEM) apps that are often delivered with a new PC.</span></span> <span data-ttu-id="147c9-106">Sie können konfigurieren, ob Benutzerdaten beibehalten werden, wenn diese Geräteaktion ausgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="147c9-106">You can configure if user data is retained when this device action is issued.</span></span> <span data-ttu-id="147c9-107">In diesem Fall werden alle Apps und Einstellungen entfernt, die Inhalte des Basisordners des Benutzers bleiben jedoch erhalten.</span><span class="sxs-lookup"><span data-stu-id="147c9-107">In this case, apps and settings are removed, but the contents of the users Home folder are retained.</span></span>
 
-## <a name="how-to-use-fresh-start"></a>So verwenden Sie Fresh Start
+## <a name="how-to-use-fresh-start"></a><span data-ttu-id="147c9-108">So verwenden Sie Fresh Start</span><span class="sxs-lookup"><span data-stu-id="147c9-108">How to use Fresh Start</span></span>
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der verwalteten Geräte ein Windows 10-Desktopgerät aus, und wählen Sie dann die Remotegeräteaktion **Sauberer Start**.
+1. <span data-ttu-id="147c9-109">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="147c9-109">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="147c9-110">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="147c9-110">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="147c9-111">Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="147c9-111">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="147c9-112">Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="147c9-112">On the **Devices and groups** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="147c9-113">Wählen Sie aus der Liste der verwalteten Geräte ein Windows 10-Desktopgerät aus, und wählen Sie dann die Remotegeräteaktion **Sauberer Start**.</span><span class="sxs-lookup"><span data-stu-id="147c9-113">From the list of devices you manage, choose a Windows 10 desktop device, and then choose the **Fresh Start** device remote action.</span></span>
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a><span data-ttu-id="147c9-114">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="147c9-114">Next steps</span></span>
 
-Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.
+<span data-ttu-id="147c9-115">Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="147c9-115">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>
 

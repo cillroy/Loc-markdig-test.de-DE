@@ -1,2 +1,2 @@
-1. Melden Sie sich im Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
+1. <span data-ttu-id="1383a-101">Melden Sie sich im Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="1383a-101">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="1383a-102">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="1383a-102">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>

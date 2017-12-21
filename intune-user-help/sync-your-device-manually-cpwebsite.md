@@ -17,19 +17,19 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: ce2404fd5e26c00a6a9ced83bc6501e2074bffce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="sync-your-device-with-the-company-portal-website"></a>Synchronisieren Ihres Geräts mit der Unternehmensportal-Website
+# <a name="sync-your-device-with-the-company-portal-website"></a><span data-ttu-id="368c7-102">Synchronisieren Ihres Geräts mit der Unternehmensportal-Website</span><span class="sxs-lookup"><span data-stu-id="368c7-102">Sync your device with the Company Portal website</span></span>
 
-Manchmal kann das Installieren einer App oder das Ausführen einer anderen Aufgabe länger dauern als normal. Wenn eine Aufgabe zu lange dauert, können Sie versuchen, sie zu beschleunigen, indem Sie Ihr Gerät manuell synchronisieren.
+<span data-ttu-id="368c7-103">Manchmal kann das Installieren einer App oder das Ausführen einer anderen Aufgabe länger dauern als normal.</span><span class="sxs-lookup"><span data-stu-id="368c7-103">Sometimes installing an app or doing some other task may take longer than it normally does.</span></span> <span data-ttu-id="368c7-104">Wenn eine Aufgabe zu lange dauert, können Sie versuchen, sie zu beschleunigen, indem Sie Ihr Gerät manuell synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="368c7-104">If it takes too long, you can try to manually sync your device to speed up what you're trying to do.</span></span>
 
 > [!Note]
-> Das Synchronisierungsfeature steht zurzeit nicht für alle Geräte zur Verfügung. Wenn Ihr Gerät nicht aufgeführt ist, setzen Sie Ihr Gerät zurück, indem Sie das WLAN ungefähr 30 Sekunden lang deaktivieren, und stellen Sie die Verbindung mit dem Netzwerk anschließend wieder her.
+> <span data-ttu-id="368c7-105">Das Synchronisierungsfeature steht zurzeit nicht für alle Geräte zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="368c7-105">The sync feature is not currently available for all devices.</span></span> <span data-ttu-id="368c7-106">Wenn Ihr Gerät nicht aufgeführt ist, setzen Sie Ihr Gerät zurück, indem Sie das WLAN ungefähr 30 Sekunden lang deaktivieren, und stellen Sie die Verbindung mit dem Netzwerk anschließend wieder her.</span><span class="sxs-lookup"><span data-stu-id="368c7-106">If your device is not listed, try resetting your device by turning off Wifi for roughly 30 seconds, then reconnect to your network.</span></span>
 
-* [iOS](sync-your-device-manually-ios.md)
-* [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
-* [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
+* [<span data-ttu-id="368c7-107">iOS</span><span class="sxs-lookup"><span data-stu-id="368c7-107">iOS</span></span>](sync-your-device-manually-ios.md)
+* [<span data-ttu-id="368c7-108">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="368c7-108">Windows 10 Mobile</span></span>](sync-your-device-manually-windows.md#windows-10-mobile)
+* [<span data-ttu-id="368c7-109">Windows 10 Desktop</span><span class="sxs-lookup"><span data-stu-id="368c7-109">Windows 10 desktop</span></span>](sync-your-device-manually-windows.md#windows-10-desktop)
+* [<span data-ttu-id="368c7-110">Windows Phone 8.1</span><span class="sxs-lookup"><span data-stu-id="368c7-110">Windows Phone 8.1</span></span>](sync-your-device-manually-windows.md#windows-phone-81)

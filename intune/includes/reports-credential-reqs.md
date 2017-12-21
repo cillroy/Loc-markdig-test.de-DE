@@ -1,13 +1,13 @@
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Anforderungen an die Anmeldeinformationen für Azure AD und Intune
+## <a name="azure-ad-and-intune-credential-requirements"></a><span data-ttu-id="e3d3e-101">Anforderungen an die Anmeldeinformationen für Azure AD und Intune</span><span class="sxs-lookup"><span data-stu-id="e3d3e-101">Azure AD and Intune credential requirements</span></span>
 
-Authentifizierung und Autorisierung basieren auf Azure AD-Anmeldeinformationen und rollenbasierter Zugriffssteuerung über Intune (RBAC). Alle globalen Administratoren und Intune-Serviceadministratoren für Ihren Mandanten haben standardmäßig Zugriff auf das Data Warehouse. Verwenden Sie Intune-Rollen, um den Zugriff für mehr Benutzer bereitzustellen, indem Sie Ihnen Zugriff auf die **Reporting resource** (Berichtsressource) gewähren.
+<span data-ttu-id="e3d3e-102">Authentifizierung und Autorisierung basieren auf Azure AD-Anmeldeinformationen und rollenbasierter Zugriffssteuerung über Intune (RBAC).</span><span class="sxs-lookup"><span data-stu-id="e3d3e-102">Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC).</span></span> <span data-ttu-id="e3d3e-103">Alle globalen Administratoren und Intune-Serviceadministratoren für Ihren Mandanten haben standardmäßig Zugriff auf das Data Warehouse.</span><span class="sxs-lookup"><span data-stu-id="e3d3e-103">All global administrators and Intune service administrators for your tenant have access to the Data warehouse by default.</span></span> <span data-ttu-id="e3d3e-104">Verwenden Sie Intune-Rollen, um den Zugriff für mehr Benutzer bereitzustellen, indem Sie Ihnen Zugriff auf die **Reporting resource** (Berichtsressource) gewähren.</span><span class="sxs-lookup"><span data-stu-id="e3d3e-104">Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.</span></span>
 
-Anforderungen für den Zugriff auf das Intune Data Warehouse (einschließlich der API):
+<span data-ttu-id="e3d3e-105">Anforderungen für den Zugriff auf das Intune Data Warehouse (einschließlich der API):</span><span class="sxs-lookup"><span data-stu-id="e3d3e-105">Requirements for accessing the Intune Data Warehouse (including the API) are:</span></span>
 
-  -  Intune-Lizenz muss dem Benutzer zugewiesen sein
-  -  Benutzer muss eine der folgenden Rollen innehaben:
-      -  Globaler Azure AD-Administrator
-      -  Intune-Dienstadministrator
-      -  Benutzer mit rollenbasiertem Zugriff auf die Ressource **Reports** (Berichte)
+  -  <span data-ttu-id="e3d3e-106">Intune-Lizenz muss dem Benutzer zugewiesen sein</span><span class="sxs-lookup"><span data-stu-id="e3d3e-106">Intune license must be assigned to the user</span></span>
+  -  <span data-ttu-id="e3d3e-107">Benutzer muss eine der folgenden Rollen innehaben:</span><span class="sxs-lookup"><span data-stu-id="e3d3e-107">User must be one of:</span></span>
+      -  <span data-ttu-id="e3d3e-108">Globaler Azure AD-Administrator</span><span class="sxs-lookup"><span data-stu-id="e3d3e-108">Azure AD global administrator</span></span>
+      -  <span data-ttu-id="e3d3e-109">Intune-Dienstadministrator</span><span class="sxs-lookup"><span data-stu-id="e3d3e-109">An Intune service administrator</span></span>
+      -  <span data-ttu-id="e3d3e-110">Benutzer mit rollenbasiertem Zugriff auf die Ressource **Reports** (Berichte)</span><span class="sxs-lookup"><span data-stu-id="e3d3e-110">User with role-based access to **Reports** resource</span></span>

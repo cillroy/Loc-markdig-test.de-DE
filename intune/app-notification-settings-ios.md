@@ -16,83 +16,83 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: b87ffad8ee005fd8a164ec2891d81e19fb005a8b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="intune-app-notifications-settings-for-ios-devices"></a>App-Benachrichtigungseinstellungen für iOS-Geräte in Intune
+# <a name="intune-app-notifications-settings-for-ios-devices"></a><span data-ttu-id="7f22e-103">App-Benachrichtigungseinstellungen für iOS-Geräte in Intune</span><span class="sxs-lookup"><span data-stu-id="7f22e-103">Intune app notifications settings for iOS devices</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Hiermit können Sie konfigurieren, wie auf einem Gerät installierte Apps Benachrichtigungen senden. Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
+<span data-ttu-id="7f22e-104">Hiermit können Sie konfigurieren, wie auf einem Gerät installierte Apps Benachrichtigungen senden.</span><span class="sxs-lookup"><span data-stu-id="7f22e-104">Lets you configure how apps installed on a device send notifications.</span></span> <span data-ttu-id="7f22e-105">Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="7f22e-105">These settings support supervised devices running iOS 9.3 and later.</span></span>
 
-## <a name="configure-settings"></a>Konfigurieren der Einstellungen
+## <a name="configure-settings"></a><span data-ttu-id="7f22e-106">Konfigurieren der Einstellungen</span><span class="sxs-lookup"><span data-stu-id="7f22e-106">Configure settings</span></span>
 
-1. Wählen Sie auf dem Blatt „Gerätefunktionen“ die Option **App-Benachrichtigungen (nur überwacht)** aus.
-2. Wählen Sie auf dem Blatt **App-Benachrichtigungen** die Option **Hinzufügen**, und konfigurieren Sie die folgenden Werte:
-    - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie konfigurieren möchten. Hilfe finden Sie weiter unten in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
-    - **App-Name**: Geben Sie den Namen der App ein, die Sie konfigurieren möchten. Dieser Name wird nicht auf dem Gerät angezeigt und hilft Ihnen dabei, die App in der Liste zu identifizieren.
-    - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie konfigurieren möchten. Der Name des Herausgebers wird nicht auf dem Gerät angezeigt und hilft Ihnen nur dabei, die App in der Liste zu identifizieren.
-    - **Benachrichtigungen**: Aktivieren oder deaktivieren Sie das Senden von Benachrichtigungen von der App an das Gerät. Wenn Sie diese Einstellung deaktivieren, werden die folgenden Einstellungen ebenfalls deaktiviert.
-        - **In Mitteilungszentrale anzeigen**: Aktivieren Sie diese Einstellung, um zuzulassen, dass Benachrichtigungen der App in der Mitteilungszentrale angezeigt werden.
-        - **In Sperrbildschirm anzeigen**: Aktivieren Sie diese Einstellung, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden.
-        - **Warnungstyp**: Wählen Sie die Art der Benachrichtigung aus, die beim Entsperren des Geräts angezeigt werden soll. Diese Optionen sind verfügbar:
-            - **Keine**: Es wird keine Benachrichtigung angezeigt.
-            - **Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.
-            - **Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.
-        - **Badge für App-Symbol**: Aktivieren Sie diese Einstellung, um dem App-Symbol einen Badge hinzuzufügen, der darauf hinweist, dass die App eine Benachrichtigung gesendet hat.
-        - **Sounds**: Aktivieren Sie diese Einstellung, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.
-3. Fügen Sie so viele Apps hinzu, wie Sie benötigen. Wenn Sie fertig sind, wählen Sie **OK** aus.
-4. Klicken Sie auf **OK**, bis Sie zum Blatt **Profil erstellen** zurückkehren, und wählen Sie dann **Erstellen** aus. 
+1. <span data-ttu-id="7f22e-107">Wählen Sie auf dem Blatt „Gerätefunktionen“ die Option **App-Benachrichtigungen (nur überwacht)** aus.</span><span class="sxs-lookup"><span data-stu-id="7f22e-107">On the Device features blade, choose **App Notifications (supervised only)**.</span></span>
+2. <span data-ttu-id="7f22e-108">Wählen Sie auf dem Blatt **App-Benachrichtigungen** die Option **Hinzufügen**, und konfigurieren Sie die folgenden Werte:</span><span class="sxs-lookup"><span data-stu-id="7f22e-108">On the **App Notifications** blade, choose **Add**, and then configure the following values:</span></span>
+    - <span data-ttu-id="7f22e-109">**App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie konfigurieren möchten.</span><span class="sxs-lookup"><span data-stu-id="7f22e-109">**App bundle ID** - Enter the **App Bundle ID** of the app you want to configure.</span></span> <span data-ttu-id="7f22e-110">Hilfe finden Sie weiter unten in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.</span><span class="sxs-lookup"><span data-stu-id="7f22e-110">See **Bundle ID reference for built-in iOS apps** later in this topic for help.</span></span>
+    - <span data-ttu-id="7f22e-111">**App-Name**: Geben Sie den Namen der App ein, die Sie konfigurieren möchten.</span><span class="sxs-lookup"><span data-stu-id="7f22e-111">**App name** - Enter the name of the app you want to configure.</span></span> <span data-ttu-id="7f22e-112">Dieser Name wird nicht auf dem Gerät angezeigt und hilft Ihnen dabei, die App in der Liste zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="7f22e-112">This name is not displayed on the device and is used to help you identify the app in the list.</span></span>
+    - <span data-ttu-id="7f22e-113">**Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie konfigurieren möchten.</span><span class="sxs-lookup"><span data-stu-id="7f22e-113">**Publisher** - Enter the publisher of the app you want to configure.</span></span> <span data-ttu-id="7f22e-114">Der Name des Herausgebers wird nicht auf dem Gerät angezeigt und hilft Ihnen nur dabei, die App in der Liste zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="7f22e-114">The publisher name is not displayed on the device, and is used only to help you identify the app in the list.</span></span>
+    - <span data-ttu-id="7f22e-115">**Benachrichtigungen**: Aktivieren oder deaktivieren Sie das Senden von Benachrichtigungen von der App an das Gerät.</span><span class="sxs-lookup"><span data-stu-id="7f22e-115">**Notifications** - Enable or disable the app from sending notifications to the device.</span></span> <span data-ttu-id="7f22e-116">Wenn Sie diese Einstellung deaktivieren, werden die folgenden Einstellungen ebenfalls deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="7f22e-116">If you disable this setting, the following settings are also disabled.</span></span>
+        - <span data-ttu-id="7f22e-117">**In Mitteilungszentrale anzeigen**: Aktivieren Sie diese Einstellung, um zuzulassen, dass Benachrichtigungen der App in der Mitteilungszentrale angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="7f22e-117">**Show in Notification Center** - Enable this setting to allow the app to show notifications in the device Notification Center.</span></span>
+        - <span data-ttu-id="7f22e-118">**In Sperrbildschirm anzeigen**: Aktivieren Sie diese Einstellung, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="7f22e-118">**Show in Lock Screen** - Enable this setting to see notifications from the app on the device lock screen.</span></span>
+        - <span data-ttu-id="7f22e-119">**Warnungstyp**: Wählen Sie die Art der Benachrichtigung aus, die beim Entsperren des Geräts angezeigt werden soll. Diese Optionen sind verfügbar:</span><span class="sxs-lookup"><span data-stu-id="7f22e-119">**Alert type** - Select the type of notification you want when the device is unlocked from:</span></span>
+            - <span data-ttu-id="7f22e-120">**Keine**: Es wird keine Benachrichtigung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7f22e-120">**None** - No notification is displayed.</span></span>
+            - <span data-ttu-id="7f22e-121">**Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7f22e-121">**Banner** - A banner is briefly displayed showing the notification.</span></span>
+            - <span data-ttu-id="7f22e-122">**Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.</span><span class="sxs-lookup"><span data-stu-id="7f22e-122">**Modal** - The notification is displayed and the user must manually dismiss it before you can continue to use the device.</span></span>
+        - <span data-ttu-id="7f22e-123">**Badge für App-Symbol**: Aktivieren Sie diese Einstellung, um dem App-Symbol einen Badge hinzuzufügen, der darauf hinweist, dass die App eine Benachrichtigung gesendet hat.</span><span class="sxs-lookup"><span data-stu-id="7f22e-123">**Badge on app icon** - Enable this setting to add a badge to the app icon to indicate the app sent a notification.</span></span>
+        - <span data-ttu-id="7f22e-124">**Sounds**: Aktivieren Sie diese Einstellung, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.</span><span class="sxs-lookup"><span data-stu-id="7f22e-124">**Sounds** - Enable this setting to play a sound when a notification is delivered.</span></span>
+3. <span data-ttu-id="7f22e-125">Fügen Sie so viele Apps hinzu, wie Sie benötigen.</span><span class="sxs-lookup"><span data-stu-id="7f22e-125">Continue to add as many apps as you need.</span></span> <span data-ttu-id="7f22e-126">Wenn Sie fertig sind, wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="7f22e-126">When you are finished, choose **OK**.</span></span>
+4. <span data-ttu-id="7f22e-127">Klicken Sie auf **OK**, bis Sie zum Blatt **Profil erstellen** zurückkehren, und wählen Sie dann **Erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="7f22e-127">Choose **OK** until you return to the **Create Profile** blade, then choose **Create**.</span></span> 
 
 
-## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Bündel-ID-Referenz für integrierte iOS-Apps
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a><span data-ttu-id="7f22e-128">Bündel-ID-Referenz für integrierte iOS-Apps</span><span class="sxs-lookup"><span data-stu-id="7f22e-128">Bundle ID reference for built-in iOS apps</span></span>
 
-Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller. 
+<span data-ttu-id="7f22e-129">Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps.</span><span class="sxs-lookup"><span data-stu-id="7f22e-129">This list shows the bundle ID of some common built-in iOS apps.</span></span> <span data-ttu-id="7f22e-130">Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.</span><span class="sxs-lookup"><span data-stu-id="7f22e-130">To find the bundle ID of other apps, contact your software vendor.</span></span> 
 
 |||
 |-|-|
-|App-Name|Bündel-ID|
-|App Store|com.apple.AppStore|
-|Calculator|com.apple.calculator|
-|Kalender|com.apple.mobilecal|
-|Kamera|com.apple.camera|
-|Clock|com.apple.mobiletimer|
-|Compass|com.apple.compass|
-|Kontakte|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Find Friends|com.apple.mobileme.fmf1|
-|Find iPhone|com.apple.mobileme.fmip1|
-|Gamecenter|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Integrität|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Zuordnungen|com.apple.Maps|
-|Nachrichten|com.apple.MobileSMS|
-|Musik|com.apple.Music|
-|News|com.apple.news|
-|Hinweise|com.apple.mobilenotes|
-|Zahlen|com.apple.Numbers|
-|Seiten|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotos|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Einstellungen|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Tipps|com.apple.tips|
-|Videos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Überwachen|com.apple.Bridge|
-|Weather|com.apple.weather|
+|<span data-ttu-id="7f22e-131">App-Name</span><span class="sxs-lookup"><span data-stu-id="7f22e-131">App name</span></span>|<span data-ttu-id="7f22e-132">Bündel-ID</span><span class="sxs-lookup"><span data-stu-id="7f22e-132">BundleID</span></span>|
+|<span data-ttu-id="7f22e-133">App Store</span><span class="sxs-lookup"><span data-stu-id="7f22e-133">App Store</span></span>|<span data-ttu-id="7f22e-134">com.apple.AppStore</span><span class="sxs-lookup"><span data-stu-id="7f22e-134">com.apple.AppStore</span></span>|
+|<span data-ttu-id="7f22e-135">Calculator</span><span class="sxs-lookup"><span data-stu-id="7f22e-135">Calculator</span></span>|<span data-ttu-id="7f22e-136">com.apple.calculator</span><span class="sxs-lookup"><span data-stu-id="7f22e-136">com.apple.calculator</span></span>|
+|<span data-ttu-id="7f22e-137">Kalender</span><span class="sxs-lookup"><span data-stu-id="7f22e-137">Calendar</span></span>|<span data-ttu-id="7f22e-138">com.apple.mobilecal</span><span class="sxs-lookup"><span data-stu-id="7f22e-138">com.apple.mobilecal</span></span>|
+|<span data-ttu-id="7f22e-139">Kamera</span><span class="sxs-lookup"><span data-stu-id="7f22e-139">Camera</span></span>|<span data-ttu-id="7f22e-140">com.apple.camera</span><span class="sxs-lookup"><span data-stu-id="7f22e-140">com.apple.camera</span></span>|
+|<span data-ttu-id="7f22e-141">Clock</span><span class="sxs-lookup"><span data-stu-id="7f22e-141">Clock</span></span>|<span data-ttu-id="7f22e-142">com.apple.mobiletimer</span><span class="sxs-lookup"><span data-stu-id="7f22e-142">com.apple.mobiletimer</span></span>|
+|<span data-ttu-id="7f22e-143">Compass</span><span class="sxs-lookup"><span data-stu-id="7f22e-143">Compass</span></span>|<span data-ttu-id="7f22e-144">com.apple.compass</span><span class="sxs-lookup"><span data-stu-id="7f22e-144">com.apple.compass</span></span>|
+|<span data-ttu-id="7f22e-145">Kontakte</span><span class="sxs-lookup"><span data-stu-id="7f22e-145">Contacts</span></span>|<span data-ttu-id="7f22e-146">com.apple.MobileAddressBook</span><span class="sxs-lookup"><span data-stu-id="7f22e-146">com.apple.MobileAddressBook</span></span>|
+|<span data-ttu-id="7f22e-147">FaceTime</span><span class="sxs-lookup"><span data-stu-id="7f22e-147">FaceTime</span></span>|<span data-ttu-id="7f22e-148">com.apple.facetime</span><span class="sxs-lookup"><span data-stu-id="7f22e-148">com.apple.facetime</span></span>|
+|<span data-ttu-id="7f22e-149">Find Friends</span><span class="sxs-lookup"><span data-stu-id="7f22e-149">Find Friends</span></span>|<span data-ttu-id="7f22e-150">com.apple.mobileme.fmf1</span><span class="sxs-lookup"><span data-stu-id="7f22e-150">com.apple.mobileme.fmf1</span></span>|
+|<span data-ttu-id="7f22e-151">Find iPhone</span><span class="sxs-lookup"><span data-stu-id="7f22e-151">Find iPhone</span></span>|<span data-ttu-id="7f22e-152">com.apple.mobileme.fmip1</span><span class="sxs-lookup"><span data-stu-id="7f22e-152">com.apple.mobileme.fmip1</span></span>|
+|<span data-ttu-id="7f22e-153">Gamecenter</span><span class="sxs-lookup"><span data-stu-id="7f22e-153">Game Center</span></span>|<span data-ttu-id="7f22e-154">com.apple.gamecenter</span><span class="sxs-lookup"><span data-stu-id="7f22e-154">com.apple.gamecenter</span></span>|
+|<span data-ttu-id="7f22e-155">GarageBand</span><span class="sxs-lookup"><span data-stu-id="7f22e-155">GarageBand</span></span>|<span data-ttu-id="7f22e-156">com.apple.mobilegarageband</span><span class="sxs-lookup"><span data-stu-id="7f22e-156">com.apple.mobilegarageband</span></span>|
+|<span data-ttu-id="7f22e-157">Integrität</span><span class="sxs-lookup"><span data-stu-id="7f22e-157">Health</span></span>|<span data-ttu-id="7f22e-158">com.apple.Health</span><span class="sxs-lookup"><span data-stu-id="7f22e-158">com.apple.Health</span></span>|
+|<span data-ttu-id="7f22e-159">iBooks</span><span class="sxs-lookup"><span data-stu-id="7f22e-159">iBooks</span></span>|<span data-ttu-id="7f22e-160">com.apple.iBooks</span><span class="sxs-lookup"><span data-stu-id="7f22e-160">com.apple.iBooks</span></span>|
+|<span data-ttu-id="7f22e-161">iTunes Store</span><span class="sxs-lookup"><span data-stu-id="7f22e-161">iTunes Store</span></span>|<span data-ttu-id="7f22e-162">com.apple.MobileStore</span><span class="sxs-lookup"><span data-stu-id="7f22e-162">com.apple.MobileStore</span></span>|
+|<span data-ttu-id="7f22e-163">iTunes U</span><span class="sxs-lookup"><span data-stu-id="7f22e-163">iTunes U</span></span>|<span data-ttu-id="7f22e-164">com.apple.itunesu</span><span class="sxs-lookup"><span data-stu-id="7f22e-164">com.apple.itunesu</span></span>|
+|<span data-ttu-id="7f22e-165">Keynote</span><span class="sxs-lookup"><span data-stu-id="7f22e-165">Keynote</span></span>|<span data-ttu-id="7f22e-166">com.apple.Keynote</span><span class="sxs-lookup"><span data-stu-id="7f22e-166">com.apple.Keynote</span></span>|
+|<span data-ttu-id="7f22e-167">Mail</span><span class="sxs-lookup"><span data-stu-id="7f22e-167">Mail</span></span>|<span data-ttu-id="7f22e-168">com.apple.mobilemail</span><span class="sxs-lookup"><span data-stu-id="7f22e-168">com.apple.mobilemail</span></span>|
+|<span data-ttu-id="7f22e-169">Zuordnungen</span><span class="sxs-lookup"><span data-stu-id="7f22e-169">Maps</span></span>|<span data-ttu-id="7f22e-170">com.apple.Maps</span><span class="sxs-lookup"><span data-stu-id="7f22e-170">com.apple.Maps</span></span>|
+|<span data-ttu-id="7f22e-171">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="7f22e-171">Messages</span></span>|<span data-ttu-id="7f22e-172">com.apple.MobileSMS</span><span class="sxs-lookup"><span data-stu-id="7f22e-172">com.apple.MobileSMS</span></span>|
+|<span data-ttu-id="7f22e-173">Musik</span><span class="sxs-lookup"><span data-stu-id="7f22e-173">Music</span></span>|<span data-ttu-id="7f22e-174">com.apple.Music</span><span class="sxs-lookup"><span data-stu-id="7f22e-174">com.apple.Music</span></span>|
+|<span data-ttu-id="7f22e-175">News</span><span class="sxs-lookup"><span data-stu-id="7f22e-175">News</span></span>|<span data-ttu-id="7f22e-176">com.apple.news</span><span class="sxs-lookup"><span data-stu-id="7f22e-176">com.apple.news</span></span>|
+|<span data-ttu-id="7f22e-177">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7f22e-177">Notes</span></span>|<span data-ttu-id="7f22e-178">com.apple.mobilenotes</span><span class="sxs-lookup"><span data-stu-id="7f22e-178">com.apple.mobilenotes</span></span>|
+|<span data-ttu-id="7f22e-179">Zahlen</span><span class="sxs-lookup"><span data-stu-id="7f22e-179">Numbers</span></span>|<span data-ttu-id="7f22e-180">com.apple.Numbers</span><span class="sxs-lookup"><span data-stu-id="7f22e-180">com.apple.Numbers</span></span>|
+|<span data-ttu-id="7f22e-181">Seiten</span><span class="sxs-lookup"><span data-stu-id="7f22e-181">Pages</span></span>|<span data-ttu-id="7f22e-182">com.apple.Pages</span><span class="sxs-lookup"><span data-stu-id="7f22e-182">com.apple.Pages</span></span>|
+|<span data-ttu-id="7f22e-183">Photo Booth</span><span class="sxs-lookup"><span data-stu-id="7f22e-183">Photo Booth</span></span>|<span data-ttu-id="7f22e-184">com.apple.Photo-Booth</span><span class="sxs-lookup"><span data-stu-id="7f22e-184">com.apple.Photo-Booth</span></span>|
+|<span data-ttu-id="7f22e-185">Fotos</span><span class="sxs-lookup"><span data-stu-id="7f22e-185">Photos</span></span>|<span data-ttu-id="7f22e-186">com.apple.mobileslideshow</span><span class="sxs-lookup"><span data-stu-id="7f22e-186">com.apple.mobileslideshow</span></span>|
+|<span data-ttu-id="7f22e-187">Podcasts</span><span class="sxs-lookup"><span data-stu-id="7f22e-187">Podcasts</span></span>|<span data-ttu-id="7f22e-188">com.apple.podcasts</span><span class="sxs-lookup"><span data-stu-id="7f22e-188">com.apple.podcasts</span></span>|
+|<span data-ttu-id="7f22e-189">Reminders</span><span class="sxs-lookup"><span data-stu-id="7f22e-189">Reminders</span></span>|<span data-ttu-id="7f22e-190">com.apple.reminders</span><span class="sxs-lookup"><span data-stu-id="7f22e-190">com.apple.reminders</span></span>|
+|<span data-ttu-id="7f22e-191">Safari</span><span class="sxs-lookup"><span data-stu-id="7f22e-191">Safari</span></span>|<span data-ttu-id="7f22e-192">com.apple.mobilesafari</span><span class="sxs-lookup"><span data-stu-id="7f22e-192">com.apple.mobilesafari</span></span>|
+|<span data-ttu-id="7f22e-193">Einstellungen</span><span class="sxs-lookup"><span data-stu-id="7f22e-193">Settings</span></span>|<span data-ttu-id="7f22e-194">com.apple.Preferences</span><span class="sxs-lookup"><span data-stu-id="7f22e-194">com.apple.Preferences</span></span>|
+|<span data-ttu-id="7f22e-195">Stocks</span><span class="sxs-lookup"><span data-stu-id="7f22e-195">Stocks</span></span>|<span data-ttu-id="7f22e-196">com.apple.stocks</span><span class="sxs-lookup"><span data-stu-id="7f22e-196">com.apple.stocks</span></span>|
+|<span data-ttu-id="7f22e-197">Tipps</span><span class="sxs-lookup"><span data-stu-id="7f22e-197">Tips</span></span>|<span data-ttu-id="7f22e-198">com.apple.tips</span><span class="sxs-lookup"><span data-stu-id="7f22e-198">com.apple.tips</span></span>|
+|<span data-ttu-id="7f22e-199">Videos</span><span class="sxs-lookup"><span data-stu-id="7f22e-199">Videos</span></span>|<span data-ttu-id="7f22e-200">com.apple.videos</span><span class="sxs-lookup"><span data-stu-id="7f22e-200">com.apple.videos</span></span>|
+|<span data-ttu-id="7f22e-201">VoiceMemos</span><span class="sxs-lookup"><span data-stu-id="7f22e-201">VoiceMemos</span></span>|<span data-ttu-id="7f22e-202">com.apple.VoiceMemos</span><span class="sxs-lookup"><span data-stu-id="7f22e-202">com.apple.VoiceMemos</span></span>|
+|<span data-ttu-id="7f22e-203">Wallet</span><span class="sxs-lookup"><span data-stu-id="7f22e-203">Wallet</span></span>|<span data-ttu-id="7f22e-204">com.apple.Passbook</span><span class="sxs-lookup"><span data-stu-id="7f22e-204">com.apple.Passbook</span></span>|
+|<span data-ttu-id="7f22e-205">Überwachen</span><span class="sxs-lookup"><span data-stu-id="7f22e-205">Watch</span></span>|<span data-ttu-id="7f22e-206">com.apple.Bridge</span><span class="sxs-lookup"><span data-stu-id="7f22e-206">com.apple.Bridge</span></span>|
+|<span data-ttu-id="7f22e-207">Weather</span><span class="sxs-lookup"><span data-stu-id="7f22e-207">Weather</span></span>|<span data-ttu-id="7f22e-208">com.apple.weather</span><span class="sxs-lookup"><span data-stu-id="7f22e-208">com.apple.weather</span></span>|
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a><span data-ttu-id="7f22e-209">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="7f22e-209">Next steps</span></span>
 
-Sie können nun das Geräteprofil den von Ihnen ausgewählten Gruppen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
+<span data-ttu-id="7f22e-210">Sie können nun das Geräteprofil den von Ihnen ausgewählten Gruppen zuweisen.</span><span class="sxs-lookup"><span data-stu-id="7f22e-210">You can now assign the device profile to the groups you choose.</span></span> <span data-ttu-id="7f22e-211">Weitere Informationen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).</span><span class="sxs-lookup"><span data-stu-id="7f22e-211">For details, see [How to assign device profiles](device-profile-assign.md).</span></span>

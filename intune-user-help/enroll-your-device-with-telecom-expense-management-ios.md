@@ -17,50 +17,50 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Registrieren Ihres iOS-Geräts im Telecom Expense Management
+# <a name="enroll-your-ios-device-in-telecom-expense-management"></a><span data-ttu-id="72d48-103">Registrieren Ihres iOS-Geräts im Telecom Expense Management</span><span class="sxs-lookup"><span data-stu-id="72d48-103">Enroll your iOS device in telecom expense management</span></span>
 
-Vielleicht verwendet Ihre Organisation Telecom Expense Management-Software, um sicherzustellen, dass ihre Daten- und Voicepläne zulässige Grenzwerte einhalten. Nachdem Sie die Registrierung des Geräts abgeschlossen haben, werden Sie aufgefordert, die beste Kategorie für das Gerät auszuwählen.
+<span data-ttu-id="72d48-104">Vielleicht verwendet Ihre Organisation Telecom Expense Management-Software, um sicherzustellen, dass ihre Daten- und Voicepläne zulässige Grenzwerte einhalten.</span><span class="sxs-lookup"><span data-stu-id="72d48-104">Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits.</span></span> <span data-ttu-id="72d48-105">Nachdem Sie die Registrierung des Geräts abgeschlossen haben, werden Sie aufgefordert, die beste Kategorie für das Gerät auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="72d48-105">Once you have completed enrolling your device, you will then be prompted select the best category for that device.</span></span>
 
-  ![Dies ist ein Screenshot des Bildschirms zum „Auswählen der besten Kategorie für ein Gerät“ eines iOS-Geräts. Er zeigt eine Auswahl von Unternehmens- bzw. persönlicher Registrierung.](./media/ios-enroll-10-tem-select-best-category.png)
+  ![Dies ist ein Screenshot des Bildschirms zum „Auswählen der besten Kategorie für ein Gerät“ eines iOS-Geräts.](./media/ios-enroll-10-tem-select-best-category.png)
 
-Wählen Sie die entsprechende Option aus, und Sie erhalten eine Benachrichtigung zum Installieren der [__Datalert__](https://itunes.apple.com/app/datalert/id771029268?mt=8)-App aus dem App Store. Mit der Datalert-App kann Ihre Organisation die Datenverwendung messen. Wenn Ihre Organisation die Microsoft-Geschäfts- oder Schulregistrierungsoption konfiguriert hat, werden Sie aufgefordert, sich mit Ihrem Geschäfts- oder Schulkonto anzumelden. Wenn diese Option noch nicht aktiviert wurde, müssen Sie Informationen wie Ihre Telefonnummer angeben und Ihr Gerät mithilfe eines Codes überprüfen, um sich von der App aus beim Datalert-Dienst zu registrieren.
+<span data-ttu-id="72d48-108">Wählen Sie die entsprechende Option aus, und Sie erhalten eine Benachrichtigung zum Installieren der [__Datalert__](https://itunes.apple.com/app/datalert/id771029268?mt=8)-App aus dem App Store.</span><span class="sxs-lookup"><span data-stu-id="72d48-108">Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://itunes.apple.com/app/datalert/id771029268?mt=8) app from the App Store.</span></span> <span data-ttu-id="72d48-109">Mit der Datalert-App kann Ihre Organisation die Datenverwendung messen.</span><span class="sxs-lookup"><span data-stu-id="72d48-109">The Datalert app is how your organization can measure data usage.</span></span> <span data-ttu-id="72d48-110">Wenn Ihre Organisation die Microsoft-Geschäfts- oder Schulregistrierungsoption konfiguriert hat, werden Sie aufgefordert, sich mit Ihrem Geschäfts- oder Schulkonto anzumelden.</span><span class="sxs-lookup"><span data-stu-id="72d48-110">If your organization has configured the Microsoft work or school enrollment option, you will be required to log in with your work or school account.</span></span> <span data-ttu-id="72d48-111">Wenn diese Option noch nicht aktiviert wurde, müssen Sie Informationen wie Ihre Telefonnummer angeben und Ihr Gerät mithilfe eines Codes überprüfen, um sich von der App aus beim Datalert-Dienst zu registrieren.</span><span class="sxs-lookup"><span data-stu-id="72d48-111">If this hasn't been enabled, you will need to provide information such as your phone number and verify your device using a code to enroll into the Datalert service from the app.</span></span>
 
   ![Dies ist ein Screenshot des Begrüßungsbildschirms der Datalert-App, in dem Sie nach einer kurzen Erläuterung dazu, wie Sie mit Datalert Ihren Datenplan optimal nutzen können, aufgefordert werden, zum nächsten Bildschirm zu wechseln.](./media/ios-enroll-11-tem-datalert-setup.png)
 
-## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>Registrieren bei Datalert mit Ihrem Microsoft-Geschäfts- oder -Schulkonto
+## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a><span data-ttu-id="72d48-113">Registrieren bei Datalert mit Ihrem Microsoft-Geschäfts- oder -Schulkonto</span><span class="sxs-lookup"><span data-stu-id="72d48-113">Enroll into Datalert using your Microsoft work or school account</span></span>
 
 > [!NOTE]
-> Für diese Art der Registrierung muss die [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)-App auf Ihrem Mobiltelefon installiert und aktiv sein.
+> <span data-ttu-id="72d48-114">Für diese Art der Registrierung muss die [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)-App auf Ihrem Mobiltelefon installiert und aktiv sein.</span><span class="sxs-lookup"><span data-stu-id="72d48-114">You need to have the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) app installed and active on your phone to enroll this way.</span></span>
 
-1. Wählen Sie __Mit Microsoft-Konto anmelden__.
+1. <span data-ttu-id="72d48-115">Wählen Sie __Mit Microsoft-Konto anmelden__.</span><span class="sxs-lookup"><span data-stu-id="72d48-115">Select __Enroll with Microsoft account__.</span></span>
 
   ![Dies ist ein Bild des Einstellungenbildschirms der Datalert-App, das in der oberen Bildschirmhälfte ein Telefonnummernfeld zum Registrieren eines Geräts und unten „mit Microsoft-Konto registrieren“ enthält, sofern Sie über ein Microsoft Office 365-Konto und ein Intune-Abonnement verfügen.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
-2. Sie erhalten eine Benachrichtigung, dass __„Datalert“ „Authentifikator“ öffnen möchte__. Wählen Sie __Öffnen__ aus.
+2. <span data-ttu-id="72d48-117">Sie erhalten eine Benachrichtigung, dass __„Datalert“ „Authentifikator“ öffnen möchte__.</span><span class="sxs-lookup"><span data-stu-id="72d48-117">You'll receive a notification that __"Datalert" wants to open "Authenticator"__.</span></span> <span data-ttu-id="72d48-118">Wählen Sie __Öffnen__ aus.</span><span class="sxs-lookup"><span data-stu-id="72d48-118">Select __Open__.</span></span>
 
   ![Dies ist ein Bild des Popups, in dem der Benutzer auf Anforderung der Datalert-App zum Öffnen der Authentifikator-App aufgefordert wird.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
-3. Melden Sie sich mit Ihrem __Microsoft-Schul- oder -Geschäftskonto__ an. Das Datalert-Setup wird kurz durchgeführt und sollte dann abgeschlossen sein. Berühren Sie nach Abschluss __Fertig stellen__.
+3. <span data-ttu-id="72d48-120">Melden Sie sich mit Ihrem __Microsoft-Schul- oder -Geschäftskonto__ an.</span><span class="sxs-lookup"><span data-stu-id="72d48-120">Sign in with your __Microsoft school or work account__.</span></span> <span data-ttu-id="72d48-121">Das Datalert-Setup wird kurz durchgeführt und sollte dann abgeschlossen sein.</span><span class="sxs-lookup"><span data-stu-id="72d48-121">Datalert setup will work for a few moments, then should complete.</span></span> <span data-ttu-id="72d48-122">Berühren Sie nach Abschluss __Fertig stellen__.</span><span class="sxs-lookup"><span data-stu-id="72d48-122">Tap __Finish__ when it completes.</span></span>
 
-## <a name="enroll-into-datalert-using-your-phone-number"></a>Registrieren bei Datalert mit Ihrer Telefonnummer
+## <a name="enroll-into-datalert-using-your-phone-number"></a><span data-ttu-id="72d48-123">Registrieren bei Datalert mit Ihrer Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="72d48-123">Enroll into Datalert using your phone number</span></span>
 
-1. Geben Sie die Telefonnummer des Geräts an.
+1. <span data-ttu-id="72d48-124">Geben Sie die Telefonnummer des Geräts an.</span><span class="sxs-lookup"><span data-stu-id="72d48-124">Provide your device's phone number.</span></span>
 
   ![Dies ist ein Screenshot der Datalert-App mit der Aufforderung zur Eingabe einer Telefonnummer.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
-2. Sie erhalten dann per SMS-Nachricht einen Überprüfungscode. Geben Sie den Code ein, und tippen Sie auf __OK__.
+2. <span data-ttu-id="72d48-126">Sie erhalten dann per SMS-Nachricht einen Überprüfungscode.</span><span class="sxs-lookup"><span data-stu-id="72d48-126">You will then receive a verification code through an SMS message.</span></span> <span data-ttu-id="72d48-127">Geben Sie den Code ein, und tippen Sie auf __OK__.</span><span class="sxs-lookup"><span data-stu-id="72d48-127">Provide the code and tap __OK__.</span></span>
 
   ![Dies ist ein Screenshot der Datalert-App mit der Aufforderung zur Eingabe des SMS-Überprüfungscodes.](./media/ios-enroll-13-tem-datalert-sms.png)
 
-3. Nachdem Sie den Überprüfungscode angegeben haben, ist das Datalert-Setup abgeschlossen. Tippen Sie auf __Fertig stellen__, und von nun an können Sie Ihre Daten mit der Datalert-App überwachen.
+3. <span data-ttu-id="72d48-129">Nachdem Sie den Überprüfungscode angegeben haben, ist das Datalert-Setup abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="72d48-129">Once you've provided the verification code, Datalert setup will complete.</span></span> <span data-ttu-id="72d48-130">Tippen Sie auf __Fertig stellen__, und von nun an können Sie Ihre Daten mit der Datalert-App überwachen.</span><span class="sxs-lookup"><span data-stu-id="72d48-130">Tap __Finish__ and you will be able to monitor your data from the Datalert app.</span></span>
 
   ![Dieser Screenshot zeigt die Überwachung der Datennutzung von heute durch die Datalert-App.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
-Sobald Sie sich registriert haben, zeigt Ihnen die Datalert-App Ihre Datennutzung an.
+<span data-ttu-id="72d48-132">Sobald Sie sich registriert haben, zeigt Ihnen die Datalert-App Ihre Datennutzung an.</span><span class="sxs-lookup"><span data-stu-id="72d48-132">Once you've enrolled, you will begin to see your data usage in the Datalert app.</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="72d48-133">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="72d48-133">Still need help?</span></span> <span data-ttu-id="72d48-134">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="72d48-134">Contact your company support.</span></span> <span data-ttu-id="72d48-135">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="72d48-135">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

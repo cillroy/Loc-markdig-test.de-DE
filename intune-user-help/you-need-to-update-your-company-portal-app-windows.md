@@ -17,13 +17,13 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 0688979cb0cca170a0c8c95a92f94e13de0b0b03
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Ihre Unternehmensportal-App für Windows ist veraltet
+# <a name="your-company-portal-app-for-windows-is-out-of-date"></a><span data-ttu-id="afa61-102">Ihre Unternehmensportal-App für Windows ist veraltet</span><span class="sxs-lookup"><span data-stu-id="afa61-102">Your Company Portal app for Windows is out of date</span></span>
 
-Sie müssen die Unternehmensportal-App aktualisieren, um weiterhin auf Komponenten wie Unternehmens-E-Mail, Kontakte und Dokumente zugreifen zu können. Um dieses Problem zu beheben, öffnen Sie den **Microsoft Store**, und installieren Sie die neue Version der **Unternehmensportal**-App.
+<span data-ttu-id="afa61-103">Sie müssen die Unternehmensportal-App aktualisieren, um weiterhin auf Komponenten wie Unternehmens-E-Mail, Kontakte und Dokumente zugreifen zu können.</span><span class="sxs-lookup"><span data-stu-id="afa61-103">You need to update your Company Portal app in order to continue to access things like your corporate email, contacts, and documents.</span></span> <span data-ttu-id="afa61-104">Um dieses Problem zu beheben, öffnen Sie den **Microsoft Store**, und installieren Sie die neue Version der **Unternehmensportal**-App.</span><span class="sxs-lookup"><span data-stu-id="afa61-104">To fix this, open the **Microsoft Store** and install the new version of the **Company Portal** app.</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="afa61-105">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="afa61-105">Still need help?</span></span> <span data-ttu-id="afa61-106">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="afa61-106">Contact your company support.</span></span> <span data-ttu-id="afa61-107">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="afa61-107">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

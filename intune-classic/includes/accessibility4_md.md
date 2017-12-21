@@ -1,1 +1,1 @@
-Kundendienst für Personen mit Hörschwächen
+<span data-ttu-id="b1644-101">Kundendienst für Personen mit Hörschwächen</span><span class="sxs-lookup"><span data-stu-id="b1644-101">Customer Service for People with Hearing Impairments</span></span>

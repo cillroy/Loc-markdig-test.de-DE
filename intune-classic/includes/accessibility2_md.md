@@ -1,1 +1,1 @@
-Barrierefreiheitsfunktionen von Windows
+<span data-ttu-id="87ee4-101">Barrierefreiheitsfunktionen von Windows</span><span class="sxs-lookup"><span data-stu-id="87ee4-101">Accessibility Features of Windows</span></span>

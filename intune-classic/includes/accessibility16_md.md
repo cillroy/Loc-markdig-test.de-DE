@@ -1,1 +1,1 @@
-Microsoft Support Services unterliegen den Preisen, Bestimmungen und Bedingungen, die zum Zeitpunkt der Nutzung des Dienstes gelten.
+<span data-ttu-id="9b457-101">Microsoft Support Services unterliegen den Preisen, Bestimmungen und Bedingungen, die zum Zeitpunkt der Nutzung des Dienstes gelten.</span><span class="sxs-lookup"><span data-stu-id="9b457-101">Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used.</span></span>

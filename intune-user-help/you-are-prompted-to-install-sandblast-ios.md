@@ -15,33 +15,33 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 2335f92bd4755152aaae88f057f6b92481eacbdc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>Installieren von SandBlast Mobile Protect auf Ihrem iOS-Gerät
+# <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a><span data-ttu-id="ce516-103">Installieren von SandBlast Mobile Protect auf Ihrem iOS-Gerät</span><span class="sxs-lookup"><span data-stu-id="ce516-103">You need to install SandBlast Mobile Protect on your iOS device</span></span>
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt die Supportabteilung Ihres Unternehmens, dass Sie die SandBlast Mobile Protect-App installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät andere Aufforderungen angezeigt. Dies ist davon abhängig, wie Ihr Unternehmen SandBlast Mobile Protect eingerichtet hat.
+<span data-ttu-id="ce516-104">Damit Sie auf Ihre Arbeit zugreifen können, verlangt die Supportabteilung Ihres Unternehmens, dass Sie die SandBlast Mobile Protect-App installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt.</span><span class="sxs-lookup"><span data-stu-id="ce516-104">Before you can access your work, your company support needs you to install the SandBlast Mobile Protect app, which helps to protect your device by finding potential security threats.</span></span> <span data-ttu-id="ce516-105">Möglicherweise werden auf Ihrem Gerät andere Aufforderungen angezeigt. Dies ist davon abhängig, wie Ihr Unternehmen SandBlast Mobile Protect eingerichtet hat.</span><span class="sxs-lookup"><span data-stu-id="ce516-105">You might see different prompts on your device, depending on how your company set up SandBlast Mobile Protect.</span></span>
 
-**Gehen Sie wie folgt vor:**
+<span data-ttu-id="ce516-106">**Gehen Sie wie folgt vor:**</span><span class="sxs-lookup"><span data-stu-id="ce516-106">**What you need to do:**</span></span>
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von SandBlast Mobile Protect auf Ihrem Gerät zuzulassen.
+1.  <span data-ttu-id="ce516-107">Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von SandBlast Mobile Protect auf Ihrem Gerät zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="ce516-107">If you see a following prompt, tap **Install** to allow SandBlast Mobile Protect to be installed on your device.</span></span>
 
-2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
+2. <span data-ttu-id="ce516-108">Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="ce516-108">When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.</span></span>
 
-3. Überprüfen Sie die Berechtigungen, die SandBlast Mobile Protect benötigt, und tippen Sie auf **Weiter**.
+3. <span data-ttu-id="ce516-109">Überprüfen Sie die Berechtigungen, die SandBlast Mobile Protect benötigt, und tippen Sie auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="ce516-109">Review the permissions that SandBlast Mobile Protect needs, and tap **Continue**.</span></span>
 
-4. Tippen Sie, wenn Sie gefragt werden, ob Sie Benachrichtigungen von SandBlast Mobile Protect zulassen möchten, auf **Zulassen**.
+4. <span data-ttu-id="ce516-110">Tippen Sie, wenn Sie gefragt werden, ob Sie Benachrichtigungen von SandBlast Mobile Protect zulassen möchten, auf **Zulassen**.</span><span class="sxs-lookup"><span data-stu-id="ce516-110">At the prompt asking you to allow SandBlast Mobile Protect to send you notifications, tap **Allow**.</span></span>
 
-5. SandBlast Mobile Protect schließt die Installation ab und zeigt die Willkommensseite an.
+5. <span data-ttu-id="ce516-111">SandBlast Mobile Protect schließt die Installation ab und zeigt die Willkommensseite an.</span><span class="sxs-lookup"><span data-stu-id="ce516-111">SandBlast Mobile Protect finishes installing and shows you the welcome screen.</span></span>
 
-6. Sobald die Installation abgeschlossen ist, wird der folgende Bildschirm angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
+6. <span data-ttu-id="ce516-112">Sobald die Installation abgeschlossen ist, wird der folgende Bildschirm angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.</span><span class="sxs-lookup"><span data-stu-id="ce516-112">Once you've completed setup, you see the following screen if no security threats are found on your device.</span></span>
 
-Wenn SandBlast Mobile Protect eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
+<span data-ttu-id="ce516-113">Wenn SandBlast Mobile Protect eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.</span><span class="sxs-lookup"><span data-stu-id="ce516-113">If SandBlast Mobile Protect finds a security threat on your device, you will see instructions on how to fix the issue.</span></span>
 
-**Wenn die Installation nicht funktioniert**
+<span data-ttu-id="ce516-114">**Wenn die Installation nicht funktioniert**</span><span class="sxs-lookup"><span data-stu-id="ce516-114">**If the installation doesn't work**</span></span>
 
-Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, SandBlast Mobile Protect [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797).
+<span data-ttu-id="ce516-115">Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="ce516-115">Sometimes installations can fail due to technical issues beyond your control.</span></span> <span data-ttu-id="ce516-116">Sollte dies passieren, können Sie versuchen, SandBlast Mobile Protect [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797).</span><span class="sxs-lookup"><span data-stu-id="ce516-116">If this happens, try installing SandBlast Mobile Protect [manually from the App Store](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797).</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="ce516-117">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="ce516-117">Still need help?</span></span> <span data-ttu-id="ce516-118">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="ce516-118">Contact your company support.</span></span> <span data-ttu-id="ce516-119">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="ce516-119">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

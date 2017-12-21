@@ -1,0 +1,73 @@
+---
+title: "Kompatibilitätsrichtlinien Jamf-verwalteten Geräten zu erzwingen"
+titlesuffix: Azure portal
+description: "Verwenden Sie die Konformität zum Absichern von mit Jamf verwalteten Geräten."
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 12/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
+ms.reviewer: elocholi
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/19/2017
+---
+# <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a><span data-ttu-id="34dff-103">Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs</span><span class="sxs-lookup"><span data-stu-id="34dff-103">Enforce compliance on Macs managed with Jamf Pro</span></span>
+
+|<span data-ttu-id="34dff-104">Gilt für: Intune im Azure-Portal</span><span class="sxs-lookup"><span data-stu-id="34dff-104">Applies to: Intune in the Azure portal</span></span> |
+|--|
+|<span data-ttu-id="34dff-105">Suchen Sie nach der Dokumentation zu Intune im klassischen Portal?</span><span class="sxs-lookup"><span data-stu-id="34dff-105">Looking for documentation about Intune in the classic portal?</span></span> <span data-ttu-id="34dff-106">[Klicken Sie hier](/intune/introduction-intune?toc=/intune-classic/toc.json).</span><span class="sxs-lookup"><span data-stu-id="34dff-106">[Go here](/intune/introduction-intune?toc=/intune-classic/toc.json).</span></span>|
+| |
+
+<span data-ttu-id="34dff-107">Über Azure Active Directory und die Microsoft Intune-Richtlinien für bedingten Zugriff können Sie sicherstellen, dass Ihre Endbenutzer den Anforderungen des Unternehmens entsprechen.</span><span class="sxs-lookup"><span data-stu-id="34dff-107">You can use Azure Active Directory and Microsoft Intune's conditional access policies ensure that your end users are compliant with organizational requirements.</span></span> <span data-ttu-id="34dff-108">Sie können diese Richtlinien auf Macs anwenden, die [mit Jamf Pro verwaltet](conditional-access-integrate-jamf.md) werden.</span><span class="sxs-lookup"><span data-stu-id="34dff-108">You can apply these policies to Macs that are [managed with Jamf Pro](conditional-access-integrate-jamf.md).</span></span> <span data-ttu-id="34dff-109">Hierfür müssen Sie sowohl auf die Intune- als auch auf die Jamf Pro-Konsole zugreifen.</span><span class="sxs-lookup"><span data-stu-id="34dff-109">This requires access to both the Intune and Jamf Pro consoles.</span></span>
+
+## <a name="set-up-device-compliance-policies-in-intune"></a><span data-ttu-id="34dff-110">Einrichten von Gerätekonformitätsrichtlinien in Intune</span><span class="sxs-lookup"><span data-stu-id="34dff-110">Set up device compliance policies in Intune</span></span>
+
+1. <span data-ttu-id="34dff-111">Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**.</span><span class="sxs-lookup"><span data-stu-id="34dff-111">Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**.</span></span> <span data-ttu-id="34dff-112">Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z.B. Warn-E-Mails senden).</span><span class="sxs-lookup"><span data-stu-id="34dff-112">You can create policies for macOS, including choosing a series of actions (e.g., sending warning emails) to noncompliant users and groups.</span></span>
+2. <span data-ttu-id="34dff-113">Suchen Sie nach den gewünschten Gruppen, und wenden Sie die Richtlinien an.</span><span class="sxs-lookup"><span data-stu-id="34dff-113">Search for your desired groups, then apply the policies to them.</span></span>
+
+## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a><span data-ttu-id="34dff-114">Bereitstellen der Unternehmensportal-App für macOS in Jamf Pro</span><span class="sxs-lookup"><span data-stu-id="34dff-114">Deploy the Company Portal app for macOS in Jamf Pro</span></span>
+
+<span data-ttu-id="34dff-115">Sie müssen die Unternehmensportal-App für macOS in Jamf Pro als Hintergrundinstallation bereitstellen, nachdem die folgende Prozedur abgeschlossen wurde:</span><span class="sxs-lookup"><span data-stu-id="34dff-115">You should deploy the Company Portal app for macOS in Jamf Pro as a background installation following the procedure below:</span></span>
+
+1. <span data-ttu-id="34dff-116">Laden Sie auf einem macOS-Gerät die aktuelle Version der [Unternehmensportal-App für macOS](https://go.microsoft.com/fwlink/?linkid=862280) herunter.</span><span class="sxs-lookup"><span data-stu-id="34dff-116">On a macOS device, download the current version of the [Company Portal app for macOS](https://go.microsoft.com/fwlink/?linkid=862280).</span></span> <span data-ttu-id="34dff-117">Installieren Sie die App nicht. Sie benötigen eine Kopie der App, um diese auf Jamf Pro hochladen zu können.</span><span class="sxs-lookup"><span data-stu-id="34dff-117">Do not install it; you need a copy of the app to upload to Jamf Pro.</span></span>
+2. <span data-ttu-id="34dff-118">Öffnen Sie Jamf Pro, und navigieren Sie zu **Computer management** > **Packages** (Computerverwaltung > Pakete).</span><span class="sxs-lookup"><span data-stu-id="34dff-118">Open Jamf Pro, then navigate to **Computer management** > **Packages**.</span></span>
+3. <span data-ttu-id="34dff-119">Erstellen Sie ein neues Paket mit der Unternehmensportal-App für macOS, und klicken Sie auf **Save** (Speichern).</span><span class="sxs-lookup"><span data-stu-id="34dff-119">Create a new package with the Company Portal app for macOS, then click **Save**.</span></span>
+4. <span data-ttu-id="34dff-120">Öffnen Sie **Computer** > **Policies** (Richtlinien), und wählen Sie dann **New** (Neu).</span><span class="sxs-lookup"><span data-stu-id="34dff-120">Open **Computers** > **Policies**, then select **New**.</span></span>
+5. <span data-ttu-id="34dff-121">Verwenden Sie die Nutzlast **General** (Allgemein), um Einstellungen für die Richtlinie zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="34dff-121">Use the **General** payload to configure settings for the policy.</span></span> <span data-ttu-id="34dff-122">Zu diesen Einstellungen müssen zählen:</span><span class="sxs-lookup"><span data-stu-id="34dff-122">These settings should be:</span></span>
+   - <span data-ttu-id="34dff-123">Trigger: Wählen Sie **Enrollment Complete** (Registrierung abgeschlossen) und **Recurring Check-in** (Wiederholtes Einchecken) aus.</span><span class="sxs-lookup"><span data-stu-id="34dff-123">Trigger: select **Enrollment Complete** and **Recurring Check-in**</span></span>
+   - <span data-ttu-id="34dff-124">Execution Frequency (Häufigkeit der Ausführung): Wählen Sie **Once per computer** (Einmal pro Computer) aus.</span><span class="sxs-lookup"><span data-stu-id="34dff-124">Execution Frequency: select **Once per computer**</span></span>
+6. <span data-ttu-id="34dff-125">Wählen Sie die Nutzlast **Packages** (Pakete), und klicken Sie auf **Configure** (Konfigurieren).</span><span class="sxs-lookup"><span data-stu-id="34dff-125">Select the **Packages** payload and click **Configure**.</span></span>
+7. <span data-ttu-id="34dff-126">Klicken Sie auf **Add** (Hinzufügen), um das Paket mit der Unternehmensportal-App auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="34dff-126">Click **Add** to select the package with the Company Portal app.</span></span>
+8. <span data-ttu-id="34dff-127">Wählen Sie **Install** (Installieren) aus dem Popupmenü **Action** (Aktion).</span><span class="sxs-lookup"><span data-stu-id="34dff-127">Choose **Install** from the **Action** pop-up menu.</span></span>
+9. <span data-ttu-id="34dff-128">Konfigurieren Sie die Einstellungen für das Paket.</span><span class="sxs-lookup"><span data-stu-id="34dff-128">Configure the settings for the package.</span></span>
+10. <span data-ttu-id="34dff-129">Klicken Sie auf die Registerkarte **Scope** (Bereich), um anzugeben, auf welchen Computern die Unternehmensportal-App installiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="34dff-129">Click the **Scope** tab to specify on which computers the Company Portal app should be installed.</span></span> <span data-ttu-id="34dff-130">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="34dff-130">Click **Save**.</span></span> <span data-ttu-id="34dff-131">Die Richtlinie wird auf den betreffenden Geräten ausgeführt, wenn der ausgewählte Trigger das nächste Mal auf dem Computer auftritt und die Kriterien in der Nutzlast **General** (Allgemein) erfüllt werden.</span><span class="sxs-lookup"><span data-stu-id="34dff-131">The policy will run scoped devices the next time the selected trigger occurs on the computer and meets the criteria in the **General** payload.</span></span>
+
+## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a><span data-ttu-id="34dff-132">Erstellen Sie eine Richtlinie in Jamf Pro, damit Benutzer ihre Geräte bei Azure Active Directory registrieren.</span><span class="sxs-lookup"><span data-stu-id="34dff-132">Create a policy in Jamf Pro to have users register their devices with Azure Active Directory</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="34dff-133">Sie müssen das [Unternehmensportal für macOS bereitstellen](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos), bevor Sie die nächsten Schritten durchführen.</span><span class="sxs-lookup"><span data-stu-id="34dff-133">You need to [deploy the Company Portal](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) for macOS before going through the next steps.</span></span>  
+
+<span data-ttu-id="34dff-134">Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starten, um das Gerät bei Azure AD als mit Jamf Pro verwaltetes Gerät zu registrieren.</span><span class="sxs-lookup"><span data-stu-id="34dff-134">End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro.</span></span> <span data-ttu-id="34dff-135">Dies erfordert, dass Ihre Endbenutzer Maßnahmen ergreifen.</span><span class="sxs-lookup"><span data-stu-id="34dff-135">This will require your end users to take action.</span></span> <span data-ttu-id="34dff-136">Wir empfehlen, dass Sie [Ihre Endbenutzer ](end-user-educate.md) über E-Mail, Jamf Pro-Benachrichtigungen oder andere Methoden kontaktieren und auffordern, auf die Schaltfläche in Jamf Self Service zu klicken.</span><span class="sxs-lookup"><span data-stu-id="34dff-136">We recommend that you [contact your end user](end-user-educate.md) through email, Jamf Pro notifications, or any other methods of notifying your end users to click the button in Jamf Self Service.</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="34dff-137">Die Unternehmensportal-App muss im Jamf Self Service gestartet werden, um die Geräteregistrierung einzuleiten.</span><span class="sxs-lookup"><span data-stu-id="34dff-137">The Company Portal app must be launched from Jamf Self Service to begin device registration.</span></span> <br><br><span data-ttu-id="34dff-138">Wenn Sie die Unternehmensportal-App manuell starten (z.B. aus den Ordnern „Anwendungen“ oder „Downloads“), wird das Gerät nicht registriert.</span><span class="sxs-lookup"><span data-stu-id="34dff-138">Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device.</span></span> <span data-ttu-id="34dff-139">Wenn ein Endbenutzer die Unternehmensportal-App manuell startet, wird die Warnung „AccountNotOnboarded“ angezeigt.</span><span class="sxs-lookup"><span data-stu-id="34dff-139">If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.</span></span>
+
+1. <span data-ttu-id="34dff-140">Navigieren Sie in Jamf Pro zu **Computer** > **Policies** (Richtlinien), und erstellen Sie eine neue Richtlinie für die Geräteregistrierung.</span><span class="sxs-lookup"><span data-stu-id="34dff-140">In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.</span></span>
+2. <span data-ttu-id="34dff-141">Konfigurieren Sie die Nutzlast **Microsoft Intune Integration** (Integration von Microsoft Intune), einschließlich Trigger und Ausführungshäufigkeit.</span><span class="sxs-lookup"><span data-stu-id="34dff-141">Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency.</span></span>
+3. <span data-ttu-id="34dff-142">Klicken Sie auf die Registerkarte **Scope** (Bereich), und beschränken Sie die Richtlinie auf alle Zielgeräte.</span><span class="sxs-lookup"><span data-stu-id="34dff-142">Click the **Scope** tab, and scope the policy to all targeted devices.</span></span>
+4. <span data-ttu-id="34dff-143">Klicken Sie auf die Registerkarte **Self Service**, um die Richtlinie in Jamf Self Service verfügbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="34dff-143">Click the **Self Service** tab to make the policy available in Jamf Self Service.</span></span> <span data-ttu-id="34dff-144">Nehmen Sie die Richtlinie in die Kategorie **Device Compliance** (Gerätekonformität) auf.</span><span class="sxs-lookup"><span data-stu-id="34dff-144">Include the policy in the **Device Compliance** category.</span></span> <span data-ttu-id="34dff-145">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="34dff-145">Click **Save**.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="34dff-146">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="34dff-146">Next steps</span></span>
+
+- [<span data-ttu-id="34dff-147">Bedingter Zugriff in Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="34dff-147">Conditional access in Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [<span data-ttu-id="34dff-148">Erste Schritte mit dem bedingten Zugriff in Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="34dff-148">Get started with conditional access in Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

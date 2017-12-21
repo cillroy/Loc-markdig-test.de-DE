@@ -1,1 +1,1 @@
-Telefonnummer bei Anruf aus den USA: (800) 221-4792
+<span data-ttu-id="b95a4-101">Telefonnummer bei Anruf aus den USA: (800) 221-4792</span><span class="sxs-lookup"><span data-stu-id="b95a4-101">Telephone number from within the United States: (800) 221-4792</span></span>

@@ -15,38 +15,38 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: de995840eb33c165824d2fccd135377ea6c7ad56
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="manage-user-device-linking-for-windows-pcs"></a>Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs
+# <a name="manage-user-device-linking-for-windows-pcs"></a><span data-ttu-id="f566b-103">Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs</span><span class="sxs-lookup"><span data-stu-id="f566b-103">Manage user-device linking for Windows PCs</span></span>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. 
+<span data-ttu-id="f566b-104">Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten.</span><span class="sxs-lookup"><span data-stu-id="f566b-104">The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.</span></span> 
 
-Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen zunächst mit einem PC verknüpfen. Sie können einen Benutzer mit mehreren PCs verknüpfen, aber einzelne PCs nur mit jeweils einem Benutzer. Benutzer werden automatisch mit den PCs verknüpft, die sie über das Unternehmensportal in Intune registrieren.
+<span data-ttu-id="f566b-105">Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen zunächst mit einem PC verknüpfen.</span><span class="sxs-lookup"><span data-stu-id="f566b-105">Before you can deploy software to a user, you must link the user to a PC.</span></span> <span data-ttu-id="f566b-106">Sie können einen Benutzer mit mehreren PCs verknüpfen, aber einzelne PCs nur mit jeweils einem Benutzer.</span><span class="sxs-lookup"><span data-stu-id="f566b-106">You can link a user to multiple PCs, but each PC can be linked to only one user.</span></span> <span data-ttu-id="f566b-107">Benutzer werden automatisch mit den PCs verknüpft, die sie über das Unternehmensportal in Intune registrieren.</span><span class="sxs-lookup"><span data-stu-id="f566b-107">Users are automatically linked to any PCs that they enroll in Intune by using the company portal.</span></span>
 
-So verknüpfen Sie einen Benutzer mit einem PC
+<span data-ttu-id="f566b-108">So verknüpfen Sie einen Benutzer mit einem PC</span><span class="sxs-lookup"><span data-stu-id="f566b-108">To link a user to a PC:</span></span>
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie mit einem Benutzer verknüpfen möchten).
+1.  <span data-ttu-id="f566b-109">Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie mit einem Benutzer verknüpfen möchten).</span><span class="sxs-lookup"><span data-stu-id="f566b-109">In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to link to a user).</span></span>
 
-2.  Wählen Sie den PC aus, den Sie mit einem Benutzer verknüpfen möchten, und dann **Benutzer verknüpfen** aus.
+2.  <span data-ttu-id="f566b-110">Wählen Sie den PC aus, den Sie mit einem Benutzer verknüpfen möchten, und dann **Benutzer verknüpfen** aus.</span><span class="sxs-lookup"><span data-stu-id="f566b-110">Select the PC that you want to link a user, and then choose **Link User**.</span></span>
 
-    Im Dialogfeld **Benutzer verknüpfen** wird eine Liste verfügbarer Benutzer mit ihren Anzeigenamen, Benutzer-IDs und der Anzahl von PCs angezeigt, mit denen die Benutzer jeweils aktuell verknüpft sind. Wenn ein Benutzer bereits mit dem ausgewählten PC verknüpft ist, werden Name und Benutzer-ID des Benutzers unter **Aktueller Benutzer**angezeigt. Wenn der PC mit keinem Benutzer verknüpft ist, wird unter **Aktueller Benutzer** der Wert **Kein Benutzer**angezeigt.
+    <span data-ttu-id="f566b-111">Im Dialogfeld **Benutzer verknüpfen** wird eine Liste verfügbarer Benutzer mit ihren Anzeigenamen, Benutzer-IDs und der Anzahl von PCs angezeigt, mit denen die Benutzer jeweils aktuell verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="f566b-111">The **Link User** dialog box displays a list of available users with their display name, user ID, and the number of PCs to which each user is currently linked.</span></span> <span data-ttu-id="f566b-112">Wenn ein Benutzer bereits mit dem ausgewählten PC verknüpft ist, werden Name und Benutzer-ID des Benutzers unter **Aktueller Benutzer**angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f566b-112">If a user is already linked to the selected PC, that user’s name and user ID are displayed under **Current user**.</span></span> <span data-ttu-id="f566b-113">Wenn der PC mit keinem Benutzer verknüpft ist, wird unter **Aktueller Benutzer** der Wert **Kein Benutzer**angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f566b-113">If the PC is not linked to any user, **No User** appears under **Current User**.</span></span>
 
-3.  Führen Sie eines der folgenden Verfahren aus:
+3.  <span data-ttu-id="f566b-114">Führen Sie eines der folgenden Verfahren aus:</span><span class="sxs-lookup"><span data-stu-id="f566b-114">Do one of the following:</span></span>
 
-    -   Wählen Sie **Abbrechen** aus, um die Verknüpfung des PC mit einem ggf. vorhandenen aktuellen Benutzer beizubehalten.
+    -   <span data-ttu-id="f566b-115">Wählen Sie **Abbrechen** aus, um die Verknüpfung des PC mit einem ggf. vorhandenen aktuellen Benutzer beizubehalten.</span><span class="sxs-lookup"><span data-stu-id="f566b-115">To leave the PC linked to its current user, if there is one, choose **Cancel**.</span></span>
 
-    -   Zum Entfernen der Verknüpfung mit dem aktuellen Benutzer wählen Sie ggf. **Verknüpfung entfernen**&gt; **OK** aus.
+    -   <span data-ttu-id="f566b-116">Zum Entfernen der Verknüpfung mit dem aktuellen Benutzer wählen Sie ggf. **Verknüpfung entfernen**&gt; **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="f566b-116">To remove the link to the current user, if there is one, choose **Remove link **&gt; **OK**.</span></span>
 
-    -   Zum Verknüpfen des PC mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus. Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.
+    -   <span data-ttu-id="f566b-117">Zum Verknüpfen des PC mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus.</span><span class="sxs-lookup"><span data-stu-id="f566b-117">To link the PC to a new user, in the **All users** list, select a user.</span></span> <span data-ttu-id="f566b-118">Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="f566b-118">Confirm that the user data is correct, and then choose **OK**.</span></span>
 
 > [!TIP]
-> Wenn Sie die Fähigkeit der Endbenutzer, sich mit PCs zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit PCs zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.
+> <span data-ttu-id="f566b-119">Wenn Sie die Fähigkeit der Endbenutzer, sich mit PCs zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit PCs zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="f566b-119">If you want to restrict end users ability to link themselves to PCs, enable the option **Restrict users' ability to link themselves to PCs** in the **Microsoft Intune Agent Settings** policy.</span></span>
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a><span data-ttu-id="f566b-120">Weitere Informationen:</span><span class="sxs-lookup"><span data-stu-id="f566b-120">See also</span></span>
 
-[Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+[<span data-ttu-id="f566b-121">Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient</span><span class="sxs-lookup"><span data-stu-id="f566b-121">Common Windows PC management tasks with the Intune software client</span></span>](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

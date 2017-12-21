@@ -17,15 +17,15 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: df408217e8c9264921a60cb46fa3af7ecd434a24
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Ihr iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a><span data-ttu-id="93c9c-102">Ihr iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems</span><span class="sxs-lookup"><span data-stu-id="93c9c-102">Your iOS device doesn't have the required minimum operating system version</span></span>
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-Aktualisieren Sie Ihr iOS-Gerät durch Tippen auf **Einstellungen** > **Allgemein** > **Softwareupdate**.
+<span data-ttu-id="93c9c-103">Aktualisieren Sie Ihr iOS-Gerät durch Tippen auf **Einstellungen** > **Allgemein** > **Softwareupdate**.</span><span class="sxs-lookup"><span data-stu-id="93c9c-103">Update your iOS device by tapping **Settings** > **General** > **Software Update**.</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="93c9c-104">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="93c9c-104">Still need help?</span></span> <span data-ttu-id="93c9c-105">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="93c9c-105">Contact your company support.</span></span> <span data-ttu-id="93c9c-106">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="93c9c-106">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

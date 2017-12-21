@@ -1,0 +1,107 @@
+---
+title: "Registrieren mit dem Geräteregistrierungs-Manager"
+description: "Das Geräteregistrierungs-Manager-Konto (Device Enrollment Manager, DEM) kann eine große Anzahl gemeinsam genutzter, firmeneigener mobiler Geräte mit einem einzigen Benutzerkonto verwalten."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 01/29/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: dagerrit
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: fb9ce4c39721f31b0970c547860361f2aaf52374
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/19/2017
+---
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a><span data-ttu-id="ce0ce-103">Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-103">Enroll corporate-owned devices with the device enrollment manager in Microsoft Intune</span></span>
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+<span data-ttu-id="ce0ce-104">Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-104">Organizations can use Intune to manage large numbers of mobile devices with a single user account.</span></span> <span data-ttu-id="ce0ce-105">Das Konto *Geräteregistrierungsmanager* (DEM) ist ein spezielles Benutzerkonto, das bis zu 1.000 Geräte registrieren kann.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-105">The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices.</span></span> <span data-ttu-id="ce0ce-106">Fügen Sie dem DEM-Konto vorhandene Benutzer hinzu, damit diese bestimmte DEM-Funktionen erhalten.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-106">You add existing users to the DEM account to give them the special DEM capabilities.</span></span> <span data-ttu-id="ce0ce-107">Jedes registrierte Gerät verwendet eine Einzellizenz.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-107">Each enrolled device uses a single license.</span></span> <span data-ttu-id="ce0ce-108">Wir empfehlen, dass Sie Geräte verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden (also ohne Benutzeraffinität) und nicht als persönliche Geräte (BYOD).</span><span class="sxs-lookup"><span data-stu-id="ce0ce-108">We recommend that you use devices enrolled through this account as shared devices (that is, with no user affinity) rather than personal ("BYOD") devices.</span></span>  
+
+<span data-ttu-id="ce0ce-109">Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-109">Users must exist in the Azure portal to be added as device enrollment managers.</span></span> <span data-ttu-id="ce0ce-110">Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-110">For optimal security, the DEM user should not also be an Intune admin.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="ce0ce-111">Die Registrierung mithilfe des DEM-Kontos kann nicht zusammen mit der Registrierung mithilfe des [Setup-Assistenten von Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), mit der [direkten Registrierung](ios-direct-enrollment-in-microsoft-intune.md) oder der [Registrierung über das Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-111">The DEM enrollment method can't be used with the [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) or [direct enrollment](ios-direct-enrollment-in-microsoft-intune.md), or the [DEP enrollment method](ios-device-enrollment-program-in-microsoft-intune.md).</span></span>
+
+## <a name="example-of-a-device-enrollment-manager-scenario"></a><span data-ttu-id="ce0ce-112">Beispiel für ein Geräteregistrierungs-Manager-Szenario:</span><span class="sxs-lookup"><span data-stu-id="ce0ce-112">Example of a device enrollment manager scenario</span></span>
+
+<span data-ttu-id="ce0ce-113">Ein Restaurant möchte 50 Point-of-Sale-Tablets für sein Bedienpersonal bereitstellen sowie Bestellmonitore für seine Küchenmitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-113">A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff.</span></span> <span data-ttu-id="ce0ce-114">Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-114">The employees never need to access company data or sign in as users.</span></span> <span data-ttu-id="ce0ce-115">Der Intune-Administrator erstellt ein Geräteregistrierungs-Manager-Konto und fügt einen Vorgesetzten des Restaurants zum DEM-Konto hinzu, dieser erhält also DEM-Fähigkeiten.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-115">The Intune admin creates a device enrollment manager account and adds a restaurant supervisor to the DEM account, in effect giving that supervisor DEM capabilities.</span></span> <span data-ttu-id="ce0ce-116">Der Vorgesetzte kann nun die 50 Tablets registrieren, indem er die DEM-Anmeldeinformationen verwendet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-116">The supervisor can now enroll the 50 tablets devices by using the DEM credentials.</span></span>
+
+<span data-ttu-id="ce0ce-117">Nur Benutzer in der Intune-Konsole können Geräteregistrierungs-Manager sein.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-117">Only users in the Intune console can be device enrollment managers.</span></span> <span data-ttu-id="ce0ce-118">Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-118">The device enrollment manager user cannot be an Intune admin.</span></span>
+
+<span data-ttu-id="ce0ce-119">Der DEM-Benutzer kann Folgendes tun:</span><span class="sxs-lookup"><span data-stu-id="ce0ce-119">The DEM user can:</span></span>
+
+-   <span data-ttu-id="ce0ce-120">Registrieren von bis zu 1000 Geräten in Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-120">Enroll up to 1000 devices in Intune</span></span>
+-   <span data-ttu-id="ce0ce-121">Verwenden Sie die Unternehmensportal-App, um Unternehmens-Apps abzurufen</span><span class="sxs-lookup"><span data-stu-id="ce0ce-121">Use the Company Portal app to get company apps</span></span>
+-   <span data-ttu-id="ce0ce-122">Konfigurieren des Zugriffs auf Unternehmensdaten durch Bereitstellen von rollenspezifischen Apps auf den Tablets</span><span class="sxs-lookup"><span data-stu-id="ce0ce-122">Configure access to company data by deploying role-specific apps to the tablets</span></span>
+
+## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a><span data-ttu-id="ce0ce-123">Einschränkungen der Geräte, die mit dem DEM Konto angemeldet sind</span><span class="sxs-lookup"><span data-stu-id="ce0ce-123">Limitations of devices that are enrolled with a DEM account</span></span>
+
+<span data-ttu-id="ce0ce-124">Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurden, gelten folgende Einschränkungen:</span><span class="sxs-lookup"><span data-stu-id="ce0ce-124">Devices that are enrolled with a device enrollment manager account have the following limitations:</span></span>
+
+  - <span data-ttu-id="ce0ce-125">Es gibt keinen speziellen „Gerätebenutzer“.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-125">There is no specific device "user."</span></span> <span data-ttu-id="ce0ce-126">Das heißt, es ist kein E-Mail-Zugriff und kein Zugriff auf Unternehmensdaten möglich.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-126">Therefore, there is no email or company data access.</span></span> <span data-ttu-id="ce0ce-127">Allerdings können z.B. die Geräte-Apps noch immer dazu verwendet werden, um über VPN auf Daten zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-127">However VPN, for example, could still be used to provide device apps with access to data.</span></span>
+
+  - <span data-ttu-id="ce0ce-128">Kein bedingter Zugriff, da dies benutzerspezifische Szenarien voraussetzen würde.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-128">There is no conditional access because these are per-user scenarios.</span></span>
+
+  - <span data-ttu-id="ce0ce-129">Der DEM-Benutzer kann die Registrierung von DEM-Geräten auf dem Gerät mit dem Unternehmensportal nicht aufheben.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-129">The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal.</span></span> <span data-ttu-id="ce0ce-130">Der Intune-Administrator hat diese Fähigkeit, der DEM-Benutzer jedoch nicht.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-130">The Intune admin has this capability, but the DEM user does not.</span></span>
+
+  - <span data-ttu-id="ce0ce-131">Nur das lokale Gerät erscheint in der Unternehmensportal-App oder -Website.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-131">Only the local device appears in the Company Portal app or website.</span></span>
+
+  - <span data-ttu-id="ce0ce-132">Benutzer können Apps aus dem Apple Volume Purchase Program (VPP) nicht verwenden, weil für die Verwaltung dieser Apps benutzerspezifische Apple-IDs erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-132">Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.</span></span>
+
+  - <span data-ttu-id="ce0ce-133">(Nur iOS) Wenn Sie DEM zur Registrierung von iOS-Geräten verwenden, können Sie Apple Configurator oder das Apple-Programm zur Geräteregistrierung nicht zum Registrieren von Geräten verwenden.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-133">(iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator or Apple Device Enrollment Program (DEP) to enroll devices.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ce0ce-134">Um Unternehmens-Apps auf Geräten bereitzustellen, die mit dem Geräteregistrierungs-Manager verwaltet werden, stellen Sie die Unternehmensportal-App als **erforderliche Installation** für das Benutzerkonto des Geräteregistrierungs-Managers bereit.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-134">To deploy company apps to devices that are managed by the device enrollment manager, deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.</span></span>
+> <span data-ttu-id="ce0ce-135">Zur Verbesserung der Leistung werden beim Anzeigen der Unternehmensportal-App auf einem mit dem Geräteregistrierungs-Manager verwalteten Gerät nur das lokale Gerät angezeigt.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-135">To improve performance, viewing the Company Portal app on a DEM device shows only the local device.</span></span> <span data-ttu-id="ce0ce-136">Für die Remoteverwaltung anderer vom Geräteregistrierungs-Manager verwalteter Geräte muss die Intune-Verwaltungskonsole verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-136">Remote management of other DEM devices can only be done from the Intune admin console.</span></span>
+
+
+## <a name="add-a-device-enrollment-manager"></a><span data-ttu-id="ce0ce-137">Hinzufügen eines Geräteregistrierungs-Managers</span><span class="sxs-lookup"><span data-stu-id="ce0ce-137">Add a device enrollment manager</span></span>
+
+1.  <span data-ttu-id="ce0ce-138">Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-138">Ensure that the user that you want to add to the DEM account already exists.</span></span> <span data-ttu-id="ce0ce-139">Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-139">If you need to add the user, sign in to the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).</span></span>
+
+2.  <span data-ttu-id="ce0ce-140">Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-140">Sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) with your admin credentials.</span></span>
+
+3.  <span data-ttu-id="ce0ce-141">Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-141">In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**.</span></span> <span data-ttu-id="ce0ce-142">Die Seite **Geräteregistrierungs-Manager** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-142">The **Device Enrollment Managers** page opens.</span></span>
+
+4.  <span data-ttu-id="ce0ce-143">Wählen Sie **Hinzufügen…** aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-143">Choose **Add…**.</span></span> <span data-ttu-id="ce0ce-144">Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-144">The **Add Device Enrollment Manager** dialog box opens.</span></span>
+
+5.  <span data-ttu-id="ce0ce-145">Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-145">Enter the **User ID** of the Intune account, and then choose **OK**.</span></span>
+
+    <span data-ttu-id="ce0ce-146">Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-146">The DEM user can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal.</span></span> <span data-ttu-id="ce0ce-147">Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-147">The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices.</span></span> <span data-ttu-id="ce0ce-148">Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:</span><span class="sxs-lookup"><span data-stu-id="ce0ce-148">For the end-user enrollment steps for each platform, see:</span></span>
+
+  - [<span data-ttu-id="ce0ce-149">Registrieren Ihres iOS-Geräts bei Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-149">Enroll your iOS device in Intune</span></span>](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+  - [<span data-ttu-id="ce0ce-150">Registrieren Ihres Mac OS-Geräts bei Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-150">Enroll your macOS device in Intune</span></span>](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+  - [<span data-ttu-id="ce0ce-151">Registrieren Ihres Android-Geräts bei Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-151">Enroll your Android device in Intune</span></span>](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+  - [<span data-ttu-id="ce0ce-152">Registrieren Ihres Windows-Geräts bei Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-152">Enroll your Windows device in Intune</span></span>](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+
+## <a name="delete-a-device-enrollment-manager-from-intune"></a><span data-ttu-id="ce0ce-153">Löschen eines Geräteregistrierungs-Managers aus Intune</span><span class="sxs-lookup"><span data-stu-id="ce0ce-153">Delete a device enrollment manager from Intune</span></span>
+
+1.  <span data-ttu-id="ce0ce-154">Melden Sie sich beim [Microsoft Intune-Verwaltungsportal](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-154">Sign in to the [Microsoft Intune admin portal](https://manage.microsoft.com) with your admin credentials.</span></span>
+
+2.  <span data-ttu-id="ce0ce-155">Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-155">In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**.</span></span> <span data-ttu-id="ce0ce-156">Die Seite **Geräteregistrierungs-Manager** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-156">The **Device Enrollment Managers** page opens.</span></span>
+
+3.  <span data-ttu-id="ce0ce-157">Wählen Sie den **Geräteregistrierungs-Managerbenutzer** aus, den Sie löschen möchten, und wählen Sie anschließend **Löschen** aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-157">Select the device enrollment manager **User** that you want to delete, and then choose **Delete**.</span></span> <span data-ttu-id="ce0ce-158">Dieser Benutzer wird nicht aus Intune gelöscht, und die Geräte, die diese Benutzer verwaltet, bleiben in Intune angemeldet.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-158">This user won’t be deleted from Intune, and the devices this user manages will remain enrolled in Intune.</span></span> <span data-ttu-id="ce0ce-159">Durch das Löschen eines Geräteregistrierungs-Manager wird verhindert, dass der Benutzer mehr Geräte in Intune registrieren kann.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-159">Deleting a device enrollment manager prevents that user from enrolling more devices in Intune.</span></span>
+
+4.  <span data-ttu-id="ce0ce-160">Wählen Sie **Ja** aus, um das Löschen des Geräteregistrierungs-Managers zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-160">Choose **Yes** to confirm that you want to delete the device enrollment manager.</span></span>
+
+<span data-ttu-id="ce0ce-161">Wenn Sie einen Geräteregistrierungs-Manager löschen, wirkt sich dies nicht auf registrierte Geräte aus.</span><span class="sxs-lookup"><span data-stu-id="ce0ce-161">Deleting a device enrollment manager does not affect enrolled devices.</span></span> <span data-ttu-id="ce0ce-162">Wenn ein Geräteregistrierungs-Manager gelöscht wird:</span><span class="sxs-lookup"><span data-stu-id="ce0ce-162">When a device enrollment manager is deleted:</span></span>
+
+-   <span data-ttu-id="ce0ce-163">sind keine registrierten Geräte betroffen</span><span class="sxs-lookup"><span data-stu-id="ce0ce-163">No enrolled devices are affected.</span></span>
+
+-   <span data-ttu-id="ce0ce-164">werden registrierte Geräte weiterhin vollständig verwaltet</span><span class="sxs-lookup"><span data-stu-id="ce0ce-164">Enrolled devices continue to be fully managed.</span></span>
+
+-   <span data-ttu-id="ce0ce-165">bleiben die gelöschten Kontoanmeldedaten für den Geräteregistrierungs-Manager für die Anmeldung beim Unternehmensportal zum Zugriff auf Apps gültig</span><span class="sxs-lookup"><span data-stu-id="ce0ce-165">The deleted device enrollment manager account credentials remain valid to sign in to the Company Portal to access apps.</span></span>
+
+-   <span data-ttu-id="ce0ce-166">können über die Kontoanmeldedaten für den Geräteregistrierungs-Manager weiterhin keine Geräte zurückgesetzt oder deaktiviert werden</span><span class="sxs-lookup"><span data-stu-id="ce0ce-166">The deleted device enrollment manager account credentials still cannot wipe or retire devices.</span></span>
+
+-   <span data-ttu-id="ce0ce-167">bleibt die Beziehung des gelöschten Geräteregistrierungs-Manager-Kontos zu registrierten Geräten bestehen, es können jedoch keine zusätzlichen Geräte registriert werden</span><span class="sxs-lookup"><span data-stu-id="ce0ce-167">The deleted device enrollment manager account’s relationship to enrolled devices remains, but no additional devices can be enrolled.</span></span>

@@ -15,33 +15,33 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 60c0c4b05899669a535e868992d15dcd36280333
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="install-zimperium-zips-on-your-ios-device"></a>Installieren Sie Zimperium zIPS auf Ihrem iOS-Gerät
+# <a name="install-zimperium-zips-on-your-ios-device"></a><span data-ttu-id="7e9e1-103">Installieren Sie Zimperium zIPS auf Ihrem iOS-Gerät</span><span class="sxs-lookup"><span data-stu-id="7e9e1-103">Install Zimperium zIPS on your iOS device</span></span>
 
-Damit Sie auf Ihre Arbeit zugreifen können, verlangt die Supportabteilung Ihres Unternehmens von Ihnen, dass Sie die Zimperium zIPS-App installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt. Möglicherweise werden auf Ihrem Gerät andere Aufforderungen angezeigt. Dies ist davon abhängig, wie Ihr Unternehmen Zimperium zIPS eingerichtet hat.
+<span data-ttu-id="7e9e1-104">Damit Sie auf Ihre Arbeit zugreifen können, verlangt die Supportabteilung Ihres Unternehmens von Ihnen, dass Sie die Zimperium zIPS-App installieren, die Ihr Gerät schützen soll, indem sie mögliche Sicherheitsbedrohungen erkennt.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-104">Before you can access your work, your company support needs you to install the Zimperium zIPS app, which helps to protect your device by finding potential security threats.</span></span> <span data-ttu-id="7e9e1-105">Möglicherweise werden auf Ihrem Gerät andere Aufforderungen angezeigt. Dies ist davon abhängig, wie Ihr Unternehmen Zimperium zIPS eingerichtet hat.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-105">You might see different prompts on your device, depending on how your company set up Zimperium zIPS.</span></span>
 
-## <a name="what-you-need-to-do"></a>Auszuführende Schritte 
+## <a name="what-you-need-to-do"></a><span data-ttu-id="7e9e1-106">Auszuführende Schritte</span><span class="sxs-lookup"><span data-stu-id="7e9e1-106">What you need to do</span></span> 
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Zimperium zIPS auf Ihrem Gerät zuzulassen.
+1.  <span data-ttu-id="7e9e1-107">Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Zimperium zIPS auf Ihrem Gerät zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-107">If you see a following prompt, tap **Install** to allow Zimperium zIPS to be installed on your device.</span></span>
 
-2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
+2. <span data-ttu-id="7e9e1-108">Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-108">When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.</span></span>
 
-3. Überprüfen Sie die Berechtigungen, die Zimperium zIPS benötigt, und tippen Sie auf **Weiter**.
+3. <span data-ttu-id="7e9e1-109">Überprüfen Sie die Berechtigungen, die Zimperium zIPS benötigt, und tippen Sie auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-109">Review the permissions that Zimperium zIPS needs, and tap **Continue**.</span></span>
 
-4. Tippen Sie bei der Frage, ob Sie Benachrichtigungen von Zimperium zIPS zulassen möchten, auf **Zulassen**.
+4. <span data-ttu-id="7e9e1-110">Tippen Sie bei der Frage, ob Sie Benachrichtigungen von Zimperium zIPS zulassen möchten, auf **Zulassen**.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-110">At the prompt asking you to allow Zimperium zIPS to send you notifications, tap **Allow**.</span></span>
 
-5. Zimperium zIPS schließt die Installation ab und zeigt die Willkommensseite an.
+5. <span data-ttu-id="7e9e1-111">Zimperium zIPS schließt die Installation ab und zeigt die Willkommensseite an.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-111">Zimperium zIPS finishes installing and shows you the welcome screen.</span></span>
 
-6. Sobald die Installation abgeschlossen ist, wird der folgende Bildschirm angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.
+6. <span data-ttu-id="7e9e1-112">Sobald die Installation abgeschlossen ist, wird der folgende Bildschirm angezeigt, wenn auf Ihrem Gerät keine Sicherheitsbedrohungen gefunden wurden.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-112">Once you've completed setup, you see the following screen if no security threats are found on your device.</span></span>
 
-Wenn Zimperium zIPS eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
+<span data-ttu-id="7e9e1-113">Wenn Zimperium zIPS eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-113">If Zimperium zIPS finds a security threat on your device, you will see instructions on how to fix the issue.</span></span>
 
-## <a name="if-the-installation-doesnt-work"></a>Wenn die Installation nicht funktioniert
+## <a name="if-the-installation-doesnt-work"></a><span data-ttu-id="7e9e1-114">Wenn die Installation nicht funktioniert</span><span class="sxs-lookup"><span data-stu-id="7e9e1-114">If the installation doesn't work</span></span>
 
-Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf. Sollte dies passieren, können Sie versuchen, Zimperium zIPS [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/zimperium-zips/id1030924459).
+<span data-ttu-id="7e9e1-115">Manchmal treten bei Installationen aufgrund technischer Probleme außerhalb Ihrer Kontrolle Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-115">Sometimes installations can fail due to technical issues beyond your control.</span></span> <span data-ttu-id="7e9e1-116">Sollte dies passieren, können Sie versuchen, Zimperium zIPS [manuell aus dem App Store zu installieren](https://itunes.apple.com/app/zimperium-zips/id1030924459).</span><span class="sxs-lookup"><span data-stu-id="7e9e1-116">If this happens, try installing Zimperium zIPS [manually from the App Store](https://itunes.apple.com/app/zimperium-zips/id1030924459).</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="7e9e1-117">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="7e9e1-117">Still need help?</span></span> <span data-ttu-id="7e9e1-118">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="7e9e1-118">Contact your company support.</span></span> <span data-ttu-id="7e9e1-119">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="7e9e1-119">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

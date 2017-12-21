@@ -1,1 +1,1 @@
-Telefonnummer bei Anruf von außerhalb der USA und Kanada: (609) 452-0606
+<span data-ttu-id="f0ff0-101">Telefonnummer bei Anruf von außerhalb der USA und Kanada: (609) 452-0606</span><span class="sxs-lookup"><span data-stu-id="f0ff0-101">Telephone number from outside the United States and Canada: (609) 452-0606</span></span>

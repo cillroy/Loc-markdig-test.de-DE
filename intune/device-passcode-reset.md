@@ -15,36 +15,36 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Zurücksetzen und Entfernen der Kennung auf von Intune verwalteten Geräten
+# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a><span data-ttu-id="05877-103">Zurücksetzen und Entfernen der Kennung auf von Intune verwalteten Geräten</span><span class="sxs-lookup"><span data-stu-id="05877-103">Reset and remove the passcode on Intune-managed devices</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Die Begriffe *entfernen* und *zurücksetzen* sind im Kontext dieses Artikels austauschbar.
+<span data-ttu-id="05877-104">Die Begriffe *entfernen* und *zurücksetzen* sind im Kontext dieses Artikels austauschbar.</span><span class="sxs-lookup"><span data-stu-id="05877-104">The terms *remove* and *reset* are used interchangeably in this article.</span></span>
 
-Durch die Aktion **Kennung entfernen** wird eine neue Kennung für das Gerät generiert, die auf dem Blatt <*Gerätename*> **Übersicht** angezeigt wird.
+<span data-ttu-id="05877-105">Durch die Aktion **Kennung entfernen** wird eine neue Kennung für das Gerät generiert, die auf dem Blatt <*Gerätename*> **Übersicht** angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="05877-105">The **Remove passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.</span></span>
 
-## <a name="supported-platforms"></a>Unterstützte Plattformen
+## <a name="supported-platforms"></a><span data-ttu-id="05877-106">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="05877-106">Supported platforms</span></span>
 
-- Windows – Nicht unterstützt
-- Windows Phone – Unterstützt unter Windows Phone 8.1 bis Windows 10 Creators Update nicht in Azure AD eingebunden, Windows 10 Creators Update und höher
-- iOS – Unterstützt
-- macOS – Nicht unterstützt
-- Android– Unterstützt für ältere Versionen vor Android 7. Android for Work wird nicht unterstützt.
+- <span data-ttu-id="05877-107">Windows – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="05877-107">Windows - Not supported</span></span>
+- <span data-ttu-id="05877-108">Windows Phone – Unterstützt unter Windows Phone 8.1 bis Windows 10 Creators Update nicht in Azure AD eingebunden, Windows 10 Creators Update und höher</span><span class="sxs-lookup"><span data-stu-id="05877-108">Windows Phone - Supported on Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later</span></span>
+- <span data-ttu-id="05877-109">iOS – Unterstützt</span><span class="sxs-lookup"><span data-stu-id="05877-109">iOS - Supported</span></span>
+- <span data-ttu-id="05877-110">macOS – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="05877-110">macOS - Not supported</span></span>
+- <span data-ttu-id="05877-111">Android– Unterstützt für ältere Versionen vor Android 7.</span><span class="sxs-lookup"><span data-stu-id="05877-111">Android - Supported on Android versions earlier than Android 7.</span></span> <span data-ttu-id="05877-112">Android for Work wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="05877-112">Android for Work is not supported.</span></span>
 
-## <a name="how-to-reset-a-passcode"></a>So setzen Sie eine Kennung zurück
+## <a name="how-to-reset-a-passcode"></a><span data-ttu-id="05877-113">So setzen Sie eine Kennung zurück</span><span class="sxs-lookup"><span data-stu-id="05877-113">How to reset a passcode</span></span>
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, und wählen Sie dann die Remotegeräteaktion **Kennung entfernen**.
+1. <span data-ttu-id="05877-114">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="05877-114">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="05877-115">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="05877-115">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="05877-116">Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="05877-116">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="05877-117">Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="05877-117">On the **Devices and groups** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="05877-118">Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, und wählen Sie dann die Remotegeräteaktion **Kennung entfernen**.</span><span class="sxs-lookup"><span data-stu-id="05877-118">From the list of devices you manage, choose a device, and then choose the **Remove passcode** device remote action.</span></span>
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a><span data-ttu-id="05877-119">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="05877-119">Next steps</span></span>
 
-Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.
+<span data-ttu-id="05877-120">Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="05877-120">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

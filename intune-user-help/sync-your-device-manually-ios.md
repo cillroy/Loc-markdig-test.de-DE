@@ -17,25 +17,25 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: c6ca3ec2279e9a80c8a3e91a742c1f766630580c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="sync-your-ios-device-manually"></a>Manuelles Synchronisieren des iOS-Geräts
+# <a name="sync-your-ios-device-manually"></a><span data-ttu-id="4036d-102">Manuelles Synchronisieren des iOS-Geräts</span><span class="sxs-lookup"><span data-stu-id="4036d-102">Sync your iOS device manually</span></span>
 
-Manchmal kann es zu lange dauern, bis Ihre App aus dem Unternehmensportal heruntergeladen wird. In diesem Fall können Sie versuchen, Ihr Gerät manuell zu synchronisieren. Das bedeutet, dass Sie Ihr Gerät dazu auffordern, noch einmal zu versuchen, die Informationen herunterzuladen, bei denen es sich zuvor schwer getan hat.
+<span data-ttu-id="4036d-103">Manchmal kann es zu lange dauern, bis Ihre App aus dem Unternehmensportal heruntergeladen wird.</span><span class="sxs-lookup"><span data-stu-id="4036d-103">Sometimes an app may take too long to download from the Company Portal.</span></span> <span data-ttu-id="4036d-104">In diesem Fall können Sie versuchen, Ihr Gerät manuell zu synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="4036d-104">If this happens to you, you can try to manually sync your device.</span></span> <span data-ttu-id="4036d-105">Das bedeutet, dass Sie Ihr Gerät dazu auffordern, noch einmal zu versuchen, die Informationen herunterzuladen, bei denen es sich zuvor schwer getan hat.</span><span class="sxs-lookup"><span data-stu-id="4036d-105">This means that you are telling your device to try again to get the information it may be struggling to download.</span></span>
 
-1. Öffnen Sie die Unternehmensportal-App.
+1. <span data-ttu-id="4036d-106">Öffnen Sie die Unternehmensportal-App.</span><span class="sxs-lookup"><span data-stu-id="4036d-106">Open the Company Portal app.</span></span>
 
-2. Wählen Sie im Abschnitt **Meine Geräte** das derzeit verwendete Gerät aus. Dies ist die Kachel, die sich ganz links befindet. Es ist ebenfalls ein Häkchen darauf zu sehen.
+2. <span data-ttu-id="4036d-107">Wählen Sie im Abschnitt **Meine Geräte** das derzeit verwendete Gerät aus.</span><span class="sxs-lookup"><span data-stu-id="4036d-107">In the **My Devices** section, choose the device that you are currently using.</span></span> <span data-ttu-id="4036d-108">Dies ist die Kachel, die sich ganz links befindet. Es ist ebenfalls ein Häkchen darauf zu sehen.</span><span class="sxs-lookup"><span data-stu-id="4036d-108">This is the leftmost device tile - it also has a checkmark on it.</span></span>
 
     ![Der Bildschirm mit dem Abschnitt „Meine Geräte“](./media/ios-sync-1-comp-portal-apps.png)
 
-3. Tippen Sie unten rechts auf dem Bildschirm auf die Schaltfläche **Sync**.
+3. <span data-ttu-id="4036d-110">Tippen Sie unten rechts auf dem Bildschirm auf die Schaltfläche **Sync**.</span><span class="sxs-lookup"><span data-stu-id="4036d-110">Tap the **Sync** button at the bottom right of the screen.</span></span>
 
     ![Gerätedetails mit der Schaltfläche „Synchronisierung“](./media/ios-sync-2-sync-button.png)
 
-Es wird ein Ladebalken auf dem Bildschirm angezeigt, und es wird geladen, bis die Synchronisation abgeschlossen ist.
+<span data-ttu-id="4036d-112">Es wird ein Ladebalken auf dem Bildschirm angezeigt, und es wird geladen, bis die Synchronisation abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="4036d-112">A loading bar will appear on the screen and will load until the sync is finished.</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="4036d-113">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="4036d-113">Still need help?</span></span> <span data-ttu-id="4036d-114">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="4036d-114">Contact your company support.</span></span> <span data-ttu-id="4036d-115">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="4036d-115">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

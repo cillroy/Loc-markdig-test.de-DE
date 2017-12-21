@@ -15,43 +15,43 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
+# <a name="intune-data-warehouse-api-endpoint"></a><span data-ttu-id="6e466-104">Endpunkt der Intune Data Warehouse-API</span><span class="sxs-lookup"><span data-stu-id="6e466-104">Intune Data Warehouse API endpoint</span></span>
 
-Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenbasierten Zugriffssteuerungen und Azure AD-Anmeldeinformationen verwenden. Anschließend autorisieren Sie Ihren REST-Client mithilfe von OAuth 2.0 für Azure AD. Schließlich erstellen Sie eine aussagekräftige URL, um eine Data Warehouse-Ressource aufzurufen.
+<span data-ttu-id="6e466-105">Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenbasierten Zugriffssteuerungen und Azure AD-Anmeldeinformationen verwenden.</span><span class="sxs-lookup"><span data-stu-id="6e466-105">You can use the Intune Data Warehouse API with an account with specific role-based access controls and Azure AD credentials.</span></span> <span data-ttu-id="6e466-106">Anschließend autorisieren Sie Ihren REST-Client mithilfe von OAuth 2.0 für Azure AD.</span><span class="sxs-lookup"><span data-stu-id="6e466-106">You will then authorize your REST client with Azure AD using OAuth 2.0.</span></span> <span data-ttu-id="6e466-107">Schließlich erstellen Sie eine aussagekräftige URL, um eine Data Warehouse-Ressource aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="6e466-107">And finally, you will form a meaningful URL to call a data warehouse resource.</span></span>
 
 [!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>Autorisierung
+## <a name="authorization"></a><span data-ttu-id="6e466-108">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="6e466-108">Authorization</span></span>
 
-Azure Active Directory (Azure AD) bietet Ihnen über OAuth 2.0 die Möglichkeit, den Zugriff auf Webanwendungen und Web-APIs in Ihrem Azure AD-Mandanten zu autorisieren. Dieses Handbuch ist sprachenunabhängig und beschreibt, wie HTTP-Nachrichten gesendet und empfangen werden können, ohne irgendeine unserer Open Source-Bibliotheken zu verwenden. Der Codefluss zur Autorisierung mit OAuth 2.0 wird in [section 4.1 (Abschnitt 4.1)](https://tools.ietf.org/html/rfc6749#section-4.1) der OAuth 2.0-Spezifikation beschrieben.
+<span data-ttu-id="6e466-109">Azure Active Directory (Azure AD) bietet Ihnen über OAuth 2.0 die Möglichkeit, den Zugriff auf Webanwendungen und Web-APIs in Ihrem Azure AD-Mandanten zu autorisieren.</span><span class="sxs-lookup"><span data-stu-id="6e466-109">Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize access to web applications and web APIs in your Azure AD tenant.</span></span> <span data-ttu-id="6e466-110">Dieses Handbuch ist sprachenunabhängig und beschreibt, wie HTTP-Nachrichten gesendet und empfangen werden können, ohne irgendeine unserer Open Source-Bibliotheken zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="6e466-110">This guide is language independent, and describes how to send and receive HTTP messages without using any of our open-source libraries.</span></span> <span data-ttu-id="6e466-111">Der Codefluss zur Autorisierung mit OAuth 2.0 wird in [section 4.1 (Abschnitt 4.1)](https://tools.ietf.org/html/rfc6749#section-4.1) der OAuth 2.0-Spezifikation beschrieben.</span><span class="sxs-lookup"><span data-stu-id="6e466-111">The OAuth 2.0 authorization code flow is described in [section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1) of the OAuth 2.0 specification.</span></span>
 
-Weitere Informationen finden Sie unter [Authorize access to web applications using OAuth 2.0 and Azure Active Directory (Autorisieren des Zugriffs zu Webanwendungen mithilfe von OAuth 2.0 und Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
+<span data-ttu-id="6e466-112">Weitere Informationen finden Sie unter [Authorize access to web applications using OAuth 2.0 and Azure Active Directory (Autorisieren des Zugriffs zu Webanwendungen mithilfe von OAuth 2.0 und Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="6e466-112">For more information, see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).</span></span>
 
-## <a name="api-url-structure"></a>API-URL-Struktur
+## <a name="api-url-structure"></a><span data-ttu-id="6e466-113">API-URL-Struktur</span><span class="sxs-lookup"><span data-stu-id="6e466-113">API URL structure</span></span>
 
-Die Endpunkte der Data Warehouse-API lesen die Entitäten für jeden Satz. Die API unterstützt ein **GET** HTTP-Verb und eine Teilmenge der Abfrageoptionen.
+<span data-ttu-id="6e466-114">Die Endpunkte der Data Warehouse-API lesen die Entitäten für jeden Satz.</span><span class="sxs-lookup"><span data-stu-id="6e466-114">The Data Warehouse API endpoints read the entities for each set.</span></span> <span data-ttu-id="6e466-115">Die API unterstützt ein **GET** HTTP-Verb und eine Teilmenge der Abfrageoptionen.</span><span class="sxs-lookup"><span data-stu-id="6e466-115">The API supports a **GET** HTTP verb, and a subset of query options.</span></span>
 
-Die URL für Intune verwendet das folgende Format:  
-https://fef.{***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/ {***Entitätssammlung***}? api-Version = {***-API-Version***}
+<span data-ttu-id="6e466-116">Die URL für Intune verwendet das folgende Format:</span><span class="sxs-lookup"><span data-stu-id="6e466-116">The URL for Intune uses the following format:</span></span>  
+<span data-ttu-id="6e466-117">https://fef. {***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/ {***Entitätssammlung***}? api-Version = {***-API-Version***}</span><span class="sxs-lookup"><span data-stu-id="6e466-117">https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}</span></span>
 
-Die URL enthält die folgenden Elemente:
+<span data-ttu-id="6e466-118">Die URL enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="6e466-118">The URL contains the following elements:</span></span>
 
-| Element | Beispiel | Beschreibung |
+| <span data-ttu-id="6e466-119">Element</span><span class="sxs-lookup"><span data-stu-id="6e466-119">Element</span></span> | <span data-ttu-id="6e466-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6e466-120">Example</span></span> | <span data-ttu-id="6e466-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6e466-121">Description</span></span> |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
-| location | msua06 | Die Basis-URL kann im Blatt „Data Warehouse API“ im Azure Portal gefunden werden. |
-| Entitätssammlung | Daten | Der Name der OData-Entitätssammlung. Weitere Informationen zu Sammlungen und Entitäten im Datenmodell finden Sie unter [Data Model (Datenmodell)](reports-ref-data-model.md). |
-| api-version | Beta | Die Version ist die Version der API, auf die zugegriffen wird. Weitere Informationen finden Sie unter [Version](#API-version-information). |
+| <span data-ttu-id="6e466-122">location</span><span class="sxs-lookup"><span data-stu-id="6e466-122">location</span></span> | <span data-ttu-id="6e466-123">msua06</span><span class="sxs-lookup"><span data-stu-id="6e466-123">msua06</span></span> | <span data-ttu-id="6e466-124">Die Basis-URL kann im Blatt „Data Warehouse API“ im Azure Portal gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="6e466-124">The base URL can be found by viewing the Data Warehouse API blade in the Azure portal.</span></span> |
+| <span data-ttu-id="6e466-125">Entitätssammlung</span><span class="sxs-lookup"><span data-stu-id="6e466-125">entity-collection</span></span> | <span data-ttu-id="6e466-126">Daten</span><span class="sxs-lookup"><span data-stu-id="6e466-126">dates</span></span> | <span data-ttu-id="6e466-127">Der Name der OData-Entitätssammlung.</span><span class="sxs-lookup"><span data-stu-id="6e466-127">The name of the OData entity collection.</span></span> <span data-ttu-id="6e466-128">Weitere Informationen zu Sammlungen und Entitäten im Datenmodell finden Sie unter [Data Model (Datenmodell)](reports-ref-data-model.md).</span><span class="sxs-lookup"><span data-stu-id="6e466-128">For more information on collections and entities in the data model, see [Data Model](reports-ref-data-model.md).</span></span> |
+| <span data-ttu-id="6e466-129">api-version</span><span class="sxs-lookup"><span data-stu-id="6e466-129">api-version</span></span> | <span data-ttu-id="6e466-130">Beta</span><span class="sxs-lookup"><span data-stu-id="6e466-130">beta</span></span> | <span data-ttu-id="6e466-131">Die Version ist die Version der API, auf die zugegriffen wird.</span><span class="sxs-lookup"><span data-stu-id="6e466-131">Version is the version of the API to access.</span></span> <span data-ttu-id="6e466-132">Weitere Informationen finden Sie unter [Version](#API-version-information).</span><span class="sxs-lookup"><span data-stu-id="6e466-132">For more information, see [Version](#API-version-information).</span></span> |
 
 
-## <a name="api-version-information"></a>Information zur API-Version
+## <a name="api-version-information"></a><span data-ttu-id="6e466-133">Information zur API-Version</span><span class="sxs-lookup"><span data-stu-id="6e466-133">API version information</span></span>
 
-Die aktuelle Version der API ist `beta`. 
+<span data-ttu-id="6e466-134">Die aktuelle Version der API ist `beta`.</span><span class="sxs-lookup"><span data-stu-id="6e466-134">The current version of the API is: `beta`.</span></span> 
 
-## <a name="odata-query-options"></a>OData-Abfrageoptionen
+## <a name="odata-query-options"></a><span data-ttu-id="6e466-135">OData-Abfrageoptionen</span><span class="sxs-lookup"><span data-stu-id="6e466-135">OData query options</span></span>
 
-Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter, $orderby, $select, $skip,` und `$top`.
+<span data-ttu-id="6e466-136">Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter, $orderby, $select, $skip,` und `$top`.</span><span class="sxs-lookup"><span data-stu-id="6e466-136">The current version supports the following OData query parameters: `$filter, $orderby, $select, $skip,` and `$top`.</span></span>

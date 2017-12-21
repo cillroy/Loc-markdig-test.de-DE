@@ -1,1 +1,1 @@
-Falls Sie taub oder schwerhörig sind, ist der vollständige Zugang zum Microsoft-Produkt- und Kundendienst über einen Texttelefondienst (TTY/TDD) verfügbar:
+<span data-ttu-id="f86fb-101">Falls Sie taub oder schwerhörig sind, ist der vollständige Zugang zum Microsoft-Produkt- und Kundendienst über einen Texttelefondienst (TTY/TDD) verfügbar:</span><span class="sxs-lookup"><span data-stu-id="f86fb-101">If you are deaf or hard-of-hearing, complete access to Microsoft product and customer services is available through a text telephone (TTY/TDD) service:</span></span>

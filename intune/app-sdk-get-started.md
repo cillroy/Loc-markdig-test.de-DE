@@ -15,176 +15,176 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
+# <a name="get-started-with-the-microsoft-intune-app-sdk"></a><span data-ttu-id="474af-103">Erste Schritte mit dem Microsoft Intune App SDK</span><span class="sxs-lookup"><span data-stu-id="474af-103">Get started with the Microsoft Intune App SDK</span></span>
 
-Dieser Leitfaden unterstützt Sie dabei, Ihre mobile App schnell für App-Schutzrichtlinien mit Microsoft Intune einzurichten. Unter Umständen ist es ratsam, sich zuerst in der [Übersicht über das Intune App SDK](app-sdk.md) mit den Vorteilen des Intune App SDK vertraut machen.
+<span data-ttu-id="474af-104">Dieser Leitfaden unterstützt Sie dabei, Ihre mobile App schnell für App-Schutzrichtlinien mit Microsoft Intune einzurichten.</span><span class="sxs-lookup"><span data-stu-id="474af-104">This guide will help you quickly enable your mobile app for app protection policies with Microsoft Intune.</span></span> <span data-ttu-id="474af-105">Unter Umständen ist es ratsam, sich zuerst in der [Übersicht über das Intune App SDK](app-sdk.md) mit den Vorteilen des Intune App SDK vertraut machen.</span><span class="sxs-lookup"><span data-stu-id="474af-105">You may find it useful to first understand the benefits of the Intune App SDK, as explained in the [Intune App SDK overview](app-sdk.md).</span></span>
 
-Das Intune App SDK unterstützt ähnliche Szenarien auf ios- und Android-Plattformen und bietet dem IT-Administrator eine plattformübergreifend konsistente Umgebung. Bei der Unterstützung bestimmter Funktionen gibt es jedoch geringfügige Unterschiede, die auf Einschränkungen der jeweiligen Plattform zurückzuführen sind.
+<span data-ttu-id="474af-106">Das Intune App SDK unterstützt ähnliche Szenarien auf ios- und Android-Plattformen und bietet dem IT-Administrator eine plattformübergreifend konsistente Umgebung.</span><span class="sxs-lookup"><span data-stu-id="474af-106">The Intune App SDK supports similar scenarios across iOS and Android, and is intended to create a consistent experience across the platforms for IT admins.</span></span> <span data-ttu-id="474af-107">Bei der Unterstützung bestimmter Funktionen gibt es jedoch geringfügige Unterschiede, die auf Einschränkungen der jeweiligen Plattform zurückzuführen sind.</span><span class="sxs-lookup"><span data-stu-id="474af-107">But there are small differences in the support of certain features, because of platform limitations.</span></span>
 
-## <a name="register-your-store-app-with-microsoft"></a>Registrieren Ihrer Store-App bei Microsoft
+## <a name="register-your-store-app-with-microsoft"></a><span data-ttu-id="474af-108">Registrieren Ihrer Store-App bei Microsoft</span><span class="sxs-lookup"><span data-stu-id="474af-108">Register your store app with Microsoft</span></span>
 
-### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Wenn Ihre App für Ihre Organisation intern ist und nicht öffentlich verfügbar sein wird:
+### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a><span data-ttu-id="474af-109">Wenn Ihre App für Ihre Organisation intern ist und nicht öffentlich verfügbar sein wird:</span><span class="sxs-lookup"><span data-stu-id="474af-109">If your app is internal to your organization and will not be publicly available:</span></span>
 
-Dann muss die App *nicht* registriert werden. Branchenspezifische Apps werden vom IT-Administrator intern bereitgestellt. Intune erkennt, dass die App mit dem SDK erstellt wurde, und ermöglicht dem IT-Administrator das Anwenden von App-Schutzrichtlinien auf die App. Sie können zum Abschnitt [Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie](#enable-your-iOS-or-Android-app-for-app-protection-policy) wechseln.
+<span data-ttu-id="474af-110">Dann muss die App *nicht* registriert werden.</span><span class="sxs-lookup"><span data-stu-id="474af-110">You *do not need* to register your app.</span></span> <span data-ttu-id="474af-111">Branchenspezifische Apps werden vom IT-Administrator intern bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="474af-111">For internal line-of-business apps, the IT administrator will deploy the app internally.</span></span> <span data-ttu-id="474af-112">Intune erkennt, dass die App mit dem SDK erstellt wurde, und ermöglicht dem IT-Administrator das Anwenden von App-Schutzrichtlinien auf die App.</span><span class="sxs-lookup"><span data-stu-id="474af-112">Intune will detect that the app has been built with the SDK, and will let the IT administrator apply app protection policy to it.</span></span> <span data-ttu-id="474af-113">Sie können zum Abschnitt [Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie](#enable-your-iOS-or-Android-app-for-app-protection-policy) wechseln.</span><span class="sxs-lookup"><span data-stu-id="474af-113">You can skip to the section [Enable your iOS or Android app for app protection policy](#enable-your-iOS-or-Android-app-for-app-protection-policy).</span></span>
 
-### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Wenn Ihre App in einem öffentlichen App Store (z.B. Apple App Store oder Google Play) freigegeben wird, gilt Folgendes:
+### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a><span data-ttu-id="474af-114">Wenn Ihre App in einem öffentlichen App Store (z.B. Apple App Store oder Google Play) freigegeben wird, gilt Folgendes:</span><span class="sxs-lookup"><span data-stu-id="474af-114">If your app will be released to a public app store, like the Apple App Store or Google Play:</span></span>
 
-Sie _**müssen**_ Ihre App zuerst bei Microsoft Intune registrieren und den Registrierungsbedingungen zustimmen. Danach können IT-Administratoren die App-Schutzrichtlinie auf die entsprechend aktivierte App anwenden, die als Intune-Partner-App aufgelistet wird.
+<span data-ttu-id="474af-115">Sie _**müssen**_ Ihre App zuerst bei Microsoft Intune registrieren und den Registrierungsbedingungen zustimmen.</span><span class="sxs-lookup"><span data-stu-id="474af-115">You _**must**_ first register your app with Microsoft Intune and agree to the registration terms.</span></span> <span data-ttu-id="474af-116">Danach können IT-Administratoren die App-Schutzrichtlinie auf die entsprechend aktivierte App anwenden, die als Intune-Partner-App aufgelistet wird.</span><span class="sxs-lookup"><span data-stu-id="474af-116">IT administrators can then apply app protection policy to the enlightened app, which will be listed as an Intune app partner.</span></span>
 
-Solange die Registrierung nicht abgeschlossen ist und vom Microsoft Intune-Team bestätigt wurde, können Intune-Administratoren dem Deep-Link der App keine App-Schutzrichtlinie zuweisen. Microsoft fügt Ihre App auch zur Seite der [Microsoft Intune-Partner](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hinzu. Dort wird das Symbol der App angezeigt, um anzugeben, dass sie die App-Schutzrichtlinien von Intune unterstützt.
+<span data-ttu-id="474af-117">Solange die Registrierung nicht abgeschlossen ist und vom Microsoft Intune-Team bestätigt wurde, können Intune-Administratoren dem Deep-Link der App keine App-Schutzrichtlinie zuweisen.</span><span class="sxs-lookup"><span data-stu-id="474af-117">Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link.</span></span> <span data-ttu-id="474af-118">Microsoft fügt Ihre App auch zur Seite der [Microsoft Intune-Partner](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hinzu.</span><span class="sxs-lookup"><span data-stu-id="474af-118">Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).</span></span> <span data-ttu-id="474af-119">Dort wird das Symbol der App angezeigt, um anzugeben, dass sie die App-Schutzrichtlinien von Intune unterstützt.</span><span class="sxs-lookup"><span data-stu-id="474af-119">There, the app's icon will be displayed to show that it supports Intune app protection policies.</span></span>
 
-Zu Beginn des Registrierungsvorgangs müssen Sie den [Fragebogen für Microsoft Intune-App-Partner](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u) ausfüllen.
+<span data-ttu-id="474af-120">Zu Beginn des Registrierungsvorgangs müssen Sie den [Fragebogen für Microsoft Intune-App-Partner](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u) ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="474af-120">To begin the registration process, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).</span></span>
 
-Die auf dem ausgefüllten Fragebogen angegebenen E-Mail-Adressen werden verwendet, um sich mit Ihnen in Verbindung zu setzen und damit den Registrierungsprozess fortzusetzen. Über diese E-Mail-Adresse nehmen wir bei Fragen oder Problemen auch Kontakt mit Ihnen auf.
-
-> [!NOTE]
-> Alle Daten, die in diesem Fragebogen oder in der E-Mail-Korrespondenz mit dem Microsoft Intune-Team erfasst werden, unterliegen der [Microsoft-Datenschutzrichtlinie](https://www.microsoft.com/privacystatement/default.aspx).
-
-**Informationen zum Registrierungsvorgang**:
-
-1. Nachdem Sie den Fragebogen gesendet haben, setzen wir uns über die dort angegebene E-Mail-Adresse mit Ihnen in Verbindung, um den erfolgreichen Eingang zu bestätigen oder zusätzliche Informationen anzufordern, damit die Registrierung abgeschlossen werden kann.
-
-2. Nachdem wir alle erforderlichen Informationen von Ihnen erhalten haben, senden wir Ihnen die Vereinbarung für Microsoft Intune-App-Partner zum Unterschreiben zu. Diese Vereinbarung enthält die Bedingungen, denen Ihr Unternehmen zustimmen muss, bevor es Microsoft Intune-App-Partner werden kann.
-
-3. Sie werden ebenso benachrichtigt, wenn Ihre App erfolgreich beim Microsoft Intune-Dienst registriert wurde und auf der [Microsoft Intune-Partnerwebsite](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) empfohlen wird.
-
-4. Schließlich wird der Deep-Link Ihrer App zum nächsten monatlichen Intune-Dienstupdate hinzugefügt. Wenn die Registrierung mit allen Informationen beispielsweise im Juli abgeschlossen ist, wird der Deep-Link ab Mitte August unterstützt.
-
-Wenn sich der Deep-Link Ihrer App zu einem späteren Zeitpunkt ändert, müssen Sie Ihre App neu registrieren.
+<span data-ttu-id="474af-121">Die auf dem ausgefüllten Fragebogen angegebenen E-Mail-Adressen werden verwendet, um sich mit Ihnen in Verbindung zu setzen und damit den Registrierungsprozess fortzusetzen.</span><span class="sxs-lookup"><span data-stu-id="474af-121">We will use the email addresses listed in your questionnaire response to reach out and continue the registration process.</span></span> <span data-ttu-id="474af-122">Über diese E-Mail-Adresse nehmen wir bei Fragen oder Problemen auch Kontakt mit Ihnen auf.</span><span class="sxs-lookup"><span data-stu-id="474af-122">Additionally, we use your registration email address to contact you if we have any concerns.</span></span>
 
 > [!NOTE]
-> Außerdem müssen Sie uns informieren, wenn Sie Ihre App mit einer neuen Intune App SDK-Version aktualisieren.
+> <span data-ttu-id="474af-123">Alle Daten, die in diesem Fragebogen oder in der E-Mail-Korrespondenz mit dem Microsoft Intune-Team erfasst werden, unterliegen der [Microsoft-Datenschutzrichtlinie](https://www.microsoft.com/privacystatement/default.aspx).</span><span class="sxs-lookup"><span data-stu-id="474af-123">All information collected in the questionnaire and through email correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/privacystatement/default.aspx).</span></span>
+
+<span data-ttu-id="474af-124">**Informationen zum Registrierungsvorgang**:</span><span class="sxs-lookup"><span data-stu-id="474af-124">**What to expect in the registration process**:</span></span>
+
+1. <span data-ttu-id="474af-125">Nachdem Sie den Fragebogen gesendet haben, setzen wir uns über die dort angegebene E-Mail-Adresse mit Ihnen in Verbindung, um den erfolgreichen Eingang zu bestätigen oder zusätzliche Informationen anzufordern, damit die Registrierung abgeschlossen werden kann.</span><span class="sxs-lookup"><span data-stu-id="474af-125">After you have submitted the questionnaire, we will contact you via your registration email address, to either confirm successful receipt or request additional information to finish the registration.</span></span>
+
+2. <span data-ttu-id="474af-126">Nachdem wir alle erforderlichen Informationen von Ihnen erhalten haben, senden wir Ihnen die Vereinbarung für Microsoft Intune-App-Partner zum Unterschreiben zu.</span><span class="sxs-lookup"><span data-stu-id="474af-126">After we receive all necessary information from you, we will send you the Microsoft Intune App Partner Agreement to sign.</span></span> <span data-ttu-id="474af-127">Diese Vereinbarung enthält die Bedingungen, denen Ihr Unternehmen zustimmen muss, bevor es Microsoft Intune-App-Partner werden kann.</span><span class="sxs-lookup"><span data-stu-id="474af-127">This agreement describes the terms that your company must accept before it becomes a Microsoft Intune app partner.</span></span>
+
+3. <span data-ttu-id="474af-128">Sie werden ebenso benachrichtigt, wenn Ihre App erfolgreich beim Microsoft Intune-Dienst registriert wurde und auf der [Microsoft Intune-Partnerwebsite](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) empfohlen wird.</span><span class="sxs-lookup"><span data-stu-id="474af-128">You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) site.</span></span>
+
+4. <span data-ttu-id="474af-129">Schließlich wird der Deep-Link Ihrer App zum nächsten monatlichen Intune-Dienstupdate hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="474af-129">Finally, your app's deep link will be added to the next monthly Intune Service update.</span></span> <span data-ttu-id="474af-130">Wenn die Registrierung mit allen Informationen beispielsweise im Juli abgeschlossen ist, wird der Deep-Link ab Mitte August unterstützt.</span><span class="sxs-lookup"><span data-stu-id="474af-130">For example, if the registration information is finished in July, the deep link will be supported in mid-August.</span></span>
+
+<span data-ttu-id="474af-131">Wenn sich der Deep-Link Ihrer App zu einem späteren Zeitpunkt ändert, müssen Sie Ihre App neu registrieren.</span><span class="sxs-lookup"><span data-stu-id="474af-131">If your app's deep link changes in the future, you will need to re-register your app.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="474af-132">Außerdem müssen Sie uns informieren, wenn Sie Ihre App mit einer neuen Intune App SDK-Version aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="474af-132">Please inform us if you update your app with a new version of the Intune App SDK.</span></span>
 
 
 
-## <a name="download-the-sdk-files"></a>Herunterladen der SDK-Dateien
+## <a name="download-the-sdk-files"></a><span data-ttu-id="474af-133">Herunterladen der SDK-Dateien</span><span class="sxs-lookup"><span data-stu-id="474af-133">Download the SDK files</span></span>
 
-Die Intune App SDKs für natives iOS und Android werden auf einem Microsoft-GitHub-Konto gehostet. Die folgenden öffentlichen Repositorys enthalten die SDK-Dateien für natives iOS und Android:
+<span data-ttu-id="474af-134">Die Intune App SDKs für natives iOS und Android werden auf einem Microsoft-GitHub-Konto gehostet.</span><span class="sxs-lookup"><span data-stu-id="474af-134">The Intune App SDKs for native iOS and Android are hosted on a Microsoft GitHub account.</span></span> <span data-ttu-id="474af-135">Die folgenden öffentlichen Repositorys enthalten die SDK-Dateien für natives iOS und Android:</span><span class="sxs-lookup"><span data-stu-id="474af-135">These public repositories have the SDK files for native iOS and Android, respectively:</span></span>
 
-* [Intune App SDK für iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
-* [Intune App SDK für Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+* [<span data-ttu-id="474af-136">Intune App SDK für iOS</span><span class="sxs-lookup"><span data-stu-id="474af-136">Intune App SDK for iOS</span></span>](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [<span data-ttu-id="474af-137">Intune App SDK für Android</span><span class="sxs-lookup"><span data-stu-id="474af-137">Intune App SDK for Android</span></span>](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Wenn Ihre App eine Xamarin- oder Cordova-App ist, verwenden Sie diese SDK-Varianten:
+<span data-ttu-id="474af-138">Wenn Ihre App eine Xamarin- oder Cordova-App ist, verwenden Sie diese SDK-Varianten:</span><span class="sxs-lookup"><span data-stu-id="474af-138">If your app is a Xamarin or Cordova app, please use these SDK variants:</span></span>
 
-* [Intune App SDK-Xamarin-Komponente](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune App SDK-Cordova-Plug-In](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+* [<span data-ttu-id="474af-139">Intune App SDK-Xamarin-Komponente</span><span class="sxs-lookup"><span data-stu-id="474af-139">Intune App SDK Xamarin Component</span></span>](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [<span data-ttu-id="474af-140">Intune App SDK-Cordova-Plug-In</span><span class="sxs-lookup"><span data-stu-id="474af-140">Intune App SDK Cordova Plugin</span></span>](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
-Es wird empfohlen, sich für ein GitHub-Konto zu registrieren, mit dem Sie Fork- und Pullfunktionen für unsere Repositorys verwenden können. GitHub bietet Entwicklern die Möglichkeit, mit unserem Produktteam zu kommunizieren, Probleme zu melden und schnelle Antworten zu erhalten, Versionshinweise anzuzeigen und Feedback an Microsoft zu senden. Bei Fragen zu Intune App SDK GitHub wenden Sie sich an msintuneappsdk@microsoft.com.
-
-
+<span data-ttu-id="474af-141">Es wird empfohlen, sich für ein GitHub-Konto zu registrieren, mit dem Sie Fork- und Pullfunktionen für unsere Repositorys verwenden können.</span><span class="sxs-lookup"><span data-stu-id="474af-141">It's a good idea to sign up for a GitHub account that you can use to fork and pull from our repositories.</span></span> <span data-ttu-id="474af-142">GitHub bietet Entwicklern die Möglichkeit, mit unserem Produktteam zu kommunizieren, Probleme zu melden und schnelle Antworten zu erhalten, Versionshinweise anzuzeigen und Feedback an Microsoft zu senden.</span><span class="sxs-lookup"><span data-stu-id="474af-142">GitHub lets developers communicate with our product team, open issues and receive quick responses, view release notes, and provide feedback to Microsoft.</span></span> <span data-ttu-id="474af-143">Bei Fragen zu Intune App SDK GitHub wenden Sie sich an msintuneappsdk@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="474af-143">For questions on the Intune App SDK GitHub, contact msintuneappsdk@microsoft.com.</span></span>
 
 
 
-## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie
-
-Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intune App SDK in Ihre App:
-
-* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
-
-* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
-
-* **[Leitfaden für das Intune App SDK Cordova-Plug-In](app-sdk-cordova.md)**: Dieses Dokument hilft Ihnen beim Erstellen von IOS- und Android-Apps mithilfe von Cordova für Intune-App-Schutzrichtlinien.
-
-* **[Leitfaden für das Intune App SDK Xamarin-Komponenten](app-sdk-xamarin.md)**: Dieses Dokument hilft Ihnen beim Erstellen von IOS- und Android-Apps mithilfe von Cordova für Intune-App-Schutzrichtlinien.
 
 
+## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a><span data-ttu-id="474af-144">Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie</span><span class="sxs-lookup"><span data-stu-id="474af-144">Enable your iOS or Android app for app protection policy</span></span>
 
-## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Aktivieren Ihrer iOS- oder Android-App für den App-basierten bedingten Zugriff
+<span data-ttu-id="474af-145">Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intune App SDK in Ihre App:</span><span class="sxs-lookup"><span data-stu-id="474af-145">You will need one of the following developer guides to help you integrate the Intune App SDK into your app:</span></span>
+
+* <span data-ttu-id="474af-146">**[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.</span><span class="sxs-lookup"><span data-stu-id="474af-146">**[Intune App SDK for iOS Developer Guide](app-sdk-ios.md)**: This document will walk you step-by-step through enabling your native iOS app with the Intune App SDK.</span></span>
+
+* <span data-ttu-id="474af-147">**[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.</span><span class="sxs-lookup"><span data-stu-id="474af-147">**[Intune App SDK for Android Developer Guide](app-sdk-android.md)**: This document will walk you step-by-step through enabling your native Android app with the Intune App SDK.</span></span>
+
+* <span data-ttu-id="474af-148">**[Leitfaden für das Intune App SDK Cordova-Plug-In](app-sdk-cordova.md)**: Dieses Dokument hilft Ihnen beim Erstellen von IOS- und Android-Apps mithilfe von Cordova für Intune-App-Schutzrichtlinien.</span><span class="sxs-lookup"><span data-stu-id="474af-148">**[Intune App SDK Cordova Plugin guide](app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.</span></span>
+
+* <span data-ttu-id="474af-149">**[Leitfaden für das Intune App SDK Xamarin-Komponenten](app-sdk-xamarin.md)**: Dieses Dokument hilft Ihnen beim Erstellen von IOS- und Android-Apps mithilfe von Cordova für Intune-App-Schutzrichtlinien.</span><span class="sxs-lookup"><span data-stu-id="474af-149">**[Intune App SDK Xamarin Component guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.</span></span>
+
+
+
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a><span data-ttu-id="474af-150">Aktivieren Ihrer iOS- oder Android-App für den App-basierten bedingten Zugriff</span><span class="sxs-lookup"><span data-stu-id="474af-150">Enable your iOS or Android app for app based conditional access</span></span>
  
- Folgendes ist zusätzlich zum Aktivieren Ihrer App für die App-Schutzrichtlinie erforderlich, damit diese ordnungsgemäß mit dem auf der AAD-App (Azure ActiveDirectory) basierenden bedingten Zugriff funktioniert.
+ <span data-ttu-id="474af-151">Folgendes ist zusätzlich zum Aktivieren Ihrer App für die App-Schutzrichtlinie erforderlich, damit diese ordnungsgemäß mit dem auf der AAD-App (Azure ActiveDirectory) basierenden bedingten Zugriff funktioniert.</span><span class="sxs-lookup"><span data-stu-id="474af-151">In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based conditional access:</span></span>
  
- * Die App wird mithilfe der [Azure Active Directory-Authentifizierungsbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) erstellt und für die AAD-Brokerauthentifizierung aktiviert.
+ * <span data-ttu-id="474af-152">Die App wird mithilfe der [Azure Active Directory-Authentifizierungsbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) erstellt und für die AAD-Brokerauthentifizierung aktiviert.</span><span class="sxs-lookup"><span data-stu-id="474af-152">App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.</span></span>
  
- * Die [AAD-Client-ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) für Ihre App muss für iOS- und Android-Plattformen eindeutig sein.
+ * <span data-ttu-id="474af-153">Die [AAD-Client-ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) für Ihre App muss für iOS- und Android-Plattformen eindeutig sein.</span><span class="sxs-lookup"><span data-stu-id="474af-153">The [AAD Client ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) for your app must be unique across iOS and Android platforms.</span></span>
  
  
  
 
-## <a name="configure-telemetry-for-your-app"></a>Konfigurieren der Telemetrie für Ihre App
+## <a name="configure-telemetry-for-your-app"></a><span data-ttu-id="474af-154">Konfigurieren der Telemetrie für Ihre App</span><span class="sxs-lookup"><span data-stu-id="474af-154">Configure Telemetry for your app</span></span>
 
-Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
+<span data-ttu-id="474af-155">Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.</span><span class="sxs-lookup"><span data-stu-id="474af-155">Microsoft Intune collects data on usage statistics for your app.</span></span>
 
-* **Intune App SDK für iOS**: Das SDK protokolliert standardmäßig SDK-Telemetriedaten zu Verwendungsereignissen. Diese Daten werden an Microsoft Intune gesendet.
+* <span data-ttu-id="474af-156">**Intune App SDK für iOS**: Das SDK protokolliert standardmäßig SDK-Telemetriedaten zu Verwendungsereignissen.</span><span class="sxs-lookup"><span data-stu-id="474af-156">**Intune App SDK for iOS**: The SDK logs SDK telemetry data on usage events by default.</span></span> <span data-ttu-id="474af-157">Diese Daten werden an Microsoft Intune gesendet.</span><span class="sxs-lookup"><span data-stu-id="474af-157">This data is sent to Microsoft Intune.</span></span>
 
-    * Wenn von Ihrer App keine SDK-Telemetriedaten an Microsoft Intune gesendet werden sollen, müssen Sie die Telemetrieübertragung deaktivieren, indem Sie im Wörterbuch „IntuneMAMSettings“ die Eigenschaft `MAMTelemetryDisabled` auf„JA“ festlegen.
+    * <span data-ttu-id="474af-158">Wenn von Ihrer App keine SDK-Telemetriedaten an Microsoft Intune gesendet werden sollen, müssen Sie die Telemetrieübertragung deaktivieren, indem Sie im Wörterbuch „IntuneMAMSettings“ die Eigenschaft `MAMTelemetryDisabled` auf„JA“ festlegen.</span><span class="sxs-lookup"><span data-stu-id="474af-158">If you choose not to send SDK telemetry data to Microsoft Intune from your app, you must disable telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the IntuneMAMSettings dictionary.</span></span>
 
-* **Intune App SDK für Android**: Vom SDK werden keine Telemetriedaten protokolliert.
+* <span data-ttu-id="474af-159">**Intune App SDK für Android**: Vom SDK werden keine Telemetriedaten protokolliert.</span><span class="sxs-lookup"><span data-stu-id="474af-159">**Intune App SDK for Android**: Telemetry data is not logged through the SDK.</span></span>
 
- Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.
+ <span data-ttu-id="474af-160">Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.</span><span class="sxs-lookup"><span data-stu-id="474af-160">iOS and Android line-of-business app version number is visible <!-- 1380712 --></span></span>
 
-## <a name="line-of-business-app-version-numbers"></a>Branchenspezifische App-Versionsnummern
+## <a name="line-of-business-app-version-numbers"></a><span data-ttu-id="474af-161">Branchenspezifische App-Versionsnummern</span><span class="sxs-lookup"><span data-stu-id="474af-161">Line-of-business app version numbers</span></span>
 
-Branchenspezifische Apps in Intune zeigen nun die Versionsnummer für iOS- und Android-Apps an. Die Nummer wird im Azure-Portal in der App-Liste und im Übersichtsblatt der App angezeigt. Benutzer können die App-Nummer in der Unternehmensportal-App und im Webportal anzeigen.
+<span data-ttu-id="474af-162">Branchenspezifische Apps in Intune zeigen nun die Versionsnummer für iOS- und Android-Apps an.</span><span class="sxs-lookup"><span data-stu-id="474af-162">Line-of-business apps in Intune now display the version number for iOS and Android apps.</span></span> <span data-ttu-id="474af-163">Die Nummer wird im Azure-Portal in der App-Liste und im Übersichtsblatt der App angezeigt.</span><span class="sxs-lookup"><span data-stu-id="474af-163">The number displays in the Azure portal in the app list and in the app overview blade.</span></span> <span data-ttu-id="474af-164">Benutzer können die App-Nummer in der Unternehmensportal-App und im Webportal anzeigen.</span><span class="sxs-lookup"><span data-stu-id="474af-164">End users can see the app number in the Company Portal app and in the web portal.</span></span>
 
-### <a name="full-version-number"></a>Vollständige Versionsnummer
+### <a name="full-version-number"></a><span data-ttu-id="474af-165">Vollständige Versionsnummer</span><span class="sxs-lookup"><span data-stu-id="474af-165">Full version number</span></span>
 
-Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800)
+<span data-ttu-id="474af-166">Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App.</span><span class="sxs-lookup"><span data-stu-id="474af-166">The full version number identifies a specific release of the app.</span></span> <span data-ttu-id="474af-167">Die Nummer wird als _Version_(_Build_) angezeigt.</span><span class="sxs-lookup"><span data-stu-id="474af-167">The number appears as _Version_(_Build_).</span></span> <span data-ttu-id="474af-168">Beispielsweise 2.2(2.2.17560800)</span><span class="sxs-lookup"><span data-stu-id="474af-168">For example, 2.2(2.2.17560800)</span></span>
 
-Die vollständige Versionsnummer besteht aus zwei Komponenten:
+<span data-ttu-id="474af-169">Die vollständige Versionsnummer besteht aus zwei Komponenten:</span><span class="sxs-lookup"><span data-stu-id="474af-169">The full version number has two components:</span></span>
 
- - **Version**  
-   Die Versionsnummer ist die von einem Menschen lesbare Releasenummer der App. Diese wird von Benutzern verwendet, um verschiedene Releases der App zu identifizieren.
+ - <span data-ttu-id="474af-170">**Version**</span><span class="sxs-lookup"><span data-stu-id="474af-170">**Version**</span></span>  
+   <span data-ttu-id="474af-171">Die Versionsnummer ist die von einem Menschen lesbare Releasenummer der App.</span><span class="sxs-lookup"><span data-stu-id="474af-171">The version number is the human-readable release number of the app.</span></span> <span data-ttu-id="474af-172">Diese wird von Benutzern verwendet, um verschiedene Releases der App zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="474af-172">This is used by end users to identify different releases of the app.</span></span>
 
- - **Buildnummer**  
-    Die Buildnummer ist eine interne Nummer, die in der App-Erkennung und zur programmgesteuerten Verwaltung der App verwendet werden kann. Die Buildnummer bezieht sich auf eine Iteration der App, die auf Änderungen im Code verweist.
+ - <span data-ttu-id="474af-173">**Buildnummer**</span><span class="sxs-lookup"><span data-stu-id="474af-173">**Build Number**</span></span>  
+    <span data-ttu-id="474af-174">Die Buildnummer ist eine interne Nummer, die in der App-Erkennung und zur programmgesteuerten Verwaltung der App verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="474af-174">The build number is an internal number that can be used in app detection and to programmatically manage the app.</span></span> <span data-ttu-id="474af-175">Die Buildnummer bezieht sich auf eine Iteration der App, die auf Änderungen im Code verweist.</span><span class="sxs-lookup"><span data-stu-id="474af-175">The build number refers to an iteration of the app that references changes in the code.</span></span>
 
-### <a name="version-and-build-number-in-android-and-ios"></a>Versions- und Buildnummer unter Android und iOS
+### <a name="version-and-build-number-in-android-and-ios"></a><span data-ttu-id="474af-176">Versions- und Buildnummer unter Android und iOS</span><span class="sxs-lookup"><span data-stu-id="474af-176">Version and build number in Android and iOS</span></span>
 
-Android und iOS verwenden Versions- und Buildnummern, um auf Apps zu verweisen. Beide Betriebssysteme verwenden jedoch betriebssystemspezifische Begriffe. In der folgenden Tabelle wird erklärt, wie diese Begriffe zueinander in Bezug stehen.
+<span data-ttu-id="474af-177">Android und iOS verwenden Versions- und Buildnummern, um auf Apps zu verweisen.</span><span class="sxs-lookup"><span data-stu-id="474af-177">Android and iOS both use version and build numbers in reference to apps.</span></span> <span data-ttu-id="474af-178">Beide Betriebssysteme verwenden jedoch betriebssystemspezifische Begriffe.</span><span class="sxs-lookup"><span data-stu-id="474af-178">However, both operating systems have meanings that are OS-specific.</span></span> <span data-ttu-id="474af-179">In der folgenden Tabelle wird erklärt, wie diese Begriffe zueinander in Bezug stehen.</span><span class="sxs-lookup"><span data-stu-id="474af-179">The following table explains how these terms are related.</span></span>
 
-Wenn Sie eine branchenspezifische Apps für die Verwendung in Intune entwickeln, denken Sie daran, die Versions- und die Buildnummer zu verwenden. Die Intune-Features für die App-Verwaltung sind abhängig von einer aussagekräftigen **CFBundleVersion** (für iOS) und einem aussagekräftigen **PackageVersionCode** (für Android). Diese Nummern sind im App-Manifest enthalten. 
+<span data-ttu-id="474af-180">Wenn Sie eine branchenspezifische Apps für die Verwendung in Intune entwickeln, denken Sie daran, die Versions- und die Buildnummer zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="474af-180">When you are developing a line-of-business application for use in Intune, remember to use both the version and the build number.</span></span> <span data-ttu-id="474af-181">Die Intune-Features für die App-Verwaltung sind abhängig von einer aussagekräftigen **CFBundleVersion** (für iOS) und einem aussagekräftigen **PackageVersionCode** (für Android).</span><span class="sxs-lookup"><span data-stu-id="474af-181">Intune App management features rely on a meaningful **CFBundleVersion** (for iOS) and **PackageVersionCode** (for Android).</span></span> <span data-ttu-id="474af-182">Diese Nummern sind im App-Manifest enthalten.</span><span class="sxs-lookup"><span data-stu-id="474af-182">These numbers are included in the app manifest.</span></span> 
 
-Intune|iOS|Android|Beschreibung|
+<span data-ttu-id="474af-183">Intune</span><span class="sxs-lookup"><span data-stu-id="474af-183">Intune</span></span>|<span data-ttu-id="474af-184">iOS</span><span class="sxs-lookup"><span data-stu-id="474af-184">iOS</span></span>|<span data-ttu-id="474af-185">Android</span><span class="sxs-lookup"><span data-stu-id="474af-185">Android</span></span>|<span data-ttu-id="474af-186">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="474af-186">Description</span></span>|
 |---|---|---|---|
-Versionsnummer|CFBundleShortVersionString|PackageVersionName |Diese Nummer gibt ein bestimmtes Release der App für Benutzer an.|
-Buildnummer|CFBundleVersion|PackageVersionCode |Diese Nummer gibt eine Iteration im App-Code an.|
+<span data-ttu-id="474af-187">Versionsnummer</span><span class="sxs-lookup"><span data-stu-id="474af-187">Version number</span></span>|<span data-ttu-id="474af-188">CFBundleShortVersionString</span><span class="sxs-lookup"><span data-stu-id="474af-188">CFBundleShortVersionString</span></span>|<span data-ttu-id="474af-189">PackageVersionName</span><span class="sxs-lookup"><span data-stu-id="474af-189">PackageVersionName</span></span> |<span data-ttu-id="474af-190">Diese Nummer gibt ein bestimmtes Release der App für Benutzer an.</span><span class="sxs-lookup"><span data-stu-id="474af-190">This number indicates a specific release of the app for end users.</span></span>|
+<span data-ttu-id="474af-191">Buildnummer</span><span class="sxs-lookup"><span data-stu-id="474af-191">Build number</span></span>|<span data-ttu-id="474af-192">CFBundleVersion</span><span class="sxs-lookup"><span data-stu-id="474af-192">CFBundleVersion</span></span>|<span data-ttu-id="474af-193">PackageVersionCode</span><span class="sxs-lookup"><span data-stu-id="474af-193">PackageVersionCode</span></span> |<span data-ttu-id="474af-194">Diese Nummer gibt eine Iteration im App-Code an.</span><span class="sxs-lookup"><span data-stu-id="474af-194">This number is used to indicate an iteration in the app code.</span></span>|
 
-#### <a name="ios"></a>iOS
+#### <a name="ios"></a><span data-ttu-id="474af-195">iOS</span><span class="sxs-lookup"><span data-stu-id="474af-195">iOS</span></span>
 
-- **CFBundleShortVersionString**  
-    Gibt die Nummer der Releaseversion des Pakets an. Diese Nummer gibt eine veröffentlichte Version der App an. Die Nummer wird von Benutzern verwendet, um auf die App zu verweisen.
- - **CFBundleVersion**  
-    Die Buildversion des Pakets, die eine Iteration desselben angibt. Die Nummer kann verwendet werden, um ein Release oder ein nicht veröffentlichtes Paket zu identifizieren. Die Nummer wird für die App-Erkennung verwendet.
+- <span data-ttu-id="474af-196">**CFBundleShortVersionString**</span><span class="sxs-lookup"><span data-stu-id="474af-196">**CFBundleShortVersionString**</span></span>  
+    <span data-ttu-id="474af-197">Gibt die Nummer der Releaseversion des Pakets an.</span><span class="sxs-lookup"><span data-stu-id="474af-197">Specifies the release version number of the bundle.</span></span> <span data-ttu-id="474af-198">Diese Nummer gibt eine veröffentlichte Version der App an.</span><span class="sxs-lookup"><span data-stu-id="474af-198">This number identifies a released version of the app.</span></span> <span data-ttu-id="474af-199">Die Nummer wird von Benutzern verwendet, um auf die App zu verweisen.</span><span class="sxs-lookup"><span data-stu-id="474af-199">The number is used by end users to reference the app.</span></span>
+ - <span data-ttu-id="474af-200">**CFBundleVersion**</span><span class="sxs-lookup"><span data-stu-id="474af-200">**CFBundleVersion**</span></span>  
+    <span data-ttu-id="474af-201">Die Buildversion des Pakets, die eine Iteration desselben angibt.</span><span class="sxs-lookup"><span data-stu-id="474af-201">The build version of the bundle, which identifies an iteration of the bundle.</span></span> <span data-ttu-id="474af-202">Die Nummer kann verwendet werden, um ein Release oder ein nicht veröffentlichtes Paket zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="474af-202">The number may be identify a release or unreleased bundle.</span></span> <span data-ttu-id="474af-203">Die Nummer wird für die App-Erkennung verwendet.</span><span class="sxs-lookup"><span data-stu-id="474af-203">The number is used for app detection.</span></span>
 
-#### <a name="android"></a>Android
+#### <a name="android"></a><span data-ttu-id="474af-204">Android</span><span class="sxs-lookup"><span data-stu-id="474af-204">Android</span></span>
 
- - **PackageVersionName**  
-    Die Versionsnummer, die Benutzern angezeigt wird. Dieses Attribut kann als Rohzeichenfolge oder als Verweis auf eine Zeichenfolgenressource festgelegt werden. Die Zeichenfolge dient lediglich dem Zweck, Benutzern angezeigt zu werden.
- - **PackageVersionCode**  
-    Eine interne Versionsnummer. Diese Nummer wird lediglich verwendet, um zu bestimmen, ob eine Version aktueller als eine andere ist. Eine höhere Nummer gibt dabei eine aktuellere Version an. Dies ist nicht die Version. 
+ - <span data-ttu-id="474af-205">**PackageVersionName**</span><span class="sxs-lookup"><span data-stu-id="474af-205">**PackageVersionName**</span></span>  
+    <span data-ttu-id="474af-206">Die Versionsnummer, die Benutzern angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="474af-206">The version number shown to users.</span></span> <span data-ttu-id="474af-207">Dieses Attribut kann als Rohzeichenfolge oder als Verweis auf eine Zeichenfolgenressource festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="474af-207">This attribute can be set as a raw string or as a reference to a string resource.</span></span> <span data-ttu-id="474af-208">Die Zeichenfolge dient lediglich dem Zweck, Benutzern angezeigt zu werden.</span><span class="sxs-lookup"><span data-stu-id="474af-208">The string has no other purpose than to be displayed to users.</span></span>
+ - <span data-ttu-id="474af-209">**PackageVersionCode**</span><span class="sxs-lookup"><span data-stu-id="474af-209">**PackageVersionCode**</span></span>  
+    <span data-ttu-id="474af-210">Eine interne Versionsnummer.</span><span class="sxs-lookup"><span data-stu-id="474af-210">An internal version number.</span></span> <span data-ttu-id="474af-211">Diese Nummer wird lediglich verwendet, um zu bestimmen, ob eine Version aktueller als eine andere ist. Eine höhere Nummer gibt dabei eine aktuellere Version an.</span><span class="sxs-lookup"><span data-stu-id="474af-211">This number is used only to determine whether one version is more recent than another, with higher numbers indicating more recent versions.</span></span> <span data-ttu-id="474af-212">Dies ist nicht die Version.</span><span class="sxs-lookup"><span data-stu-id="474af-212">This is not the version</span></span> 
 
-## <a name="next-steps-after-integration"></a>Nächste Schritte nach der Integration
+## <a name="next-steps-after-integration"></a><span data-ttu-id="474af-213">Nächste Schritte nach der Integration</span><span class="sxs-lookup"><span data-stu-id="474af-213">Next steps after integration</span></span>
 
-### <a name="test-your-app"></a>Testen Ihrer App
-Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre iOS- oder Android-App abgeschlossen haben, müssen Sie sicherstellen, dass alle App-Schutzrichtlinien für den Benutzer und den IT-Administrator aktiviert und funktionsfähig sind. Zum Testen Ihrer integrierten App benötigen Sie Folgendes:
+### <a name="test-your-app"></a><span data-ttu-id="474af-214">Testen Ihrer App</span><span class="sxs-lookup"><span data-stu-id="474af-214">Test your app</span></span>
+<span data-ttu-id="474af-215">Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre iOS- oder Android-App abgeschlossen haben, müssen Sie sicherstellen, dass alle App-Schutzrichtlinien für den Benutzer und den IT-Administrator aktiviert und funktionsfähig sind. Zum Testen Ihrer integrierten App benötigen Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="474af-215">After you finish the necessary steps to integrate your iOS or Android app with the Intune App SDK, you will need to ensure that all the app protection policies are enabled and functioning for the user and the IT admin. To test your integrated app, you will need the following:</span></span>
 
-* **Microsoft Intune-Testkonto**: Um Ihre für Intune aktivierte App und die Intune-App-Schutzfunktionen zu testen, benötigen Sie ein Microsoft Intune-Konto.
+* <span data-ttu-id="474af-216">**Microsoft Intune-Testkonto**: Um Ihre für Intune aktivierte App und die Intune-App-Schutzfunktionen zu testen, benötigen Sie ein Microsoft Intune-Konto.</span><span class="sxs-lookup"><span data-stu-id="474af-216">**Microsoft Intune test account**: To test your Intune-enlightened app against Intune app protection features, you will need a Microsoft Intune account.</span></span>
 
-    * ISVs, die ihre iOS- oder Android-Store-Apps für die Intune-App-Schutzrichtlinie aktivieren, erhalten nach Abschluss der Registrierung bei Microsoft Intune (wie im Registrierungsschritt beschrieben) einen Angebotscode. Mit diesem Angebotscode können Sie sich für eine Microsoft Intune-Testversion mit einem Jahr erweiterter Nutzung anmelden.
+    * <span data-ttu-id="474af-217">ISVs, die ihre iOS- oder Android-Store-Apps für die Intune-App-Schutzrichtlinie aktivieren, erhalten nach Abschluss der Registrierung bei Microsoft Intune (wie im Registrierungsschritt beschrieben) einen Angebotscode.</span><span class="sxs-lookup"><span data-stu-id="474af-217">If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step.</span></span> <span data-ttu-id="474af-218">Mit diesem Angebotscode können Sie sich für eine Microsoft Intune-Testversion mit einem Jahr erweiterter Nutzung anmelden.</span><span class="sxs-lookup"><span data-stu-id="474af-218">The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.</span></span>
 
-    * Wenn Sie eine branchenspezifische App entwickeln, die nicht in den Store übertragen wird, sollten Sie über Ihre Organisation auf Microsoft Intune zugreifen können. Sie können sich auch bei [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) für eine kostenlose einmonatige Testversion registrieren.
+    * <span data-ttu-id="474af-219">Wenn Sie eine branchenspezifische App entwickeln, die nicht in den Store übertragen wird, sollten Sie über Ihre Organisation auf Microsoft Intune zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="474af-219">If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization.</span></span> <span data-ttu-id="474af-220">Sie können sich auch bei [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) für eine kostenlose einmonatige Testversion registrieren.</span><span class="sxs-lookup"><span data-stu-id="474af-220">You can also sign up for a one-month free trial in [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).</span></span>
 
-* **Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen. Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](/intune-classic/deploy-use/ios-mam-policy-settings) und [Android-App-Schutzrichtlinien](/intune-classic/deploy-use/android-mam-policy-settings).
+* <span data-ttu-id="474af-221">**Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen.</span><span class="sxs-lookup"><span data-stu-id="474af-221">**Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting.</span></span> <span data-ttu-id="474af-222">Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](/intune-classic/deploy-use/ios-mam-policy-settings) und [Android-App-Schutzrichtlinien](/intune-classic/deploy-use/android-mam-policy-settings).</span><span class="sxs-lookup"><span data-stu-id="474af-222">See the descriptions for [iOS app protection policies](/intune-classic/deploy-use/ios-mam-policy-settings) and [Android app protection policies](/intune-classic/deploy-use/android-mam-policy-settings).</span></span>
 
-* **Problembehandlung**: Wenn Sie beim manuellen Testen der Benutzerumgebung Ihrer App auf Probleme stoßen, lesen Sie den Artikel zur [Problembehandlung von MAM](/intune-classic/troubleshoot/troubleshoot-mam). Dieser Artikel bietet Hilfe für gängige Probleme, Dialogfelder und Fehlermeldungen, die in Intune-fähigen Apps auftreten können. 
+* <span data-ttu-id="474af-223">**Problembehandlung**: Wenn Sie beim manuellen Testen der Benutzerumgebung Ihrer App auf Probleme stoßen, lesen Sie den Artikel zur [Problembehandlung von MAM](/intune-classic/troubleshoot/troubleshoot-mam).</span><span class="sxs-lookup"><span data-stu-id="474af-223">**Troubleshoot**: If you run into any issues while manually testing your app's user experience, check out the [Troubleshooting MAM](/intune-classic/troubleshoot/troubleshoot-mam).</span></span> <span data-ttu-id="474af-224">Dieser Artikel bietet Hilfe für gängige Probleme, Dialogfelder und Fehlermeldungen, die in Intune-fähigen Apps auftreten können.</span><span class="sxs-lookup"><span data-stu-id="474af-224">This article offers help for common issues, dialogs, and error messages that may be experienced in Intune-enlightened apps.</span></span> 
 
-### <a name="badge-your-app-optional"></a>Anzeigen eines Badges auf Ihrem App-Symbol (optional)
+### <a name="badge-your-app-optional"></a><span data-ttu-id="474af-225">Anzeigen eines Badges auf Ihrem App-Symbol (optional)</span><span class="sxs-lookup"><span data-stu-id="474af-225">Badge your app (optional)</span></span>
 
-Nachdem Sie bestätigt haben, dass Ihre Intune-App-Schutzrichtlinien in Ihrer App funktionieren, können Sie Ihr App-Symbol mit einem Badge in Form des Intune-App-Schutzlogos versehen.
+<span data-ttu-id="474af-226">Nachdem Sie bestätigt haben, dass Ihre Intune-App-Schutzrichtlinien in Ihrer App funktionieren, können Sie Ihr App-Symbol mit einem Badge in Form des Intune-App-Schutzlogos versehen.</span><span class="sxs-lookup"><span data-stu-id="474af-226">After validating that Intune app protection policies work in your app, you can badge your app icon with the Intune app protection logo.</span></span>
 
-Dieses Badge informiert IT-Administratoren, Endbenutzer und potenzielle Intune-Kunden, das Ihre App mit Intune-App-Schutzrichtlinien funktioniert. Es fördert die Verwendung und Akzeptanz Ihrer App bei Intune-Kunden.
+<span data-ttu-id="474af-227">Dieses Badge informiert IT-Administratoren, Endbenutzer und potenzielle Intune-Kunden, das Ihre App mit Intune-App-Schutzrichtlinien funktioniert.</span><span class="sxs-lookup"><span data-stu-id="474af-227">This badge indicates to IT administrators, end-users, and potential Intune customers that your app works with Intune app protection policies.</span></span> <span data-ttu-id="474af-228">Es fördert die Verwendung und Akzeptanz Ihrer App bei Intune-Kunden.</span><span class="sxs-lookup"><span data-stu-id="474af-228">It encourages the usage and adoption of your app by Intune customers.</span></span>
 
-Das Badge ist ein Aktentaschensymbol (siehe die folgenden Beispiele):
+<span data-ttu-id="474af-229">Das Badge ist ein Aktentaschensymbol (siehe die folgenden Beispiele):</span><span class="sxs-lookup"><span data-stu-id="474af-229">The badge is a briefcase icon and can be seen in the samples below:</span></span>
 
 ![Badge-Beispiel 1](./media/badge-example-1.png) ![Badge-Beispiel 2](./media/badge-example-2.png)
 
-**Voraussetzungen für das Versehen Ihrer App mit einem Badge**:
+<span data-ttu-id="474af-232">**Voraussetzungen für das Versehen Ihrer App mit einem Badge**:</span><span class="sxs-lookup"><span data-stu-id="474af-232">**What you'll need to badge your app**:</span></span>
 
-* Eine Bildbearbeitungsanwendung, die **EPS**-Dateien lesen kann, oder eine Adobe-Anwendung, die **AI**-Dateien lesen kann.
+* <span data-ttu-id="474af-233">Eine Bildbearbeitungsanwendung, die **EPS**-Dateien lesen kann, oder eine Adobe-Anwendung, die **AI**-Dateien lesen kann.</span><span class="sxs-lookup"><span data-stu-id="474af-233">An image manipulation application that can read **.eps** files, or an Adobe application that can read **.ai** files.</span></span>
 
-* Auf der GitHub-Website von Microsoft Intune finden Sie die [Ressourcen und Anleitungen für Intune-App-Badges](https://github.com/msintuneappsdk/intune-app-partner-badge).
+* <span data-ttu-id="474af-234">Auf der GitHub-Website von Microsoft Intune finden Sie die [Ressourcen und Anleitungen für Intune-App-Badges](https://github.com/msintuneappsdk/intune-app-partner-badge).</span><span class="sxs-lookup"><span data-stu-id="474af-234">You can find the [Intune app badge assets and guidelines](https://github.com/msintuneappsdk/intune-app-partner-badge) on the Microsoft Intune GitHub.</span></span>

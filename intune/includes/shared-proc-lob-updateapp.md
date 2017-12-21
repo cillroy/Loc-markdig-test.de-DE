@@ -1,9 +1,9 @@
 
-1. Melden Sie sich im Azure-Portal an.  
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.  
-3. Klicken Sie auf **Mobile Apps** > **Apps**.
-4. Suchen Sie Ihre App in der Liste, und wählen Sie sie aus.
-5. Klicken Sie auf dem Blatt **Übersicht** auf die Option **Eigenschaften**.
-5. Klicken Sie auf **App-Paketdatei**.
-6. Klicken Sie auf das Ordnersymbol, und navigieren Sie zum Speicherort der aktualisierten App-Datei. Klicken Sie auf **Öffnen**. Die App-Informationen werden mit den Paketinformationen aktualisiert. 
-8. Überprüfen Sie, ob die **Anwendungsversion** das aktualisierte App-Paket widerspiegelt.
+1. <span data-ttu-id="412f0-101">Melden Sie sich im Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="412f0-101">Sign in to the Azure portal.</span></span>  
+2. <span data-ttu-id="412f0-102">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="412f0-102">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>  
+3. <span data-ttu-id="412f0-103">Klicken Sie auf **Mobile Apps** > **Apps**.</span><span class="sxs-lookup"><span data-stu-id="412f0-103">Choose **Mobile Apps** > **Apps**.</span></span>
+4. <span data-ttu-id="412f0-104">Suchen Sie Ihre App in der Liste, und wählen Sie sie aus.</span><span class="sxs-lookup"><span data-stu-id="412f0-104">Find and select your app in the list of apps.</span></span>
+5. <span data-ttu-id="412f0-105">Klicken Sie auf dem Blatt **Übersicht** auf die Option **Eigenschaften**.</span><span class="sxs-lookup"><span data-stu-id="412f0-105">Choose **Properties** in the **Overview** blade.</span></span>
+5. <span data-ttu-id="412f0-106">Klicken Sie auf **App-Paketdatei**.</span><span class="sxs-lookup"><span data-stu-id="412f0-106">Select **App package file**.</span></span>
+6. <span data-ttu-id="412f0-107">Klicken Sie auf das Ordnersymbol, und navigieren Sie zum Speicherort der aktualisierten App-Datei.</span><span class="sxs-lookup"><span data-stu-id="412f0-107">Click the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="412f0-108">Klicken Sie auf **Öffnen**.</span><span class="sxs-lookup"><span data-stu-id="412f0-108">Click **Open**.</span></span> <span data-ttu-id="412f0-109">Die App-Informationen werden mit den Paketinformationen aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="412f0-109">The app information will update with the package information.</span></span> 
+8. <span data-ttu-id="412f0-110">Überprüfen Sie, ob die **Anwendungsversion** das aktualisierte App-Paket widerspiegelt.</span><span class="sxs-lookup"><span data-stu-id="412f0-110">Verify that the **App version** reflects the updated app package.</span></span>

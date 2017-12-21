@@ -15,72 +15,72 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
+# <a name="app-based-conditional-access-with-intune"></a><span data-ttu-id="b8df6-103">App-basierter bedingter Zugriff mit Intune</span><span class="sxs-lookup"><span data-stu-id="b8df6-103">App-based conditional access with Intune</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[Intune-App-Schutzrichtlinien](app-protection-policy.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die bei Intune registriert sind. App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind. Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind.
+<span data-ttu-id="b8df6-104">[Intune-App-Schutzrichtlinien](app-protection-policy.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die bei Intune registriert sind.</span><span class="sxs-lookup"><span data-stu-id="b8df6-104">[Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune.</span></span> <span data-ttu-id="b8df6-105">App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind.</span><span class="sxs-lookup"><span data-stu-id="b8df6-105">You can also use app protection policies on employee owned devices that are not enrolled for management in Intune.</span></span> <span data-ttu-id="b8df6-106">Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind.</span><span class="sxs-lookup"><span data-stu-id="b8df6-106">In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.</span></span>
 
-Mit App-basiertem bedingten Zugriff und der Verwaltung von mobilen Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur mobile Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
-
-> [!NOTE]
-> Eine verwaltete App ist eine App, auf die App-Schutzrichtlinien angewendet wurden und die von Intune verwaltet werden kann.
-
-Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS und Android blockieren. Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Bevor Sie eine App-basierte bedingte Zugriffsrichtlinie erstellen, benötigen Sie Folgendes:
-
-- **Enterprise Mobility + Security (EMS)** oder ein **Azure Active Directory Premium-Abonnement**
-- Benutzer müssen für EMS oder Azure AD lizenziert werden.
-
-Weitere Informationen finden Sie in der [Enterprise Mobility – Preise](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Azure Active Directory – Preise](https://azure.microsoft.com/pricing/details/active-directory/).
-
-## <a name="supported-apps"></a>Unterstützte Apps
-
-Eine Liste von Apps, die den App-basierten bedingten Zugriff unterstützen, finden Sie in der [Dokumentation zur Technischen Referenz zum bedingen Zugriff von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
-
-Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen.
-
-## <a name="how-app-based-conditional-access-works"></a>Funktionsweise des App-basierten bedingten Zugriffs
-
-In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die beim Zugriff auf Unternehmens-E-Mails verwendet werden kann.
+<span data-ttu-id="b8df6-107">Mit App-basiertem bedingten Zugriff und der Verwaltung von mobilen Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur mobile Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="b8df6-107">App-based conditional access and mobile app management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online and other Office 365 services.</span></span>
 
 > [!NOTE]
-> Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.
+> <span data-ttu-id="b8df6-108">Eine verwaltete App ist eine App, auf die App-Schutzrichtlinien angewendet wurden und die von Intune verwaltet werden kann.</span><span class="sxs-lookup"><span data-stu-id="b8df6-108">A managed app is an app that has app protection policies applied to it, and can be managed by Intune.</span></span>
+
+<span data-ttu-id="b8df6-109">Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS und Android blockieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-109">You can block the built-in mail apps on iOS and Android when you allow only the Microsoft Outlook app to access Exchange Online.</span></span> <span data-ttu-id="b8df6-110">Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-110">Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="b8df6-111">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b8df6-111">Prerequisites</span></span>
+<span data-ttu-id="b8df6-112">Bevor Sie eine App-basierte bedingte Zugriffsrichtlinie erstellen, benötigen Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="b8df6-112">Before you create an app-based conditional access policy, you must have:</span></span>
+
+- <span data-ttu-id="b8df6-113">**Enterprise Mobility + Security (EMS)** oder ein **Azure Active Directory Premium-Abonnement**</span><span class="sxs-lookup"><span data-stu-id="b8df6-113">**Enterprise Mobility + Security (EMS)** or an **Azure Active Directory (AD) Premium subscription**</span></span>
+- <span data-ttu-id="b8df6-114">Benutzer müssen für EMS oder Azure AD lizenziert werden.</span><span class="sxs-lookup"><span data-stu-id="b8df6-114">Users must be licensed for EMS or Azure AD</span></span>
+
+<span data-ttu-id="b8df6-115">Weitere Informationen finden Sie in der [Enterprise Mobility – Preise](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Azure Active Directory – Preise](https://azure.microsoft.com/pricing/details/active-directory/).</span><span class="sxs-lookup"><span data-stu-id="b8df6-115">For more information, see [Enterprise Mobility pricing ](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
+
+## <a name="supported-apps"></a><span data-ttu-id="b8df6-116">Unterstützte Apps</span><span class="sxs-lookup"><span data-stu-id="b8df6-116">Supported apps</span></span>
+
+<span data-ttu-id="b8df6-117">Eine Liste von Apps, die den App-basierten bedingten Zugriff unterstützen, finden Sie in der [Dokumentation zur Technischen Referenz zum bedingen Zugriff von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).</span><span class="sxs-lookup"><span data-stu-id="b8df6-117">A list of apps that support app-based conditional access can be found in the [Azure Active Directory conditional access technical reference documentation.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)</span></span>
+
+<span data-ttu-id="b8df6-118">Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen.</span><span class="sxs-lookup"><span data-stu-id="b8df6-118">App-based conditional access [also supports line-of-business (LOB) apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).</span></span>
+
+## <a name="how-app-based-conditional-access-works"></a><span data-ttu-id="b8df6-119">Funktionsweise des App-basierten bedingten Zugriffs</span><span class="sxs-lookup"><span data-stu-id="b8df6-119">How app-based conditional access works</span></span>
+
+<span data-ttu-id="b8df6-120">In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die beim Zugriff auf Unternehmens-E-Mails verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="b8df6-120">In this example, the admin has applied app protection policies to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b8df6-121">Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b8df6-121">The flowchart structure below can be used for other managed apps.</span></span>
 
 ![App-basierter bedingter Zugriff mit Intune, Flussdiagramm](./media/ca-intune-common-ways-3.png)
 
-1.  Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
+1.  <span data-ttu-id="b8df6-123">Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-123">The user tries to authenticate to Azure AD from the Outlook app.</span></span>
 
-2.  Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
+2.  <span data-ttu-id="b8df6-124">Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-124">The user gets redirected to the app store to install a broker app when trying to authenticate for the first time.</span></span> <span data-ttu-id="b8df6-125">Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.</span><span class="sxs-lookup"><span data-stu-id="b8df6-125">The broker app can be either the Microsoft Authenticator for iOS, or the Microsoft Company portal for Android devices.</span></span>
 
- Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
+ <span data-ttu-id="b8df6-126">Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-126">If users try to use a native e-mail app, they’ll be redirected to the app store to then install the Outlook app.</span></span>
 
-3.  Die Broker-App wird auf dem Gerät installiert.
+3.  <span data-ttu-id="b8df6-127">Die Broker-App wird auf dem Gerät installiert.</span><span class="sxs-lookup"><span data-stu-id="b8df6-127">The broker app gets installed on the device.</span></span>
 
-4.  Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird. Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.
+4.  <span data-ttu-id="b8df6-128">Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="b8df6-128">The broker app starts the Azure AD registration process which creates a device record in Azure AD.</span></span> <span data-ttu-id="b8df6-129">Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.</span><span class="sxs-lookup"><span data-stu-id="b8df6-129">This is not the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.</span></span>
 
-5.  Die Broker-App überprüft die Identität der App. Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.
+5.  <span data-ttu-id="b8df6-130">Die Broker-App überprüft die Identität der App.</span><span class="sxs-lookup"><span data-stu-id="b8df6-130">The broker app verifies the identity of the app.</span></span> <span data-ttu-id="b8df6-131">Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.</span><span class="sxs-lookup"><span data-stu-id="b8df6-131">There’s a security layer so the broker app can validate if the app is authorized to be used by the user.</span></span>
 
-6.  Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
+6.  <span data-ttu-id="b8df6-132">Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="b8df6-132">The broker app sends the App Client ID to Azure AD as part of the user authentication process to check if it’s in the policy approved list.</span></span>
 
-7.  Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
+7.  <span data-ttu-id="b8df6-133">Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste.</span><span class="sxs-lookup"><span data-stu-id="b8df6-133">Azure AD allows the user to authenticate and use the app based on the policy approved list.</span></span> <span data-ttu-id="b8df6-134">Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.</span><span class="sxs-lookup"><span data-stu-id="b8df6-134">If the app is not on the list, Azure AD denies access to the app.</span></span>
 
-8.  Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
+8.  <span data-ttu-id="b8df6-135">Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.</span><span class="sxs-lookup"><span data-stu-id="b8df6-135">The Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.</span></span>
 
-9.  Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
+9.  <span data-ttu-id="b8df6-136">Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.</span><span class="sxs-lookup"><span data-stu-id="b8df6-136">Outlook Cloud Service communicates with Azure AD to retrieve Exchange Online service access token for the user.</span></span>
 
-10.  Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
+10.  <span data-ttu-id="b8df6-137">Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.</span><span class="sxs-lookup"><span data-stu-id="b8df6-137">The Outlook app communicates with Exchange Online to retrieve the user's corporate e-mail.</span></span>
 
-11.  Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
+11.  <span data-ttu-id="b8df6-138">Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.</span><span class="sxs-lookup"><span data-stu-id="b8df6-138">Corporate e-mail is delivered to the user's mailbox.</span></span>
 
-## <a name="next-steps"></a>Nächste Schritte
-[Erstellen einer App-basierten Richtlinie für bedingten Zugriff](app-based-conditional-access-intune-create.md)
+## <a name="next-steps"></a><span data-ttu-id="b8df6-139">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="b8df6-139">Next steps</span></span>
+[<span data-ttu-id="b8df6-140">Erstellen einer App-basierten Richtlinie für bedingten Zugriff</span><span class="sxs-lookup"><span data-stu-id="b8df6-140">Create an app-based conditional access policy</span></span>](app-based-conditional-access-intune-create.md)
 
-[Blockieren von Apps, die über keine moderne Authentifizierung verfügen](app-modern-authentication-block.md)
+[<span data-ttu-id="b8df6-141">Blockieren von Apps, die über keine moderne Authentifizierung verfügen</span><span class="sxs-lookup"><span data-stu-id="b8df6-141">Block apps that do not have modern authentication</span></span>](app-modern-authentication-block.md)

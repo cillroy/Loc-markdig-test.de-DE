@@ -17,67 +17,67 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 2071eac453bb0bc4f241d8bf16d5c848dedfd64c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a><span data-ttu-id="f6b36-103">Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune</span><span class="sxs-lookup"><span data-stu-id="f6b36-103">Create a work profile and enroll your device in Intune</span></span>
 
-Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt.
+<span data-ttu-id="f6b36-104">Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen.</span><span class="sxs-lookup"><span data-stu-id="f6b36-104">Enrolling your Android device gives you access to company email, apps, and other work data.</span></span> <span data-ttu-id="f6b36-105">Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt.</span><span class="sxs-lookup"><span data-stu-id="f6b36-105">As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data.</span></span>
 
-Der Support Ihres Unternehmens kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Der Support Ihres Unternehmens kann nicht die privaten Daten auf Ihrem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
+<span data-ttu-id="f6b36-106">Der Support Ihres Unternehmens kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält.</span><span class="sxs-lookup"><span data-stu-id="f6b36-106">Your company support can manage only the work profile, which contains your work data.</span></span> <span data-ttu-id="f6b36-107">Der Support Ihres Unternehmens kann nicht die privaten Daten auf Ihrem Gerät verwalten.</span><span class="sxs-lookup"><span data-stu-id="f6b36-107">Your company support cannot manage the personal data on your device.</span></span> <span data-ttu-id="f6b36-108">Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).</span><span class="sxs-lookup"><span data-stu-id="f6b36-108">Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).</span></span>
 
-So erstellen Sie ein Arbeitsprofil:
+<span data-ttu-id="f6b36-109">So erstellen Sie ein Arbeitsprofil:</span><span class="sxs-lookup"><span data-stu-id="f6b36-109">To create a work profile:</span></span>
 
-1.  Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  <span data-ttu-id="f6b36-110">Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="f6b36-110">On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.</span></span> <span data-ttu-id="f6b36-111">Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).</span><span class="sxs-lookup"><span data-stu-id="f6b36-111">If you haven't installed the free app yet, download and install it from [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).</span></span>
 
     ![Willkommensbildschirm der Android-Unternehmensportal-App](./media/and-enroll-0-welcome-screen.png)
 
-2. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **WEITER**.
+2. <span data-ttu-id="f6b36-113">Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **WEITER**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-113">On the **Company Access Setup** screen, tap **CONTINUE**.</span></span>
 
     ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  Lesen Sie auf dem Bildschirm **Why create a work profile?** (Warum sollte ich ein Arbeitsprofil erstellen?) über die Vorteile, und tippen Sie dann auf **WEITER**.
+3.  <span data-ttu-id="f6b36-115">Lesen Sie auf dem Bildschirm **Why create a work profile?** (Warum sollte ich ein Arbeitsprofil erstellen?) über die Vorteile, und tippen Sie dann auf **WEITER**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-115">On the **Why create a work profile?** screen, read about what you'll be able to do, and then tap **CONTINUE**.</span></span>
 
     ![Warum sollte ich ein Arbeitsprofil erstellen](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
+4.  <span data-ttu-id="f6b36-117">Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-117">Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.</span></span>
 
     ![Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
+5.  <span data-ttu-id="f6b36-119">Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-119">On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.</span></span>
 
     ![Bildschirm „Wie geht es weiter?“](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
-6. Tippen Sie auf dem Bildschirm **Set up work profile** (Arbeitsprofil einrichten), auf **WEITER**, damit die Unternehmensportal-App auf das Arbeitsprofils zugreifen kann.
+6. <span data-ttu-id="f6b36-121">Tippen Sie auf dem Bildschirm **Set up work profile** (Arbeitsprofil einrichten), auf **WEITER**, damit die Unternehmensportal-App auf das Arbeitsprofils zugreifen kann.</span><span class="sxs-lookup"><span data-stu-id="f6b36-121">On the **Set up work profile** screen, tap **NEXT** to let the Company Portal app access the work profile.</span></span>
 
     ![Erlauben Sie der Unternehmensportal-App Zugriff auf Arbeitsprofil](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Lesen Sie auf dem Google-Bildschirm, wozu der Support Ihres Unternehmens berechtigt ist, wenn Sie ein Arbeitsprofil erstellen, und tippen Sie dann auf **OK**.
+7. <span data-ttu-id="f6b36-123">Lesen Sie auf dem Google-Bildschirm, wozu der Support Ihres Unternehmens berechtigt ist, wenn Sie ein Arbeitsprofil erstellen, und tippen Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-123">Review the Google screen that describes what your company support can do when you create a work profile, and then tap **OK**.</span></span>
 
     ![Lesen Sie die Google-Informationen zu Arbeitsprofilen](./media/andr-afw-google-screen-what-it-can-do.png)
 
-    Ihnen wird eine Reihe von Nachrichten mit dem Text „Einrichten Ihres Arbeitsprofils“ und „Registrierung des Geräts“ angezeigt.
+    <span data-ttu-id="f6b36-125">Ihnen wird eine Reihe von Nachrichten mit dem Text „Einrichten Ihres Arbeitsprofils“ und „Registrierung des Geräts“ angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f6b36-125">You'll see a couple of messages that say "Setting up your work profile" and "Enrolling your device."</span></span>
 
-8. Wenn Sie auf dem **You‘re Halfway There!**-Bildschirm (Sie haben es fast geschafft!) angelangt sind, warten Sie ein paar Sekunden, bis die Unternehmensportal-App geöffnet wird.
+8. <span data-ttu-id="f6b36-126">Wenn Sie auf dem **You‘re Halfway There!**-Bildschirm (Sie haben es fast geschafft!)</span><span class="sxs-lookup"><span data-stu-id="f6b36-126">On the **You're Halfway There!**</span></span> <span data-ttu-id="f6b36-127">angelangt sind, warten Sie ein paar Sekunden, bis die Unternehmensportal-App geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="f6b36-127">screen, wait a few seconds until the Company Portal app opens.</span></span>
 
     ![Tippen Sie auf die Unternehmensportal-App mit dem Pin](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit dem gleichen Geschäfts-, Schul- oder Unikonto an, das Sie früher in diesem Prozess zum Anmelden verwendet haben.
+9. <span data-ttu-id="f6b36-129">Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit dem gleichen Geschäfts-, Schul- oder Unikonto an, das Sie früher in diesem Prozess zum Anmelden verwendet haben.</span><span class="sxs-lookup"><span data-stu-id="f6b36-129">On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with the same work or school account that you used to sign in earlier in this process.</span></span>
 
-10. Beachten Sie auf dem Bildschirm **Unternehmenszugriff einrichten**, dass das Setup Ihres Arbeitsprofils jetzt abgeschlossen ist, und tippen Sie dann auf **WEITER**.
+10. <span data-ttu-id="f6b36-130">Beachten Sie auf dem Bildschirm **Unternehmenszugriff einrichten**, dass das Setup Ihres Arbeitsprofils jetzt abgeschlossen ist, und tippen Sie dann auf **WEITER**.</span><span class="sxs-lookup"><span data-stu-id="f6b36-130">On the **Company Access Setup** screen, note that your Work Profile Setup is now complete, and then tap **CONTINUE**.</span></span>
 
     ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils abgeschlossen ist](./media/andr-afw-work-profile-now-set-up.png)
 
-    Die Meldung „Registrierung Ihres Geräts“ wird kurz angezeigt.
+    <span data-ttu-id="f6b36-132">Die Meldung „Registrierung Ihres Geräts“ wird kurz angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f6b36-132">You'll briefly see the message "Enrolling your device."</span></span>
 
-11. Wenn der Bildschirm **Alles erledigt!** anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **DONE** (FERTIG).
+11. <span data-ttu-id="f6b36-133">Wenn der Bildschirm **Alles erledigt!**</span><span class="sxs-lookup"><span data-stu-id="f6b36-133">When the **You're all set!**</span></span> <span data-ttu-id="f6b36-134">anzeigt, dass alles ordnungsgemäß eingerichtet wurde, tippen Sie auf **DONE** (FERTIG).</span><span class="sxs-lookup"><span data-stu-id="f6b36-134">screen shows that everything has been set up correctly, tap **DONE**.</span></span>
 
     ![Einrichtung des Unternehmenszugriffs zeigt an, dass die Einrichtung des Arbeitsprofils und die Registrierung abgeschlossen sind](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
-    Sie erhalten nun Unternehmens-Apps aus dem Play Store for Work.
+    <span data-ttu-id="f6b36-136">Sie erhalten nun Unternehmens-Apps aus dem Play Store for Work.</span><span class="sxs-lookup"><span data-stu-id="f6b36-136">You can now get company apps from the Play Store for Work.</span></span>
 
     ![App-Seite Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="f6b36-138">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="f6b36-138">Still need help?</span></span> <span data-ttu-id="f6b36-139">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="f6b36-139">Contact your company support.</span></span> <span data-ttu-id="f6b36-140">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="f6b36-140">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

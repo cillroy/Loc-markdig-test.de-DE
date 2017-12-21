@@ -1,0 +1,80 @@
+---
+title: "VPN-Einstellungen für iOS-Geräte in Intune"
+titlesuffix: Azure portal
+description: "Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf iOS-Geräten verwenden können.\""
+keywords: 
+author: vhorne
+ms.author: victorh
+manager: angrobe
+ms.date: 02/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
+ms.reviewer: karanda
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: d144218963def7c0edbeb78b508d5081f32484e0
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/19/2017
+---
+# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a><span data-ttu-id="fffef-103">VPN-Einstellungen für iOS-Geräte in Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="fffef-103">VPN settings for iOS devices in Microsoft Intune</span></span>
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+<span data-ttu-id="fffef-104">Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgenden Liste konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="fffef-104">Depending on the settings you choose, not all values in the following list are configurable.</span></span>
+
+## <a name="base-vpn-settings"></a><span data-ttu-id="fffef-105">Grundlegende VPN-Einstellungen</span><span class="sxs-lookup"><span data-stu-id="fffef-105">Base VPN settings</span></span>
+
+
+<span data-ttu-id="fffef-106">**Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein.</span><span class="sxs-lookup"><span data-stu-id="fffef-106">**Connection name** - Enter a name for this connection.</span></span> <span data-ttu-id="fffef-107">Benutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.</span><span class="sxs-lookup"><span data-stu-id="fffef-107">End users see this name when they browse their device for the list of available VPN connections.</span></span>
+- <span data-ttu-id="fffef-108">**IP-Adresse oder FQDN:** Geben Sie die IP-Adresse oder den vollqualifizierten Domänennamen des VPN-Servers an, mit dem Geräte eine Verbindung herstellen.</span><span class="sxs-lookup"><span data-stu-id="fffef-108">**IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to.</span></span> <span data-ttu-id="fffef-109">Beispiele: **192.168.1.1**, **vpn.contoso.com**.</span><span class="sxs-lookup"><span data-stu-id="fffef-109">Examples: **192.168.1.1**, **vpn.contoso.com**.</span></span>
+- <span data-ttu-id="fffef-110">**Authentifizierungsmethode:** Wählen Sie unter folgenden Optionen aus, wie sich Geräte beim VPN-Server authentifizieren:</span><span class="sxs-lookup"><span data-stu-id="fffef-110">**Authentication method** - Choose how devices authenticate to the VPN server from:</span></span>
+    - <span data-ttu-id="fffef-111">**Zertifikate:** Wählen Sie unter **Authentifizierungszertifikat** ein zuvor erstelltes SCEP- oder PKCS-Zertifikatprofil zum Authentifizieren der Verbindung aus.</span><span class="sxs-lookup"><span data-stu-id="fffef-111">**Certificates** - Under **Authentication certificate**, Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection.</span></span> <span data-ttu-id="fffef-112">Weitere Informationen zu Zertifikatprofilen finden Sie unter [Konfigurieren von Zertifikaten in Microsoft Intune](certificates-configure.md).</span><span class="sxs-lookup"><span data-stu-id="fffef-112">For more information about certificate profiles, see [How to configure certificates](certificates-configure.md).</span></span>
+    - <span data-ttu-id="fffef-113">**Benutzername und Kennwort:** Benutzer müssen einen Benutzernamen und ein Kennwort für die Anmeldung beim VPN-Server angeben.</span><span class="sxs-lookup"><span data-stu-id="fffef-113">**Username and password** - End users must supply a username and password to log in to the VPN server.</span></span>
+- <span data-ttu-id="fffef-114">**Verbindungstyp:** Wählen Sie den VPN-Verbindungstyp in der folgenden Liste von Anbietern aus:</span><span class="sxs-lookup"><span data-stu-id="fffef-114">**Connection type** - Select the VPN connection type from the following list of vendors:</span></span>
+    - <span data-ttu-id="fffef-115">**Check Point Capsule VPN**</span><span class="sxs-lookup"><span data-stu-id="fffef-115">**Check Point Capsule VPN**</span></span>
+    - <span data-ttu-id="fffef-116">**Cisco AnyConnect**</span><span class="sxs-lookup"><span data-stu-id="fffef-116">**Cisco AnyConnect**</span></span>
+    - <span data-ttu-id="fffef-117">**Dell SonicWALL Mobile Connect**</span><span class="sxs-lookup"><span data-stu-id="fffef-117">**Dell SonicWALL Mobile Connect**</span></span>
+    - <span data-ttu-id="fffef-118">**F5 Edge Client**</span><span class="sxs-lookup"><span data-stu-id="fffef-118">**F5 Edge Client**</span></span>
+    - <span data-ttu-id="fffef-119">**Pulse Secure**</span><span class="sxs-lookup"><span data-stu-id="fffef-119">**Pulse Secure**</span></span>
+    - <span data-ttu-id="fffef-120">**Cisco (IPsec)**</span><span class="sxs-lookup"><span data-stu-id="fffef-120">**Cisco (IPSec)**</span></span>
+    - <span data-ttu-id="fffef-121">**Citrix**</span><span class="sxs-lookup"><span data-stu-id="fffef-121">**Citrix**</span></span>
+    - <span data-ttu-id="fffef-122">**Benutzerdefiniertes VPN**</span><span class="sxs-lookup"><span data-stu-id="fffef-122">**Custom VPN**</span></span>
+- <span data-ttu-id="fffef-123">**Tunneling teilen:** **Aktivieren** oder **deaktivieren** Sie diese Option, mit der Geräte anhand des Datenverkehrs selbst entscheiden können, welche Verbindung verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="fffef-123">**Split tunneling** - **Enable** or **Disable** this option, which lets devices decide which connection to use depending on the traffic.</span></span> <span data-ttu-id="fffef-124">Beispiel: Ein Benutzer in einem Hotel verwendet die VPN-Verbindung zum Zugreifen auf Arbeitsdateien, jedoch das Standardnetzwerk des Hotels für normales Webbrowsen.</span><span class="sxs-lookup"><span data-stu-id="fffef-124">For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.</span></span>
+
+
+## <a name="custom-vpn-settings"></a><span data-ttu-id="fffef-125">Benutzerdefinierte VPN-Einstellungen</span><span class="sxs-lookup"><span data-stu-id="fffef-125">Custom VPN settings</span></span>
+
+<span data-ttu-id="fffef-126">Wenn Sie **Benutzerdefiniertes VPN** als Verbindungstyp ausgewählt haben, konfigurieren Sie diese weiteren Einstellungen:</span><span class="sxs-lookup"><span data-stu-id="fffef-126">If you selected **Custom VPN** as the connection type, configure these further settings:</span></span>
+
+- <span data-ttu-id="fffef-127">**VPN-Bezeichner:** Dies ist ein Bezeichner für die verwendete VPN-App und wird von Ihrem VPN-Anbieter bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="fffef-127">**VPN identifier** This is an identifier for the VPN app you are using, and is supplied by your VPN provider.</span></span>
+- <span data-ttu-id="fffef-128">**Geben Sie Schlüssel-Wert-Paare für die benutzerdefinierten VPN-Attribute ein:** Fügen Sie **Schlüssel** und **Werte** zum Anpassen der VPN-Verbindung hinzu, oder importieren Sie sie.</span><span class="sxs-lookup"><span data-stu-id="fffef-128">**Enter key and value pairs for the custom VPN attributes** Add or import **Keys** and **Values** that customize your VPN connection.</span></span> <span data-ttu-id="fffef-129">Auch diese Werte werden in der Regel von Ihrem VPN-Anbieter bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="fffef-129">Again, these values are typically supplied by your VPN provider.</span></span>
+
+## <a name="apps-per-app-vpn-settings"></a><span data-ttu-id="fffef-130">App-Einstellungen (VPN für App)</span><span class="sxs-lookup"><span data-stu-id="fffef-130">Apps (per-app VPN) settings</span></span>
+
+- <span data-ttu-id="fffef-131">**VPN für App:** Aktivieren Sie diese Option, wenn Sie über URLs verfügen möchten, über die im Safari-Browser die VPN-Verbindung aktiviert werden kann.</span><span class="sxs-lookup"><span data-stu-id="fffef-131">**Per-app VPN** - Enable this option if you want to URLs that enable the VPN connection when they are visited from the Safari browser.</span></span> <span data-ttu-id="fffef-132">Für diese Konfiguration müssen Sie in den grundlegenden VPN-Einstellungen **Zertifikate** als Authentifizierungsmethode ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="fffef-132">To configure this, you must have selected **Certificates** as the authentication method in the base VPN settings.</span></span>
+- <span data-ttu-id="fffef-133">**Hiermit geben Sie URLs zum Aktivieren der VPN-Verbindung bei Verwendung des Safari-Browsers an:** Klicken Sie hierauf, um Website-URLs hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="fffef-133">**URLs that enable the VPN connection while using the Safari browser** - Click add to add one or more web site URLs.</span></span> <span data-ttu-id="fffef-134">Wenn diese URLs aufgerufen werden, wird die VPN-Verbindung aktiviert.</span><span class="sxs-lookup"><span data-stu-id="fffef-134">When these URLs are visited, the VPN connection is enabled.</span></span>
+
+- <span data-ttu-id="fffef-135">**Bedarfsgesteuerte Regeln:** Hier können Sie bedingte Regeln konfigurieren, die steuern, wann die VPN-Verbindung initiiert wird.</span><span class="sxs-lookup"><span data-stu-id="fffef-135">**On-demand rules** - This lets you configure conditional rules that control when the VPN connection is initiated.</span></span> <span data-ttu-id="fffef-136">Beispielsweise können Sie eine Bedingung erstellen, in der die VPN-Verbindung nur verwendet wird, wenn ein Gerät nicht mit einem Ihrer Unternehmens-WLAN-Netzwerke verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="fffef-136">For example, you could create a condition where the VPN connection is only used when a device is not connected to one of your company Wi-Fi networks.</span></span> <span data-ttu-id="fffef-137">Alternativ können Sie eine Bedingung erstellen, in der die VPN-Verbindung nicht initiiert wird, wenn ein Gerät nicht auf eine angegebene DNS-Suchdomäne zugreifen kann.</span><span class="sxs-lookup"><span data-stu-id="fffef-137">Alternatively, you could create a condition where, if a device cannot access a DNS search domain you specify, then the VPN connection is not initiated.</span></span>
+
+    - <span data-ttu-id="fffef-138">**SSIDs oder DNS-Suchdomänen:** Wählen Sie aus, ob diese Bedingung **SSIDs** des Drahtlosnetzwerks oder **DNS-Suchdomänen** verwenden soll.</span><span class="sxs-lookup"><span data-stu-id="fffef-138">**SSIDs or DNS search domains** - Select whether this condition uses wireless network **SSIDs**, or **DNS search domains**.</span></span> <span data-ttu-id="fffef-139">Wählen Sie „Hinzufügen“ aus, um SSIDs oder Suchdomänen zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="fffef-139">Choose Add to configure one or more SSIDs or search domains.</span></span>
+    - <span data-ttu-id="fffef-140">**URL-Zeichenfolgentest:** Geben Sie optional eine URL an, die von der Regel als Test verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="fffef-140">**URL string probe** - Optionally, provide a URL that the rule uses as a test.</span></span> <span data-ttu-id="fffef-141">Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird die VPN-Verbindung initiiert, und das Gerät stellt eine Verbindung mit der Ziel-URL her.</span><span class="sxs-lookup"><span data-stu-id="fffef-141">If the device on which this profile is installed is able to access this URL without redirection, the VPN connection is initiated and the device connects to the target URL.</span></span> <span data-ttu-id="fffef-142">Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="fffef-142">The user will not see the URL string probe site.</span></span> <span data-ttu-id="fffef-143">Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird.</span><span class="sxs-lookup"><span data-stu-id="fffef-143">An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN.</span></span> <span data-ttu-id="fffef-144">Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.</span><span class="sxs-lookup"><span data-stu-id="fffef-144">Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.</span></span>
+    - <span data-ttu-id="fffef-145">**Domänenaktion:** Wählen Sie eine der folgenden Optionen aus:</span><span class="sxs-lookup"><span data-stu-id="fffef-145">**Domain action** - Choose one of the following items:</span></span>
+        - <span data-ttu-id="fffef-146">Bei Bedarf verbinden</span><span class="sxs-lookup"><span data-stu-id="fffef-146">Connect if needed -</span></span> 
+        - <span data-ttu-id="fffef-147">Nie verbinden</span><span class="sxs-lookup"><span data-stu-id="fffef-147">Never connect -</span></span> 
+    - <span data-ttu-id="fffef-148">**Aktion:** Wählen Sie eine der folgenden Optionen aus:</span><span class="sxs-lookup"><span data-stu-id="fffef-148">**Action** - Choose one of the following items:</span></span>
+        - <span data-ttu-id="fffef-149">Verbinden</span><span class="sxs-lookup"><span data-stu-id="fffef-149">Connect -</span></span> 
+        - <span data-ttu-id="fffef-150">Verbindung auswerten</span><span class="sxs-lookup"><span data-stu-id="fffef-150">Evaluate connection -</span></span> 
+        - <span data-ttu-id="fffef-151">Ignorieren</span><span class="sxs-lookup"><span data-stu-id="fffef-151">Ignore -</span></span> 
+        - <span data-ttu-id="fffef-152">Trennen</span><span class="sxs-lookup"><span data-stu-id="fffef-152">Disconnect -</span></span> 
+
+
+## <a name="proxy-settings"></a><span data-ttu-id="fffef-153">Proxyeinstellungen</span><span class="sxs-lookup"><span data-stu-id="fffef-153">Proxy settings</span></span>
+
+- <span data-ttu-id="fffef-154">**Automatisches Konfigurationsskript:** Verwenden Sie eine Datei zum Konfigurieren des Proxyservers.</span><span class="sxs-lookup"><span data-stu-id="fffef-154">**Automatic configuration script** - Use a file to configure the proxy server.</span></span> <span data-ttu-id="fffef-155">Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com**), unter der die Konfigurationsdatei zu finden ist.</span><span class="sxs-lookup"><span data-stu-id="fffef-155">Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.</span></span>
+- <span data-ttu-id="fffef-156">**Adresse:** Geben Sie die Adresse des Proxyservers (als IP-Adresse) ein.</span><span class="sxs-lookup"><span data-stu-id="fffef-156">**Address** - Enter the proxy server address (as an IP address).</span></span>
+- <span data-ttu-id="fffef-157">**Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="fffef-157">**Port number** - Enter the port number associated with the proxy server.</span></span>

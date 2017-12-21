@@ -16,108 +16,108 @@ ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
-ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a><span data-ttu-id="2b21b-103">Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="2b21b-103">Endpoint protection settings for Windows 10 and later in Microsoft Intune</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mit dem Endpoint Protection-Profil können Sie Sicherheitsfunktionen auf Windows 10-Geräten steuern, wie z.B. BitLocker und Windows Defender.
+<span data-ttu-id="2b21b-104">Mit dem Endpoint Protection-Profil können Sie Sicherheitsfunktionen auf Windows 10-Geräten steuern, wie z.B. BitLocker und Windows Defender.</span><span class="sxs-lookup"><span data-stu-id="2b21b-104">The endpoint protection profile let you control security features on Windows 10 devices, like BitLocker, and Windows Defender.</span></span>
 
-In diesem Thema erfahren Sie, wie Sie Endpoint Protection-Profile erstelle können.
+<span data-ttu-id="2b21b-105">In diesem Thema erfahren Sie, wie Sie Endpoint Protection-Profile erstelle können.</span><span class="sxs-lookup"><span data-stu-id="2b21b-105">Use the information in this topic to learn how to create endpoint protection profiles.</span></span>
 
 > [!Note]
-> Diese Einstellungen werden nicht auf der Home Edition und auf der Professional Edition von Windows 10 unterstützt.
+> <span data-ttu-id="2b21b-106">Diese Einstellungen werden nicht auf der Home Edition und auf der Professional Edition von Windows 10 unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2b21b-106">These settings are not supported on the Home and Professional editions of Windows 10.</span></span>
 
-## <a name="create-an-endpoint-protection-profile"></a>Erstellen eines Endpoint Protection-Profils
+## <a name="create-an-endpoint-protection-profile"></a><span data-ttu-id="2b21b-107">Erstellen eines Endpoint Protection-Profils</span><span class="sxs-lookup"><span data-stu-id="2b21b-107">Create an endpoint protection profile</span></span>
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Gerätefunktionsprofil ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus.
-7. Nehmen Sie auf dem Blatt **Windows-Verschlüsselung** die gewünschten Einstellungen vor. Die Angaben in diesem Thema helfen Ihnen dabei zu verstehen, was die Auswirkungen jeder Einstellung sind. Wenn Sie fertig sind, wählen Sie **OK** aus.
-8. Gehen Sie zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
+1. <span data-ttu-id="2b21b-108">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="2b21b-108">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="2b21b-109">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-109">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="2b21b-110">Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-110">On the **Intune** blade, choose **Device configuration**.</span></span>
+2. <span data-ttu-id="2b21b-111">Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-111">On the **Device Configuration** blade, choose **Manage** > **Profiles**.</span></span>
+3. <span data-ttu-id="2b21b-112">Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-112">On the profiles blade, choose **Create Profile**.</span></span>
+4. <span data-ttu-id="2b21b-113">Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Gerätefunktionsprofil ein.</span><span class="sxs-lookup"><span data-stu-id="2b21b-113">On the **Create Profile** blade, enter a **Name** and **Description** for the device features profile.</span></span>
+5. <span data-ttu-id="2b21b-114">Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-114">From the **Platform** drop-down list, select **Windows 10 and later**.</span></span>
+6. <span data-ttu-id="2b21b-115">Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-115">From the **Profile type** drop-down list, choose **Endpoint protection**.</span></span>
+7. <span data-ttu-id="2b21b-116">Nehmen Sie auf dem Blatt **Windows-Verschlüsselung** die gewünschten Einstellungen vor.</span><span class="sxs-lookup"><span data-stu-id="2b21b-116">On the **Windows encryption** blade, configure the settings you want.</span></span> <span data-ttu-id="2b21b-117">Die Angaben in diesem Thema helfen Ihnen dabei zu verstehen, was die Auswirkungen jeder Einstellung sind.</span><span class="sxs-lookup"><span data-stu-id="2b21b-117">Use the details in this topic to help you understand what each setting does.</span></span> <span data-ttu-id="2b21b-118">Wenn Sie fertig sind, wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="2b21b-118">When you are finished, choose **OK**.</span></span>
+8. <span data-ttu-id="2b21b-119">Gehen Sie zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="2b21b-119">Go back to the **Create Profile** blade, and choose **Create**.</span></span>
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+<span data-ttu-id="2b21b-120">Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2b21b-120">The profile is created and appears on the profiles list blade.</span></span>
 
-## <a name="windows-defender-smartscreen-settings"></a>Einstellungen für Windows Defender SmartScreen
+## <a name="windows-defender-smartscreen-settings"></a><span data-ttu-id="2b21b-121">Einstellungen für Windows Defender SmartScreen</span><span class="sxs-lookup"><span data-stu-id="2b21b-121">Windows Defender SmartScreen settings</span></span>
 
-- **SmartScreen für Apps und Dateien**: Hiermit wird Windows SmartScreen für die Datei- und App-Ausführung aktiviert.
-- **Ausführung nicht überprüfter Dateien**: Hiermit wird die Ausführung von Dateien durch den Benutzer gesperrt, die nicht durch Windows SmartScreen überprüft wurden.
+- <span data-ttu-id="2b21b-122">**SmartScreen für Apps und Dateien**: Hiermit wird Windows SmartScreen für die Datei- und App-Ausführung aktiviert.</span><span class="sxs-lookup"><span data-stu-id="2b21b-122">**SmartScreen for apps and files** - Enable Windows SmartScreen for file execution, and running apps.</span></span>
+- <span data-ttu-id="2b21b-123">**Ausführung nicht überprüfter Dateien**: Hiermit wird die Ausführung von Dateien durch den Benutzer gesperrt, die nicht durch Windows SmartScreen überprüft wurden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-123">**Unverified files execution** - Block the end user from running files that have not been verified by Windows SmartScreen.</span></span>
 
-## <a name="windows-encryption-settings"></a>Windows-Verschlüsselungseinstellungen
+## <a name="windows-encryption-settings"></a><span data-ttu-id="2b21b-124">Windows-Verschlüsselungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="2b21b-124">Windows encryption settings</span></span>
 
-### <a name="windows-settings"></a>Windows-Einstellungen
+### <a name="windows-settings"></a><span data-ttu-id="2b21b-125">Windows-Einstellungen</span><span class="sxs-lookup"><span data-stu-id="2b21b-125">Windows Settings</span></span>
 
-- **Geräte müssen verschlüsselt sein (nur Desktop)**: Wenn diese Einstellung aktiv ist, werden Benutzer aufgefordert, die Geräteverschlüsselung zu aktivieren. Zusätzlich werden Sie gebeten zu bestätigen, dass keine Verschlüsselung eines anderen Anbieters aktiviert ist. Wenn die Windows-Verschlüsselung eingeschaltet wird, während eine andere Verschlüsselungsmethode aktiv ist, wird das Gerät möglicherweise instabil.
-- **Speicherkarte muss verschlüsselt sein (nur mobil)**: Wenn diese Einstellung aktiv ist, werden alle vom Gerät verwendeten Wechselspeicherkarten verschlüsselt.
-
-
-### <a name="bitlocker-base-settings"></a>BitLocker-Grundeinstellungen
-
-- **Verschlüsselungsmethoden konfigurieren**: Wenn diese Einstellung aktiv ist, können Sie Verschlüsselungsalgorithmen für Betriebssystem-, Daten- und Wechseldatenträger konfigurieren.
-    - **Verschlüsselung für Betriebssystemlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerken. Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
-    - **Verschlüsselung für Festplattenlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Festplattenlaufwerke (integriert). Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
-    - **Verschlüsselung für Wechseldatenträger**: Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger. Wenn der Wechseldatenträger mit Geräten verwendet wird, die nicht unter Windows 10 laufen, wird empfohlen, dass Sie den AES-CBC-Algorithmus verwenden.
+- <span data-ttu-id="2b21b-126">**Geräte müssen verschlüsselt sein (nur Desktop)**: Wenn diese Einstellung aktiv ist, werden Benutzer aufgefordert, die Geräteverschlüsselung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="2b21b-126">**Require devices to be encrypted (Desktop only)** - If enabled, users are prompted to enable device encryption.</span></span> <span data-ttu-id="2b21b-127">Zusätzlich werden Sie gebeten zu bestätigen, dass keine Verschlüsselung eines anderen Anbieters aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="2b21b-127">Additionally, they are asked to confirm that encryption from another provider has not been enabled.</span></span> <span data-ttu-id="2b21b-128">Wenn die Windows-Verschlüsselung eingeschaltet wird, während eine andere Verschlüsselungsmethode aktiv ist, wird das Gerät möglicherweise instabil.</span><span class="sxs-lookup"><span data-stu-id="2b21b-128">If Windows encryption is turned on while another encryption method is active, the device might become unstable.</span></span>
+- <span data-ttu-id="2b21b-129">**Speicherkarte muss verschlüsselt sein (nur mobil)**: Wenn diese Einstellung aktiv ist, werden alle vom Gerät verwendeten Wechselspeicherkarten verschlüsselt.</span><span class="sxs-lookup"><span data-stu-id="2b21b-129">**Require Storage Card to be encrypted (mobile only)** - Enable this setting to encrypt any removable storage cards used by the device.</span></span>
 
 
-### <a name="bitlocker-os-drive-settings"></a>Einstellung für BitLocker-OS-Datenträger
+### <a name="bitlocker-base-settings"></a><span data-ttu-id="2b21b-130">BitLocker-Grundeinstellungen</span><span class="sxs-lookup"><span data-stu-id="2b21b-130">BitLocker base settings</span></span>
 
-- **Zusätzliche Authentifizierung beim Start anfordern** -
-    - **BitLocker mit nicht kompatiblem TPM-Chip** -
-    - **TPM-Systemstart**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss.
-    - **TPM-Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstart-PIN verwendet werden darf oder muss.
-    - **TPM-Systemstartschlüssel**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss.
-    - **TPM-Systemstartschlüssel und -Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel und ein PIN verwendet werden darf oder muss.
-- **PIN-Mindestlänge**: Wenn diese Einstellung aktiv ist, können Sie eine Mindestlänge für den TPM-Systemstart-PIN festlegen.
-    - **Mindestanzahl von Zeichen**: Geben Sie die Zahl an Zeichen an, die für den Systemstart-PIN erforderlich sind, zwischen **4**-**20**.
-- **Betriebssystemwiederherstellung aktivieren**: Wenn diese Einstellung aktiv ist, können Sie steuern, wie durch BitLocker geschützte Betriebssystemdatenträger wiederhergestellt werden, wenn die erforderlichen Systemstartinformationen nicht verfügbar sind.
-    - **Agent für zertifikatbasierte Datenwiederherstellung**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.
-    - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
-    - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
-        - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
-        - **Nur Wiederherstellungskennwörter sichern**
-    - **Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Wenn diese Einstellung aktiviert ist, verhindern Sie, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden.
-- **Pre-Boot-Wiederherstellungsmeldung und -URL aktivieren**: Legen Sie diese Einstellung fest, um die Meldung und URL zu konfigurieren, die auf dem Pre-Boot-Schlüsselwiederherstellungsbildschirm angezeigt werden.
-    - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Wählen Sie aus:
-        - **Standardmäßige Wiederherstellungsmeldung und -URL verwenden**
-        - **Leere Wiederherstellungsmeldung und -URL verwenden**
-        - **Benutzerdefinierte Wiederherstellungsmeldung**
-        - **Benutzerdefinierte Wiederherstellungs-URL**
+- <span data-ttu-id="2b21b-131">**Verschlüsselungsmethoden konfigurieren**: Wenn diese Einstellung aktiv ist, können Sie Verschlüsselungsalgorithmen für Betriebssystem-, Daten- und Wechseldatenträger konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="2b21b-131">**Configure encryption methods** - Enable this setting to configure encryption algorithms for operating system, data, and removable drives.</span></span>
+    - <span data-ttu-id="2b21b-132">**Verschlüsselung für Betriebssystemlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerken.</span><span class="sxs-lookup"><span data-stu-id="2b21b-132">**Encryption for operating system drives** - Choose the encryption method for operating system drives.</span></span> <span data-ttu-id="2b21b-133">Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-133">We recommend you use the XTS-AES algorithm.</span></span>
+    - <span data-ttu-id="2b21b-134">**Verschlüsselung für Festplattenlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Festplattenlaufwerke (integriert).</span><span class="sxs-lookup"><span data-stu-id="2b21b-134">**Encryption for fixed data-drives** - Choose the encryption method for fixed (built-in) data drives.</span></span> <span data-ttu-id="2b21b-135">Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-135">We recommend you use the XTS-AES algorithm.</span></span>
+    - <span data-ttu-id="2b21b-136">**Verschlüsselung für Wechseldatenträger**: Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger.</span><span class="sxs-lookup"><span data-stu-id="2b21b-136">**Encryption for removable data-drives** - Choose the encryption method for removable data drives.</span></span> <span data-ttu-id="2b21b-137">Wenn der Wechseldatenträger mit Geräten verwendet wird, die nicht unter Windows 10 laufen, wird empfohlen, dass Sie den AES-CBC-Algorithmus verwenden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-137">If the removable drive is used with devices that are not running Windows 10, we recommend you use the AES-CBC algorithm.</span></span>
 
 
-### <a name="bitlocker-fixed-data-drive-settings"></a>Einstellungen für das BitLocker-Festplattenlaufwerk
+### <a name="bitlocker-os-drive-settings"></a><span data-ttu-id="2b21b-138">Einstellung für BitLocker-OS-Datenträger</span><span class="sxs-lookup"><span data-stu-id="2b21b-138">BitLocker OS drive settings</span></span>
 
-- **Schreibzugriff auf Festplattenlaufwerke verweigern, die nicht durch BitLocker geschützt sind**: Wenn diese Einstellung festgelegt wurde, muss der BitLocker-Schutz auf allen Festplatten- und integrierten Laufwerken aktiviert sein, damit in sie geschrieben werden kann.
-- **Wiederherstellung von Festplattenlaufwerken aktivieren**: Wenn diese Einstellung festgelegt wurde, können Sie steuern, wie durch BitLocker geschützte Festplattenlaufwerke wiederhergestellt, wenn die erforderlichen Systemstartinformationen nicht vorliegen.
-    - **Datenwiederherstellungs-Agent**: Wenn diese Einstellung aktiviert ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Festplattenlaufwerken verwendet werden.
-    - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.  
-    - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
-    - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
-        - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
-        - **Nur Wiederherstellungskennwörter sichern**
-    - **Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
+- <span data-ttu-id="2b21b-139">**Zusätzliche Authentifizierung beim Start anfordern** -</span><span class="sxs-lookup"><span data-stu-id="2b21b-139">**Require additional authentication at startup** -</span></span>
+    - <span data-ttu-id="2b21b-140">**BitLocker mit nicht kompatiblem TPM-Chip** -</span><span class="sxs-lookup"><span data-stu-id="2b21b-140">**BitLocker with non-compatible TPM chip** -</span></span>
+    - <span data-ttu-id="2b21b-141">**TPM-Systemstart**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss.</span><span class="sxs-lookup"><span data-stu-id="2b21b-141">**TPM startup** - Configure whether the TPM chip is allowed, not allowed, or required.</span></span>
+    - <span data-ttu-id="2b21b-142">**TPM-Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstart-PIN verwendet werden darf oder muss.</span><span class="sxs-lookup"><span data-stu-id="2b21b-142">**TPM startup PIN** - Configure whether using a startup PIN with the TPM chip is allowed, not allowed, or required.</span></span>
+    - <span data-ttu-id="2b21b-143">**TPM-Systemstartschlüssel**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss.</span><span class="sxs-lookup"><span data-stu-id="2b21b-143">**TPM startup key** - Configure whether using a startup key with the TPM chip is allowed, not allowed, or required.</span></span>
+    - <span data-ttu-id="2b21b-144">**TPM-Systemstartschlüssel und -Systemstart-PIN**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel und ein PIN verwendet werden darf oder muss.</span><span class="sxs-lookup"><span data-stu-id="2b21b-144">**TPM startup key and PIN** - Configure whether using a startup key and PIN with the TPM chip is allowed, not allowed, or required.</span></span>
+- <span data-ttu-id="2b21b-145">**PIN-Mindestlänge**: Wenn diese Einstellung aktiv ist, können Sie eine Mindestlänge für den TPM-Systemstart-PIN festlegen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-145">**Minimum PIN Length** - Enable this setting to configure a minimum length for the TPM startup PIN.</span></span>
+    - <span data-ttu-id="2b21b-146">**Mindestanzahl von Zeichen**: Geben Sie die Zahl an Zeichen an, die für den Systemstart-PIN erforderlich sind, zwischen **4**-**20**.</span><span class="sxs-lookup"><span data-stu-id="2b21b-146">**Minimum characters** - Enter the number of characters required for the startup PIN from **4**-**20**.</span></span>
+- <span data-ttu-id="2b21b-147">**Betriebssystemwiederherstellung aktivieren**: Wenn diese Einstellung aktiv ist, können Sie steuern, wie durch BitLocker geschützte Betriebssystemdatenträger wiederhergestellt werden, wenn die erforderlichen Systemstartinformationen nicht verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="2b21b-147">**Enable OS drive recovery** - Enable this setting to control how BitLocker-protected operating system drives are recovered when the required start-up information is not available.</span></span>
+    - <span data-ttu-id="2b21b-148">**Agent für zertifikatbasierte Datenwiederherstellung**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-148">**Certificate-based data recovery agent** - Enable this setting if you want data recovery agents to be able to be used with BitLocker-protected operating system drives.</span></span>
+    - <span data-ttu-id="2b21b-149">**Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-149">**User creation of recovery password** - Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.</span></span>
+    - <span data-ttu-id="2b21b-150">**Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-150">**User creation of recovery key** - Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.</span></span>
+    - <span data-ttu-id="2b21b-151">**Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.</span><span class="sxs-lookup"><span data-stu-id="2b21b-151">**Hide recovery options in the BitLocker setup wizard** - Enable this setting to prevent users from seeing, or changing recovery options when they turn on BitLocker.</span></span>
+    - <span data-ttu-id="2b21b-152">**BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2b21b-152">**Save BitLocker recovery information to AD DS** - Enables the storage of BitLocker recovery information in Active Directory.</span></span>
+    - <span data-ttu-id="2b21b-153">**Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-153">**Configure storage of BitLocker recovery Information to AD DS** - Configure what parts of BitLocker recovery information are stored in Active Directory.</span></span> <span data-ttu-id="2b21b-154">Wählen Sie aus:</span><span class="sxs-lookup"><span data-stu-id="2b21b-154">Choose from:</span></span>
+        - <span data-ttu-id="2b21b-155">**Wiederherstellungskennwörter und Schlüsselpakete sichern**</span><span class="sxs-lookup"><span data-stu-id="2b21b-155">**Backup recovery passwords and key packages**</span></span>
+        - <span data-ttu-id="2b21b-156">**Nur Wiederherstellungskennwörter sichern**</span><span class="sxs-lookup"><span data-stu-id="2b21b-156">**Backup recovery passwords only**</span></span>
+    - <span data-ttu-id="2b21b-157">**Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Wenn diese Einstellung aktiviert ist, verhindern Sie, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-157">**Require recovery information to be stored in AD DS before enabling BitLocker** - Enable this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information is successfully stored in Active Directory.</span></span>
+- <span data-ttu-id="2b21b-158">**Pre-Boot-Wiederherstellungsmeldung und -URL aktivieren**: Legen Sie diese Einstellung fest, um die Meldung und URL zu konfigurieren, die auf dem Pre-Boot-Schlüsselwiederherstellungsbildschirm angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-158">**Enable pre-boot recovery message and URL** - Enable this setting to configure the message and URL that are displayed on the pre-boot key recovery screen.</span></span>
+    - <span data-ttu-id="2b21b-159">**Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="2b21b-159">**Pre-boot recovery message** - Configure how the pre-boot recovery message displays to users.</span></span> <span data-ttu-id="2b21b-160">Wählen Sie aus:</span><span class="sxs-lookup"><span data-stu-id="2b21b-160">Choose from:</span></span>
+        - <span data-ttu-id="2b21b-161">**Standardmäßige Wiederherstellungsmeldung und -URL verwenden**</span><span class="sxs-lookup"><span data-stu-id="2b21b-161">**Use default recovery message and URL**</span></span>
+        - <span data-ttu-id="2b21b-162">**Leere Wiederherstellungsmeldung und -URL verwenden**</span><span class="sxs-lookup"><span data-stu-id="2b21b-162">**Use empty recovery message and URL**</span></span>
+        - <span data-ttu-id="2b21b-163">**Benutzerdefinierte Wiederherstellungsmeldung**</span><span class="sxs-lookup"><span data-stu-id="2b21b-163">**Use custom recovery message**</span></span>
+        - <span data-ttu-id="2b21b-164">**Benutzerdefinierte Wiederherstellungs-URL**</span><span class="sxs-lookup"><span data-stu-id="2b21b-164">**Use custom recovery URL**</span></span>
 
 
-### <a name="bitlocker-removable-data-drive-settings"></a>Einstellungen für den BitLocker-Wechseldatenträger
+### <a name="bitlocker-fixed-data-drive-settings"></a><span data-ttu-id="2b21b-165">Einstellungen für das BitLocker-Festplattenlaufwerk</span><span class="sxs-lookup"><span data-stu-id="2b21b-165">BitLocker fixed data-drive settings</span></span>
 
-- **Schreibzugriff auf Wechseldatenträger verweigern, die nicht durch BitLocker geschützt sind**: Legen Sie fest, ob die BitLocker-Verschlüsselung für Wechseldatenträger erforderlich ist.
-    - **Schreibzugriff auf Geräte blockieren, die in einer anderen Organisation konfiguriert sind**: Legen Sie fest, ob in Wechseldatenträger, die einer anderen Organisation angehören, geschrieben werden darf.
+- <span data-ttu-id="2b21b-166">**Schreibzugriff auf Festplattenlaufwerke verweigern, die nicht durch BitLocker geschützt sind**: Wenn diese Einstellung festgelegt wurde, muss der BitLocker-Schutz auf allen Festplatten- und integrierten Laufwerken aktiviert sein, damit in sie geschrieben werden kann.</span><span class="sxs-lookup"><span data-stu-id="2b21b-166">**Deny write access to fixed data-drive not protected by BitLocker** - If enabled, BitLocker protection must be enabled on all fixed, or built-in data drives to be able to write to them.</span></span>
+- <span data-ttu-id="2b21b-167">**Wiederherstellung von Festplattenlaufwerken aktivieren**: Wenn diese Einstellung festgelegt wurde, können Sie steuern, wie durch BitLocker geschützte Festplattenlaufwerke wiederhergestellt, wenn die erforderlichen Systemstartinformationen nicht vorliegen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-167">**Enable fixed drive recovery** - Enable this setting to control how BitLocker-protected fixed drives are recovered when the required start-up information is not available.</span></span>
+    - <span data-ttu-id="2b21b-168">**Datenwiederherstellungs-Agent**: Wenn diese Einstellung aktiviert ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Festplattenlaufwerken verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-168">**Data recovery agent** - Enable this setting if you want data recovery agents to be used with BitLocker-protected fixed drives.</span></span>
+    - <span data-ttu-id="2b21b-169">**Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-169">**User creation of recovery password** - Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.</span></span>  
+    - <span data-ttu-id="2b21b-170">**Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.</span><span class="sxs-lookup"><span data-stu-id="2b21b-170">**User creation of recovery key** - Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.</span></span>
+    - <span data-ttu-id="2b21b-171">**Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.</span><span class="sxs-lookup"><span data-stu-id="2b21b-171">**Hide recovery options in the BitLocker setup wizard** - Enable this setting to prevent users from seeing, or changing recovery options when they turn on BitLocker.</span></span>
+    - <span data-ttu-id="2b21b-172">**BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2b21b-172">**Save BitLocker recovery information to AD DS** - Enables the storage of BitLocker recovery information in Active Directory.</span></span>
+    - <span data-ttu-id="2b21b-173">**Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="2b21b-173">**Configure storage of BitLocker recovery Information to AD DS** - Configure what parts of BitLocker recovery information are stored in Active Directory.</span></span> <span data-ttu-id="2b21b-174">Wählen Sie aus:</span><span class="sxs-lookup"><span data-stu-id="2b21b-174">Choose from:</span></span>
+        - <span data-ttu-id="2b21b-175">**Wiederherstellungskennwörter und Schlüsselpakete sichern**</span><span class="sxs-lookup"><span data-stu-id="2b21b-175">**Backup recovery passwords and key packages**</span></span>
+        - <span data-ttu-id="2b21b-176">**Nur Wiederherstellungskennwörter sichern**</span><span class="sxs-lookup"><span data-stu-id="2b21b-176">**Backup recovery passwords only**</span></span>
+    - <span data-ttu-id="2b21b-177">**Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.</span><span class="sxs-lookup"><span data-stu-id="2b21b-177">**Require recovery information to be stored in AD DS before enabling BitLocker** - Enable this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information has been successfully stored in Active Directory.</span></span>
+
+
+### <a name="bitlocker-removable-data-drive-settings"></a><span data-ttu-id="2b21b-178">Einstellungen für den BitLocker-Wechseldatenträger</span><span class="sxs-lookup"><span data-stu-id="2b21b-178">BitLocker removable data-drive settings</span></span>
+
+- <span data-ttu-id="2b21b-179">**Schreibzugriff auf Wechseldatenträger verweigern, die nicht durch BitLocker geschützt sind**: Legen Sie fest, ob die BitLocker-Verschlüsselung für Wechseldatenträger erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="2b21b-179">**Deny write access to removable data-drive not protected by BitLocker** - Specify whether BitLocker encryption is required for removable storage drives.</span></span>
+    - <span data-ttu-id="2b21b-180">**Schreibzugriff auf Geräte blockieren, die in einer anderen Organisation konfiguriert sind**: Legen Sie fest, ob in Wechseldatenträger, die einer anderen Organisation angehören, geschrieben werden darf.</span><span class="sxs-lookup"><span data-stu-id="2b21b-180">**Block write access to devices configured in another organization** - Specify whether removable data drives that belong to another organization can be written to.</span></span>
 
 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a><span data-ttu-id="2b21b-181">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="2b21b-181">Next steps</span></span>
 
-Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
+<span data-ttu-id="2b21b-182">Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.</span><span class="sxs-lookup"><span data-stu-id="2b21b-182">If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).</span></span>

@@ -16,82 +16,82 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a><span data-ttu-id="30052-103">Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte</span><span class="sxs-lookup"><span data-stu-id="30052-103">Add app configuration policies for managed iOS devices</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine iOS-App ausführen. Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu. Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
+<span data-ttu-id="30052-104">Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine iOS-App ausführen.</span><span class="sxs-lookup"><span data-stu-id="30052-104">Use app configuration policies in Microsoft Intune to supply settings when users run an iOS app.</span></span> <span data-ttu-id="30052-105">Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu.</span><span class="sxs-lookup"><span data-stu-id="30052-105">You do not assign these policies directly to users and devices.</span></span> <span data-ttu-id="30052-106">Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu.</span><span class="sxs-lookup"><span data-stu-id="30052-106">Instead, you associate a policy with an app, and then assign the app.</span></span> <span data-ttu-id="30052-107">Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).</span><span class="sxs-lookup"><span data-stu-id="30052-107">The policy settings are used when the app checks for them, typically the first time it is run.</span></span>
 
 > [!TIP]
-> Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
+> <span data-ttu-id="30052-108">Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 8.0 und höher verfügbar.</span><span class="sxs-lookup"><span data-stu-id="30052-108">This policy type is currently available only for devices running iOS 8.0 and later.</span></span> <span data-ttu-id="30052-109">Er unterstützt die folgenden App-Installationstypen:</span><span class="sxs-lookup"><span data-stu-id="30052-109">It supports the following app installation types:</span></span>
 >
-> -   **Verwaltete iOS-App aus dem App Store**
-> -   **App-Paket für iOS**
+> -   <span data-ttu-id="30052-110">**Verwaltete iOS-App aus dem App Store**</span><span class="sxs-lookup"><span data-stu-id="30052-110">**Managed iOS app from the app store**</span></span>
+> -   <span data-ttu-id="30052-111">**App-Paket für iOS**</span><span class="sxs-lookup"><span data-stu-id="30052-111">**App package for iOS**</span></span>
 >
-> Weitere Informationen zu Installationstypen von Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md).
+> <span data-ttu-id="30052-112">Weitere Informationen zu Installationstypen von Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md).</span><span class="sxs-lookup"><span data-stu-id="30052-112">For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).</span></span>
 
-## <a name="create-an-app-configuration-policy"></a>Erstellen einer Konfigurationsrichtlinie für Apps
+## <a name="create-an-app-configuration-policy"></a><span data-ttu-id="30052-113">Erstellen einer Konfigurationsrichtlinie für Apps</span><span class="sxs-lookup"><span data-stu-id="30052-113">Create an app configuration policy</span></span>
 
-1. Melden Sie sich im Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
-3. Wählen Sie die Workload **Mobile Apps** aus.
-4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
-5. Legen Sie die folgenden Details fest:
-    - **Name**<br>
-      Der Name des Profils, das im Azure-Portal angezeigt wird
-    - **Beschreibung**<br>
-      Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
-    - **Geräteregistrierungstyp**<br>
-      Klicken Sie auf **Verwaltete Geräte**.
-6. Wählen Sie **iOS** als **Plattform** aus.
-7.  Wählen Sie **Zugeordnete App** aus. Wählen Sie dann auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.
-8.  Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
-9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Einstellungen aus:
-    - **[Verwenden des Konfigurations-Designers](#Use-the-configuration-designer)**
-    - **[Eingeben von XML-Daten](#enter-xml-data)**
-10. Wählen Sie **OK** und dann **Hinzufügen** aus.
+1. <span data-ttu-id="30052-114">Melden Sie sich im Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="30052-114">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="30052-115">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-115">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>
+3. <span data-ttu-id="30052-116">Wählen Sie die Workload **Mobile Apps** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-116">Choose the **Mobile apps** workload.</span></span>
+4. <span data-ttu-id="30052-117">Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-117">Choose **App configuration policies** in the **Manage** group, and then choose **Add**.</span></span>
+5. <span data-ttu-id="30052-118">Legen Sie die folgenden Details fest:</span><span class="sxs-lookup"><span data-stu-id="30052-118">Set the following details:</span></span>
+    - <span data-ttu-id="30052-119">**Name**</span><span class="sxs-lookup"><span data-stu-id="30052-119">**Name**</span></span><br>
+      <span data-ttu-id="30052-120">Der Name des Profils, das im Azure-Portal angezeigt wird</span><span class="sxs-lookup"><span data-stu-id="30052-120">The name of the profile that will appear in the Azure portal.</span></span>
+    - <span data-ttu-id="30052-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="30052-121">**Description**</span></span><br>
+      <span data-ttu-id="30052-122">Die Beschreibung des Profils, das im Azure-Portal angezeigt wird</span><span class="sxs-lookup"><span data-stu-id="30052-122">The description of the profile that will appear in the Azure portal.</span></span>
+    - <span data-ttu-id="30052-123">**Geräteregistrierungstyp**</span><span class="sxs-lookup"><span data-stu-id="30052-123">**Device enrollment type**</span></span><br>
+      <span data-ttu-id="30052-124">Klicken Sie auf **Verwaltete Geräte**.</span><span class="sxs-lookup"><span data-stu-id="30052-124">Choose **Managed devices**.</span></span>
+6. <span data-ttu-id="30052-125">Wählen Sie **iOS** als **Plattform** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-125">Select **iOS** for **Platform**.</span></span>
+7.  <span data-ttu-id="30052-126">Wählen Sie **Zugeordnete App** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-126">Choose **Associated App**.</span></span> <span data-ttu-id="30052-127">Wählen Sie dann auf dem Blatt **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="30052-127">Then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.</span></span>
+8.  <span data-ttu-id="30052-128">Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-128">On the **Add Configuration Policy** blade, choose **Configuration settings**.</span></span>
+9. <span data-ttu-id="30052-129">Wählen Sie das **Format der Konfigurationseinstellungen** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-129">Select **Configuration settings format**.</span></span> <span data-ttu-id="30052-130">Wählen Sie eine der folgenden Einstellungen aus:</span><span class="sxs-lookup"><span data-stu-id="30052-130">Select one of the following:</span></span>
+    - <span data-ttu-id="30052-131">**[Verwenden des Konfigurations-Designers](#Use-the-configuration-designer)**</span><span class="sxs-lookup"><span data-stu-id="30052-131">**[Use configuration designer](#Use-the-configuration-designer)**</span></span>
+    - <span data-ttu-id="30052-132">**[Eingeben von XML-Daten](#enter-xml-data)**</span><span class="sxs-lookup"><span data-stu-id="30052-132">**[Enter XML data](#enter-xml-data)**</span></span>
+10. <span data-ttu-id="30052-133">Wählen Sie **OK** und dann **Hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="30052-133">Choose **OK**, and then choose **Add**.</span></span>
 
-## <a name="use-configuration-designer"></a>Verwenden des Konfigurations-Designers
+## <a name="use-configuration-designer"></a><span data-ttu-id="30052-134">Verwenden des Konfigurations-Designers</span><span class="sxs-lookup"><span data-stu-id="30052-134">Use configuration designer</span></span>
 
-Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht. Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte. Sie müssen ebenfalls den Datentyp für jeden Wert angeben. Die Einstellungen werden für Apps automatisch bei der Installation bereitgestellt.
+<span data-ttu-id="30052-135">Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht.</span><span class="sxs-lookup"><span data-stu-id="30052-135">You can use the configuration designer for apps on devices that are enrolled or not enrolled in Intune.</span></span> <span data-ttu-id="30052-136">Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte.</span><span class="sxs-lookup"><span data-stu-id="30052-136">The designer lets you configure specific configuration keys and values.</span></span> <span data-ttu-id="30052-137">Sie müssen ebenfalls den Datentyp für jeden Wert angeben.</span><span class="sxs-lookup"><span data-stu-id="30052-137">You must also specify the data type for each value.</span></span> <span data-ttu-id="30052-138">Die Einstellungen werden für Apps automatisch bei der Installation bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="30052-138">Settings are supplied to apps automatically when they're installed.</span></span>
 
-### <a name="add-a-setting"></a>Hinzufügen einer Einstellung
+### <a name="add-a-setting"></a><span data-ttu-id="30052-139">Hinzufügen einer Einstellung</span><span class="sxs-lookup"><span data-stu-id="30052-139">Add a setting</span></span>
 
-1. Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest:
-   - **Konfigurationsschlüssel**<br>
-     Der Schlüssel, der die bestimmte Einstellungskonfiguration eindeutig identifiziert.
-   - **Werttyp**<br>
-     Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.
-   - **Konfigurationswert**<br>
-     Der Wert für die Konfiguration.
-2. Wählen Sie **OK** aus, um Ihre Konfigurationseinstellungen festzulegen.
+1. <span data-ttu-id="30052-140">Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest:</span><span class="sxs-lookup"><span data-stu-id="30052-140">For each key and value in the configuration, set:</span></span>
+   - <span data-ttu-id="30052-141">**Konfigurationsschlüssel**</span><span class="sxs-lookup"><span data-stu-id="30052-141">**Configuration key**</span></span><br>
+     <span data-ttu-id="30052-142">Der Schlüssel, der die bestimmte Einstellungskonfiguration eindeutig identifiziert.</span><span class="sxs-lookup"><span data-stu-id="30052-142">The key that uniquely identifies the specific setting configuration.</span></span>
+   - <span data-ttu-id="30052-143">**Werttyp**</span><span class="sxs-lookup"><span data-stu-id="30052-143">**Value type**</span></span><br>
+     <span data-ttu-id="30052-144">Der Datentyp des Konfigurationswerts.</span><span class="sxs-lookup"><span data-stu-id="30052-144">The data type of the configuration value.</span></span> <span data-ttu-id="30052-145">Zu den Typen gehören Integer, Real, String oder Boolean.</span><span class="sxs-lookup"><span data-stu-id="30052-145">Types include Integer, Real, String, or Boolean.</span></span>
+   - <span data-ttu-id="30052-146">**Konfigurationswert**</span><span class="sxs-lookup"><span data-stu-id="30052-146">**Configuration value**</span></span><br>
+     <span data-ttu-id="30052-147">Der Wert für die Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="30052-147">The value for the configuration.</span></span>
+2. <span data-ttu-id="30052-148">Wählen Sie **OK** aus, um Ihre Konfigurationseinstellungen festzulegen.</span><span class="sxs-lookup"><span data-stu-id="30052-148">Choose **OK** to set your configuration settings.</span></span>
 
-### <a name="delete-a-setting"></a>Löschen einer Einstellung
+### <a name="delete-a-setting"></a><span data-ttu-id="30052-149">Löschen einer Einstellung</span><span class="sxs-lookup"><span data-stu-id="30052-149">Delete a setting</span></span>
 
-1. Wählen Sie die Auslassungspunkte (**...** ) neben der Einstellung aus.
-2. Klicken Sie auf **Löschen**.
+1. <span data-ttu-id="30052-150">Wählen Sie die Auslassungspunkte (**...** ) neben der Einstellung aus.</span><span class="sxs-lookup"><span data-stu-id="30052-150">Choose the ellipsis (**...**) next to the setting.</span></span>
+2. <span data-ttu-id="30052-151">Klicken Sie auf **Löschen**.</span><span class="sxs-lookup"><span data-stu-id="30052-151">Select **Delete**.</span></span>
 
-Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
+<span data-ttu-id="30052-152">Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="30052-152">The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.</span></span>
 
-## <a name="enter-xml-data"></a>Eingeben von XML-Daten
+## <a name="enter-xml-data"></a><span data-ttu-id="30052-153">Eingeben von XML-Daten</span><span class="sxs-lookup"><span data-stu-id="30052-153">Enter XML data</span></span>
 
-Sie können eine XML-Eigenschaftenliste eingeben oder einfügen, die die App-Konfigurationseinstellungen für in Intune registrierte Geräte enthält. Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren. Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.
+<span data-ttu-id="30052-154">Sie können eine XML-Eigenschaftenliste eingeben oder einfügen, die die App-Konfigurationseinstellungen für in Intune registrierte Geräte enthält.</span><span class="sxs-lookup"><span data-stu-id="30052-154">You can type or paste an XML property list that contains the app configuration settings for devices enrolled in Intune.</span></span> <span data-ttu-id="30052-155">Das Format der XML-Eigenschaftenliste variiert je nach der App, die Sie konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="30052-155">The format of the XML property list varies depending on the app that you are configuring.</span></span> <span data-ttu-id="30052-156">Wenden Sie sich an den Hersteller der App, um ausführliche Informationen über das genau zu verwendende Format zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="30052-156">For details about the exact format to use, contact the supplier of the app.</span></span>
 
-Intune überprüft das XML-Format. Intune überprüft jedoch nicht, ob die XML-Eigenschaftenliste (PList) mit der Ziel-App verwendet werden kann.
+<span data-ttu-id="30052-157">Intune überprüft das XML-Format.</span><span class="sxs-lookup"><span data-stu-id="30052-157">Intune validates the XML format.</span></span> <span data-ttu-id="30052-158">Intune überprüft jedoch nicht, ob die XML-Eigenschaftenliste (PList) mit der Ziel-App verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="30052-158">However, Intune does not check that the XML property list (PList) will work with the target app.</span></span>
 
-Weitere Informationen zu XML-Eigenschaftenlisten:
+<span data-ttu-id="30052-159">Weitere Informationen zu XML-Eigenschaftenlisten:</span><span class="sxs-lookup"><span data-stu-id="30052-159">To learn more about XML property lists:</span></span>
 
-  -  Lesen Sie [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-  -  Lesen Sie unter [Understand XML Property Lists (Grundlegendes zu XML-Eigenschaftenlisten)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS-Entwicklerbibliothek nach.
+  -  <span data-ttu-id="30052-160">Lesen Sie [Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).</span><span class="sxs-lookup"><span data-stu-id="30052-160">Read [Configure iOS apps with mobile app configuration policies in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).</span></span>
+  -  <span data-ttu-id="30052-161">Lesen Sie unter [Understand XML Property Lists (Grundlegendes zu XML-Eigenschaftenlisten)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in der iOS-Entwicklerbibliothek nach.</span><span class="sxs-lookup"><span data-stu-id="30052-161">Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.</span></span>
 
-### <a name="example-format-for-an-app-configuration-xml-file"></a>Beispielformat für eine App-Konfigurations-XML-Datei
+### <a name="example-format-for-an-app-configuration-xml-file"></a><span data-ttu-id="30052-162">Beispielformat für eine App-Konfigurations-XML-Datei</span><span class="sxs-lookup"><span data-stu-id="30052-162">Example format for an app configuration XML file</span></span>
 
-Wenn Sie eine App-Konfigurationsdatei erstellen, können Sie die folgenden Werte in diesem Format angeben:
+<span data-ttu-id="30052-163">Wenn Sie eine App-Konfigurationsdatei erstellen, können Sie die folgenden Werte in diesem Format angeben:</span><span class="sxs-lookup"><span data-stu-id="30052-163">When you create an app configuration file, you can specify one or more of the following values by using this format:</span></span>
 
 ```
 <dict>
@@ -117,30 +117,30 @@ Wenn Sie eine App-Konfigurationsdatei erstellen, können Sie die folgenden Werte
   <string>{{udidlast4digits}}</string>
 </dict>
 ```
-### <a name="supported-xml-plist-data-types"></a>Unterstützte XML-PList-Datentypen
+### <a name="supported-xml-plist-data-types"></a><span data-ttu-id="30052-164">Unterstützte XML-PList-Datentypen</span><span class="sxs-lookup"><span data-stu-id="30052-164">Supported XML PList data types</span></span>
 
-Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
+<span data-ttu-id="30052-165">Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:</span><span class="sxs-lookup"><span data-stu-id="30052-165">Intune supports the following data types in a property list:</span></span>
 
-- &lt;integer&gt;
-- &lt;real&gt;
-- &lt;string&gt;
-- &lt;array&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; oder &lt;false /&gt;
+- <span data-ttu-id="30052-166">&lt;integer&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-166">&lt;integer&gt;</span></span>
+- <span data-ttu-id="30052-167">&lt;real&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-167">&lt;real&gt;</span></span>
+- <span data-ttu-id="30052-168">&lt;string&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-168">&lt;string&gt;</span></span>
+- <span data-ttu-id="30052-169">&lt;array&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-169">&lt;array&gt;</span></span>
+- <span data-ttu-id="30052-170">&lt;dict&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-170">&lt;dict&gt;</span></span>
+- <span data-ttu-id="30052-171">&lt;true /&gt; oder &lt;false /&gt;</span><span class="sxs-lookup"><span data-stu-id="30052-171">&lt;true /&gt; or &lt;false /&gt;</span></span>
 
-### <a name="tokens-used-in-the-property-list"></a>Tokens, die in der Eigenschaftenliste verwendet werden.
+### <a name="tokens-used-in-the-property-list"></a><span data-ttu-id="30052-172">Tokens, die in der Eigenschaftenliste verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="30052-172">Tokens used in the property list</span></span>
 
-Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
-- \{\{userPrincipalName\}\}: z.B.**John@contoso.com**
-- \{\{Mail\}\}: z.B.**John@contoso.com**
-- \{\{partialupn\}\}: z.B. **John**
-- \{\{accountid\}\}: z.B. **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{deviceid\}\}: z.B. **b9841cd9-9843-405f-be28-b2265c59ef97**
-- \{\{userid\}\}: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}: z.B. **John Doe**
-- \{\{serialnumber\}\}: z.B. **F4KN99ZUG5V2** (für iOS-Geräte)
-- \{\{serialnumberlast4digits\}\}: z.B. **G5V2** (für iOS-Geräte)
+<span data-ttu-id="30052-173">Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:</span><span class="sxs-lookup"><span data-stu-id="30052-173">Additionally, Intune supports the following token types in the property list:</span></span>
+- <span data-ttu-id="30052-174">\{\{userPrincipalName\}\}: z.B.**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="30052-174">\{\{userprincipalname\}\}—for example, **John@contoso.com**</span></span>
+- <span data-ttu-id="30052-175">\{\{Mail\}\}: z.B.**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="30052-175">\{\{mail\}\}—for example, **John@contoso.com**</span></span>
+- <span data-ttu-id="30052-176">\{\{partialupn\}\}: z.B. **John**</span><span class="sxs-lookup"><span data-stu-id="30052-176">\{\{partialupn\}\}—for example, **John**</span></span>
+- <span data-ttu-id="30052-177">\{\{accountid\}\}: z.B. **fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span><span class="sxs-lookup"><span data-stu-id="30052-177">\{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span></span>
+- <span data-ttu-id="30052-178">\{\{deviceid\}\}: z.B. **b9841cd9-9843-405f-be28-b2265c59ef97**</span><span class="sxs-lookup"><span data-stu-id="30052-178">\{\{deviceid\}\}—for example, **b9841cd9-9843-405f-be28-b2265c59ef97**</span></span>
+- <span data-ttu-id="30052-179">\{\{userid\}\}: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**</span><span class="sxs-lookup"><span data-stu-id="30052-179">\{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**</span></span>
+- <span data-ttu-id="30052-180">\{\{username\}\}: z.B. **John Doe**</span><span class="sxs-lookup"><span data-stu-id="30052-180">\{\{username\}\}—for example, **John Doe**</span></span>
+- <span data-ttu-id="30052-181">\{\{serialnumber\}\}: z.B. **F4KN99ZUG5V2** (für iOS-Geräte)</span><span class="sxs-lookup"><span data-stu-id="30052-181">\{\{serialnumber\}\}—for example, **F4KN99ZUG5V2** (for iOS devices)</span></span>
+- <span data-ttu-id="30052-182">\{\{serialnumberlast4digits\}\}: z.B. **G5V2** (für iOS-Geräte)</span><span class="sxs-lookup"><span data-stu-id="30052-182">\{\{serialnumberlast4digits\}\}—for example, **G5V2** (for iOS devices)</span></span>
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a><span data-ttu-id="30052-183">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="30052-183">Next steps</span></span>
 
-Fahren Sie wie gewöhnlich mit dem [Zuweisen](apps-deploy.md) und [Überwachen](apps-monitor.md) der App fort.
+<span data-ttu-id="30052-184">Fahren Sie wie gewöhnlich mit dem [Zuweisen](apps-deploy.md) und [Überwachen](apps-monitor.md) der App fort.</span><span class="sxs-lookup"><span data-stu-id="30052-184">Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.</span></span>

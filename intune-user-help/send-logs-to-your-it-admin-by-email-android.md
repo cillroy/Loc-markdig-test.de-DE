@@ -17,27 +17,27 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 9886fdf682b08707d4a5292f8c34aca20b828028
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>Senden von Protokollen an den Support Ihres Unternehmens per E-Mail
+# <a name="send-logs-to-your-company-support-using-email"></a><span data-ttu-id="bf80e-103">Senden von Protokollen an den Support Ihres Unternehmens per E-Mail</span><span class="sxs-lookup"><span data-stu-id="bf80e-103">Send logs to your company support using email</span></span>
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+<span data-ttu-id="bf80e-104">Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen.</span><span class="sxs-lookup"><span data-stu-id="bf80e-104">If you get an error while you’re using the Company Portal app on your Android device, you can help your company support troubleshoot the problem by sending them information through email.</span></span> <span data-ttu-id="bf80e-105">Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.</span><span class="sxs-lookup"><span data-stu-id="bf80e-105">This information is kept on your device in a special document called a _diagnostic log_.</span></span>
 
 > [!Note]
-> Um dem Support Ihres Unternehmens die Diagnose des Problems zu erleichtern, sollten Sie die _ausführliche Protokollierung_ aktivieren. Bei der ausführlichen Protokollierung werden alle relevanten Informationen im Bericht aufgeführt. Informieren Sie sich, wie Sie die [ausführliche Protokollierung aktivieren](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> <span data-ttu-id="bf80e-106">Um dem Support Ihres Unternehmens die Diagnose des Problems zu erleichtern, sollten Sie die _ausführliche Protokollierung_ aktivieren.</span><span class="sxs-lookup"><span data-stu-id="bf80e-106">To make it easier for your company support to figure out the issue, you should turn on _verbose logging_.</span></span> <span data-ttu-id="bf80e-107">Bei der ausführlichen Protokollierung werden alle relevanten Informationen im Bericht aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="bf80e-107">Verbose logging includes all relevant details in the report.</span></span> <span data-ttu-id="bf80e-108">Informieren Sie sich, wie Sie die [ausführliche Protokollierung aktivieren](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).</span><span class="sxs-lookup"><span data-stu-id="bf80e-108">Find out how to [turn on verbose logging here](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).</span></span>
 
-So senden Sie per E-Mail Protokolle an den Support Ihres Unternehmens:
+<span data-ttu-id="bf80e-109">So senden Sie per E-Mail Protokolle an den Support Ihres Unternehmens:</span><span class="sxs-lookup"><span data-stu-id="bf80e-109">To send logs to your company support using email:</span></span>
 
-1.  Öffnen Sie die Unternehmensportal-App.
+1.  <span data-ttu-id="bf80e-110">Öffnen Sie die Unternehmensportal-App.</span><span class="sxs-lookup"><span data-stu-id="bf80e-110">Open the Company Portal app.</span></span>
 
-2.  Tippen Sie auf **Menü** >  **Hilfe und Feedback**.
+2.  <span data-ttu-id="bf80e-111">Tippen Sie auf **Menü** >  **Hilfe und Feedback**.</span><span class="sxs-lookup"><span data-stu-id="bf80e-111">Tap **Menu** >  **Help and Feedback**.</span></span>
 
     > [!NOTE]
-    > Je nachdem, welches Android-Gerät Sie besitzen, kann **Menü** eine Schaltfläche in der Software oder eine Taste auf dem Gerät sein.
+    > <span data-ttu-id="bf80e-112">Je nachdem, welches Android-Gerät Sie besitzen, kann **Menü** eine Schaltfläche in der Software oder eine Taste auf dem Gerät sein.</span><span class="sxs-lookup"><span data-stu-id="bf80e-112">**Menu** could be a software button or a hardware button, depending on which Android device you have.</span></span>
 
-3.  Tippen Sie unter **Hilfe** auf **Hilfe anfordern**.
+3.  <span data-ttu-id="bf80e-113">Tippen Sie unter **Hilfe** auf **Hilfe anfordern**.</span><span class="sxs-lookup"><span data-stu-id="bf80e-113">Under **Help**, tap **Get Help**.</span></span>
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+<span data-ttu-id="bf80e-114">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="bf80e-114">Still need help?</span></span> <span data-ttu-id="bf80e-115">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="bf80e-115">Contact your company support.</span></span> <span data-ttu-id="bf80e-116">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="bf80e-116">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

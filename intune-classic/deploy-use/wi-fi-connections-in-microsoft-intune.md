@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: afb37382a594fed2a3e0551065989d4d1d7cc52c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 61b0dc2f115fe27fbdcdccc36b462b042bbe452f
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Konfigurieren von Geräten zur Herstellung einer Verbindung mit Ihren WLAN-Unternehmensnetzwerken
 
@@ -67,15 +67,16 @@ Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen k
 
 Es gibt keine empfohlenen Einstellungen für diesen Richtlinientyp. Sie müssen eine benutzerdefinierte Richtlinie erstellen.
 
-3.  Geben Sie den Namen und die Beschreibung für das Profil an.
+3. Geben Sie den Namen und die Beschreibung für das Profil an.
 
 4. Geben Sie die Werte der **Netzwerkverbindungen** an.
- - **SSID (Service Set Identifier)**: Wählen Sie diese Option aus, wenn für die Benutzer anstelle der SSID der Netzwerkname angezeigt werden soll.
- - **Verbinden, wenn das Netzwerk nicht seinen Namen überträgt (SSID)**: Wählen Sie diese Option aus, um Geräte mit dem Netzwerk zu verbinden, wenn es nicht in der Liste der Netzwerke angezeigt wird (weil es ausgeblendet ist und seinen Namen nicht sendet).
+   - **SSID (Service Set Identifier)**: Wählen Sie diese Option aus, wenn für die Benutzer anstelle der SSID der Netzwerkname angezeigt werden soll.
+   - **Verbinden, wenn das Netzwerk nicht seinen Namen überträgt (SSID)**: Wählen Sie diese Option aus, um Geräte mit dem Netzwerk zu verbinden, wenn es nicht in der Liste der Netzwerke angezeigt wird (weil es ausgeblendet ist und seinen Namen nicht sendet).
 
 5. Konfigurieren Sie die **Sicherheitseinstellungen** für die ausgewählte Plattform. Die verfügbaren Einstellungen hängen von den Typen der Drahtlossicherheit ab, die Sie auswählen. Sie werden unter [Sicherheitseinstellungen](#security-settings) beschrieben.
 
 6. Konfigurieren Sie **Proxyeinstellungen** (nur iOS und Mac OS X).
+
 
     |Name der Einstellung|Weitere Informationen|Verwendung|
     |----------------|-------------------|-------------|
@@ -83,7 +84,8 @@ Es gibt keine empfohlenen Einstellungen für diesen Richtlinientyp. Sie müssen 
     |**Proxyserveradresse** und **Portnummer**|Geben Sie die URL und die Portnummer des Proxyservers an.|Wenn **Proxyeinstellungen für diese WLAN-Verbindung** auf **Manuell** festgelegt wurde.|
     |**Proxyserver-URL**|Geben Sie die URL der Datei an, die die Proxyservereinstellungen enthält.|Wenn **Proxyeinstellungen für diese WLAN-Verbindung** auf **Automatisch** festgelegt wurde.|
 
-7.  Speichern des WLAN-Profils
+
+7. Speichern des WLAN-Profils
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt. Informationen zur Bereitstellung des Profils finden Sie unter **Nächste Schritte**.
 
@@ -177,5 +179,5 @@ Diese Tabellen enthalten die Details für die Sicherheitseinstellungen, die für
 |**Identitätsschutz aktivieren (äußere Identität)**|Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein.<br /><br />Während der Authentifizierung wird anfänglich diese anonyme Identität gesendet. Die tatsächliche Identifizierung wird in einem sicheren Tunnel gesendet.|Bei Festlegung von **PEAP**, **EAP-TTLS** oder **EAP-FAST** als **EAP-Typ**.|
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 Unter [WLAN-Profil mit vorinstalliertem Schlüssel](pre-shared-key-wi-fi-profile.md) erfahren Sie, wie Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen.

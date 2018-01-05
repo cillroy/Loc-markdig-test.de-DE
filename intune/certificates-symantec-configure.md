@@ -54,7 +54,7 @@ Wenn Sie den Intune Certificate Connector bereits für eine vorhandene Microsoft
 
 4. Installieren Sie .NET Framework 3.5:
 
-    a. Öffnen Sie **Systemsteuerung** > **Programme und Features** > **Windows-Features aktivieren oder deaktivieren**.
+    ein. Öffnen Sie **Systemsteuerung** > **Programme und Features** > **Windows-Features aktivieren oder deaktivieren**.
 
     b. Wählen Sie **.NET Framework 3.5** aus, und installieren Sie es.
 
@@ -108,7 +108,7 @@ Verwenden Sie die folgenden Schritte, um das RA-Zertifikat (Registrierungsautori
 
 4. Melden Sie sich bei der Symantec-Zertifizierungsstelle an, und navigieren Sie von den Aufgaben aus zu **Get an RA Cert** (RA-Zertifikat abrufen).
 
-   a. Geben Sie den CSR-Inhalt aus Schritt 3 in das entsprechende Textfeld ein.
+   ein. Geben Sie den CSR-Inhalt aus Schritt 3 in das entsprechende Textfeld ein.
 
    b. Geben Sie den Anzeigenamen des Zertifikats in das entsprechende Textfeld ein.
 
@@ -120,7 +120,7 @@ Verwenden Sie die folgenden Schritte, um das RA-Zertifikat (Registrierungsautori
 
 5. Importieren Sie das RA-Zertifikat in den Windows-Zertifikatspeicher:
 
-    a. Öffnen Sie eine MMC-Konsole.
+    ein. Öffnen Sie eine MMC-Konsole.
 
     b. Klicken Sie auf **Datei** > **Snap-Ins hinzufügen bzw. entfernen** > **Zertifikat**, und klicken Sie dann auf **Hinzufügen**.
 
@@ -140,7 +140,7 @@ Verwenden Sie die folgenden Schritte, um das RA-Zertifikat (Registrierungsautori
 
 6. Exportieren und importieren Sie das Zertifikat mit dem privaten Schlüssel:
 
-    a. Erweitern Sie **Zertifikate (lokaler Computer)** > **Persönlich** > **Zertifikate**.
+    ein. Erweitern Sie **Zertifikate (lokaler Computer)** > **Persönlich** > **Zertifikate**.
 
     b. Wählen Sie das Zertifikat aus, das im vorherigen Schritt importiert wurde.
 
@@ -170,7 +170,7 @@ Wenn Sie den neuesten Intune Certificate Connector bereits für eine vorhandene 
 2. Laden Sie „NDESConnectorSetup.exe“ über **Microsoft Intune** > **Gerätekonfiguration** > **Zertifizierungsstelle** > **Certificate Connector herunterladen** herunter.
 3. Führen Sie „NDESConnectorSetup.exe“ mit erweiterten Berechtigungen aus.
 
-    a. Wählen Sie auf dem Bildschirm **Installationsoptionen** die Option **PFX-Verteilung** aus, wie im folgenden Screenshot gezeigt.  Führen Sie das verbleibende Setup mit der Standardauswahl durch.
+    ein. Wählen Sie auf dem Bildschirm **Installationsoptionen** die Option **PFX-Verteilung** aus, wie im folgenden Screenshot gezeigt.  Führen Sie das verbleibende Setup mit der Standardauswahl durch.
 
    > [!IMPORTANT]
    > Wenn Sie den Intune Certificate Connector zum Ausstellen von Zertifikaten von einer Microsoft-Zertifizierungsstelle und von einer Symantec-Zertifizierungsstelle konfigurieren möchten, wählen Sie **SCEP- und PFX-Profilverteilung**. Führen Sie das verbleibende Setup mit der Standardauswahl durch.
@@ -183,7 +183,7 @@ Der Intune Certificate Connector wird standardmäßig unter `%ProgramFiles%\Micr
 
 1. Öffnen Sie in Editor die Datei „%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config“.
 
-    a. Aktualisieren Sie den Wert des RACertThumbprint-Schlüssels mit dem Wert des Zertifikatfingerabdrucks, den Sie im vorherigen Abschnitt kopiert haben.  Im Folgenden finden Sie ein Beispiel:
+    ein. Aktualisieren Sie den Wert des RACertThumbprint-Schlüssels mit dem Wert des Zertifikatfingerabdrucks, den Sie im vorherigen Abschnitt kopiert haben.  Im Folgenden finden Sie ein Beispiel:
 
    ```
    <add key="RACertThumbprint"
@@ -194,7 +194,7 @@ Der Intune Certificate Connector wird standardmäßig unter `%ProgramFiles%\Micr
 
 2. Öffnen Sie „services.msc“.
 
-    a. Wählen Sie **Intune-Connectordienst**.
+    ein. Wählen Sie **Intune-Connectordienst**.
 
     b. Beenden Sie den Dienst, und starten Sie ihn dann wieder.
 
@@ -206,7 +206,7 @@ Wenn Sie den Intune Certificate Connector bereits für eine vorhandene Microsoft
 
 1. Starten Sie die Benutzeroberfläche des NDES-Connectors von ` %ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe ` aus.
 
-    a. Klicken Sie auf die Registerkarte **Registrierung**, und klicken Sie dann auf **Anmelden**.
+    ein. Klicken Sie auf die Registerkarte **Registrierung**, und klicken Sie dann auf **Anmelden**.
 
     b. Geben Sie Ihre Administratoranmeldeinformationen für den Intune-Mandanten in den entsprechenden Textfeldern an.
 
@@ -221,7 +221,7 @@ Die für mit Intune verwaltete Geräte bereitgestellten PKCS-Zertifikate müssen
 
 1. Rufen Sie ein vertrauenswürdiges Stammzertifikat aus der Symantec-Zertifizierungsstelle ab:
 
-    a. Melden Sie sich beim Symantec-Verwaltungsportal für Zertifizierungsstellen an.
+    ein. Melden Sie sich beim Symantec-Verwaltungsportal für Zertifizierungsstellen an.
 
     b. Klicken Sie unter „Tasks“ (Aufgaben) auf „Manage CAs“ (Zertifizierungsstellen verwalten).
 
@@ -231,7 +231,7 @@ Die für mit Intune verwaltete Geräte bereitgestellten PKCS-Zertifikate müssen
 
 2. Erstellen Sie ein vertrauenswürdiges Zertifikatprofil im Intune-Verwaltungsportal:
 
-    a. Melden Sie sich mit den Administratoranmeldeinformationen für den Intune-Mandanten beim [Azure-Portal](https://portal.azure.com) an, und suchen Sie nach Intune Ressourcen.
+    ein. Melden Sie sich mit den Administratoranmeldeinformationen für den Intune-Mandanten beim [Azure-Portal](https://portal.azure.com) an, und suchen Sie nach Intune Ressourcen.
 
     b. Erstellen Sie ein vertrauenswürdiges Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration** - **Profile** > **Profil erstellen**.
 
@@ -266,7 +266,7 @@ Die Zertifikatprofil-OID ist einer Zertifikatprofilvorlage in der Symantec-Zerti
 1. Melden Sie sich mit Ihren Administratoranmeldeinformationen für den Intune-Mandanten beim [Azure-Portal](https://portal.azure.com) an, und suchen Sie nach Intune Ressourcen.
 2. Erstellen Sie ein PKCS-Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration > Profile** > **Profil erstellen** > **PKCS-Zertifikat**.
 
-    a. Geben Sie die erforderlichen Informationen in den Feldern **Name** und **Beschreibung** an, und wählen Sie dann die Zielplattform aus.
+    ein. Geben Sie die erforderlichen Informationen in den Feldern **Name** und **Beschreibung** an, und wählen Sie dann die Zielplattform aus.
 
     b. Wählen Sie in der Dropdownliste **Profiltyp** das **PKCS-Zertifikatprofil** aus.  
 

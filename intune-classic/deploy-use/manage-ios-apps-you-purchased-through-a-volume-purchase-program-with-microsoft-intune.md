@@ -85,5 +85,5 @@ Sie können überwachen, welche VPP-Apps bereitgestellt wurden und wie viele Liz
 > [!TIP]
 > Sie können auch App-**Filter** verwenden, um den Status der einzelnen App-Installationen zu überprüfen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Bereitstellen von Apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)

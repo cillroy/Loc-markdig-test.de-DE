@@ -173,5 +173,5 @@ Derzeit gibt es keine aktiven Benachrichtigungen.
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 Details zu aktuellen Entwicklungen finden Sie unter [Neuheiten in Microsoft Intune](whats-new.md).

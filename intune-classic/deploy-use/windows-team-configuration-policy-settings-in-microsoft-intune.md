@@ -15,17 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f3dd28b88ae2ef20963ae709c0b283c8a894551e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bc7b2ea782fb6e8b29815192a3401cd00a02f781
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Team-Konfigurationsrichtlinie in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 10 Team-Geräte (z. B. Microsoft Surface Hub) zu konfigurieren.
+
 
 |Name der Einstellung|Details|
 |----------------|-----------|
@@ -38,6 +39,6 @@ Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Mi
 |**URL zum Bild für den Sperrbildschirmhintergrund**|Aktivieren Sie diese Einstellung, um auf dem **Willkommensbildschirm** von Windows 10 Team-Geräten einen benutzerdefinierten Hintergrund aus der angegebenen URL anzuzeigen.<br /><br />Das Bild muss im PNG-Format vorliegen und die URL muss mit **https://** beginnen.|
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

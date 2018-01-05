@@ -28,7 +28,7 @@ ms.lasthandoff: 12/19/2017
 Mithilfe der Microsoft Intune-**Richtlinie für Editionsupgrades** können Sie für Geräte, die eine der folgenden Windows 10-Versionen ausführen, automatisch Upgrades auf eine andere Edition vornehmen:
 * Windows 10 Desktop
 * Windows 10 Holographic
-* Windows 10 Mobile
+* Windows 10 Mobile
 
 Die folgenden Upgradepfade werden unterstützt:
 - Von Windows 10 Pro auf Windows 10 Enterprise
@@ -52,5 +52,5 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 |**Product Key**|Geben Sie den Product Key an, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann.<br>Nach der Erstellung einer Richtlinie, die einen Product Key enthält, können Sie den Product Key später nicht mehr bearbeiten. Grund hierfür ist, dass der Schlüssel aus Sicherheitsgründen verborgen wird. Um den Product Key zu ändern, müssen Sie den gesamten Schlüssel erneut eingeben.
 |**Lizenzdatei**|Klicken Sie auf **Durchsuchen**, um die von Microsoft erhaltene Lizenzdatei auszuwählen, die Lizenzinformationen für die Windows Holographic-Edition oder für die Windows 10 Mobile-Edition enthält, auf die das Upgrade bei den als Ziel festgelegten Geräten erfolgen soll.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

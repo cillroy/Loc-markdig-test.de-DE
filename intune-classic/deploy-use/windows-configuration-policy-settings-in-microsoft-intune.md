@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 059665094379435381d62a2c45af189bef0289d2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 61bdce15c5f81a3fd0469572feebf171e5847167
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows-Richtlinien in Microsoft Intune
 
@@ -52,6 +52,7 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 |Name der Einstellung|Details|
 |----------------|-----|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Dateien auf dem Gerät.|
+
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, die Windows 8.1 ausführen, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](http://support.microsoft.com/kb/3013816) auf jedem Gerät.
@@ -118,5 +119,5 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

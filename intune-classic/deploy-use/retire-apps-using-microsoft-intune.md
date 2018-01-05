@@ -37,5 +37,5 @@ Um eine App außer Betrieb zu nehmen, deinstallieren Sie sie einfach. Wenn Sie A
 
 Wenn das Gerät oder der Computer das nächste Mal die Apps prüft, wird die App deinstalliert.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Hinzufügen von Apps in Microsoft Intune](add-apps.md)

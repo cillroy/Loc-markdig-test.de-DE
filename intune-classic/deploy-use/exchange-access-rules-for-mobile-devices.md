@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7672c923f1f4f962ff420aa60ce2f745c6bf312a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0543a3ca0324c398fbe04fb01368fd9d8beb9bb4
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-Zugriffsregeln für mobile Geräte
 
@@ -37,11 +37,13 @@ Die folgende Tabelle enthält die Zugriffsebenen, die von Exchange ActiveSync ve
 
 Eine Zugriffsstrategie enthält eine **Standardregel** und **Plattformausnahmen** und gilt für alle mobilen Geräte, die mit Exchange verbunden sind. Die folgende Tabelle enthält einige Beispiele für Zugriffsmethoden.
 
+
 |Zugriffsmethode|Beschreibung|
 |-------------------|---------------|
 |Liste „Zulassen“|Mit der *Liste „Zulassen“* können Sie einer Liste bekannter Geräte Zugriff gewähren und den Zugriff für alle anderen Geräte blockieren. Hierzu müssen Sie benutzerdefinierte Regeln für Geräteplattformen erstellen, die auf das Postfach eines Benutzers zugreifen können. Nachdem Sie eine solche Regel erstellt haben, müssen Sie in der Standardzugriffsregel festlegen, dass alle anderen Geräte blockiert oder unter Quarantäne gestellt werden. Zum Hinzufügen eines neuen Geräts zur Liste „Zulassen“ müssen Sie eine neue benutzerdefinierte Regel erstellen.|
 |Liste „Blockieren“|Mit der *Liste „Blockieren“* können Sie allen Geräten standardmäßig Zugriff gewähren, aber eine Gruppe von Geräten blockieren, die keinen Zugriff auf Ihr Unternehmen haben sollen. Erstellen Sie die Liste „Blockieren“ mithilfe benutzerdefinierter Regeln, um die Geräteplattformen zu blockieren, die nicht mit den Postfächern Ihres Unternehmens synchronisiert werden sollen. Es empfiehlt sich, die Standardzugriffsregel so festzulegen, dass sie den Zugriff auf alle Geräte gewährt, die durch die bestehenden Regeln nicht explizit blockiert werden. Zum Hinzufügen eines neuen Geräts oder einer Gerätegruppe zur Liste „Blockieren“ müssen Sie eine neue benutzerdefinierte Regel erstellen.|
 |Gemischtes Zulassen und Blockieren|Sie können nicht nur die Listen „Zulassen“ und „Blockieren“ erstellen, sondern auch neue mobile Geräte unter Quarantäne stellen, wenn sie ganz neu in das Unternehmen eingeführt und noch geprüft werden. Wenn Sie z. B. eine Liste „Blockieren“ für mobile Geräte erstellt haben, die nicht in Ihrem Unternehmen zugelassen sind, und eine Liste „Zulassen“ für mobile Geräte, die im Unternehmen zugelassen sind, können Sie in der Standardregel festlegen, dass Geräte unter Quarantäne gestellt werden sollen. Alle anderen Geräte werden automatisch unter Quarantäne gestellt. Dadurch können Sie neue Geräte erkennen, wenn sie in die Organisation eingeführt werden, und entscheiden, ob sie der Liste „Zulassen“ oder der Liste „Blockieren“ hinzugefügt werden sollen.|
+
 Im folgenden Verfahren wird das Erstellen einer benutzerdefinierten Regel beschrieben.
 
 ## <a name="create-a-default-access-rule"></a>Erstellen einer Standardzugriffsregel

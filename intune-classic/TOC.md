@@ -142,7 +142,7 @@
 ## [Bereitstellen von Apps](deploy-use/deploy-apps.md)
 ### [Bereitstellen von Apps auf Geräten und PCs](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [Bereitstellen von Apps für Android for Work-Geräte](deploy-use/android-for-work-apps.md)
-### [Überwachen von Apps](deploy-use/monitor-apps-in-microsoft-intune.md)
+### [Überwachen von apps](deploy-use/monitor-apps-in-microsoft-intune.md)
 ### [Verwalten von Apps aus einem Volumenprogramm](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Verwalten von iOS-Apps aus einem Volumenprogramm](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [Verwalten von Windows-Apps aus einem Volumenprogramm](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)

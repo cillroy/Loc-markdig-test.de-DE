@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f575797a09fb4d74c2da2a7dc6b14a9723d3f4d
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 47d46b199f6219671c8829028368f7fe82b2ef05
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
@@ -31,30 +31,30 @@ ms.lasthandoff: 12/19/2017
 
 1. Öffnen Sie das **Startmenü**.
 
-  - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
-  - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
+   - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
+   - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
 
-2.  Öffnen Sie die Windows **Einstellungen**-App, indem Sie in der Suchleiste nach „Einstellungen“ suchen.
+2. Öffnen Sie die Windows **Einstellungen**-App, indem Sie in der Suchleiste nach „Einstellungen“ suchen.
 
 3. Wählen Sie **Konten** > **Zugriff auf Geschäfts-, Schul- oder Unikonto** > **Verbinden** aus.
 
     ![Wählen Sie „Auf Geschäfts-,Schul- oder Unikonto zugreifen“ aus](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und wählen Sie **Weiter** aus.
+4. Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und wählen Sie **Weiter** aus.
 
-    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+   ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Intune an.
+5. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Intune an.
 
     ![Geschäfts- oder Schulkonto hinzufügen](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     In einer Meldung wird angezeigt, dass Ihr Unternehmen oder Ihre Bildungseinrichtung das Gerät registriert.
 
-5. Wenn die Seite **Alles bereit!** sehen, wählen Sie **Schließen** aus. Der Vorgang ist abgeschlossen.
+6. Wenn die Seite **Alles bereit!** sehen, wählen Sie **Schließen** aus. Der Vorgang ist abgeschlossen.
 
-  ![Klicken Sie auf dem Bildschirm „Alles erledigt!“ auf „Schließen“.](./media/w10-enroll-rs1-youre-all-set.png)
+   ![Klicken Sie auf dem Bildschirm „Alles erledigt!“ auf „Schließen“.](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. Wenn Sie die Verbindung noch einmal überprüfen möchten, kehren Sie zu den **Einstellungen** zurück. Ihr Geschäfts-, Schul- oder Unikonto wird jetzt aufgeführt.
+7. Wenn Sie die Verbindung noch einmal überprüfen möchten, kehren Sie zu den **Einstellungen** zurück. Ihr Geschäfts-, Schul- oder Unikonto wird jetzt aufgeführt.
 
     ![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 

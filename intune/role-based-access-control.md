@@ -128,6 +128,6 @@ Sie können eine benutzerdefinierte Sicherheitsrolle erstellen, die alle für ei
 
 [Verwenden der Rolle „Intune-Support“ im Portal zur Problembehandlung](help-desk-operators.md)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Zuweisen von Rollen mithilfe von Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

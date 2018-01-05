@@ -63,7 +63,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Diagramm das zeigt, wie die Richtlinie für bedingten Zugriff den Zugriff blockiert, wenn das Gerät aufgrund von böswilligen Apps auf dem Gerät als nicht konform eingestuft wird](./media/malicious-apps-blocked.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Diagramm, das die Richtlinie für bedingten Zugriff darstellt, die den Zugriff erteilt, nachdem das Gerät nach der Sanierung als kompatibel bewertet wurde](./media/malicious-apps-unblocked.png)
 
@@ -86,7 +86,7 @@ Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, 
 ![Diagramm, das die Blockierung des Gerätezugriffs auf SharePoint Online mithilfe von bedingtem Zugriff basierend auf der Erkennung von Bedrohungen darstellt](./media/network-spo-blocked.png)
 
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Diagramm, das den bedingten Zugriff nach dem Beheben der Netzwerkbedrohung darstellt](./media/network-spo-unblocked.png)
 

@@ -67,7 +67,7 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 
 2.  Wählen Sie auf dem Blatt **App-Richtlinie** die Option **Richtlinie hinzufügen** aus und geben Sie folgende Werte ein:
 
-    a.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
+    ein.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
 
     b.  **Beschreibung:** Geben Sie eine optionale Beschreibung ein.
 

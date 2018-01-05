@@ -55,6 +55,6 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 - Wenn die App des Benutzer als **Nicht eingecheckt** aufgelistet ist, überprüfen Sie, ob Sie die App-Schutzrichtlinie für diese App ordnungsgemäß konfiguriert haben.
 - Stellen Sie sicher, dass diese Bedingungen auf alle Benutzer angewendet werden, für die die App-Schutzrichtlinien gelten sollen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policies.md)

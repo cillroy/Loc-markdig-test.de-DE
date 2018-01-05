@@ -82,9 +82,9 @@ Wenn sich der neue Benutzer in einer Lookout MTP-Registrierungsgruppe befindet, 
 
 ## <a name="compliance-remediation-workflows"></a>Arbeitsabläufe zur Wiederherstellung der Kompatibilität
 - [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Sie müssen eine Bedrohung beheben, die Lookout for Work auf Ihrem Android-Gerät gefunden hat](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Einrichten Ihres Abonnements für Lookout MTP](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)

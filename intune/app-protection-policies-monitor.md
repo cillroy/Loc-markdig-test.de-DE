@@ -133,7 +133,7 @@ Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 
     ![Screenshot 7](./media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 [Verwalten der Datenübertragung zwischen iOS-Apps](data-transfer-between-apps-manage-ios.md)
 
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-apps-android.md)

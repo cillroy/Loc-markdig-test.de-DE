@@ -53,7 +53,7 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 - Wenn die App des Benutzer als **Nicht eingecheckt** aufgelistet ist, überprüfen Sie, ob Sie die MAM-Richtlinie für diese App ordnungsgemäß konfiguriert haben.
 - Stellen Sie sicher, dass diese Bedingungen auf alle Benutzer angewendet werden, auf die die MAM Richtlinien angewendet werden sollen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Vorbereiten der Konfiguration von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb9ce4c39721f31b0970c547860361f2aaf52374
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bf18404de8d2783690cfa4dbe3fa0c826ed5cfff
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune
 
@@ -67,22 +67,22 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1.  Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
+1. Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
 
-2.  Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
+2. Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
 
-3.  Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
+3. Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
 
-4.  Wählen Sie **Hinzufügen…** aus. Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.
+4. Wählen Sie **Hinzufügen…** aus. Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.
 
-5.  Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.
+5. Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.
 
-    Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet. Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren. Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:
+   Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet. Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren. Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:
 
-  - [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Löschen eines Geräteregistrierungs-Managers aus Intune
 

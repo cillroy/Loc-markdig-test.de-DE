@@ -131,7 +131,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 |Podcasts|com.apple.podcasts|
 |Reminders|com.apple.reminders|
 |Safari|com.apple.mobilesafari|
-|Einstellungen|com.apple.Preferences|
+|Einstellung|com.apple.Preferences|
 |Stocks|com.apple.stocks|
 |Tipps|com.apple.tips|
 |Videos|com.apple.videos|

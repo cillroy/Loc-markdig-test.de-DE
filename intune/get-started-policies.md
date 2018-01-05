@@ -59,7 +59,7 @@ __Wie erstelle ich eine Richtlinie?__
 
 [Erste Schritte beim Registrieren von Geräten:](get-started-enroll.md) Machen Sie sich mit dem Registrierungsprozess vertraut, indem Sie ein iOS-Gerät vollständig registrieren.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md)
 * [Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md)

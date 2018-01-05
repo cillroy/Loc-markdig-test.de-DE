@@ -43,7 +43,7 @@ ms.lasthandoff: 12/19/2017
 
 2.  Wählen Sie die folgenden Apps aus:
 
-    a.  Microsoft Authenticator
+    ein.  Microsoft Authenticator
 
     b.  Skycure-App für Android
 

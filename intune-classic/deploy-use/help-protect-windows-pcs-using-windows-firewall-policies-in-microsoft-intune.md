@@ -133,5 +133,5 @@ Sie können Ausnahmen konfigurieren, die bestimmten durch die Firewall geleitete
 |**Windows Virtual PC**<br>(Windows 7 oder höher)|Ermöglicht virtuellen Computern die Kommunikation mit anderen Computern.|
 |**Tragbare Drahtlosgeräte**|Ermöglicht die Medienübertragung von einer netzwerkfähigen Kamera oder einem Mediengerät auf verwaltete Computer unter Verwendung des MTP-Protokolls (Media Transfer Protocol). Bei dieser Einstellung werden die Netzwerkprotokolle SSDP und UPnP verwendet.|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

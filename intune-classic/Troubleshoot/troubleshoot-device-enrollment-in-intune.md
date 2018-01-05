@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2b8d6e09aa2fad00bf72842649c15d692cf2e5bd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4248c94ca37f79ccd0402cfbf6e09e071b01b61a
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
@@ -81,9 +81,9 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 8.  Entfernen Sie Geräte nach Bedarf, z. B. solche, die nicht mehr verwendet werden oder fehlerhafte Definitionen haben.
 
 > [!NOTE]
-
+> 
 > Sie können das Erreichen der Kapazitätsgrenze für Geräteregistrierungen vermeiden, indem Sie das Konto des Geräteregistrierungs-Managers verwenden, wie unter [Registrieren unternehmenseigener Geräte mit dem Geräteregistrierungs-Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) beschrieben.
->
+> 
 > Ein Benutzerkonto das dem Konto „Geräteregistrierungs-Manager“ hinzugefügt wird, kann die Registrierung nicht abschließen, wenn die bedingte Zugriffsrichtlinie für diese spezielle Benutzeranmeldung erzwungen wird.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
@@ -189,27 +189,27 @@ Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden
 
 1. Starten Sie die Smart Manager-App auf dem Gerät.
 
-  ![Smart Manager-Symbol auf dem Gerät auswählen](./media/smart-manager-app-icon.png)
+   ![Smart Manager-Symbol auf dem Gerät auswählen](./media/smart-manager-app-icon.png)
 
 2. Wählen Sie die Kachel **Akku** aus.
 
-  ![Kachel „Akku“ auswählen](./media/smart-manager-battery-tile.png)
+   ![Kachel „Akku“ auswählen](./media/smart-manager-battery-tile.png)
 
 3. Wählen Sie unter **App-Energiesparmodus** oder **App-Optimierung** die Option **Detail** aus.
 
-  ![Option „Detail“ unter „App-Energiesparmodus“ oder „App-Optimierung“ auswählen](./media/smart-manager-app-power-saving-detail.png)
+   ![Option „Detail“ unter „App-Energiesparmodus“ oder „App-Optimierung“ auswählen](./media/smart-manager-app-power-saving-detail.png)
 
 4. Wählen Sie aus der Liste der Apps den Eintrag **Unternehmensportal** aus.
 
-  ![Unternehmensportal aus der Liste der Apps auswählen](./media/smart-manager-company-portal.png)
+   ![Unternehmensportal aus der Liste der Apps auswählen](./media/smart-manager-company-portal.png)
 
 5. Wählen Sie **Deaktivieren** aus.
 
-  ![Option „Deaktivieren“ im Dialogfeld „App-Optimierung“ auswählen](./media/smart-manager-app-optimization-turned-off.png)
+   ![Option „Deaktivieren“ im Dialogfeld „App-Optimierung“ auswählen](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Vergewissern Sie sich unter **App-Energiesparmodus** oder **App-Optimierung**, dass das Unternehmensportal deaktiviert ist.
 
-  ![Überprüfen, ob das Unternehmensportal deaktiviert ist](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Überprüfen, ob das Unternehmensportal deaktiviert ist](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Fehler bei der Profilinstallation

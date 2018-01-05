@@ -54,7 +54,7 @@ Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Ver
 
 **Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Hinzufügen von Apps mit Microsoft Intune](apps-add.md)
 
 [Wie Ihre iOS-Benutzer Apps erhalten](end-user-apps-ios.md)

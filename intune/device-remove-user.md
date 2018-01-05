@@ -30,7 +30,7 @@ Die Aktion **Benutzer entfernen** löscht den von Ihnen ausgewählten Benutzer a
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
 - Windows – Nicht unterstützt
-- Windows Phone 8.1 – Nicht unterstützt
+- Windows Phone – Nicht unterstützt
 - iOS – Unterstützt auf iOS 9.3 und höher (nur freigegebene iPad-Geräte)
 - macOS – Nicht unterstützt
 - Android – Nicht unterstützt

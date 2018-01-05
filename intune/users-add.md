@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3fbc3a79186a8e77a95a45aed9e23767b09d89fc
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
@@ -36,16 +36,16 @@ Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.co
 2. Wählen Sie im Office 365-Menü **Administrator** aus.
 3. Wählen Sie im Admin Center **Benutzer hinzufügen** aus.
 
-  ![Screenshot des Office 365 Admin Center](media/office-add-user.png)
+   ![Screenshot des Office 365 Admin Center](media/office-add-user.png)
 
 4. Geben Sie die folgenden Benutzerdetails an:
-  - **Vorname**
-  - **Nachname**
-  - **Anzeigename**
-  - **Benutzername**: Universal Principle Name (UPN), der in Azure Active Directory gespeichert und für den Zugriff auf den Dienst verwendet wird
-  - **Speicherort**
-  - **Kontaktinformationen** (optional)
-  - **Kennwort**: automatisch generiert oder angegeben
+   - **Vorname**
+   - **Nachname**
+   - **Anzeigename**
+   - **Benutzername**: Universal Principle Name (UPN), der in Azure Active Directory gespeichert und für den Zugriff auf den Dienst verwendet wird
+   - **Speicherort**
+   - **Kontaktinformationen** (optional)
+   - **Kennwort**: automatisch generiert oder angegeben
 
      ![Screenshot des Office 365 Admin Center](media/office-add-user-details.png)
 
@@ -56,16 +56,16 @@ Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.co
 1. Melden Sie sich im [Azure-Portal](https://portal.azure.com) an, und navigieren Sie zu **Weitere Dienste** > **Überwachung + Verwaltung** > **Intune**. Sie können auch *Ressourcen* für **Intune** suchen.
 2. Wählen Sie **Benutzer** aus.
 3. Klicken Sie im Admin Center auf **Neuer Benutzer**.
-  ![Screenshot des Office 365 Admin Center](media/intune-add-user.png)
+   ![Screenshot des Office 365 Admin Center](media/intune-add-user.png)
 4. Geben Sie die folgenden Benutzerdetails an:
-  - **Name**
-  - **Benutzername**: Der neue Name im Azure Active Directory-Portal ![Screenshot des Office 365 Admin Center](media/intune-add-user-info.png) Klicken Sie auf **OK**, um fortzufahren.
+   - **Name**
+   - **Benutzername**: Der neue Name im Azure Active Directory-Portal ![Screenshot des Office 365 Admin Center](media/intune-add-user-info.png) Klicken Sie auf **OK**, um fortzufahren.
 5. Optional können Sie die folgenden Benutzereigenschaften angeben:
-  - **Profil**: Informationen zum Beruf, einschließlich **Position** und **Abteilung**
-  -  **Gruppen**: Gruppen auswählen, die zum Benutzer hinzugefügt werden
-  - **Verzeichnisrolle**: Weisen Sie dem Benutzer Administratorberechtigungen zu, einschließlich einer Intune-Dienstadministratorrolle.
+   - **Profil**: Informationen zum Beruf, einschließlich **Position** und **Abteilung**
+   -  **Gruppen**: Gruppen auswählen, die zum Benutzer hinzugefügt werden
+   - **Verzeichnisrolle**: Weisen Sie dem Benutzer Administratorberechtigungen zu, einschließlich einer Intune-Dienstadministratorrolle.
 
-  Wählen Sie **Erstellen** aus, um in Intune einen neuen Benutzer hinzuzufügen.
+   Wählen Sie **Erstellen** aus, um in Intune einen neuen Benutzer hinzuzufügen.
 6. Wählen Sie **Profil** aus und dann einen **Verwendungsstandort** für den neuen Benutzer. Der Verwendungsstandort wird benötigt, bevor Sie dem neuen Benutzer eine Intune-Lizenz zuweisen können. Klicken Sie auf **Speichern**, um fortzufahren.
     ![Screenshot des Office 365 Admin Center](media/intune-add-user-loc.png)
 7. Wählen Sie **Lizenzen** aus und dann **Zuweisen**, um diesem Benutzer eine Intune-Lizenz zuzuweisen. Eine Intune-Lizenz ist erforderlich, um Geräte zu registrieren oder auf Unternehmensressourcen zuzugreifen. Wählen Sie **Produkte** aus, dann den Lizenztyp, klicken Sie auf **Auswählen** und dann auf **Zuweisen**.

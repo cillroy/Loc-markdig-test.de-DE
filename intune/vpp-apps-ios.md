@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3caa8fd9f0fa3938987c18bbf64387635cd940b2
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -102,13 +102,13 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
-1.  Wählen Sie auf dem Blatt **Intune** unter **Verwalten** die Option **Mobile Apps** > **Apps** aus.
-2.  Wählen Sie auf dem Blatt mit der Liste der Apps die App aus, die Sie zuweisen möchten, und klicken Sie dann auf **Zuweisungen**.
-3.  Klicken Sie auf dem Blatt erst auf ***App-Name*** - **Zuweisungen** und dann auf **Gruppen auswählen**. Wählen Sie anschließend auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
-5.  Wählen Sie für jede von Ihnen ausgewählte Gruppe die folgenden Einstellungen aus:
-    - **Typ**: Wählen Sie aus, ob die App **verfügbar** (Benutzer können die App vom Unternehmensportal aus installieren) oder **erforderlich** (die App wird automatisch auf Benutzergeräten installiert) sein soll.
-    - **Lizenztyp**: Wählen Sie zwischen **Benutzerlizenzierung** oder **Gerätelizenzierung**.
-6.  Wählen Sie abschließend **Speichern** aus.
+1. Wählen Sie auf dem Blatt **Intune** unter **Verwalten** die Option **Mobile Apps** > **Apps** aus.
+2. Wählen Sie auf dem Blatt mit der Liste der Apps die App aus, die Sie zuweisen möchten, und klicken Sie dann auf **Zuweisungen**.
+3. Klicken Sie auf dem Blatt erst auf ***App-Name*** - **Zuweisungen** und dann auf **Gruppen auswählen**. Wählen Sie anschließend auf dem Blatt **Gruppen auswählen** den Azure AD-Benutzer oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
+4. Wählen Sie für jede von Ihnen ausgewählte Gruppe die folgenden Einstellungen aus:
+   - **Typ**: Wählen Sie aus, ob die App **verfügbar** (Benutzer können die App vom Unternehmensportal aus installieren) oder **erforderlich** (die App wird automatisch auf Benutzergeräten installiert) sein soll.
+   - **Lizenztyp**: Wählen Sie zwischen **Benutzerlizenzierung** oder **Gerätelizenzierung**.
+5. Wählen Sie abschließend **Speichern** aus.
 
 
 >[!NOTE]
@@ -120,8 +120,8 @@ Der Benutzer erhält Aufforderungen zur VPP-App-Installation im Zusammenhang mit
 
 | # | Szenario                                | Einladen zum Apple VPP-Programm                              | Aufforderung zur App-Installation | Aufforderung für die Apple-ID |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: lizenzierter Benutzer                             | „Y“ zugeordnet ist                                                                                               | J                                           | „Y“ zugeordnet ist                                 |
-| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | „Y“ zugeordnet ist                                                                                               | J                                           | „Y“ zugeordnet ist                                 |
+| 1 | BYOD: lizenzierter Benutzer                             | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
+| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
 | 3 | Corp: lizenzierter Benutzer (Gerät wird überwacht)         | „Y“ zugeordnet ist                                                                                               | N                                           | „Y“ zugeordnet ist                                 |
 | 4 | BYOD: lizenziertes Gerät                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |
 | 5 | Corp: lizenziertes Gerät (Gerät wird nicht überwacht)                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |

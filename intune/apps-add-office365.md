@@ -84,7 +84,7 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 1.  Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Suite Settings** (Einstellungen für die App-Sammlung) aus.
 2.  Geben Sie auf dem Blatt **App Suite Settings** die folgenden Informationen an: 
     - **Office-Version:** Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version auf jeweils 32-Bit- und 64-Bit-Geräten installieren, jedoch können Sie die 64-Bit-Version nur auf 64-Bit-Geräten installieren.
-    - **Updatekanal:** Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der Übersicht der Updatekanäle für Office 365 ProPlus. Wählen Sie aus: 
+    - **Updatekanal:** Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der Übersicht der Updatekanäle für Office 365 ProPlus. Es stehen die folgenden Optionen zur Auswahl: 
         - **Aktuell**
         - **Verzögert**
         - **First Release für aktuellen Kanal**

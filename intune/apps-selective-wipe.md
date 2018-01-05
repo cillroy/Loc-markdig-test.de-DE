@@ -82,7 +82,7 @@ Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manue
 
 3.  Sie werden aufgefordert, den Löschvorgang zu bestätigen. Wählen Sie **Ja** oder **Nein** aus, und klicken Sie dann auf **OK**.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
 [Was ist die App-Verwaltung?](app-management.md)

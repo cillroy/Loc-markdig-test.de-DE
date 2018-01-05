@@ -1,5 +1,5 @@
 ---
-title: "Auf welche Informationen kann Ihr Unternehmen zugreifen, wenn Sie Ihr Gerät registrieren? | Microsoft Docs"
+title: "Auf welche Informationen kann Ihr Unternehmen zugreifen, wenn Sie Ihr Gerät registrieren? | Microsoft-Dokumentation"
 description: Eine Liste dessen, auf was die IT-Abteilung zugreifen kann und auf was nicht.
 keywords: 
 author: barlanmsft

@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75fd3f0c79c1137fd2d42a6185995bd323544879
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0cbfe0292b57806a3f91b784b1bbee5d18b2b5e8
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="intune-network-bandwidth-use"></a>Nutzung der Netzwerkbandbreite durch Intune
 
@@ -57,11 +57,13 @@ Ein Proxyserver mit Zwischenspeicherung, der Inhaltsanfragen von Clients empfän
 
 Nachfolgend werden typische Einstellungen für die Verwendung eines Proxyservers aufgeführt, mit dem Inhalt für Intune-Clients zwischengespeichert wird.
 
+
 |Einstellung|Empfohlener Wert|Details|
 |-----------|---------------------|-----------|
 |Cachegröße|5-30 GB|Dieser Wert schwankt abhängig von der Anzahl von Clientcomputern in Ihrem Netzwerk und den von Ihnen verwendeten Konfigurationen. Damit Dateien nicht zu schnell gelöscht werden, stellen Sie die Größe des Zwischenspeichers passend für Ihre Umgebung ein.|
 |Größe der einzelnen Cachedatei|950 MB|Diese Einstellung ist möglicherweise nicht für alle Proxyserver mit Zwischenspeicherung verfügbar.|
 |Objekttypen, die zwischengespeichert werden|HTTP<br /><br />HTTPS<br /><br />BITS|Intune-Pakete sind CAB-Dateien, die per BITS-Download (Background Intelligent Transfer Service) über HTTP abgerufen wurden.|
+
 Informationen zur Verwendung eines Proxyservers zum Zwischenspeichern von Inhalt entnehmen Sie der Dokumentation zu Ihrer Proxyserverlösung.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Verwenden von Background Intelligent Transfer Service auf Computern
@@ -157,6 +159,7 @@ In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der In
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Informationen zum Netzwerk von Apple-Geräten
+
 | Hostname  | URL (IP-Adresse/Subnetz) | Protokoll | Port | Gerät |
 | --- | --- | --- | --- | --- |
 |  Verwaltungskonsole  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS und macOS |
@@ -168,3 +171,4 @@ In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der In
 | Gerätedienste  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
 | Geräte (Internet/WLAN) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 und 443 | Nur Apple &#39;#&#39; ist eine zufällige Zahl zwischen 0 und 200. |
 | Geräte (Internet/WLAN) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 oder 443 | Nur Apple |
+

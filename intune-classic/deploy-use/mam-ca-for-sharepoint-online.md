@@ -74,7 +74,7 @@ Dieses Thema enthält Anweisungen zum Einrichten von App-basierten bedingten Zug
 
 [Blockieren von Apps, die keine moderne Authentifizierung verwenden](block-apps-with-no-modern-authentication.md)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 

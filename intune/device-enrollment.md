@@ -46,28 +46,28 @@ Die folgende Tabelle bietet einen Überblick über die Intune-Registrierungsmeth
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Ja |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**[USB (Setup-Assistent)](#usb-sa)**| Ja |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[DEP](#dep)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**[USB (Setup-Assistent)](#usb-sa)**| Ja  |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein |   Ja |   Nein | [Weitere Informationen](windows-enroll.md)|
+|**[BYOD](#byod)** | Nein |   Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
-|**Automatische Registrierung** | Nein |Ja |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Automatische Registrierung** | Nein |Ja  |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
 
 **Android-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](./android-enroll.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](./android-enroll.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| Nein | Ja | Nein| [Weitere Informationen](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Android for Work**| Nein | Ja  | Nein| [Weitere Informationen](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD

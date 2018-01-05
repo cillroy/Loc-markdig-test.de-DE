@@ -41,5 +41,5 @@ Eine Ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihne
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

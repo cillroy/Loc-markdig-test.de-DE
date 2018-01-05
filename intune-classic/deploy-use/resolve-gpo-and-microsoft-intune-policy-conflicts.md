@@ -116,5 +116,5 @@ Sie können GPOs auf nur die Sicherheitsgruppen anwenden, die im Bereich **Siche
 
 Die neue Sicherheitsgruppe muss in den Intune-Dienständerungen als Registrierung verwaltet werden.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Windows-PCs mit Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

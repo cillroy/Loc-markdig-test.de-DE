@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f15429fe61e08eb9a23123341b5ab8ce70a77e77
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0f46f096d7067a2eb5afe1b070565ba2b8cfafb8
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Aktivieren des Zugriffs auf Unternehmensressourcen mit Microsoft Intune
 
@@ -34,27 +34,31 @@ Bereitstellen von Einstellungen für drahtlose Netzwerke für Ihre Benutzer. Die
 
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Ja (Sie können ein Windows-WLAN-Profil importieren.)|Ja (Sie können OMA-URI konfigurieren.) |Ja|Ja|Ja|
+|Ja (Sie können ein Windows-WLAN-Profil importieren.)|Ja (Sie können OMA-URI konfigurieren.) |Ja |Ja |Ja |
 
 ## <a name="vpn-profilesvpn-connections-in-microsoft-intunemd-and-supported-platforms"></a>[VPN-Profile](vpn-connections-in-microsoft-intune.md) und unterstützte Plattformen
 Stellen Sie Einstellungen für ein virtuelles privates Netzwerk (VPN) für Ihre Benutzer bereit. Diese Einstellungen erleichtern Ihren Benutzern die Verbindung mit Ressourcen im Unternehmensnetzwerk.
 
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Ja|Ja|Ja|Ja|Ja|
+|Ja |Ja |Ja |Ja |Ja |
 
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[E-Mail-Profile](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) und unterstützte Plattformen
 Erstellen, Bereitstellen und Überwachen von nativen E-Mail-Clienteinstellungen auf den Geräten in Ihrer Organisation.
 
+
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Nein|Ja|Ja|Nein|Ja|
+|Nein|Ja |Ja |Nein|Ja |
+
 > [!NOTE]
 > [Dieser Beitrag im Intune-Teamblog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) enthält Informationen zum Konfigurieren von Windows Phone 8.1-WLAN-Profilen mithilfe von OMA-URI.
 
 ## <a name="certificate-profilessecure-resource-access-with-certificate-profilesmd-and-supported-platforms"></a>[Zertifikatprofile](secure-resource-access-with-certificate-profiles.md) und unterstützte Plattformen
 Ermöglichen den sicheren Zugriff auf Unternehmensressourcen einschließlich Drahtlosnetzwerken und VPN-Verbindungen.
 
+
 |Windows 8.1 und höher|Windows Phone 8.1 und höher|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Ja|Ja|Ja|Ja|Ja|
+|Ja |Ja |Ja |Ja |Ja |
+

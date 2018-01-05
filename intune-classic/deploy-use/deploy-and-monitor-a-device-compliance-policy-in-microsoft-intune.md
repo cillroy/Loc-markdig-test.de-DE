@@ -1,6 +1,6 @@
 ---
 title: "Bereitstellen und Überwachen einer Konformitätsrichtlinie"
-description: "Befolgen Sie die schrittweisen Anweisungen in diesem Thema zum Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte."
+description: "Befolgen Sie die schrittweisen Anweisungen in diesem Thema zum Bereitstellen und Überwachen einer Konformitätsrichtlinie für Geräte."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -69,5 +69,5 @@ Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein 
 Wie Sie die Kompatibilitätsrichtlinie zusammen mit Richtlinien für bedingten Zugriff verwenden können, um den Zugriff auf Dienste in Ihrer Organisation zu steuern, erfahren Sie unter [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Einführung in Richtlinien zur Gerätekompatibilität in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)

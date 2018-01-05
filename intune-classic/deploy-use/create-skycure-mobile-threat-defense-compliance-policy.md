@@ -47,7 +47,7 @@ Beim Einrichten von Skycure Mobile Threat Defense haben Sie in der Skycure-Konso
 
 4.  Wählen Sie die Option **Maximal zulässige Bedrohungsstufe**:
 
-    a.  **Keine (geschützt)**: Dies ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+    ein.  **Keine (geschützt)**: Dies ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
 
     b.  **Niedrig**: Das Gerät ist kompatibel, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
 

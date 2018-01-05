@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce2404fd5e26c00a6a9ced83bc6501e2074bffce
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 97581932224399a7c3b15211db88ecdf97a4b0d2
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="sync-your-device-with-the-company-portal-website"></a>Synchronisieren Ihres Geräts mit der Unternehmensportal-Website
 

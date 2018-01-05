@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e77c069128b00d94d057cb7514e1e9ca62e299fc
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -264,7 +264,7 @@ In der Entität **Devices** werden alle für die Verwaltung registrierten Gerät
 | Modell | Gerätemodell |
 | LastPolicyUpdateUtc | Der letzte Zeitpunkt, zu dem die Richtlinie auf dem Gerät aktualisiert wurde |
 | LastExchangeStatusUtc | Der letzte Zeitpunkt, an dem das Gerät mit Exchange synchronisiert wurde |
-| IsDeleted | Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
+| isDeleted | Legen Sie diesen Wert auf TRUE fest, wenn das Gerät nicht mehr von Intune verwaltet wird. Dadurch wird der letzte bekannte Zustand beibehalten. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -412,6 +412,7 @@ Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen 
 
 Die Entität **ApplicationInventory** listet die Apps auf, die zum Zeitpunkt der Inventursammlung auf dem Gerät gefunden wurden.
 
+
 | Eigenschaft  | Beschreibung |
 |---------|------------|
 | DeviceKey |Ein Verweis auf die Gerätetabelle |
@@ -419,3 +420,4 @@ Die Entität **ApplicationInventory** listet die Apps auf, die zum Zeitpunkt der
 | ApplicationName |? (kopiert aus ExchangeDeviceService\DeviceApplication) |
 | ApplicationVersion |? (kopiert aus ExchangeDeviceService\DeviceApplication) |
 | BundleSize |? (kopiert aus ExchangeDeviceService\DeviceApplication) |
+

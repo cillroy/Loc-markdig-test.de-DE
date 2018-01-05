@@ -15,11 +15,11 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 41eb9e7ef59af185bae10664123098641f9c3826
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 98919c33e458534a3ad47a8cd7f90579c0e19864
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>An den telefonischen Support für Microsoft Intune wenden
 
@@ -117,4 +117,5 @@ ms.lasthandoff: 12/19/2017
 |USA|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr PST (UTC -8)|Englisch|800-865-9408||
 |Uruguay|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr UYST (UTC -2)|Spanisch&#42;, Englisch|000-411-002-7131||
 |Venezuela|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr VET (UTC -4:30)|Spanisch&#42;, Englisch|0-800-100-8763||
+
 &#42; Unterstützt durch Telefondolmetschen.

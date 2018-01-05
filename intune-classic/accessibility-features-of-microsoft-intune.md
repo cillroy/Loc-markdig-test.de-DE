@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 58a9ad9a50ea9a88a6d2bbc98d0475038b340281
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f8b4cc133ecb1af8268ccda8240ce8f9c0c955a5
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Barrierefreiheitsfunktionen von Windows Intune
 Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft Windows verbessern folgende Funktionen in Microsoft Intune die Barrierefreiheit für Personen mit Behinderungen: Verwenden von Tastenkombinationen
@@ -42,5 +42,6 @@ Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft W
 |Liste in einem Menü reduzieren|ALT+NACH-OBEN-TASTE|
 |Zur nächsten Anwendungsgruppe bewegen|NACH-OBEN-TASTE|
 |Aktionen für ein ausgewähltes Gerät anzeigen|Rechtspfeil|
+
 > [!NOTE]
 > In Microsoft Intune-Portalen kann mithilfe der Standardtastenkombinationen in Internet Explorer navigiert werden.

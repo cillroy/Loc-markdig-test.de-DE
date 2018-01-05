@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a940d6c1224f9e139c95d2e6638df82fff1ff74
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a0079bb8dd38ca2cafd1c00314ede21be16c08db
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="change-the-mdm-authority"></a>Ändern der MDM-Autorität
 Ab Configuration Manager Version 1610 können Sie Ihre MDM-Autorität ohne Unterstützung durch den Microsoft-Support und ohne Aufheben der Registrierung und erneutes Registrieren Ihrer vorhandenen verwalteten Geräte umstellen. Dieses Thema zeigt Ihnen erforderliche Schritte, um einen vorhandenen Microsoft Intune-Mandanten, der über Intune konfiguriert wurde und dessen MDM-Autorität auf **Microsoft Intune** (standalone) festgelegt ist, ohne Aufheben der Registrierung und erneutes Registrieren vorhandener verwalteter Geräte auf **Configuration Manager** (hybride Verwaltung mobiler Geräte) umzustellen.
@@ -76,16 +76,16 @@ Wenn Sie iOS-Geräte verwenden, müssen Sie das APNs-Zertifikat in Configuration
 
 1. **Laden Sie eine Zertifikatsignieranforderung herunter**.
 
-    1. Wechseln Sie in der Configuration Manager-Konsole zu **Verwaltung** &gt; **Clouddienste** &gt; **Microsoft Intune-Abonnements**, und wählen Sie **APNs-Zertifikatanforderung erstellen** aus, um das Dialogfeld **APNs-Zertifikatsignieranforderung anfordern** zu öffnen.  
-    2. **Navigieren** Sie zu dem Pfad, um die neue CSR-Datei (Zertifikatsignieranforderung) zu speichern. Speichern Sie die Zertifikatsignierungsanforderung (CSR-Datei) lokal.  
-    3. Klicken Sie auf **Herunterladen**. Die neue CSR-Datei von Microsoft Intune wird heruntergeladen und von Configuration Manager gespeichert.   
+   1. Wechseln Sie in der Configuration Manager-Konsole zu **Verwaltung** &gt; **Clouddienste** &gt; **Microsoft Intune-Abonnements**, und wählen Sie **APNs-Zertifikatanforderung erstellen** aus, um das Dialogfeld **APNs-Zertifikatsignieranforderung anfordern** zu öffnen.  
+   2. **Navigieren** Sie zu dem Pfad, um die neue CSR-Datei (Zertifikatsignieranforderung) zu speichern. Speichern Sie die Zertifikatsignierungsanforderung (CSR-Datei) lokal.  
+   3. Klicken Sie auf **Herunterladen**. Die neue CSR-Datei von Microsoft Intune wird heruntergeladen und von Configuration Manager gespeichert.   
 
-    > [!IMPORTANT]
-    > Sie müssen eine neue Zertifikatsignieranforderung herunterladen. Verwenden Sie keine vorhandene Datei, da dies zu einem Fehler führt.  
+      > [!IMPORTANT]
+      > Sie müssen eine neue Zertifikatsignieranforderung herunterladen. Verwenden Sie keine vorhandene Datei, da dies zu einem Fehler führt.  
 
-2.  Wechseln Sie zum [Apple Push Certificates-Portal](http://go.microsoft.com/fwlink/?LinkId=269844), und melden Sie sich mit der **gleichen** Apple-ID an, die verwendet wurde, um zuvor das APNs-Zertifikat zu erstellen und zu erneuern, das Sie in Intune standalone verwendet haben.
+2. Wechseln Sie zum [Apple Push Certificates-Portal](http://go.microsoft.com/fwlink/?LinkId=269844), und melden Sie sich mit der **gleichen** Apple-ID an, die verwendet wurde, um zuvor das APNs-Zertifikat zu erstellen und zu erneuern, das Sie in Intune standalone verwendet haben.
 
-    ![Anmeldeseite des Apple Push Certificates-Portals](../media/mdm-change-apns-portal.png)
+   ![Anmeldeseite des Apple Push Certificates-Portals](../media/mdm-change-apns-portal.png)
 
 3. Wählen Sie das APNs-Zertifikat aus, das Sie in Intune standalone verwendet haben, und klicken Sie dann auf **Erneuern**.
 

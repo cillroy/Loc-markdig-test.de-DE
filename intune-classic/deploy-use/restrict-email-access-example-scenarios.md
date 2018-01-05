@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d694204439da004d5860e50fe12625dac03e883a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0a2e4776ea55e75da605ef5537d306f55d59fe2a
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Schützen des E-Mail-Zugriffs mit Microsoft Intune: Beispielszenarios
 
@@ -49,13 +49,13 @@ Der folgende Ablauf wird im Szenario verwendet, um zu entscheiden, welche Gerät
 ## <a name="scenario-2-all-ios-devices-that-access-exchange-on-premises-must-be-managed-by-intune"></a>Szenario 2: Alle iOS-Geräte, die auf lokales Exchange zugreifen, müssen von Intune verwaltet werden
 ### <a name="scenario-requirements"></a>Anforderungen für das Szenario
 - Nur Geräten, auf denen iOS ausgeführt wird, sollte Zugriff auf lokales Exchange gewährt werden.
-- Die Geräte müssen auch bei Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen, bevor sie für den Zugriff auf Exchange verwendet werden können.
+- Die Geräte müssen auch bei Intune registriert sein und die Regeln der Konformitätsrichtlinie erfüllen, bevor sie für den Zugriff auf Exchange verwendet werden können.
 
 Um dies zu erreichen, konfigurieren Sie die folgende Richtlinie für bedingten Zugriff für lokales Exchange mit folgenden Einstellungen:
 
--   Wählen Sie die Option **Zugriff auf lokales Exchange von E-Mail-Apps blockieren, wenn das Gerät nicht kompatibel oder nicht bei Microsoft Intune registriert ist**. Wenn Sie diese Option auswählen, aktivieren Sie die Richtlinie für bedingten Zugriff, die erfordert, dass alle Geräte bei Microsoft Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen müssen, bevor sie auf Exchange zugreifen können.
+- Wählen Sie die Option **Zugriff auf lokales Exchange von E-Mail-Apps blockieren, wenn das Gerät nicht kompatibel oder nicht bei Microsoft Intune registriert ist**. Wenn Sie diese Option auswählen, aktivieren Sie die Richtlinie für bedingten Zugriff, die erfordert, dass alle Geräte bei Microsoft Intune registriert sein und die Regeln der Kompatibilitätsrichtlinie erfüllen müssen, bevor sie auf Exchange zugreifen können.
 
--   Erstellen Sie für die erweiterten Exchange ActiveSync-Einstellungen Folgendes:
+- Erstellen Sie für die erweiterten Exchange ActiveSync-Einstellungen Folgendes:
 
   -   Eine Plattformausnahme, die Geräten mit iOS erlaubt, auf Exchange zuzugreifen.   
 

@@ -14,11 +14,11 @@ ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 765c86db937334628ca887356d24675c6145e72a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 654bced9d2543b649e2d06b59665efa88ed4e108
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Auswählen der Methode zum Registrieren mobiler Geräte
 
@@ -29,14 +29,14 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 ## <a name="which-byod-platform-do-you-want-to-enable"></a>**Welche BYOD-Plattform möchten Sie aktivieren?**
 
 > [!div  class="button"]
-[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
+> [Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-[iOS und Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+> [iOS und Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 > [!div class="button"]
-[Windows-PCs >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [Windows-PCs >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 > [!div class="button"]
-[Windows 10 Mobile und Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
-
-
+> [Windows 10 Mobile und Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+> 
+> 
 > [!div class="button"]
-[< Zurück](choose-how-to-enroll-devices1.md)
+> [< Zurück](choose-how-to-enroll-devices1.md)

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ce2401645987bd0942fa946eedd4009e952fc44
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 56e4f550732c4b1681e9adcd2d0bbf01364a07d9
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Anpassen von Intune-Konsolenansichten an Administratorrollen
 
@@ -29,44 +29,44 @@ Sie können die Microsoft Intune-Verwaltungskonsolenansicht filtern, damit Admin
 
 ## <a name="to-create-a-custom-view"></a>So erstellen Sie eine benutzerdefinierte Ansicht
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Admin** &gt; **Dienstadministratoren** aus.
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Admin** &gt; **Dienstadministratoren** aus.
 
-2.  Wählen Sie aus der Liste der Dienstadministratoren den Benutzer aus, dessen Bezeichnung Sie ändern möchten, und wählen Sie anschließend **Zugriff verwalten** aus.
+2. Wählen Sie aus der Liste der Dienstadministratoren den Benutzer aus, dessen Bezeichnung Sie ändern möchten, und wählen Sie anschließend **Zugriff verwalten** aus.
 
-3.  Wählen Sie im Dialogfeld **Zugriff verwalten** die Zugriffsebene, die dem ausgewählten Benutzer zugewiesen werden soll. Es gibt folgende Auswahlmöglichkeiten:
+3. Wählen Sie im Dialogfeld **Zugriff verwalten** die Zugriffsebene, die dem ausgewählten Benutzer zugewiesen werden soll. Es gibt folgende Auswahlmöglichkeiten:
 
-    -   **Vollzugriff**
-    -   **Schreibgeschützter Zugriff**
-    -   **Helpdesk – Gruppenknoten**
+   -   **Vollzugriff**
+   -   **Schreibgeschützter Zugriff**
+   -   **Helpdesk – Gruppenknoten**
 
-    „Vollzugriff“ und „schreibgeschützter Zugriff“ sind selbsterklärend. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
+   „Vollzugriff“ und „schreibgeschützter Zugriff“ sind selbsterklärend. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
-    **Helpdesk – Gruppenknoten** beschränkt die Möglichkeiten, was der Administrator anzeigen und ausführen kann auf Folgendes:
+   **Helpdesk – Gruppenknoten** beschränkt die Möglichkeiten, was der Administrator anzeigen und ausführen kann auf Folgendes:
 
-    -   Anzeigen der Listen von Benutzern und Geräten. Der Administrator kann die Ansicht nicht mithilfe von Filtern ändern. Sie können jedoch mithilfe der Gruppenfilterung definieren, was dem Administrator angezeigt wird. Weitere Informationen finden Sie unter [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+   -   Anzeigen der Listen von Benutzern und Geräten. Der Administrator kann die Ansicht nicht mithilfe von Filtern ändern. Sie können jedoch mithilfe der Gruppenfilterung definieren, was dem Administrator angezeigt wird. Weitere Informationen finden Sie unter [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-    -   Drucken der Liste der Benutzer und Geräte
+   -   Drucken der Liste der Benutzer und Geräte
 
-    -   Exportieren der Liste der Benutzer und Geräte
+   -   Exportieren der Liste der Benutzer und Geräte
 
-    -   Anzeigen der Eigenschaften eines Benutzers oder Geräts
+   -   Anzeigen der Eigenschaften eines Benutzers oder Geräts
 
-    -   Führen Sie die folgenden Remoteaufgaben aus:
+   -   Führen Sie die folgenden Remoteaufgaben aus:
 
-        -   Vollständige Malwareüberprüfung ausführen
+       -   Vollständige Malwareüberprüfung ausführen
 
-        -   Malwareschnellüberprüfung ausführen
+       -   Malwareschnellüberprüfung ausführen
 
-        -   Computer neu starten
+       -   Computer neu starten
 
-        -   Update für Malwaredefinitionen ausführen
+       -   Update für Malwaredefinitionen ausführen
 
-        -   Richtlinien aktualisieren
+       -   Richtlinien aktualisieren
 
-        -   Inventur aktualisieren
+       -   Inventur aktualisieren
 
-        -   Remotesperrung eines Geräts
+       -   Remotesperrung eines Geräts
 
-        -   Zurücksetzen einer Kennung
+       -   Zurücksetzen einer Kennung
 
 Wenn der von Ihnen konfigurierte Administrator das nächste Mal die Intune-Verwaltungskonsole öffnet, wird ihm die von Ihnen festgelegte Zugriffsebene zugewiesen.

@@ -60,5 +60,5 @@ Um aus der Liste der **eingeschränkten Benutzergruppen** **eine Benutzergruppe 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](block-apps-with-no-modern-authentication.md)
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

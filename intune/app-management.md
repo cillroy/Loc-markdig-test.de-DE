@@ -40,21 +40,21 @@ Intune bietet eine Reihe von Funktionen, die Ihnen dabei helfen, die benötigten
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
-|Hinzufügen und Zuweisen von Apps für Geräte und Benutzer|Ja|Ja|Ja|Ja|
-|Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind|Ja|Ja|Nein|Nein|
-|Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien|Nein|Ja|Nein|Nein|
-|Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps|Nein|Ja|Nein|Nein|
-|Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien|Ja|Ja|Nein|Nein<sup>1</sup>|
-|Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung)|Ja|Ja|Ja|Ja|
-|Überwachen von App-Zuweisungen|Ja|Ja|Ja|Ja|
-|Zuweisen und Nachverfolgen von Per Volumenlizenz in einem App-Store erworbenen Apps|Nein|Nein|Nein|Ja|
-|Verpflichtende Installation von Apps auf Geräten (erforderlich)<sup>2</sup>|Ja|Ja|Ja|Ja|
-|Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation)|Ja|Ja|Ja|Ja|
-|Installieren von Verknüpfungen zu Apps im Internet (Webclip)|Ja|Ja|Ja|Ja|
-|Interne (branchenspezifische) Apps|Ja|Ja|Nein|Nein|
-|Apps aus einem Store|Ja|Ja|Ja|Ja|
-|Aktualisierung von Apps|Ja|Ja|Ja|Ja|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|Hinzufügen und Zuweisen von Apps für Geräte und Benutzer|Ja |Ja |Ja |Ja |
+|Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind|Ja |Ja |Nein|Nein|
+|Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien|Nein|Ja |Nein|Nein|
+|Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps|Nein|Ja |Nein|Nein|
+|Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien|Ja |Ja |Nein|Nein<sup>1</sup>|
+|Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung)|Ja |Ja |Ja |Ja |
+|Überwachen von App-Zuweisungen|Ja |Ja |Ja |Ja |
+|Zuweisen und Nachverfolgen von Per Volumenlizenz in einem App-Store erworbenen Apps|Nein|Nein|Nein|Ja |
+|Verpflichtende Installation von Apps auf Geräten (erforderlich)<sup>2</sup>|Ja |Ja |Ja |Ja |
+|Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation)|Ja |Ja |Ja |Ja |
+|Installieren von Verknüpfungen zu Apps im Internet (Webclip)|Ja |Ja |Ja |Ja |
+|Interne (branchenspezifische) Apps|Ja |Ja |Nein|Nein|
+|Apps aus einem Store|Ja |Ja |Ja |Ja |
+|Aktualisierung von Apps|Ja |Ja |Ja |Ja |
 
 <sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.
 
@@ -74,7 +74,7 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 - **Apps:** Mit diesem Knoten können Sie die meisten Apps hinzufügen, zuweisen und überwachen.
     - [Hinzufügen von Apps](apps-add.md)
     - [Zuweisen von Apps](apps-deploy.md)
-    - [Überwachen von Apps](apps-monitor.md)
+    - [Überwachen von apps](apps-monitor.md)
 - **App-Konfigurationsrichtlinien:** Verwenden Sie App-Konfigurationsrichtlinien, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können.
     - [Richtlinien zur Konfiguration von iOS-Apps](app-configuration-policies-use-ios.md)
     - [Richtlinien zur Konfiguration von Android-Apps](app-configuration-policies-use-android.md)

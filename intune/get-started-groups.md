@@ -43,7 +43,7 @@ Wenn Sie eine Gruppe erfolgreich erstellt haben, sollte sie in der Liste **Alle 
 
 [Erste Schritte mit Richtlinien:](get-started-policies.md) Erstellen Sie Richtlinien, um zu verhindern, dass Benutzer nicht autorisierte Aktionen mit ihren Geräten vornehmen.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Hinzufügen von Gruppen in Intune](groups-add.md)
 * [Verwalten des Zugriffs auf Ressourcen mit Azure Active Directory-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

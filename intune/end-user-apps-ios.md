@@ -49,7 +49,7 @@ Registrierte Benutzer erhalten ihre Apps durch Berühren der folgenden Kacheln a
 
 Informationen zum Hinzufügen von Apps und ihrer Platzierung auf diesen Kacheln finden Sie unter [Hinzufügen von Apps für registrierte Geräte zu Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Wie Ihre Android-Benutzer Apps erhalten](end-user-apps-android.md)
 
 [Wie Ihre Windows-Benutzer Apps erhalten](end-user-apps-windows.md)

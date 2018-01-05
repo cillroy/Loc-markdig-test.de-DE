@@ -67,7 +67,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Apps mit Schadsoftware entdeckt](./media/skycure-arch-1.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Apps mit Schadsoftware entdeckt, Zugriff gewährt](./media/skycure-arch-2.png)
 
@@ -79,7 +79,7 @@ Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Si
 
 ![Blockieren des Netzwerkzugriffs über WLAN](./media/skycure-arch-3.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung](./media/skycure-arch-4.png)
 
@@ -91,7 +91,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern de
 
 ![Blockieren von SharePoint Online bei Erkennung von Bedrohungen für das Netzwerk](./media/skycure-arch-5.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung für Sharepoint-Beispiel](./media/skycure-arch-6.png)
 

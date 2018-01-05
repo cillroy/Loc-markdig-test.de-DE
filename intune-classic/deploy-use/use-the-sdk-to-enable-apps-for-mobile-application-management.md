@@ -39,5 +39,5 @@ Sie benötigen den Zugriff auf den Quellcode der App, um das SDK verwenden zu k�
 
 Eine Übersicht über das SDK finden Sie unter [Übersicht](/intune/app-sdk-get-started).
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](/intune/apps-prepare-mobile-application-management)

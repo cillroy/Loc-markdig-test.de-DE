@@ -15,11 +15,11 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89641cee439d7da9f73d56c2ab3d6d8299164700
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 785260cab5b0f4dc4437d424f04c7bf4086d152c
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
@@ -61,7 +61,7 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 2. Klicken Sie auf **Hinzufügen**, wenn Sie die Informationen für die jeweilige Website eingegeben haben.
 3. Klicken Sie zum Abschluss auf **OK**.
 
->[!IMPORTANT] 
+> [!IMPORTANT] 
 > Die folgenden URLs werden von Intune automatisch zugelassen.
 > - www.microsoft.com
 > - www.microsoft.net

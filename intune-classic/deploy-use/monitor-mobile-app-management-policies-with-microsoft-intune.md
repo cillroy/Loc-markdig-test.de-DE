@@ -131,7 +131,7 @@ Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 
     ![Screenshot 7](../media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 [Verwalten der Datenübertragung zwischen iOS-Apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-android)

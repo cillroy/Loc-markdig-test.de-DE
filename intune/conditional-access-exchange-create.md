@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 953f78de15d292346ec7d618e976fc085ba4d428
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0605bb94c2f9875396cdcdd74685eb8ceb3c2bdc
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Erstellen und Zuweisen einer Richtlinie für bedingten Zugriff für Exchange lokal und das ältere Exchange Online Dedicated in Microsoft Intune
 
@@ -104,9 +104,9 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 12. Legen Sie auf dem Blatt **Erweiterte Zugriffseinstellungen für Exchange ActiveSync** die globale Standardregel für den Zugriff von Geräten, die nicht von Intune verwaltet werden, sowie Regeln auf Plattformebene fest, wie in den nächsten beiden Schritten beschrieben.
 
 13. Bei Geräten, die nicht durch den bedingten Zugriff oder andere Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert werden soll.
-  - Wenn Sie den Zugriff zulassen, können alle Geräte sofort auf Exchange lokal zugreifen.  Geräte, die Benutzern in **Eingeschlossene Gruppen** gehören, werden blockiert, wenn sie später als nicht konform mit den Konformitätsrichtlinien ausgewertet werden oder nicht in Intune registriert sind.
-  - Wenn Sie diese Option auf das Blockieren des Zugriffs festlegen, wird der Zugriff auf Exchange lokal sofort für alle Geräte blockiert.  Geräte, die Benutzern in **Eingeschlossene Gruppen** gehören, erhalten Zugriff, sobald das Gerät in Intune registriert und als konform ausgewertet wurde. Android-Geräte ohne Samsung KNOX Standard werden immer blockiert, da sie diese Einstellung nicht unterstützen.
-<br></br>
+    - Wenn Sie den Zugriff zulassen, können alle Geräte sofort auf Exchange lokal zugreifen.  Geräte, die Benutzern in **Eingeschlossene Gruppen** gehören, werden blockiert, wenn sie später als nicht konform mit den Konformitätsrichtlinien ausgewertet werden oder nicht in Intune registriert sind.
+    - Wenn Sie diese Option auf das Blockieren des Zugriffs festlegen, wird der Zugriff auf Exchange lokal sofort für alle Geräte blockiert.  Geräte, die Benutzern in **Eingeschlossene Gruppen** gehören, erhalten Zugriff, sobald das Gerät in Intune registriert und als konform ausgewertet wurde. Android-Geräte ohne Samsung KNOX Standard werden immer blockiert, da sie diese Einstellung nicht unterstützen.
+    <br></br>
 14. Wählen Sie unter **Geräteplattformausnahmen** die Option **Hinzufügen** aus, um die Plattformen anzugeben. Wenn die Einstellung **Zugriff nicht verwalteter Geräte** auf **blockiert** festgelegt ist, erhalten Geräte, die registriert und konform sind, auch dann Zugriff, wenn eine Plattformausnahme diesen blockieren würde. Wählen Sie **OK** aus, um die Einstellungen zu speichern.
 
 15. Klicken Sie auf dem Blatt **Lokal** auf **Speichern**, um die Richtlinie für bedingten Zugriff zu speichern.
@@ -124,6 +124,6 @@ Ab Intune Version 1704 können Administratoren im Azure-Portal für Intune Azure
 
 2. Wählen Sie auf dem Blatt **Richtlinien** **Neue Richtlinie** aus, um die neue Azure AD-Richtlinie für den bedingten Zugriff zu erstellen.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

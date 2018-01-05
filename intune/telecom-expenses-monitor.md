@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 571118896c54237a3128ff6e35ce425e1b09f078
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 482918a825b0b4ebc0951274bd49dd969e8f8103
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -72,7 +72,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie bereits ein TEM-Dienst-Abonneme
 
     Der folgende Screenshot zeigt die grünen Häkchen, die angezeigt werden, sobald die Verbindung erfolgreich aufgebaut wurde.
 
-  ![Die Datalert-Seite, die eine erfolgreiche Verbindung anzeigt](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Die Datalert-Seite, die eine erfolgreiche Verbindung anzeigt](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen, ob die TEM-Funktion in Intune aktiv ist
 
@@ -88,7 +88,7 @@ Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden 
 
    Suchen Sie nach dem **Aktiv**-Verbindungsstatus oben auf der Seite.
 
-  ![Azure-Portal mit aktivem Datalert-Verbindungsstatus](./media/tem-azure-portal-enable-service.png)
+   ![Azure-Portal mit aktivem Datalert-Verbindungsstatus](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Schritt 3: Bereitstellen der Datalert-App für in Unternehmen registrierte Geräte
 
@@ -118,11 +118,11 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 6. Wählen Sie die **Datalert**-App aus, und wählen Sie **OK**.
 
-  ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-select-app-from-apple-app-store.png)
+   ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-select-app-from-apple-app-store.png)
 
 7. Schließen Sie die verbleibenden Schritte zum Erstellen einer App für iOS ab.
 
-  ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-steps-to-create-the-app.png)
+   ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-steps-to-create-the-app.png)
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Zuweisen der Datalert-App zur Unternehmensgerätegruppe
 
@@ -134,7 +134,7 @@ Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie fo
 
 4. Legen Sie fest, ob die Installation der App für die Gruppe erforderlich oder optional ist. Auf dem folgenden Beispiel-Screenshot wird die Installation als erforderlich angezeigt, was bedeutet, dass Benutzer die Datalert-App nach der Registrierung ihres Geräts installieren müssen.
 
-  ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-assign-datalert-app-to-device-group.png)
+   ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Schritt 4: Hinzufügen von kostenpflichtigen Firmentelefonleitungen zur Datalert-Konsole
 

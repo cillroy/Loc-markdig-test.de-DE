@@ -99,7 +99,7 @@ Außerdem benötigen Sie [Microsoft Authenticator](https://docs.microsoft.com/az
 
 3.  Geben Sie im Abschnitt **Allgemein** der Seite **Richtlinie erstellen** einen Namen und eine optionale Beschreibung für die Konfigurationsrichtlinie für iOS-Apps an.
 
-    a.  Öffnen Sie die Datei **skycure\_configuration.plist** mit einem Text-Editor wie Editor. Kopieren Sie den Inhalt und fügen Sie ihn in den Text unter **Richtlinie zur Konfiguration mobiler Apps** ein. Wählen Sie dann **Überprüfen** und schließlich **Richtlinie speichern** aus.
+    ein.  Öffnen Sie die Datei **skycure\_configuration.plist** mit einem Text-Editor wie Editor. Kopieren Sie den Inhalt und fügen Sie ihn in den Text unter **Richtlinie zur Konfiguration mobiler Apps** ein. Wählen Sie dann **Überprüfen** und schließlich **Richtlinie speichern** aus.
 
        ![iOS-App-Konfigurationsrichtlinie 2](../media/mtp/skycure-add-apps-8.png)
 

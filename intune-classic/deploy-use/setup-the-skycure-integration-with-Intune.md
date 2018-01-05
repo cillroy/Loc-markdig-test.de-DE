@@ -99,7 +99,7 @@ Skycure synchronisiert die Geräte und führt den Mobile Threat Defense-Dienst m
 
 4.  Überprüfen Sie die folgenden Einstellungen:
 
-    a.  Report the health and risk of device to Intune (Integrität und Risiken des Geräts an Intune melden)
+    ein.  Report the health and risk of device to Intune (Integrität und Risiken des Geräts an Intune melden)
 
     b.  Also report security incidents to Intune (Auch Sicherheitsvorfälle an Intune melden)
 

@@ -142,7 +142,7 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 | Tabellen        | Sind           | Gut  |
 | ------------- |:-------------:| -----:|
 | Sp 3 ist      | rechtsbündig | $1600 |
-| Sp 2 ist      | zentriert      |   $12 |
+| Sp 2 ist      | zentriert      |   12 $ |
 | SP 1 ist der Standard | linksbündig     |    $1 |
 
 
@@ -162,7 +162,7 @@ Dies ist ein Beispiel für `in-line code`.
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> Die Trockenheit hatte nun zehn Millionen Jahre angedauert, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages zu Afrika werden würde, hatte der Kampf ums Überleben eine neue Wildheit erreicht, und ein Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
+> Die Trockenheit hatte nun zehn Millionen Jahre lang angehalten, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages zu Afrika werden würde, hatte der Kampf ums Überleben eine neue Wildheit erreicht, und ein Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
 
 ## <a name="images"></a>Bilder
 

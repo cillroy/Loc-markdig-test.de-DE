@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e75c456f5f8ef569ff9ad6338796cb753806edf7
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ba2105122cd09506e2d9fe9b7ed19a9bf5bd5245
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Konfigurieren des Microsoft Intune Service to Service Connector für Hosted Exchange
 
@@ -30,7 +30,8 @@ Anhand dieser Informationen können Sie Microsoft Intune und Exchange Online ode
 ## <a name="service-to-service-connector-requirements"></a>Anforderungen an den Service to Service Connector
 Der **Service to Service Connector** unterstützt nur Exchange Online oder Exchange Online Dedicated und stellt keine Anforderungen an die lokale Infrastruktur.
 
-|Anforderung|Weitere Informationen|
+
+|Anforderungen|Weitere Informationen|
 |---------------|--------------------|
 |Konfiguration und Ausführung von Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autorität für die Verwaltung mobiler Geräte| [Festlegen von Microsoft Intune als Autorität für die Verwaltung mobiler Geräte](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|

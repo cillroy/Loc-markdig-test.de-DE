@@ -101,6 +101,6 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
     >Intune erfasst alle sieben Tage den Status der Aktivierungssperre auf Geräten. Aus diesem Grund werden Geräte in der Intune-Konsole möglicherweise nicht sofort mit dem richtigen Status der Aktivierungssperre angezeigt.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)

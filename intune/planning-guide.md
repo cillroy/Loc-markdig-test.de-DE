@@ -32,7 +32,7 @@ Dieses Handbuch enthält Abschnitte, in denen Sie lückenlos durch die Bereitste
 
 -   [Abschnitt 1: Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen](planning-guide-deployment-goals.md)
 
--   [Abschnitt 2: Bestimmen von Anwendungsfallszenarien](planning-guide-scenarios.md)
+-   [Abschnitt 2: Bestimmen von Anwendungsszenarien](planning-guide-scenarios.md)
 
 -   [Abschnitt 3: Bestimmen von Anwendungsfallanforderungen](planning-guide-requirements.md)
 

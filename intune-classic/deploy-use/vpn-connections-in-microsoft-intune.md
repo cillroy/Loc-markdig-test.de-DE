@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ade01bc278b677013fc32cf2f3cc2404dfddb4a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4308c8283dd370349cfb857c65536a1091e913e3
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-Verbindungen in Microsoft Intune
 
@@ -48,18 +48,18 @@ Intune unterstützt die Erstellung von VPN-Profilen mit den folgenden Verbindung
 
 Verbindungstyp |iOS und Mac OS X  |Android und Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop und Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Ja |Ja   |Nein    |Nein  |Nein    | Ja (OMA-URI, nur mobil)|     
-Cisco (IPsec)|Ja |Ja   |Nein  |Nein  |Nein | Nein|
-Citrix|Ja |Ja (nur Android)   |Nein  |Nein  |Nein | Nein|
-Pulse Secure|Ja  |Ja |Ja   |Ja  |Ja| Ja|        
-F5 Edge Client|Ja |Ja |Ja |Ja  |   Ja |  Ja|   
-Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja|         
-CheckPoint Mobile VPN|Ja |Ja |Ja |Ja|Ja|Ja|
+Cisco AnyConnect|Ja  |Ja    |Nein    |Nein  |Nein    | Ja (OMA-URI, nur mobil)|     
+Cisco (IPsec)|Ja  |Ja    |Nein  |Nein  |Nein | Nein|
+Citrix|Ja  |Ja (nur Android)   |Nein  |Nein  |Nein | Nein|
+Pulse Secure|Ja   |Ja  |Ja    |Ja   |Ja | Ja |        
+F5 Edge Client|Ja  |Ja  |Ja  |Ja   |   Ja  |  Ja |   
+Dell SonicWALL Mobile Connect|Ja  |Ja  |Ja  |Ja  |Ja  |Ja |         
+CheckPoint Mobile VPN|Ja  |Ja  |Ja  |Ja |Ja |Ja |
 Microsoft SSL (SSTP)|Nein |Nein |Nein |Nein|Nein|VPN v1 OMA-URI*|
-Microsoft Automatic|Nein |Nein |Nein |Nein|Ja (OMA-URI)|Ja|
-IKEv2|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Ja (OMA-URI)|Ja|
-PPTP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Nein|Ja|
-L2TP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Ja (OMA-URI)|Ja|
+Microsoft Automatic|Nein |Nein |Nein |Nein|Ja (OMA-URI)|Ja |
+IKEv2|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Ja (OMA-URI)|Ja |
+PPTP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Nein|Ja |
+L2TP|Benutzerdefiniertes Profil für iOS|Nein |Nein |Nein|Ja (OMA-URI)|Ja |
 
 \* Ohne zusätzliche Einstellungen, die andernfalls für Windows 10 verfügbar sind.
 
@@ -94,7 +94,7 @@ Der Benutzer authentifiziert sich beim VPN-Server durch Angabe seines Benutzerna
     * **VPN-Profil (Windows Phone 8.1 und höher)**
     * **VPN-Profil (Windows 10 Desktop und Mobile und höher)**
 
- Sie können nur benutzerdefinierte VPN-Profilrichtlinien erstellen und bereitstellen. Empfohlene Einstellungen sind nicht verfügbar.
+   Sie können nur benutzerdefinierte VPN-Profilrichtlinien erstellen und bereitstellen. Empfohlene Einstellungen sind nicht verfügbar.
 
 > [!Note]
 > Ein VPN-Profil für Android for Work-Geräte lässt nur für solche Apps eine VPN-Verbindung zu, die auf dem Arbeitsprofil des Geräts installiert sind.
@@ -133,6 +133,7 @@ Name der Einstellung  |Weitere Informationen
 
 Die folgenden zusätzlichen Einstellungen sind für Geräte mit Windows 10 Desktop und Mobile verfügbar.
 
+
 Name der Einstellung  |Weitere Informationen  
 ---------|---------
 **Regeln für den Netzwerkdatenverkehr**|Wählen Sie die Protokolle, die lokalen und Remoteports sowie die Adressbereiche aus, die für die VPN-Verbindung aktiviert werden sollen. Wenn Sie keine Regel für den Netzwerkdatenverkehr erstellen, werden alle Protokolle, Ports und Adressbereiche aktiviert. Nachdem Sie eine Regel erstellt haben, werden nur die in dieser Regel festgelegten Protokolle, Ports und Adressbereiche von der VPN-Verbindung verwendet.
@@ -161,18 +162,18 @@ Sie können für Geräte mit iOS 8.0 und höher ein bedarfsgesteuertes VPN konfi
 
 1. Suchen Sie auf der Seite der Richtlinienkonfiguration die Option **Bedarfsgesteuerte Regeln für diese VPN-Verbindung**. Die Spalten heißen **Übereinstimmung**, die Bedingung, deren Einhaltung die Regeln überprüfen, und **Aktion**, die Aktion, die durch die Richtlinie ausgelöst wird, wenn die Bedingung erfüllt ist.
 2. Wählen Sie **Hinzufügen** aus, um eine Regel zu erstellen. Es gibt zwei Arten von Übereinstimmungen, die Sie in der Regel einrichten können. Sie können pro Regel jeweils nur eine Art konfigurieren.
-  - **SSIDs**: beziehen sich auf drahtlose Netzwerke.
-  - **DNS-Suchdomänen**: Sie können vollständig qualifizierte Domänennamen wie z.B. *team.corp.contoso.com* oder Domänen wie *contoso.com* verwenden (dies entspricht der Verwendung von **.contoso.com*).
+   - **SSIDs**: beziehen sich auf drahtlose Netzwerke.
+   - **DNS-Suchdomänen**: Sie können vollständig qualifizierte Domänennamen wie z.B. *team.corp.contoso.com* oder Domänen wie *contoso.com* verwenden (dies entspricht der Verwendung von **.contoso.com*).
 3. Optional: Geben Sie eine URL-Zeichenfolgetest an, d. h. eine URL, die von der Regel als Test verwendet wird. Wenn das Gerät, auf dem dieses Profil installiert wird, auf diese URL ohne Umleitung zugreifen kann, wird das VPN eingerichtet, und das Gerät stellt eine Verbindung mit der Ziel-URL her. Der URL-Zeichenfolgentest-Standort wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekompatibilität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
 4. Wählen Sie eine der folgenden Aktionen aus:
-  - **Verbinden**
-  - **Verbindung auswerten** verfügt über drei Einstellungen: a. **Domänenaktion**: Wählen Sie **Bei Bedarf verbinden** oder **Nie verbinden** aus: b. **Durch Trennzeichen getrennte Liste der Domänen**: Diese Option konfigurieren Sie nur, wenn Sie **Bei Bedarf verbinden** als **Domänenaktion** auswählen: c. **Test der erforderlichen URL-Zeichenfolge** – eine HTTP- oder HTTPS-URL (bevorzugt), z. B. *https://vpntestprobe.contoso.com*. Mit der Regel wird überprüft, ob diese Adresse eine Antwort sendet. Wenn dies nicht der Fall ist, und **Bei Bedarf verbinden** die **Domänenaktion** ist, wird das VPN ausgelöst.
-      
+   - **Verbinden**
+   - **Verbindung auswerten** verfügt über drei Einstellungen: a. **Domänenaktion**: Wählen Sie **Bei Bedarf verbinden** oder **Nie verbinden** aus: b. **Durch Trennzeichen getrennte Liste der Domänen**: Diese Option konfigurieren Sie nur, wenn Sie **Bei Bedarf verbinden** als **Domänenaktion** auswählen: c. **Test der erforderlichen URL-Zeichenfolge** – eine HTTP- oder HTTPS-URL (bevorzugt), z. B. *https://vpntestprobe.contoso.com*. Mit der Regel wird überprüft, ob diese Adresse eine Antwort sendet. Wenn dies nicht der Fall ist, und **Bei Bedarf verbinden** die **Domänenaktion** ist, wird das VPN ausgelöst.
+
      > [!TIP]
      >
      >Ein Beispiel für die Verwendung dieser Aktion: Für einige Standorte im Unternehmensnetzwerk ist eine direkte oder VPN-Unternehmensnetzwerkverbindung erforderlich, für andere jedoch nicht. Wenn Sie in **Durch Trennzeichen getrennte Liste von DNS-Suchdomänen** *corp.contoso.com* gelistet sind, können Sie **Bei Bedarf verbinden** auswählen und dann bestimmte Standorte innerhalb dieses Netzwerks auflisten, die möglicherweise VPN benötigen, z. B. *sharepoint.corp.contoso.com*. Die Regel überprüft daraufhin, ob *vpntestprobe.contoso.com* erreicht werden kann. Wenn dies nicht möglich ist, wird das VPN für die Sharepoint-Website ausgelöst.
-  - **Ignorieren** – Die VPN-Konnektivität wird nicht geändert. Wenn das VPN verbunden ist, lassen Sie die Verbindung bestehen, wenn es nicht verbunden ist, stellen Sie keine Verbindung her. Angenommen, Sie verfügen über eine Regel, die für alle Ihre internen Unternehmenswebsites eine VPN-Verbindung herstellt, möchten eine dieser internen Websites aber nur verfügbar machen, wenn das Gerät tatsächlich mit dem Unternehmensnetzwerk verbunden ist. In diesem Fall würden Sie eine Ignorieren-Regel für diese eine Website erstellen.
-  - **Trennen** – Trennt Geräte vom VPN, wenn die Bedingung erfüllt sind. Sie könnten Ihre Unternehmens-WLANs beispielsweise im Feld **SSIDs** auflisten und eine Regel erstellen, welche die Geräte vom VPN trennt, wenn sie eine Verbindung mit einem dieser Netzwerke herstellen.
+   - **Ignorieren** – Die VPN-Konnektivität wird nicht geändert. Wenn das VPN verbunden ist, lassen Sie die Verbindung bestehen, wenn es nicht verbunden ist, stellen Sie keine Verbindung her. Angenommen, Sie verfügen über eine Regel, die für alle Ihre internen Unternehmenswebsites eine VPN-Verbindung herstellt, möchten eine dieser internen Websites aber nur verfügbar machen, wenn das Gerät tatsächlich mit dem Unternehmensnetzwerk verbunden ist. In diesem Fall würden Sie eine Ignorieren-Regel für diese eine Website erstellen.
+   - **Trennen** – Trennt Geräte vom VPN, wenn die Bedingung erfüllt sind. Sie könnten Ihre Unternehmens-WLANs beispielsweise im Feld **SSIDs** auflisten und eine Regel erstellen, welche die Geräte vom VPN trennt, wenn sie eine Verbindung mit einem dieser Netzwerke herstellen.
 
 Domänenspezifische Regeln werden vor Regeln ausgewertet, die für alle Domänen gelten.
 

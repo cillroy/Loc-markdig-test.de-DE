@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0312c29f0c50319850de60b9c2720baa3eec69b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b1339f7640b83f23e99c15982d9255bf554c7441
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -70,7 +70,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
 
- ![Screenshot des Arbeitsbereichs des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
+   ![Screenshot des Arbeitsbereichs des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
 2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**. Sie können angeben, ob für zuvor importierte Zahlen Folgendes gilt: **Hiermit überschreiben Sie Details für vorhandene Bezeichner**.
 
@@ -95,7 +95,7 @@ Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in In
 
 **So ändern Sie den Gerätebesitz:**
 1. Navigieren Sie in Intune im Azure-Portal zu **Geräte** > **Alle Geräte**, und wählen Sie das Gerät aus.
-3. Wählen Sie **Eigenschaften** aus.
-4. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
+2. Wählen Sie **Eigenschaften** aus.
+3. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
 
-  ![Screenshot der Geräteeigenschaften, der die Optionen der Gerätekategorie und des Gerätebesitzes anzeigt.](./media/device-properties.png)
+   ![Screenshot der Geräteeigenschaften, der die Optionen der Gerätekategorie und des Gerätebesitzes anzeigt.](./media/device-properties.png)

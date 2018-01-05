@@ -15,11 +15,11 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 175c670f78123f7a74fe5e7d87fd24ad165cb2ce
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 774e57d632ceb8fdb23d5d9af9066806295cb5d0
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Hinzufügen von Windows Phone 8.1 Store-Apps in Microsoft Intune
 

@@ -43,7 +43,7 @@ Eine der schnelleren Bereitstellungsmethoden für Apps ist das Zuweisen einer ö
 8. Achten Sie darauf, dass Sie **Ja** für **Diese App als ausgewählte App im Unternehmensportal anzeigen** ausgewählt haben, und klicken Sie dann auf **OK**.
 9. Wählen Sie **Hinzufügen** auf dem Blatt **App hinzufügen** aus, um die App hinzuzufügen. Dann werden Sie zur **Übersicht** der App weitergeleitet. Klicken Sie auf **Zuweisungen** und dann auf **Gruppe auswählen**, um sie Ihrer Testgruppe hinzuzufügen. Machen Sie die App zum Herunterladen **verfügbar**. Dann sollte die App als **Empfohlene App** auf Ihrem Testgerät angezeigt werden.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Was ist die Microsoft Intune App-Verwaltung?](app-management.md)
 * [Übersicht über den App-Lebenszyklus](app-lifecycle.md)

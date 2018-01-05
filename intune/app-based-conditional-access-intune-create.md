@@ -82,7 +82,7 @@ Ab Intune-Release 1708 können IT-Administratoren App-basierte Richtlinien für 
 ## <a name="next-steps"></a>Nächste Schritte
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md)
 [Bedingter Zugriff im klassischen Azure-Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

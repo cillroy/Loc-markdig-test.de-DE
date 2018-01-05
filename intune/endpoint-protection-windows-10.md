@@ -84,12 +84,12 @@ Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
     - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
     - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
     - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
+    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
         - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
         - **Nur Wiederherstellungskennwörter sichern**
     - **Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Wenn diese Einstellung aktiviert ist, verhindern Sie, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden.
 - **Pre-Boot-Wiederherstellungsmeldung und -URL aktivieren**: Legen Sie diese Einstellung fest, um die Meldung und URL zu konfigurieren, die auf dem Pre-Boot-Schlüsselwiederherstellungsbildschirm angezeigt werden.
-    - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Wählen Sie aus:
+    - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Es stehen die folgenden Optionen zur Auswahl:
         - **Standardmäßige Wiederherstellungsmeldung und -URL verwenden**
         - **Leere Wiederherstellungsmeldung und -URL verwenden**
         - **Benutzerdefinierte Wiederherstellungsmeldung**
@@ -105,7 +105,7 @@ Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
     - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
     - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten ausblenden**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
     - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
+    - **Speicherung von BitLocker-Wiederherstellungsinformationen in AD DS konfigurieren**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
         - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
         - **Nur Wiederherstellungskennwörter sichern**
     - **Wiederherstellungsinformationen müssen vor dem Aktivieren von BitLocker in AD DS gespeichert werden**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.

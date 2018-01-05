@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie Ihr Windows-Gerät zurücksetzen? | Microsoft Docs"
+title: "Was geschieht, wenn Sie Ihr Windows-Gerät zurücksetzen? | Microsoft-Dokumentation"
 description: 
 keywords: 
 author: barlanmsft

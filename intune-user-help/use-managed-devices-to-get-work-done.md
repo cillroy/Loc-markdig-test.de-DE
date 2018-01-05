@@ -68,9 +68,9 @@ Wenn Sie erfahren möchten, was die Supportabteilung Ihres Unternehmens auf Ihre
 -   Apple-Geräte unter iOS (z.B. iPhone oder iPad) sowie macOs (z.B: MacBook und iMac)
 -   Android-Geräte
 -   Windows-Geräte
-    -   Windows 10 Mobile
+    -   Windows 10 Mobile
     -   Windows 10 Desktop
-    -   Windows Phone 8.1
+    -   Windows Phone 8.1
     -   Windows 8.1
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Können Sie einen Computer bzw. ein Gerät aus dem Unternehmensportal entfernen?

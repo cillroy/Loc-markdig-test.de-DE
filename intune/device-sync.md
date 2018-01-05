@@ -53,15 +53,15 @@ Wenn ein Administrator die Geräteaktion **Sync** ausführt, sind iOS- und Andro
 | Fehlercode  | Vorgeschlagene Beschreibung                                                                                                                  | Wiederholbar |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | 2016330898 | Unbekannter Fehler aufgetreten.                                                                                                             | Nein        |
-| 2016330897 | Ihre Verbindung zu Intune wurde aufgrund einer Zeitüberschreitung abgebrochen. Setzen Sie Ihre Verbindung zurück.                                                                             | Ja       |
-| 2016330896 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330895 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330894 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
-| 2016330893 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja       |
+| 2016330897 | Ihre Verbindung zu Intune wurde aufgrund einer Zeitüberschreitung abgebrochen. Setzen Sie Ihre Verbindung zurück.                                                                             | Ja        |
+| 2016330896 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330895 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330894 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
+| 2016330893 | Ihre Internetverbindung wurde getrennt. Setzen Sie Ihre Verbindung zurück.                                                                            | Ja        |
 | 2016330892 | Internationales Roaming ist deaktiviert.                                                                                                     | Nein        |
-| 2016330891 | Während eines Anrufs kann für dieses Gerät nicht auf die Mobilfunkverbindung zugegriffen werden. Warten Sie, bis der Anruf beendet wird. | Ja       |
+| 2016330891 | Während eines Anrufs kann für dieses Gerät nicht auf die Mobilfunkverbindung zugegriffen werden. Warten Sie, bis der Anruf beendet wird. | Ja        |
 | 2016330890 | Das Mobilfunknetz für dieses Gerät: Diese Geräte konnten zu diesem Zeitpunkt nicht verwendet werden.                                                   | Nein        |
-| 2016330889 | Fehler bei der sicheren Verbindung: Setzen Sie Ihre Verbindung zurück.                                                                                   | Ja       |
+| 2016330889 | Fehler bei der sicheren Verbindung: Setzen Sie Ihre Verbindung zurück.                                                                                   | Ja        |
 | 2016330888 | Fehler bei der Auswertung der Serververtrauensstellung                                                                                                | Nein        |
 
 ## <a name="next-steps"></a>Nächste Schritte

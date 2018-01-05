@@ -1,6 +1,6 @@
 ---
 title: "Gerätekompatibilitätsrichtlinien"
-description: "In diesem Thema wird erläutert, was Gerätekompatibilitätsrichtlinien sind und wie sie funktionieren."
+description: "In diesem Thema wird erläutert, was Gerätekonformitätsrichtlinien sind und wie sie funktionieren."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -25,15 +25,15 @@ ms.lasthandoff: 12/19/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="what-is-a-compliance-policy"></a>Was ist eine Kompatibilitätsrichtlinie?
+## <a name="what-is-a-compliance-policy"></a>Was ist eine Konformitätsrichtlinie?
 Um Unternehmensdaten zu schützen, müssen Sie sicherstellen, dass die Geräte, die für den Zugriff auf Unternehmens-Apps und Daten verwendet werden, bestimmten Regeln entsprechen. Diese Regeln könnten die Verwendung einer PIN für den Zugriff auf Geräte und das Verschlüsseln von Daten, die auf Geräten gespeichert sind, einschließen. Eine Gruppe solcher Regeln wird als Kompatibilitätsrichtlinie bezeichnet.
 
-## <a name="how-should-i-use-compliance-policies"></a>Wie verwende ich Kompatibilitätsrichtlinien?
+## <a name="how-should-i-use-compliance-policies"></a>Wie verwende ich Konformitätsrichtlinien?
 Sie können Kompatibilitätsrichtlinien mit Richtlinien für bedingten Zugriff verwenden, um nur Geräte zuzulassen, die Kompatibilitätsrichtlinienregeln für den Zugriff auf E-Mail und andere Dienste entsprechen. Wie die beiden Richtlinien zusammen verwendet werden können, erfahren Sie im Artikel [Einschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-Sie können Kompatibilitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
+Sie können Konformitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
-Sie stellen Kompatibilitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
+Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
 Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 Die folgende Tabelle enthält die Gerätetypen, die Kompatibilitätsrichtlinien unterstützen. In der Tabelle wird auch beschrieben, wie nicht kompatible Einstellungen verwaltet werden, wenn eine Kompatibilitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
@@ -65,5 +65,5 @@ Die folgende Tabelle enthält die Gerätetypen, die Kompatibilitätsrichtlinien 
 
 [Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

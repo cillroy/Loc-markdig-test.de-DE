@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed5be15f84cf34660c8684ce61322cad9013fae3
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 399cb382acfe0594d06a6b8d6ef4317c22f66e4f
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Mac OS X-Konfigurationsrichtlinien in Microsoft Intune
 
@@ -67,13 +67,14 @@ Aktivieren Sie in der Liste der **kompatiblen und nicht kompatiblen Apps für Ma
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer durch Trennzeichen getrennten Datei angegeben haben. Verwenden Sie in der Datei das Format App-Name, Herausgeber, Paket-ID der App.|
 |**Bearbeiten**|Ermöglicht das Bearbeiten der Werte für Name, Herausgeber und Paket-ID der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
+
 > [!TIP]
 > Weitere Informationen zu Intune-Berichten finden Sie unter [Einblicke in Microsoft Intune-Vorgänge durch Berichte](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät wieder aus dem Energiesparmodus aktiviert wird.
 
-### <a name="monitor-compliant-and-noncompliant-apps"></a>Überwachen kompatibler und nicht kompatibler Apps
+### <a name="monitor-compliant-and-noncompliant-apps"></a>Überwachen konformer und nicht konformer Apps
 Anhand der **Berichte über nicht kompatible Apps** können Sie überprüfen, ob die angegebenen Apps kompatibel sind.
 
 #### <a name="to-run-a-report"></a>So führen Sie einen Bericht aus
@@ -91,7 +92,7 @@ Mit dieser Funktion können Sie Mac OS X-Einstellungen bereitstellen, die nicht 
 Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigurationsdatei mit den Einstellungen erstellt haben, die Sie für Benutzer oder Geräte bereitstellen möchten. Um Apple Configurator herunterzuladen und mehr darüber zu erfahren, besuchen Sie den [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 > [!NOTE]
-> Intune gibt keine Auskunft über die Kompatibilität der einzelnen Einstellungen einer benutzerdefinierten Mac OS X-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
+> Intune gibt keine Auskunft über die Konformität der einzelnen Einstellungen einer benutzerdefinierten Mac OS X-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -112,12 +113,12 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>Erstellen einer Konfigurationsprofildatei
-Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwendet wird, kann über zwei Methoden erstellt werden.
+Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwendet wird, kann auf zwei Weisen erstellt werden:
 
 -   Exportieren Sie die Datei (mit der Erweiterung **.mobileconfig**) aus dem Apple Configurator-Tool.
 
 -   Erstellen Sie die Datei selbst unter Verwendung des entsprechenden Schemas aus der [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

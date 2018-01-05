@@ -34,10 +34,10 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 | Herausforderungen bei der Bereitstellung |Nutzungsbedingungen|Test zur Überprüfung im Endbenutzerszenario|
 | Anwendungsfallszenarien |Konfigurationsrichtlinie| |
 | Anforderungen für Anwendungsfallszenarien |Zertifikatprofil| |
-| Rolloutplan |WLAN-Profil| |
+| Rolloutplan |Wi-Fi-Profil| |
 | Kommunikationsplan für Rollout|VPN-Profil| |
 | |  E-Mail-Profil | |
-| | Anwendungen | |
+| | Applications | |
 | | Kompatibilitätsrichtlinie | |
 | | Richtlinie für bedingten Zugriff|-|
 

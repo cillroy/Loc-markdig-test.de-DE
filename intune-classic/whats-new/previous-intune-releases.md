@@ -14,11 +14,11 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c0188d855a5d5caa6aba1fd7d4a017144709a668
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 672d74800f56323a57ea1e5e8529d91762c42a9e
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="previous-intune-releases"></a>Vorherige Versionen von Intune
 
@@ -54,11 +54,11 @@ Wenn Sie den bedingten Zugriff verwenden, werden die Registrierungsschritte für
 
 __Android__
 - **Android-Unternehmensportal-App**<br/>
-Wenn Android-Endbenutzer von einer Fehlermeldung darüber informiert werden, dass ein erforderliches Zertifikat auf ihrem Gerät fehlt, können Sie auf die Schaltfläche „Problembehebung“ tippen, um mit [Schritte](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) zu erhalten, die IT-Administratoren verwenden können, um das Zertifikatproblem zu beheben.
+  Wenn Android-Endbenutzer von einer Fehlermeldung darüber informiert werden, dass ein erforderliches Zertifikat auf ihrem Gerät fehlt, können Sie auf die Schaltfläche „Problembehebung“ tippen, um mit [Schritte](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) zu erhalten, die IT-Administratoren verwenden können, um das Zertifikatproblem zu beheben.
 
 - **Einschränken der Installationen quergeladener Apps auf registrierten Geräten**<br/>
-Auf Android-Geräten können nicht mehr Apps über die Unternehmensportal-Website installiert werden, es sei denn, die Geräte wurden mithilfe der Intune-Unternehmensportal-App für Android in Intune registriert.
-<!---TFS 1299082--->
+  Auf Android-Geräten können nicht mehr Apps über die Unternehmensportal-Website installiert werden, es sei denn, die Geräte wurden mithilfe der Intune-Unternehmensportal-App für Android in Intune registriert.
+  <!---TFS 1299082--->
 
 __iOS__
 - **Änderungen an den Geräteregistrierungs-Manager-Konten in der iOS-Unternehmensportal-App**<br/>
@@ -84,7 +84,7 @@ Informationen zum Status des Intune-Diensts wurden wie für andere Microsoft-Die
 
 ### <a name="device-management"></a>Geräteverwaltung
 - **Windows Defender-Richtlinieneinstellung zum Schutz gegen potenziell unerwünschte Apps.** Die allgemeine Konfigurationsrichtlinie für Windows 10 Desktop und Mobile wurde um die neue Windows Defender-Einstellung **Erkennung möglicherweise unerwünschter Anwendungen** erweitert. Mit dieser Einstellung können registrierte Windows-Desktopcomputer gegen Software geschützt werden, die von Windows Defender als möglicherweise unerwünscht eingestuft wird. Sie können verhindern, dass diese Anwendungen ausgeführt werden, oder den Überwachungsmodus verwenden, um zu melden, wenn eine möglicherweise unerwünschte Anwendung installiert wird. Weitere Informationen finden Sie unter [Einstellungen für Windows 10-Richtlinien in Microsoft Intune](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).
-<!---TFS 1244478--->
+  <!---TFS 1244478--->
 
 ### <a name="conditional-access"></a>Bedingter Zugriff
 - **Cisco ISE-Netzwerkzugriffssteuerungs-Richtlinie für Intune.**  Kunden, die Cisco Identity Service Engine (ISE) 2.1 und Microsoft Intune verwenden, können eine Netzwerkzugriffssteuerungs-Richtlinie in ISE festlegen.
@@ -94,12 +94,12 @@ Informationen zum Status des Intune-Diensts wurden wie für andere Microsoft-Die
     * Die Geräte müssen über Intune verwaltet werden
     * Kompatibilität mit allen bereitgestellten Intune-Konformitätsrichtlinien
 
- Endbenutzer mit nicht konformen Geräten werden aufgefordert, sich zu registrieren und jegliche Konformitätsprobleme zu beheben, um Zugriff zu erhalten.
+  Endbenutzer mit nicht konformen Geräten werden aufgefordert, sich zu registrieren und jegliche Konformitätsprobleme zu beheben, um Zugriff zu erhalten.
 - **Bedingter Zugriff für Browser.** Sie können eine Richtlinie für bedingten Zugriff für [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) festlegen, sodass nur von unterstützten Webbrowsern auf verwalteten und kompatiblen IOS- und Android-Geräten aus auf sie zugegriffen werden kann. Endbenutzer, die versuchen, sich bei Outlook Web Access- (OWA-) und SharePoint-Standorten mit IOS- und Android-Geräten anzumelden, werden aufgefordert, ihr Gerät bei Intune zu registrieren und alle Nichtkompatibilitätsprobleme zu beheben, bevor eine vollständige Anmeldung möglich ist.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
-- **Dynamics CRM Online unterstützt den bedingten Zugriff.** Sie können eine Richtlinie für den bedingten Zugriff für [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) festlegen, sodass nur der Zugriff durch verwaltete und kompatible iOS- und Android-Geräte möglich ist. Endbenutzer, die versuchen, sich bei der mobilen Dynamics CRM-App für iOS und Android anzumelden, werden aufgefordert, sich bei Intune zu registrieren und alle Kompatibilitätsprobleme zu beheben, bevor die Anmeldung abgeschlossen werden kann.
-<!---TFS1295358--->
+- **Dynamics CRM Online unterstützt den bedingten Zugriff.** Sie können eine Richtlinie für den bedingten Zugriff für [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) festlegen, sodass nur der Zugriff durch verwaltete und konforme iOS- und Android-Geräte möglich ist. Endbenutzer, die versuchen, sich bei der mobilen Dynamics CRM-App für iOS und Android anzumelden, werden aufgefordert, sich bei Intune zu registrieren und alle Konformitätsprobleme zu beheben, bevor die Anmeldung abgeschlossen werden kann.
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Aktualisierungen des Intune-Unternehmensportals
 
@@ -180,19 +180,19 @@ Alle diese Features werden auch für hybride Kundenbereitstellungen (Configurati
 
 ### <a name="app-management"></a>App-Verwaltung
 - **MAM-Benutzerkompatibilität.**
-Sie können nun den [Status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) von Anwendungsverwaltungsrichtlinien für alle Benutzer in Ihrem Azure Active Directory-Mandanten (AAD) anzeigen. Dies umfasst u. a.:
-   - Geräte
-   - Apps auf dem Gerät
+  Sie können nun den [Status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) von Anwendungsverwaltungsrichtlinien für alle Benutzer in Ihrem Azure Active Directory-Mandanten (AAD) anzeigen. Dies umfasst u. a.:
+  - Geräte
+  - Apps auf dem Gerät
 
-   Statuswerte:
+    Statuswerte:
 
-   **Eingecheckt**: Gibt an, dass die Richtlinie dem Benutzer bereitgestellt wurde, dass die App im Kontext verwendet wurde und dass sie die Richtlinie erfolgreich empfangen hat.
+    **Eingecheckt**: Gibt an, dass die Richtlinie dem Benutzer bereitgestellt wurde, dass die App im Kontext verwendet wurde und dass sie die Richtlinie erfolgreich empfangen hat.
 
     **Nicht eingecheckt**: Gibt an, dass die Richtlinie dem Benutzer bereitgestellt wurde, die App seitdem aber nicht im Arbeitskontext verwendet wurde.
 
 
 - **MAM-Steuerelemente, um die Synchronisierung von Outlook-Kontakten zu verhindern (Android).**
-Es ist eine neue Einstellung für die [mobile Anwendungsverwaltung](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) verfügbar; Kontakte, die schon im nativen Adressbuch gespeichert wurden, werden entfernt. Diese neue Einstellung wird anfänglich von der Outlook-Anwendung auf Android-Geräten unterstützt.
+  Es ist eine neue Einstellung für die [mobile Anwendungsverwaltung](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) verfügbar; Kontakte, die schon im nativen Adressbuch gespeichert wurden, werden entfernt. Diese neue Einstellung wird anfänglich von der Outlook-Anwendung auf Android-Geräten unterstützt.
 
 ### <a name="device-management"></a>Geräteverwaltung
 - **Telefonnummeridentifikation für unternehmenseigene Geräte.** Telefone, die als „Unternehmen“ eingestuft sind, werden jetzt mit der vollständigen Telefonnummer identifiziert, wenn Sie beispielsweise einen Inventurbericht für mobile Geräte ausführen. BYOD-Telefonnummern werden weiterhin mit *** maskiert, und nur die letzten vier Ziffern werden angezeigt.
@@ -212,6 +212,6 @@ Es ist eine neue Einstellung für die [mobile Anwendungsverwaltung](/intune-clas
 
 Bevor diese Statusangaben hinzugefügt wurden, waren die Benutzer verunsichert, wenn die Installation einer App sehr lange dauerte, da nur ein Status „Wird installiert“ angezeigt wurde – und das möglicherweise für Stunden. Das Hinzufügen der neuen Statusangaben bedeutet, dass sich Benutzer nicht an den Support wenden müssen, sondern auf den Link „Gerätesynchronisierung ausstehend“ tippen und den Anweisungen folgen können, um die Fortsetzung des Synchronisierungsprozesses zu erzwingen.
 
->[!div class="step-by-step"]
-
->[&larr; **Neuheiten in Intune**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Neuheiten in Intune**](whats-new-in-microsoft-intune.md)    

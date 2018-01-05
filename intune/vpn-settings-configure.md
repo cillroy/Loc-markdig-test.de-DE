@@ -33,20 +33,20 @@ Nehmen Sie z. B. an, Sie möchten allen iOS-Geräten die Einstellungen zur Verf
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
-|Cisco (IPsec)|Nein|Ja|Nein|Nein|Nein|Nein|
-|Citrix|Ja|Ja|Nein|Nein|Nein|Ja|
-|F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
-|Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
-|Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
-|Cisco AnyConnect|Ja|Ja|Ja|Nein|Nein|Nein|
-|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja|
-|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja|
-|L2TP|Nein|Nein|Nein|Nein|Nein|Ja|
-|PPTP|Nein|Nein|Nein|Nein|Nein|Ja|
-|Benutzerdefiniert|Nein|Ja|Ja|Nein|Nein|Nein|
+|Pulse Secure|Ja |Ja |Ja |Ja |Ja |Ja |
+|Cisco (IPsec)|Nein|Ja |Nein|Nein|Nein|Nein|
+|Citrix|Ja |Ja |Nein|Nein|Nein|Ja |
+|F5 Edge Client|Ja |Ja |Ja |Ja |Ja |Ja |
+|Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja |
+|Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
+|Cisco AnyConnect|Ja |Ja |Ja |Nein|Nein|Nein|
+|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
+|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja |
+|L2TP|Nein|Nein|Nein|Nein|Nein|Ja |
+|PPTP|Nein|Nein|Nein|Nein|Nein|Ja |
+|Benutzerdefiniert|Nein|Ja |Ja |Nein|Nein|Nein|
 
 
 > [!IMPORTANT]

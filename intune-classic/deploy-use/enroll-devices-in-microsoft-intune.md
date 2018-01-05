@@ -43,38 +43,38 @@ Die folgende Tabelle zeigt Intune-Registrierungsmethoden und die unterstützten 
 
 | **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  | [Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   Ja |   Optional |  Optional|[Weitere Informationen](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB (Setup-Assistent)](#usb-sa)**| Ja |   Optional |  Nein| [Weitere Informationen](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Ja  |   Optional |  Optional|[Weitere Informationen](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB (Setup-Assistent)](#usb-sa)**| Ja  |   Optional |  Nein| [Weitere Informationen](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Nein |Nein |Nein  |[Weitere Informationen](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS-Registrierungsmethoden**
 
 | **Methode** |  **Zurücksetzen erforderlich?** |    **Affinität**    |   **Sperren** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nein|    Ja |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nein|    Ja  |   Nein | [Weitere Informationen](prerequisites-for-enrollment.md)|
 
 
 Eine Reihe von Fragen, die Sie beim Ermitteln der richtigen Methode unterstützen, finden Sie unter [Auswählen der Registrierungsart von Geräten](/intune-classic/get-started/choose-how-to-enroll-devices1).

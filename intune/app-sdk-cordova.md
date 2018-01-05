@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd4cedd20f427966dc3cfb7c2748f57b4d0746ab
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4292976d948d10f1172cf59c5180bd6f7345b512
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK-Cordova-Plug-In
 
@@ -69,16 +69,16 @@ Cordova-Apps, die mit dem Intune App SDK Cordova Plug-In erstellt wurden, könne
 
 1. Updaten Sie Ihre ADAL-Version:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Fügen Sie das Intune App SDK für Cordova-Plug-In hinzu:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>Erstellen des Plug-Ins in Ihrer iOS-App
 
@@ -128,7 +128,7 @@ Nachdem die App zum ersten Mal gestartet wurde, sollten Sie ein Dialogfeld sehen
 * Die MultiDex Unterstützung ist unvollständig.
 * Die App muss `minSdkVersion` von 14 und `targetSdkVersion` von 24 oder niedriger haben. Wir unterstützen derzeit keine Apps für API 25.
 * Wir können keine Apps erneut signieren, die mit dem V2-Signaturschema signiert wurden. Wenn V2-signierte Apps von dem Plug-In umschlossen werden, ist die umschlossene Ausgabe-APK unsigniert.
-*
+  *
   * Sie können die Cordova-Standard-V2-Signierung deaktivieren, indem Sie Ihrer `build-extras.gradle`-Datei Folgendes hinzufügen:
 
   ```gradle

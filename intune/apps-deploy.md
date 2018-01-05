@@ -32,14 +32,14 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 ||||
 |-|-|-|-|
 |&nbsp;|Bei Intune registrierte Geräte|Nicht bei Intune registrierte Geräte|
-|Zuweisen zu Benutzern|Ja|Ja|
-|Zuweisen zu Geräten|Ja|Nein|
-|Zuweisen umschlossener Apps oder von Apps aus dem Intune SDK (für App-Schutzrichtlinien)|Ja|Ja|
-|Zuweisen von Apps als verfügbar|Ja|Ja|
-|Zuweisen von Apps als erforderlich|Ja|Nein|
-|Deinstallieren von Apps|Ja|Nein|
-|Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja|Nein|
-|Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja|Ja|
+|Zuweisen zu Benutzern|Ja |Ja |
+|Zuweisen zu Geräten|Ja |Nein|
+|Zuweisen umschlossener Apps oder von Apps aus dem Intune SDK (für App-Schutzrichtlinien)|Ja |Ja |
+|Zuweisen von Apps als verfügbar|Ja |Ja |
+|Zuweisen von Apps als erforderlich|Ja |Nein|
+|Deinstallieren von Apps|Ja |Nein|
+|Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja |Nein|
+|Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja |Ja |
 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.

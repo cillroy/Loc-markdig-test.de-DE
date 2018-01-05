@@ -54,7 +54,7 @@ Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch 
 2. **Konfigurieren der Android for Work-Bindung**<br>
     Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
-   a. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
+   ein. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
    ![Screenshot: Link zum Konfigurieren der Android for Work-Bindung](./media/android-work-bind.png)
 
    b. **Anmelden bei Google**<br>

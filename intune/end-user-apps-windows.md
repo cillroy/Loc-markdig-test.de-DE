@@ -34,6 +34,6 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Benutzer die
 
 **Nicht verwaltete Apps** können mittels Richtlinien verwaltet werden. Sie wurden nicht von Intune umschlossen bzw. sind nicht in das Intune App SDK integriert. Diesen Apps lassen sich keine App-Schutzrichtlinien zuweisen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Wie Ihre Android-Benutzer Apps erhalten](end-user-apps-android.md)
 [How your iOS users get their apps](end-user-apps-android.md)

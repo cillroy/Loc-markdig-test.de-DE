@@ -75,5 +75,5 @@ Sie sollten auch die Lizenz für das Intune-Benutzerkonto des Mitarbeiters wider
 ## <a name="retire-hardware"></a>Außerbetriebnehmen von Hardware
 Manchmal ist es das Gerät selbst, das das Ende seines Lebenszyklus erreicht hat. In solchen Fällen werden durch das [Zurücksetzen auf die Werkseinstellungen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) alle Daten vom Gerät und das Gerät aus Intune entfernt. Dann können Sie die Hardware gemäß der Unternehmensrichtlinie beseitigen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Schützen von Daten durch vollständiges oder selektives Zurücksetzen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)

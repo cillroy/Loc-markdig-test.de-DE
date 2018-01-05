@@ -50,7 +50,7 @@ Sie müssen auch sicherstellen, dass Sie der globale Administrator für Ihre Org
 
 [Erste Schritte mit Azure:](get-started-azure.md) Lernen Sie den Aufbau des Azure-Portal kennen, und nehmen Sie Änderungen an der aktuellen Seite vor.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Was ist Intune?](introduction-intune.md)
 * [Was ist das Azure-Portal?](what-is-intune.md)

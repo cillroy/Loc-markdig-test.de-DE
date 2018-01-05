@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 9c2df0f35eff2f03b2a797efb1365cc65303519d
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
@@ -48,6 +48,7 @@ In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwalte
 |**Minimale Version des Betriebssystems** | Isoliert |
 | **Maximale Version des Betriebssystems** | Isoliert |  
 | **Windows-Integritätsnachweis** | Nicht verfügbar |  
+
 ----------------------------
 
 

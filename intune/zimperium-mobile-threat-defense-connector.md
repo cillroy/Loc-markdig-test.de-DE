@@ -51,7 +51,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Apps mit Schadsoftware entdeckt](./media/Maliciousapps_blocked_Zimperium.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Apps mit Schadsoftware entdeckt, Zugriff gewährt](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Si
 
 ![Blockieren des Netzwerkzugriffs über WLAN](./media/network_wifi_blocked_Zimperium.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,7 +75,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern de
 
 ![Blockieren von SharePoint Online bei Erkennung von Bedrohungen für das Netzwerk](./media/network_spo_blocked_Zimperium.png)
 
-**Zugriff erteilt nach der Sanierung:**
+**Zugriff nach Beseitigung gewährt:**
 
 ![Zugriff erteilt nach der Behebung für Sharepoint-Beispiel](./media/network_spo_unblocked_Zimperium.png)
 

@@ -89,7 +89,7 @@ Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manue
 4.  Sie werden aufgefordert, den Löschvorgang zu bestätigen. Wählen Sie **Ja** oder **Nein** aus, und klicken Sie dann auf **OK**.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Verwenden des Azure-Portals](azure-portal-for-microsoft-intune-mam-policies.md)

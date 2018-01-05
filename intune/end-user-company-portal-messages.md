@@ -107,5 +107,5 @@ Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **A
 
 Fügen Sie dem Unternehmensportal die Liste der **zulässigen Apps** und **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

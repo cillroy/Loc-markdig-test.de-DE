@@ -20,31 +20,31 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/19/2017
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a><span data-ttu-id="4e7ef-103">Entfernen eines Benutzers von einem gemeinsam genutzten iOS-Gerät mit Intune</span><span class="sxs-lookup"><span data-stu-id="4e7ef-103">Remove a user from a shared iOS device with Intune</span></span>
+# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a><span data-ttu-id="c3a64-103">Entfernen eines Benutzers von einem gemeinsam genutzten iOS-Gerät mit Intune</span><span class="sxs-lookup"><span data-stu-id="c3a64-103">Remove a user from a shared iOS device with Intune</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-<span data-ttu-id="4e7ef-104">Die Aktion **Benutzer entfernen** löscht den von Ihnen ausgewählten Benutzer aus dem lokalen Cache auf einem freigegebenen iPad-Gerät ab, das für die Verwaltung der iOS Classroom-App mit einem [iOS-Bildungsprofil](education-settings-configure-ios.md) konfiguriert ist.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-104">The **Remove user** action deletes a user you choose from the local cache on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md).</span></span> 
+<span data-ttu-id="c3a64-104">Die Aktion **Benutzer entfernen** löscht den von Ihnen ausgewählten Benutzer aus dem lokalen Cache auf einem freigegebenen iPad-Gerät ab, das für die Verwaltung der iOS Classroom-App mit einem [iOS-Bildungsprofil](education-settings-configure-ios.md) konfiguriert ist.</span><span class="sxs-lookup"><span data-stu-id="c3a64-104">The **Remove user** action deletes a user you choose from the local cache on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md).</span></span> 
 
-## <a name="supported-platforms"></a><span data-ttu-id="4e7ef-105">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="4e7ef-105">Supported platforms</span></span>
+## <a name="supported-platforms"></a><span data-ttu-id="c3a64-105">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="c3a64-105">Supported platforms</span></span>
 
-- <span data-ttu-id="4e7ef-106">Windows – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4e7ef-106">Windows - Not supported</span></span>
-- <span data-ttu-id="4e7ef-107">Windows Phone 8.1 – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4e7ef-107">Windows Phone - Not supported</span></span>
-- <span data-ttu-id="4e7ef-108">iOS – Unterstützt auf iOS 9.3 und höher (nur freigegebene iPad-Geräte)</span><span class="sxs-lookup"><span data-stu-id="4e7ef-108">iOS - Supported on iOS 9.3 and later (shared iPad devices only)</span></span>
-- <span data-ttu-id="4e7ef-109">macOS – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4e7ef-109">macOS - Not supported</span></span>
-- <span data-ttu-id="4e7ef-110">Android – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4e7ef-110">Android - Not supported</span></span>
+- <span data-ttu-id="c3a64-106">Windows – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c3a64-106">Windows - Not supported</span></span>
+- <span data-ttu-id="c3a64-107">Windows Phone – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c3a64-107">Windows Phone - Not supported</span></span>
+- <span data-ttu-id="c3a64-108">iOS – Unterstützt auf iOS 9.3 und höher (nur freigegebene iPad-Geräte)</span><span class="sxs-lookup"><span data-stu-id="c3a64-108">iOS - Supported on iOS 9.3 and later (shared iPad devices only)</span></span>
+- <span data-ttu-id="c3a64-109">macOS – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c3a64-109">macOS - Not supported</span></span>
+- <span data-ttu-id="c3a64-110">Android – Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c3a64-110">Android - Not supported</span></span>
 
-## <a name="how-to-remove-a-user"></a><span data-ttu-id="4e7ef-111">So entfernen Sie einen Benutzer</span><span class="sxs-lookup"><span data-stu-id="4e7ef-111">How to remove a user</span></span>
+## <a name="how-to-remove-a-user"></a><span data-ttu-id="c3a64-111">So entfernen Sie einen Benutzer</span><span class="sxs-lookup"><span data-stu-id="c3a64-111">How to remove a user</span></span>
 
-1. <span data-ttu-id="4e7ef-112">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-112">Sign into the Azure portal.</span></span>
-2. <span data-ttu-id="4e7ef-113">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-113">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
-3. <span data-ttu-id="4e7ef-114">Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-114">On the **Intune** blade, choose **Devices**.</span></span>
-4. <span data-ttu-id="4e7ef-115">Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-115">On the **Devices** blade, choose **All devices**.</span></span>
-5. <span data-ttu-id="4e7ef-116">Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-Gerät aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-116">From the list of devices you manage, choose an iOS device.</span></span>
-6. <span data-ttu-id="4e7ef-117">Wählen Sie auf dem Blatt für dieses Gerät **Benutzer** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-117">On the blade for that device, choose **Users**.</span></span>
-7. <span data-ttu-id="4e7ef-118">Klicken Sie über die Liste mit der rechten Maustaste auf den Benutzer, den Sie entfernen möchten, und wählen Sie dann **Benutzer entfernen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-118">From the list, right-click the user you want to remove, and then choose **Remove user**.</span></span>
+1. <span data-ttu-id="c3a64-112">Melden Sie sich beim Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="c3a64-112">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="c3a64-113">Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-113">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="c3a64-114">Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-114">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="c3a64-115">Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-115">On the **Devices** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="c3a64-116">Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-Gerät aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-116">From the list of devices you manage, choose an iOS device.</span></span>
+6. <span data-ttu-id="c3a64-117">Wählen Sie auf dem Blatt für dieses Gerät **Benutzer** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-117">On the blade for that device, choose **Users**.</span></span>
+7. <span data-ttu-id="c3a64-118">Klicken Sie über die Liste mit der rechten Maustaste auf den Benutzer, den Sie entfernen möchten, und wählen Sie dann **Benutzer entfernen** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-118">From the list, right-click the user you want to remove, and then choose **Remove user**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="4e7ef-119">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="4e7ef-119">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c3a64-119">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="c3a64-119">Next steps</span></span>
 
-<span data-ttu-id="4e7ef-120">Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e7ef-120">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>
+<span data-ttu-id="c3a64-120">Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="c3a64-120">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

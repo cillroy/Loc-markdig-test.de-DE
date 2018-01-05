@@ -301,7 +301,7 @@
               href: device-restrictions-macos.md
             - name: "Windows\_8.1"
               href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: "Windows\_Phone\_8.1"
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -316,7 +316,7 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: Windows Phone 8.1
+            - name: "Windows\_Phone\_8.1"
               href: email-settings-windows-phone-8-1.md
             - name: Windows 10
               href: email-settings-windows-10.md
@@ -333,7 +333,7 @@
               href: vpn-settings-macos.md
             - name: "Windows\_8.1"
               href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: "Windows\_Phone\_8.1"
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -587,7 +587,7 @@
           href: custom-settings-ios.md
         - name: macOS
           href: custom-settings-macos.md
-        - name: Windows Phone 8.1
+        - name: "Windows\_Phone\_8.1"
           href: custom-settings-windows-phone-8-1.md
         - name: Windows 10
           href: custom-settings-windows-10.md

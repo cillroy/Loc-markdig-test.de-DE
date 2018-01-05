@@ -16,23 +16,23 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e27e1bbe9b48b24e02b9b77a93ddc10f7a1d9b0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bcc166687fc756c06acd14513eda427299761d47
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="you-need-to-update-your-windows-device"></a><span data-ttu-id="52d01-102">Sie müssen Ihr Windows-Gerät aktualisieren</span><span class="sxs-lookup"><span data-stu-id="52d01-102">You need to update your Windows device</span></span>
+# <a name="you-need-to-update-your-windows-device"></a><span data-ttu-id="30235-102">Sie müssen Ihr Windows-Gerät aktualisieren</span><span class="sxs-lookup"><span data-stu-id="30235-102">You need to update your Windows device</span></span>
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-<span data-ttu-id="52d01-103">Aktualisieren Sie mobile Geräte mit Windows, indem Sie zu **Einstellungen** > **Handyupdate** > **Nach Updates suchen** navigieren.</span><span class="sxs-lookup"><span data-stu-id="52d01-103">For mobile devices running Windows, update your device by navigating to **Settings** > **phone update** > **check for updates**.</span></span>
+<span data-ttu-id="30235-103">Aktualisieren Sie mobile Geräte mit Windows, indem Sie zu **Einstellungen** > **Handyupdate** > **Nach Updates suchen** navigieren.</span><span class="sxs-lookup"><span data-stu-id="30235-103">For mobile devices running Windows, update your device by navigating to **Settings** > **phone update** > **check for updates**.</span></span>
 
-<span data-ttu-id="52d01-104">Suchen Sie für Computer unter Windows nach **Betriebssystem**, und befolgen Sie die Anweisungen zum Bestimmen der ausgeführten Windows-Version.</span><span class="sxs-lookup"><span data-stu-id="52d01-104">For computers running Windows, search for **operating system** and follow the prompts to identify which version of Windows you're running.</span></span>
+<span data-ttu-id="30235-104">Suchen Sie für Computer unter Windows nach **Betriebssystem**, und befolgen Sie die Anweisungen zum Bestimmen der ausgeführten Windows-Version.</span><span class="sxs-lookup"><span data-stu-id="30235-104">For computers running Windows, search for **operating system** and follow the prompts to identify which version of Windows you're running.</span></span>
 
 > [!Note]
-> <span data-ttu-id="52d01-105">Suchen Sie nach **Windows-Updates**, um Computer mit älteren Betriebssystemen als Windows 8.1 zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="52d01-105">To update computers that have operating systems earlier than Windows 8.1, search for **Windows updates**.</span></span>
+> <span data-ttu-id="30235-105">Suchen Sie nach **Windows-Updates**, um Computer mit älteren Betriebssystemen als Windows 8.1 zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="30235-105">To update computers that have operating systems earlier than Windows 8.1, search for **Windows updates**.</span></span>
 
-<span data-ttu-id="52d01-106">Geben Sie für Windows 10 und Windows 8.1 __Windows-Version__ in die __Suchleiste__ ein.</span><span class="sxs-lookup"><span data-stu-id="52d01-106">For Windows 10 and Windows 8.1, type __Windows version__ into the __search bar__.</span></span> <span data-ttu-id="52d01-107">Wählen Sie __Windows-Version__ unter __Kann ich Ihnen weiterhelfen?__ aus.</span><span class="sxs-lookup"><span data-stu-id="52d01-107">Under __Can I help?__, select __windows version__.</span></span> <span data-ttu-id="52d01-108">Die Versionsnummer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="52d01-108">The version number will appear.</span></span> <span data-ttu-id="52d01-109">Diese Nummer lautet in etwa so: __10.0.14393.447__.</span><span class="sxs-lookup"><span data-stu-id="52d01-109">This number will look something like __10.0.14393.447__.</span></span>
+<span data-ttu-id="30235-106">Geben Sie für Windows 10 und Windows 8.1 __Windows-Version__ in die __Suchleiste__ ein.</span><span class="sxs-lookup"><span data-stu-id="30235-106">For Windows 10 and Windows 8.1, type __Windows version__ into the __search bar__.</span></span> <span data-ttu-id="30235-107">Wählen Sie __Windows-Version__ unter __Kann ich Ihnen weiterhelfen?__ aus.</span><span class="sxs-lookup"><span data-stu-id="30235-107">Under __Can I help?__, select __windows version__.</span></span> <span data-ttu-id="30235-108">Die Versionsnummer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="30235-108">The version number will appear.</span></span> <span data-ttu-id="30235-109">Diese Nummer lautet in etwa so: __10.0.14393.447__.</span><span class="sxs-lookup"><span data-stu-id="30235-109">This number will look something like __10.0.14393.447__.</span></span>
 
-<span data-ttu-id="52d01-110">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="52d01-110">Still need help?</span></span> <span data-ttu-id="52d01-111">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="52d01-111">Contact your company support.</span></span> <span data-ttu-id="52d01-112">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="52d01-112">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="30235-110">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="30235-110">Still need help?</span></span> <span data-ttu-id="30235-111">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="30235-111">Contact your company support.</span></span> <span data-ttu-id="30235-112">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="30235-112">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

@@ -15,36 +15,36 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89f7446f52911ec754e567ea187b73953c96c901
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d67ebc48ea7357a74e64a72f5403393ce57eaeea
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="accessibility-products-and-services-from-microsoft"></a><span data-ttu-id="4adb1-103">Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft</span><span class="sxs-lookup"><span data-stu-id="4adb1-103">Accessibility Products and Services from Microsoft</span></span>
+# <a name="accessibility-products-and-services-from-microsoft"></a><span data-ttu-id="bf096-103">Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft</span><span class="sxs-lookup"><span data-stu-id="bf096-103">Accessibility Products and Services from Microsoft</span></span>
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
--   [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
+- [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
 
--   [!INCLUDE[accessibility3](./includes/accessibility3_md.md)]
+- [!INCLUDE[accessibility3](./includes/accessibility3_md.md)]
 
--   [!INCLUDE[accessibility4](./includes/accessibility4_md.md)]
+- [!INCLUDE[accessibility4](./includes/accessibility4_md.md)]
 
--   [!INCLUDE[accessibility5](./includes/accessibility5_md.md)]
+- [!INCLUDE[accessibility5](./includes/accessibility5_md.md)]
 
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## <a name="accessibility-features-of-windows"></a><span data-ttu-id="4adb1-104">Features zur Barrierefreiheit von Windows</span><span class="sxs-lookup"><span data-stu-id="4adb1-104">Accessibility features of Windows</span></span>
+## <a name="accessibility-features-of-windows"></a><span data-ttu-id="bf096-104">Features zur Barrierefreiheit von Windows</span><span class="sxs-lookup"><span data-stu-id="bf096-104">Accessibility features of Windows</span></span>
 [!INCLUDE[accessibility7](./includes/accessibility7_md.md)]
 
-### <a name="free-step-by-step-tutorials"></a><span data-ttu-id="4adb1-105">Kostenlose Schritt-für-Schritt-Tutorials</span><span class="sxs-lookup"><span data-stu-id="4adb1-105">Free step-by-step tutorials</span></span>
+### <a name="free-step-by-step-tutorials"></a><span data-ttu-id="bf096-105">Kostenlose Schritt-für-Schritt-Tutorials</span><span class="sxs-lookup"><span data-stu-id="bf096-105">Free step-by-step tutorials</span></span>
 [!INCLUDE[accessibility8](./includes/accessibility8_md.md)]
 
-### <a name="assistive-technology-products-for-windows"></a><span data-ttu-id="4adb1-106">Hilfstechnologieprodukte für Windows</span><span class="sxs-lookup"><span data-stu-id="4adb1-106">Assistive technology products for Windows</span></span>
+### <a name="assistive-technology-products-for-windows"></a><span data-ttu-id="bf096-106">Hilfstechnologieprodukte für Windows</span><span class="sxs-lookup"><span data-stu-id="bf096-106">Assistive technology products for Windows</span></span>
 [!INCLUDE[accessibility9](./includes/accessibility9_md.md)]
 
-## <a name="documentation-in-alternative-formats"></a><span data-ttu-id="4adb1-107">Dokumentation in alternativen Formaten</span><span class="sxs-lookup"><span data-stu-id="4adb1-107">Documentation in alternative formats</span></span>
+## <a name="documentation-in-alternative-formats"></a><span data-ttu-id="bf096-107">Dokumentation in alternativen Formaten</span><span class="sxs-lookup"><span data-stu-id="bf096-107">Documentation in alternative formats</span></span>
 [!INCLUDE[accessibility10](./includes/accessibility10_md.md)]
 
 [!INCLUDE[accessibility11](./includes/accessibility11_md.md)]
@@ -57,14 +57,14 @@ ms.lasthandoff: 12/19/2017
 
 [!INCLUDE[accessibility12](./includes/accessibility12_md.md)]
 
-## <a name="customer-service-for-people-with-hearing-impairments"></a><span data-ttu-id="4adb1-108">Kundendienst für Personen mit Hörschwächen</span><span class="sxs-lookup"><span data-stu-id="4adb1-108">Customer Service for people with hearing impairments</span></span>
+## <a name="customer-service-for-people-with-hearing-impairments"></a><span data-ttu-id="bf096-108">Kundendienst für Personen mit Hörschwächen</span><span class="sxs-lookup"><span data-stu-id="bf096-108">Customer Service for people with hearing impairments</span></span>
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
--   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
+- [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
 
--   [!INCLUDE[accessibility15](./includes/accessibility15_md.md)]
+- [!INCLUDE[accessibility15](./includes/accessibility15_md.md)]
 
 [!INCLUDE[accessibility16](./includes/accessibility16_md.md)]
 
-## <a name="for-more-information"></a><span data-ttu-id="4adb1-109">Weitere Informationen finden Sie unter</span><span class="sxs-lookup"><span data-stu-id="4adb1-109">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="bf096-109">Weitere Informationen finden Sie unter</span><span class="sxs-lookup"><span data-stu-id="bf096-109">For more information</span></span>
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]

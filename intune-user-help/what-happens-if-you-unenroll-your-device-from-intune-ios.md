@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie die Registrierung für Ihr iOS-oder macOS-Gerät aufheben? | Microsoft-Dokumentation"
+title: "Was geschieht, wenn Sie die Registrierung für Ihr iOS-oder macOS-Gerät aufheben? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5bec81e9bf3f91b3d6e38bb4d31728f1785ae8b1
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: b7568a658a655b5c061ced64449d17ee6f6053ae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres iOS- oder macOS-Geräts bei Intune aufheben?
 

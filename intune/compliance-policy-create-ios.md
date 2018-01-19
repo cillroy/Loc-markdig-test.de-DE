@@ -15,11 +15,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 828cdccc92203b97b3b89c37cdf18c36a18128b3
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 
@@ -42,7 +42,6 @@ In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwalte
 |**Minimale Version des Betriebssystems** | Isoliert |
 | **Maximale Version des Betriebssystems** | Isoliert |  
 | **Windows-Integritätsnachweis** | Nicht verfügbar |  
-
 ----------------------------
 
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 653d0a76e83eb35289114f71413925f1b26bc5d4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 7e3b2cff16cd96e714329c82e0dcbc516e765ae9
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Behandlung von Problemen bei der Clienteinrichtung in Microsoft Intune
 
@@ -103,7 +103,6 @@ Bei Windows-Geräten ohne MDM können Richtlinienfehler in der Datei „policypl
 ## <a name="client-installation-error-codes"></a>Fehlercodes bei der Clientinstallation
 In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** angezeigt werden, wenn die Installation der Clientsoftware fehlschlägt. Gleichzeitig werden Vorschläge zur Behebung der Probleme vorgestellt, für die die Fehlercodes stehen.
 
-
 |Fehlercode|Mögliches Problem|Lösungsvorschlag|
 |--------------|--------------------|------------------------|
 |**0x80CF0437**|Die Uhr des Clientcomputers ist nicht auf die richtige Uhrzeit eingestellt.|Stellen Sie sicher, dass die Uhr und die Zeitzone des Clientcomputers richtig eingestellt sind.|
@@ -126,7 +125,6 @@ In der folgenden Tabelle werden Fehlercodes erläutert, die in **Warnungen** ang
 |**0xAB2**|Fehler beim Zugriff auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu ermitteln, benötigen Sie möglicherweise die Tools, die im Artikel 198038 der [Microsoft Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](http://go.microsoft.com/fwlink/?LinkID=234255) erläutert werden.|
 |**0x8004300f**|Die Software kann nicht installiert werden, da der System Center Configuration Manager-Client bereits installiert ist.|Entfernen Sie den Configuration Manager-Client, und wiederholen Sie dann die Installation der Clientsoftware.|
 |**0x80043010**|Die Software kann nicht installiert werden, da der OMADM-Client (Open Mobile Alliance Device Management) bereits installiert ist.|Heben Sie die Registrierung des OMADM-Clients auf, und wiederholen Sie dann die Installation der Clientsoftware.|
-
 Wenn weiterhin Installationsprobleme auftreten, wenden Sie sich wie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) beschrieben an den Support. Halten Sie das Registrierungsprotokoll des Clientcomputers (dieses befindet sich unter %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log und %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) und das Windows Update-Protokoll (%*windir*%\windowsupdate.log) für die Supportmitarbeiter bereit.
 
 ## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>Was Sie machen können, wenn Endpoint Protection bei der Deinstallation des Clients nicht deinstalliert ist

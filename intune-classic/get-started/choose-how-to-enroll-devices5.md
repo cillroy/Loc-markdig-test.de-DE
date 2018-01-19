@@ -14,11 +14,11 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: d5c9daa7621b343324fcf3d255bc9bfe05f50de9
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: ccff6ac2bf74b7d4afd92ccbac49bef0e06ae086
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Auswählen der Methode zum Registrieren mobiler Geräte
 
@@ -29,11 +29,11 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Wie werden Sie freigegebene iOS-Geräte verwalten?**
 
 > [!div class="button"]
-> [DEP-Registrierung von iOS-Geräten >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+[DEP-Registrierung von iOS-Geräten >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 > [!div class="button"]
-> [Direkte Registrierung von iOS-Geräten >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+[Direkte Registrierung von iOS-Geräten >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 > [!div class="button"]
-> [DEM-Registrierung >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[DEM-Registrierung >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Apple-Geräteregistrierungsprogramm (DEP)** – Mit DEP erworbene oder verwaltete iOS-Geräte können mit einem Anmeldungsprofil angesprochen werden. Wenn die Benutzer ihre Geräte zum ersten Mal einschalten, lädt das Gerät das DEP-Profil herunter und registriert sich beim Profil-DEP.
 
@@ -42,4 +42,4 @@ Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmet
   - **Geräteregistrierungs-Manager** – Mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) von Intune können Manager oder Administratoren eine Vielzahl mobiler Geräte bei einem einzelnen Benutzerkonto registrieren. Diese Geräte dürfen keine Benutzeraffinität (d. h. dedizierte Benutzer) aufweisen und müssen registriert werden, indem sie installiert und bei der Unternehmensportal-App angemeldet werden.
 
 > [!div class="button"]
-> [< Zurück](choose-how-to-enroll-devices3.md)
+[< Zurück](choose-how-to-enroll-devices3.md)

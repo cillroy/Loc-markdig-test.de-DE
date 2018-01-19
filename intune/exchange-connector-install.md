@@ -16,10 +16,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 
@@ -37,7 +37,7 @@ Um eine Verbindung einzurichten, die Microsoft Intune die Kommunikation mit der 
 ## <a name="on-premises-exchange-connector-requirements"></a>Anforderungen des lokalen Exchange Connectors
 In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem Sie den lokalen Exchange Connector installieren.
 
-|Anforderung|Weitere Informationen|
+|Anforderungen|Weitere Informationen|
 |---------------|--------------------|
 |Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
 |Microsoft Exchange|Für lokale Connectors ist Microsoft Exchange 2010 SP1 oder höher oder die Exchange Online Dedicated-Legacyumgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
@@ -134,11 +134,11 @@ Nach Einrichtung der Verbindung durch den Exchange Connector werden mobile Gerä
 > [!NOTE]
 > Wenn Sie den lokalen Exchange Connector installiert haben und zu einem späteren Zeitpunkt die Exchange-Verbindung löschen, müssen Sie den lokalen Exchange Connector von dem Computer löschen, auf dem er installiert wurde.
 
-## <a name="on-premises-exchange-connector-high-availability-support"></a>Lokale Exchange Connector-Unterstützung für hohe Verfügbarkeit 
-Nachdem der Exchange-Connector eine Verbindung mit Exchange, die mit dem angegebenen CAS erstellt wurde, kann der Connector mit der Ermittlung andere CASs. Die primäre Zertifizierungsstellen nicht verfügbar, der Connector Failover wird auf einem anderen Zertifizierungsstellen, falls verfügbar, bis die primäre Zertifizierungsstellen verfügbar ist. Dieses Feature ist standardmäßig aktiviert. Sie können diese Funktion deaktivieren, indem Sie mithilfe des folgenden Verfahrens:
-1. Auf dem Server, auf dem Exchange Connector installiert ist, wechseln Sie zu %*"ProgramData"*%\Microsoft\Windows Intune Exchange Connector. 
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Hochverfügbarkeitsunterstützung für lokalen Exchange Connector 
+Nachdem der Exchange Connector über den angegebenen CAS eine Verbindung mit Exchange hergestellt hat, kann der Connector andere CAS erkennen. Wenn der primäre CAS nicht mehr verfügbar ist, wird für den Connector ggf. ein Failover auf einen anderen CAS durchgeführt, bis der primäre CAS verfügbar wird. Dieses Feature ist standardmäßig aktiviert. Sie können diese Feature mithilfe des folgenden Verfahrens deaktivieren:
+1. Navigieren Sie auf dem Server, auf dem der Exchange Connector installiert ist, zu „%*ProgramData*%\Microsoft\Microsoft Intune Exchange Connector“. 
 2. Öffnen Sie mit einem Text-Editor **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Änderung &lt;IsCasFailoverEnabled&gt;**"true"**&lt;/IsCasFailoverEnabled&gt; auf &lt;IsCasFailoverEnabled&gt;**"false"** &lt;/IsCasFailoverEnabled&gt; die Funktion deaktiviert.    
+3. Um die Feature zu deaktivieren, ändern Sie &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;.    
 
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Überwachen der Exchange-Connectoraktivität

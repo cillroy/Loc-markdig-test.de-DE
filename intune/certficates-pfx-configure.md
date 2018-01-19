@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2051491da49d0293279543d0d2464f642a25ade9
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 2f4dda4b4972b2a715ce956c0212a8ff06dc9c0f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Konfigurieren und Verwalten von PKCS-Zertifikaten mit Intune
 
@@ -55,7 +55,7 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 
    Beispiel:
 
-4. Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
+4.  Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
 
    `certutil -ca.cert certnew.cer`
 
@@ -92,7 +92,7 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
     * Wählen Sie die Vorlage, die Sie in den vorherigen Schritten erstellt haben, und klicken Sie auf **OK**.
 15. Gehen Sie folgendermaßen vor, damit der Server Zertifikate im Namen von bei Intune registrierten Geräten und Benutzern verwaltet:
 
-    ein. Klicken Sie mit der rechten Maustaste auf die Zertifizierungsstelle, und wählen Sie **Eigenschaften**.
+    a. Klicken Sie mit der rechten Maustaste auf die Zertifizierungsstelle, und wählen Sie **Eigenschaften**.
 
     b. Fügen Sie auf der Registerkarte „Sicherheit“ das Computerkonto des Servers hinzu, auf dem Sie den Microsoft Intune Certificate Connector ausführen.
       * Erteilen Sie dem Computerkonto die Zulassungsberechtigungen **Zertifikate ausstellen und verwalten** und **Zertifikate anfordern**.

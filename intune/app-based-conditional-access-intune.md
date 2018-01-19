@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21a027e0acd81d919b402128202e4a70a6788173
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 
@@ -56,29 +56,29 @@ In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-A
 
 ![App-basierter bedingter Zugriff mit Intune, Flussdiagramm](./media/ca-intune-common-ways-3.png)
 
-1. Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
+1.  Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
 
-2. Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
+2.  Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
 
-   Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
+ Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
 
-3. Die Broker-App wird auf dem Gerät installiert.
+3.  Die Broker-App wird auf dem Gerät installiert.
 
-4. Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird. Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.
+4.  Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird. Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.
 
-5. Die Broker-App überprüft die Identität der App. Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.
+5.  Die Broker-App überprüft die Identität der App. Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.
 
-6. Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
+6.  Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
 
-7. Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
+7.  Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
 
-8. Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
+8.  Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
 
-9. Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
+9.  Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
 
-10. Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
+10.  Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
 
-11. Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
+11.  Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen einer App-basierten Richtlinie für bedingten Zugriff](app-based-conditional-access-intune-create.md)

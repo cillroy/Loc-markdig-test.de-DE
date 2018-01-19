@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f9d21cbf46322cb69e518bd10d18b54306a783a
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -39,11 +39,11 @@ Sprechen Sie wir über einige Konzepte, wenn Sie eine WIP-Richtlinie hinzufügen
 
 ### <a name="types-of-apps"></a>App-Typen
 
-- **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht. <!---I really don't know what you mean by "easily import into policy"--->
+-   **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht. <!---I really don't know what you mean by "easily import into policy"--->
 
-- **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
+-   **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
 
-- **Windows Desktop-Apps:** Sie haben außerdem die Möglichkeit,der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z.B. .exe, .dll, usw.)
+-   **Windows Desktop-Apps:** Sie haben außerdem die Möglichkeit,der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z.B. .exe, .dll, usw.)
 
 ## <a name="pre-requisites"></a>Voraussetzungen
 
@@ -56,7 +56,7 @@ Darüber hinaus benötigen Sie Folgendes:
 
 > [!IMPORTANT]
 > WIP unterstützt nicht mehrere Identitäten; nur jeweils eine verwaltete Identität darf vorhanden sein.
-> <!---Should you be linking to a topic that explains what multi-identity is?--->
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Hinzufügen einer WIP-Richtlinie
 
@@ -66,7 +66,7 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 
 2.  Wählen Sie auf dem Blatt **App-Richtlinie** die Option **Richtlinie hinzufügen** aus und geben Sie folgende Werte ein:
 
-    ein.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
+    a.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
 
     b.  **Beschreibung:** Geben Sie eine optionale Beschreibung ein.
 

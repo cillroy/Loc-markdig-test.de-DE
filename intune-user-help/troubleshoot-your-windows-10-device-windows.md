@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8724983e268582db80f0e6c70042b25981e7e633
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
 Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md) befolgt haben, aber dennoch nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, führen Sie zur Problembehandlung die folgenden Schritte durch.
@@ -37,15 +37,15 @@ Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
 
-1. Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, wechseln Sie zurück zu **Zugriff auf Geschäfts-, Schul- oder Unikonto**.
+1.  Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, wechseln Sie zurück zu **Zugriff auf Geschäfts-, Schul- oder Unikonto**.
 
 2. Führen Sie eines der folgenden Verfahren aus:
 
-   - Wenn eine Verbindung ähnlich der unten gezeigten Abbildung angezeigt wird, tippen sie darauf, und überprüfen Sie, ob die Optionen „Verwalten“, „Info“ und „Trennen“ angezeigt werden. Wenn das der Fall ist, sind Sie jetzt registriert und verbunden.
+    - Wenn eine Verbindung ähnlich der unten gezeigten Abbildung angezeigt wird, tippen sie darauf, und überprüfen Sie, ob die Optionen „Verwalten“, „Info“ und „Trennen“ angezeigt werden. Wenn das der Fall ist, sind Sie jetzt registriert und verbunden.
 
-     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Wenn die oben gezeigten Verbindungsinformationen nicht angezeigt werden oder einige Optionen fehlen, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen für Ihr Geschäfts-, Schul- oder Unikonto an. Jetzt sollte eine Verbindung hergestellt sein.
+    - Wenn die oben gezeigten Verbindungsinformationen nicht angezeigt werden oder einige Optionen fehlen, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen für Ihr Geschäfts-, Schul- oder Unikonto an. Jetzt sollte eine Verbindung hergestellt sein.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Schritte zur Problembehandlung bei Anzeige von „Mein Konto“
 

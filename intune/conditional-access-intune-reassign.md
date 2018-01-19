@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6ae457ea2904215ded032f1d3e5388e3217488e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal
 
@@ -184,7 +184,7 @@ Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richt
 Sobald Sie Ihre Richtlinien für den bedingten Zugriff erneut im Azure-Portal zugewiesen haben, ist es wichtig, dass Sie die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, allmählich deaktivieren. Darüber hinaus müssen Sie möglicherweise die gleiche Sicherheitsgruppe verwenden, um die im Azure-Portal erstellten Richtlinien für bedingten Zugriff anzuwenden.
 
 > [!NOTE] 
-> Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für den bedingten Zugriff im klassischen Intune-Portal deaktivieren.
+    > Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für den bedingten Zugriff im klassischen Intune-Portal deaktivieren.
 
 ### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für den bedingten Zugriff
 
@@ -198,7 +198,7 @@ Sobald Sie Ihre Richtlinien für den bedingten Zugriff erneut im Azure-Portal zu
 
     ![Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal](./media/reassign-ca-18.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md)
 - [App-basierter bedingter Zugriff mit Intune](app-based-conditional-access-intune.md)

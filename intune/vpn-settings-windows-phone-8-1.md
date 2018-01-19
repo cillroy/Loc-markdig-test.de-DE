@@ -15,11 +15,11 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2ac89492be4ab1dc0a2a45338883105bcf23ce6e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d91ede811036c18ef4a561cc6f40623a74a7cdc4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>VPN-Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune
 
@@ -63,6 +63,7 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+
 ```
 
 **Beispiel für CheckPoint Mobile VPN:**
@@ -74,11 +75,13 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 **Beispiel für Dell SonicWALL Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+
 ```
 
 **Beispiel für F5 Edge Client:**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+
 ```
 
 Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden Sie in der VPN-Dokumentation des jeweiligen Herstellers.

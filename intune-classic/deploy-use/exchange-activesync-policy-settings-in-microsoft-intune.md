@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce07a0c9ac2d7ad32e31248aa97a967843862a21
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 93fb9090a4d10e10163e9d94d23ea6bca23922ff
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune
 
@@ -48,7 +48,6 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 |----------------|---|
 |**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Daten auf einem Gerät, falls dies unterstützt wird.<br><br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|
 |**Verschlüsselung auf Speicherkarten vorschreiben**|Erfordert die Verschlüsselung von Daten, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).
-
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, auf denen Windows 8.1 ausgeführt wird, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](https://support.microsoft.com/kb/3013816) auf jedem Gerät.
@@ -81,5 +80,5 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen:
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

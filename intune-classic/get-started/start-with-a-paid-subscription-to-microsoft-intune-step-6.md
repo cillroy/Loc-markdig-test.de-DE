@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d63450736391b5064a7e20ac57588cdc82f9068
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 9068e9462226f70150f06cd65e9ba044dc96ac99
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-policies-and-publish-apps"></a>Erstellen von Richtlinien und Veröffentlichen von Apps
 
@@ -63,12 +63,12 @@ Zunächst müssen Sie die Apps mithilfe einer der folgenden Methoden in Intune v
 Sobald die App in Intune zur Verfügung steht, können Sie sie auf verwalteten Geräten bereitstellen:
 - [Bereitstellen von Apps auf Geräten](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Bereitstellen von Apps aus einem Volumenprogramm:
-  - [iOS: Volume Purchase Program (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-  - [Microsoft Store für Unternehmen](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+    - [iOS: Volume Purchase Program (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [Microsoft Store für Unternehmen](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     Nachdem Sie die Apps für die Bereitstellung konfiguriert haben, können Sie [Apps konfigurieren](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
-> [!div class="step-by-step"]
-> 
-> [&larr; **Organisieren von Benutzern und Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Anpassen des Unternehmensportals** &rarr;](/intune/company-portal-customize)  
+>[!div class="step-by-step"]
+
+>[&larr; **Organisieren von Benutzern und Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Anpassen des Unternehmensportals** &rarr;](/intune/company-portal-customize)  

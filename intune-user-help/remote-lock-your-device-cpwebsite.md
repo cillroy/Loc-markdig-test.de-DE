@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9652193ca501b4b69369c5e8dee250c96e94bd6d
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 
@@ -38,27 +38,27 @@ Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unter
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>So verwenden Sie die Remotesperre zum Sperren Ihres Geräts
 
-1. Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
-   ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
+  ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie sperren möchten.
 
-   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
+  ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3. Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Remotesperre**.
+3.  Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Remotesperre**.
 
-   ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
+    ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
 
-4. Eine Benachrichtigung wird angezeigt, damit Sie wissen, dass Sie gerade Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, und die Unternehmensportal-Website versucht, das Gerät zu sperren.
+4.  Eine Benachrichtigung wird angezeigt, damit Sie wissen, dass Sie gerade Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, und die Unternehmensportal-Website versucht, das Gerät zu sperren.
 
-   Nachdem Sie **Remotesperre** ausgewählt haben, wird die Meldung „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
+    Nachdem Sie **Remotesperre** ausgewählt haben, wird die Meldung „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
 
-   Der Status „Remotesperre“ wird an drei Stellen angezeigt:
+    Der Status „Remotesperre“ wird an drei Stellen angezeigt:
 
-   * Im Benachrichtigungsbereich der Website.
-   * Die **Detailseite** für das Gerät.
-   * Die Kachel zeigt den Gerätenamen im Bereich **My Devices** (Meine Geräte) auf der Seite.
+    * Im Benachrichtigungsbereich der Website.
+    * Die **Detailseite** für das Gerät.
+    * Die Kachel zeigt den Gerätenamen im Bereich **My Devices** (Meine Geräte) auf der Seite.
 
 > [!Note]
 > Wenn eine Meldung „Fehler bei der Remotesperre“ angezeigt wird, warten Sie einige Minuten, und versuchen Sie erneut, das Gerät zu sperren. Sobald Sie die Option zum erneuten Versuchen auswählen, ändert sich der Status wieder zu „Remotesperre steht aus“. Wenn der erneute Versuch nicht funktioniert, wenden Sie sich bitte an den Support Ihres Unternehmens.

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 02973215a9dba6d975e23ca025b04554db8ca7f6
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3fddbdee83c6ccf68b86bd2e335930683cb3267e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>Verwalten von Intune-Lizenzen mithilfe von PowerShell
 
@@ -68,5 +68,5 @@ Sie können den folgenden Befehl ausführen, um den Intune-Serviceplan auszuschl
 
 ### <a name="next-steps"></a>Nächste Schritte
 Gratulation! Sie haben Schritt 4 der Kurzanleitung *Erste Schritte mit Intune* abgeschlossen.
-> [!div class="step-by-step"]
-> (/intune/custom-domain-name-configure) [&larr; **Synchronisieren von Benutzern mit Intune**](/intune/custom-domain-name-configure)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[!div class="step-by-step"]
+(/intune/custom-domain-name-configure) [&larr; **Synchronisieren von Benutzern mit Intune**](/intune/custom-domain-name-configure)     [**Organisieren von Benutzern und Geräten** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

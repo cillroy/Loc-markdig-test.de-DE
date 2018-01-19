@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52204ebdb7045f6080adce546ee8f4e00c0b7022
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3c04fcdadbc3ec2e121b4718b950a7e5e58700fe
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile
 
@@ -39,13 +39,13 @@ Dieser Richtlinientyp kann hilfreich sein, wenn die standardmäßigen Intune-VPN
 
 ## <a name="to-create-a-custom-configuration-policy"></a>So erstellen Sie eine benutzerdefinierte Konfigurationsrichtlinie:
 
-1. Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Richtlinie hinzufügen** > *Plattform erweitern* > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
-2. Geben Sie einen Namen für die Richtlinie ein.
-3. Wählen Sie für jede URI-Einstellung, die Sie festlegen möchten, die Option **Hinzufügen** aus, und geben Sie die erforderlichen Informationen an. Beispiel:
+   1. Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** > **Richtlinie hinzufügen** > *Plattform erweitern* > **Benutzerdefinierte Konfiguration** > **Richtlinie erstellen** aus.
+   2. Geben Sie einen Namen für die Richtlinie ein.
+   3. Wählen Sie für jede URI-Einstellung, die Sie festlegen möchten, die Option **Hinzufügen** aus, und geben Sie die erforderlichen Informationen an. Beispiel:
 
    ![Dialogfeld „Benutzerdefinierte VPN-Profilkonfiguration“](./media/Intune_Add_VPN_URI.png)
 
-4. Nachdem Sie alle URI-Einstellungen eingegeben haben, wählen Sie **Richtlinie speichern** aus, und stellen Sie die Richtlinie anschließend bereit.
+   4.  Nachdem Sie alle URI-Einstellungen eingegeben haben, wählen Sie **Richtlinie speichern** aus, und stellen Sie die Richtlinie anschließend bereit.
 
 [Stellen Sie die Richtlinie dann wie immer bereit](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy).
 
@@ -163,5 +163,5 @@ Beispiele:
 > - Standardmäßig *WHITELIST*, wenn eine PackageList angegeben ist
 
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen:
 [VPN-Verbindungen in Microsoft Intune](vpn-connections-in-microsoft-intune.md)

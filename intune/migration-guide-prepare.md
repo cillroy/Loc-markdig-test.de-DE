@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 2c32a5cc45714b929535e0af0f0f664b0d8bad41
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Phase 1: Vorbereitung von Intune für die Verwaltung mobiler Geräte (MDM)
 
@@ -54,23 +54,23 @@ Bevor wir uns mit den Details zum Einrichten von Intune befassen, werfen wir ein
 
 ### <a name="what-is-your-device-security-policy"></a>Welche Sicherheitsrichtlinie für Geräte haben Sie?
 
-- Ist Verschlüsselung auf Geräteebene erforderlich?
+-   Ist Verschlüsselung auf Geräteebene erforderlich?
 
-- Wie ist die Länge Ihres aktuellen Kennworts/PIN-Codes?
+-   Wie ist die Länge Ihres aktuellen Kennworts/PIN-Codes?
 
-- Müssen Sie Gerätefunktionen deaktivieren oder bestimmtes Geräteverhalten einschränken? Sie können eine Reihe von plattformspezifischen Einstellungen mit Konfigurationsprofilen für Geräte steuern, z.B.:
-    - Deaktivieren der Kamera
-    - Einzelanwendungsmodus zulassen<br/>
+-   Müssen Sie Gerätefunktionen deaktivieren oder bestimmtes Geräteverhalten einschränken? Sie können eine Reihe von plattformspezifischen Einstellungen mit Konfigurationsprofilen für Geräte steuern, z.B.:
+      - Deaktivieren der Kamera
+      - Einzelanwendungsmodus zulassen<br/>
 
-- Welche Arten von Authentifizierung müssen Sie unterstützen? Welche Zertifikate müssen bereitgestellt werden, wenn Sie zertifikatbasierte Authentifizierung benötigen?
+-   Welche Arten von Authentifizierung müssen Sie unterstützen? Welche Zertifikate müssen bereitgestellt werden, wenn Sie zertifikatbasierte Authentifizierung benötigen?
   - Intune kann Zertifikate mit Ressourcenzugriffsprofilen für registrierte Geräte bereitstellen.
-  -   Welche Art von Public Key-Infrastruktur (PKI) müssen Sie unterstützen?
-  <br></br>
-- Müssen Sie virtuelles privates Netzwerk (VPN) auf Geräte- oder App-Ebene unterstützen?
+    -   Welche Art von Public Key-Infrastruktur (PKI) müssen Sie unterstützen?
+<br></br>
+-   Müssen Sie virtuelles privates Netzwerk (VPN) auf Geräte- oder App-Ebene unterstützen?
 
-  -   Intune kann VPN-Konfigurationen für VPN-Drittanbieter bereitstellen.
-  <br/><br/>
-- Können vorübergehende Ausnahmen für bestimmte Anforderungen gemacht werden, um Ausfallzeiten zu vermeiden? Oder müssen Geräte mit Zugriff immer alle Sicherheitsanforderungen erfüllen?
+    -   Intune kann VPN-Konfigurationen für VPN-Drittanbieter bereitstellen.
+<br/><br/>
+-   Können vorübergehende Ausnahmen für bestimmte Anforderungen gemacht werden, um Ausfallzeiten zu vermeiden? Oder müssen Geräte mit Zugriff immer alle Sicherheitsanforderungen erfüllen?
 
 ## <a name="next-steps"></a>Nächste Schritte
 Lesen Sie diese [Fallstudien](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) aus verschiedenen Branchen, die Ihnen zeigen, wie Organisationen ihre Anforderungen an die Verwaltung mobiler Geräte eingeschätzt haben.

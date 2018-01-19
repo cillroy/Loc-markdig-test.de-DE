@@ -14,11 +14,11 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62fa8de9bbbff2cd9746dfba93efd5362bdf3fed
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: b9ac6158c897c739c6b80dbddb26c6abca4d0ed8
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 
@@ -33,13 +33,11 @@ Verwenden Sie die Informationen in den folgenden Abschnitten zum Konfigurieren, 
 ## <a name="choose-when-to-use-endpoint-protection"></a>Wann eignet sich Endpoint Protection?
 Eine ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihnen verwalteten Computer frei von Schadsoftware und Viren zu halten. Bevor Sie Intune auf Windows-PCs in Ihrer Organisation bereitstellen, sollten Sie entscheiden, wie Sie Ihre Computer schützen. Hierzu wählen Sie eine der folgenden Optionen aus und konfigurieren die zugehörigen Richtlinieneinstellungen:
 
-
 |Zweck:|Richtlinieneinstellungen für Endpoint Protection|Weitere Informationen|
 |--------------|---------------------------------------|--------------------|
 |Microsoft Endpoint Protection nur verwenden, wenn keine Endpunktschutzanwendung von Drittanbietern installiert ist.<br /><br />Sie können Microsoft Intune Endpoint Protection auf allen Computern verwenden, auf denen keine Endpunktschutzanwendung eines Drittanbieters installiert ist.|Endpoint Protection installieren = **Ja**<br /><br />Endpoint Protection aktivieren = **Ja**<br /><br />Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist = **Nein**|Wenn die Endpunktschutzanwendung eines Drittanbieters erkannt wird, wird Microsoft Intune Endpoint Protection nicht installiert bzw. deinstalliert, wenn es zuvor installiert war.|
 |Microsoft Endpoint Protection verwenden, auch wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist.<br /><br />Bei dieser Vorgehensweise führen Sie Microsoft Intune Endpoint Protection und die Endpunktschutzanwendung des Drittanbieters gleichzeitig aus. Von einer solchen Konfiguration wird aufgrund möglicher Leistungsprobleme abgeraten. |Endpoint Protection installieren = **Ja**<br /><br />Endpoint Protection aktivieren = **Ja**<br /><br />Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist = **Ja**|Zu verwenden in folgenden Fällen:<br /><br />– Sie möchten zur Verwendung von Microsoft Intune Endpoint Protection wechseln.<br />– Sie stellen einen neuen Client bereit, der Microsoft Intune Endpoint Protection verwendet.<br />– Sie aktualisieren einen Client, der Microsoft Intune Endpoint Protection verwendet.|
 |Microsoft Intune Endpoint Protection ohne Intune verwenden. Stattdessen greifen Sie auf die Endpunktschutzanwendung eines Drittanbieters zurück.|Endpoint Protection installieren = **Nein**|Wenn Sie keine Endpunktschutzanwendung eines Drittanbieters verwenden, wird von dieser Konfiguration abgeraten, denn in diesem Fall wären die Computer in Ihrer Organisation anfällig für Malware oder andere Angriffe.<br /><br />Microsoft Intune Endpoint Protection wird nicht installiert. Eine bereits installierte Instanz wird deinstalliert.|
-
 Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendung zu Microsoft Intune Endpoint Protection zu wechseln:
 
 1.  Beenden Sie Ihre aktuelle Endpunktschutzanwendung nicht, während Sie die Intune-Clientsoftware auf den betreffenden Computern bereitstellen.
@@ -79,7 +77,6 @@ Sie können die bereitgestellte Endpoint Protection-Richtlinie auf der Seite **A
 |**Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist**|Legen Sie diese Option auf **Ja** fest, um die Installation von Microsoft Endpoint Protection zu erzwingen, auch wenn eine Endpunktschutzanwendung eines Drittanbieters erkannt wird.<br /><br />Empfohlener Wert: **Nein**|
 |**Vor der Entfernung von Malware einen Systemwiederherstellungspunkt erstellen**|Legen Sie hier **Ja** fest, um vor dem Entfernen von Malware einen Windows-Systemwiederherstellungspunkt zu erstellen.<br /><br />Empfohlener Wert: **Ja**|
 |**Behandelte Malware nachverfolgen (Tage)**|Ermöglicht Endpoint Protection, erkannte Schadsoftware für einen festgelegten Zeitraum nachzuverfolgen, damit Sie vormals infizierte verwaltete Computer manuell überprüfen können.<br /><br />Sie können einen Wert zwischen 0 und 30 Tagen angeben.<br /><br />Empfohlener Wert: **7 Tage**|
-
 Wenn Sie die Richtlinienwerte für die Einstellungen **Endpoint Protection installieren** und **Endpoint Protection aktivieren** auf **Ja** und den Richtlinienwert für **Endpoint Protection auch dann installieren, wenn eine Endpunktschutzanwendung von Drittanbietern installiert ist** auf **Nein** festgelegt haben, erkennt Microsoft Intune Endpoint Protection, dass eine andere Endpunktschutzanwendung installiert ist. Dies bedeutet, dass Endpoint Protection nicht installiert oder deinstalliert wird, wenn es bereits vorhanden ist. Allerdings meldet Microsoft Intune Endpoint Protection in Intune keine Informationen über die Integrität der anderen Endpunktschutzanwendung.
 
   Microsoft Security Essentials warnt Sie aufgrund seines Echtzeitschutzes, wenn potenzielle Bedrohungen wie Viren oder Spyware versuchen, sich auf Ihrem PC zu installieren oder auszuführen. In dem Moment, in dem dies passiert, wird ganz rechts auf der Taskleiste eine Meldung im Infobereich angezeigt.
@@ -148,10 +145,10 @@ Sie können auch **Dynamische Definitionen auf Basis von Microsoft Active Protec
 
 ## <a name="choose-management-tasks-for-endpoint-protection"></a>Auswählen von Verwaltungsaufgaben für Endpoint Protection
 Mithilfe der folgenden Aufgaben können Sie verschiedene Verwaltungsaufgaben auf verwalteten Computern ausführen, auf denen Endpoint Protection ausgeführt wird:
-- Update für Malwaredefinitionen ausführen
+ - Update für Malwaredefinitionen ausführen
   - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu aktualisierenden Computer aus. Wählen Sie **Remoteaufgaben** &gt; **Update für Malwaredefinitionen ausführen** aus.
   - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Wählen Sie die Registerkarte **Aktualisieren** und dann **Aktualisieren** aus.
-- Malwareüberprüfung ausführen:
+ - Malwareüberprüfung ausführen:
   - Intune-Konsole: Wählen Sie im Arbeitsbereich **Gruppen** die zu überprüfenden Computer aus. Wählen Sie **Vollständige Malwareüberprüfung ausführen** oder **Malwareschnellüberprüfung ausführen** aus.
   - Verwaltete Computer: Starten Sie die Endpoint Protection-Clientsoftware über den Benachrichtigungsbereich von Windows. Wählen Sie **Schnell**, **Vollständig**oder **Benutzerdefiniert** und dann **Jetzt überprüfen** aus.
 
@@ -159,12 +156,12 @@ Zur Anzeige des Status einer Remoteaufgabe wählen Sie rechts unten in der Intun
 
 ## <a name="monitor-endpoint-protection"></a>Überwachen von Endpoint Protection
 Sie können den Malwarestatus Ihrer Computer mithilfe des Arbeitsbereichs **Schutz** der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/)überwachen. Dieser Arbeitsbereich enthält zwei Seiten:
-- **Übersicht über Endpoint Protection**: Hier werden wichtige Probleme als Links angezeigt, die Sie auswählen können, um weitere Informationen zu erhalten. Die folgenden Arten von Problemen können angezeigt werden:
+ - **Übersicht über Endpoint Protection**: Hier werden wichtige Probleme als Links angezeigt, die Sie auswählen können, um weitere Informationen zu erhalten. Die folgenden Arten von Problemen können angezeigt werden:
   - **Instanzen von Schadsoftware, die Nachverfolgung erfordern**: Klicken Sie auf den Link, um eine Liste mit Schadsoftwareproblemen sowie den zur Lösung des jeweiligen Problems erforderlichen Folgemaßnahmen anzuzeigen. Sie können diese Liste weiter durchsuchen, um festzustellen, welche Computer betroffen sind.
   - **Computer mit Schadsoftware, die Nachverfolgung erfordern**: Klicken Sie auf den Link, um alle Computer mit ungelösten Schadsoftwareproblemen sowie den zur Lösung des jeweiligen Problems erforderlichen Folgemaßnahmen anzuzeigen.
   - **Ungeschützte Geräte**: Klicken Sie auf den Link, um Computer anzuzeigen, die von keiner Endpunktschutzsoftware geschützt sind, weil eine solche Software entweder nicht installiert ist, oder weil ein Fehler aufgetreten ist. Wählen Sie einen Computer aus, um weitere Details anzuzeigen.
   - **Geräte, auf denen eine andere Endpunktschutzanwendung ausgeführt wird**: Klicken Sie auf den Link, um Computer anzuzeigen, auf denen die Endpunktschutzanwendung eines Drittanbieters ausgeführt wird.
-- **Sämtliche Malware**: Hiermit wird eine Liste der gesamten auf Ihren Computern gefundenen aktiven Schadsoftware angezeigt. Sie können diese Liste durchsuchen, um alle Computer anzuzeigen, die von einer bestimmten Schadsoftware betroffen sind, oder eine der folgenden Aufgaben auswählen:
+ - **Sämtliche Malware**: Hiermit wird eine Liste der gesamten auf Ihren Computern gefundenen aktiven Schadsoftware angezeigt. Sie können diese Liste durchsuchen, um alle Computer anzuzeigen, die von einer bestimmten Schadsoftware betroffen sind, oder eine der folgenden Aufgaben auswählen:
   - **Eigenschaften anzeigen**: Es wird eine Seite mit weiteren Informationen zur ausgewählten Schadsoftware geöffnet.
   - **Informationen zu dieser Schadsoftware**: Es wird ein Thema aus dem Microsoft Malware Protection Center mit weiteren Informationen zur Schadsoftware geöffnet.
 

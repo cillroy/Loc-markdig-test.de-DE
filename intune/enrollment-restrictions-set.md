@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: affd792bb8d48710e944f05fa864c7a2485e652e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d882cc4d5d5141eda28d90292f1a8f7acaaf2e6b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -77,10 +77,10 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 5. Wählen Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) die Option **Plattformen** aus. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** aus.
 6. Klicken Sie auf **Speichern**.
 7. Wählen Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) **Plattformkonfigurationen** und dann die minimale und maximale **Version** für die aufgeführte Plattform aus. Die folgenden Versionen werden unterstützt:
-   - Android und Android for Work unterstützen major.minor.rev.build.
-   - iOS unterstützt major.minor.rev.
-   - Windows unterstützt major.minor.rev.build nur für Windows 10.
-   Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden. 
+  - Android und Android for Work unterstützen major.minor.rev.build.
+  - iOS unterstützt major.minor.rev.
+  - Windows unterstützt major.minor.rev.build nur für Windows 10.
+  Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden. 
 8. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** für **Geräte in Privatbesitz** aus.
 
     ![Screenshot des Arbeitsbereichs „Gerätebeschränkungen“ mit den standardmäßigen Geräteplattformkonfigurationen für die konfigurierten Einstellungen von Geräten in Privatbesitz.](media/device-restrictions-platform-configurations.png)

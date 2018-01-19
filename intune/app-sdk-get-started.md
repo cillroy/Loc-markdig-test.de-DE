@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e88727531edc215638a0c6ac46f80d0a28917923
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -115,7 +115,7 @@ Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
 
 * **Intune App SDK für Android**: Vom SDK werden keine Telemetriedaten protokolliert.
 
-  Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.
+ Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.
 
 ## <a name="line-of-business-app-version-numbers"></a>Branchenspezifische App-Versionsnummern
 
@@ -148,7 +148,7 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Diese Nummer gibt eine Iteration
 
 - **CFBundleShortVersionString**  
     Gibt die Nummer der Releaseversion des Pakets an. Diese Nummer gibt eine veröffentlichte Version der App an. Die Nummer wird von Benutzern verwendet, um auf die App zu verweisen.
-  - **CFBundleVersion**  
+ - **CFBundleVersion**  
     Die Buildversion des Pakets, die eine Iteration desselben angibt. Die Nummer kann verwendet werden, um ein Release oder ein nicht veröffentlichtes Paket zu identifizieren. Die Nummer wird für die App-Erkennung verwendet.
 
 #### <a name="android"></a>Android

@@ -15,16 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 756af2f4d681d02a8033324e7226caffd576e08e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d80ec63cd501ebb4b6779a54002a98c65e851cc5
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="get-started-enrolling-devices"></a>Erste Schritte bei der Geräteregistrierung
 
 Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Da Ihre Endbenutzer mit Intune eher auf ihren Geräten als in der Verwaltungskonsole interagieren, sollten Sie mit der Registrierung vertraut sein. Auf diese Weise können Sie ausgezeichnete Kompatibilitätsrichtlinien zusammen mit Ihrer Erfahrung nutzen, um sich in die Lage Ihrer Benutzer hineinzuversetzen. Dies ist besonders wichtig, da Ihre Benutzer genau wissen werden, welche Informationen Sie als Administrator sehen können:
-
 
 | Was für die IT nicht einsehbar ist | Was für die IT einsehbar ist |
 |---|---|
@@ -36,7 +35,6 @@ Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatte
 | Die Kennwörter für Ihre persönlichen Accounts | Gerätename |
 | Ihre Termine | Der Hersteller (gilt nur für Geräte, die nicht von Apple hergestellt wurden) |
 | Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet | Telefonnummer (Bei Arbeitsgeräten die vollständige Nummer). Bei persönlichen Geräten nur die letzten vier Ziffern.) |
-
 
 ## <a name="how-do-i-enroll-a-device"></a>Wie registriere ich ein Gerät?
 
@@ -63,7 +61,7 @@ Das Registrieren eines Geräts ist für viele Endbenutzer beim Zugriff auf Unter
 
 [Erste Schritte beim Hinzufügen von Apps:](get-started-apps.md) Suchen Sie Apps, und fügen Sie sie auf Geräten hinzu, um Ihren Mitarbeitern die Arbeit zu erleichtern.
 
-## <a name="learn-more"></a>Erfahren Sie mehr
+## <a name="learn-more"></a>Weitere Informationen
 
 * [Registrierungsoptionen für Intune](enrollment-options.md)
 * [Aktivieren von BYOD mit Intune](byod-enable.md)

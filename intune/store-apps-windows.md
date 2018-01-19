@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b037ea7a57ae0b99aa8099f6afe8505c86aad2d2
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: f10da996f8587e63320e31ae57e88a5f14f3f9c2
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Hinzufügen von Windows Store-Apps in Microsoft Intune
 
@@ -64,11 +64,11 @@ Benutzer können die Unternehmensportal-App aus dem Microsoft Store installieren
 
 ![Abbildung mit den herunterzuladenden Abhängigkeitsdateien ](./media/Win10CP-dependent-files.png)
 5. Erstellen Sie einen Ordner (beispielsweise „C:&#92;Company Portal“), bevor Sie die Unternehmensportal-App in Intune hochladen, und strukturieren Sie die Pakete wie folgt:
-   1. Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner namens „Dependencies“.  
-   ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](./media/Win10CP-Dependencies-save.png)
-   2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
-   Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
-   ![Die Windows App-Abhängigkeit für dieses Softwareinstallationsprogramm wurde im Anwendungsordner nicht gefunden. Sie können diese Anwendung weiterhin erstellen und zuweisen. Sie können sie jedoch nicht ausführen, bis die fehlende Windows-App-Abhängigkeit bereitgestellt wird.](./media/Win10CP-error-message.png)
+  1. Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner namens „Dependencies“.  
+  ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](./media/Win10CP-Dependencies-save.png)
+  2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
+  Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
+  ![Die Windows App-Abhängigkeit für dieses Softwareinstallationsprogramm wurde im Anwendungsordner nicht gefunden. Sie können diese Anwendung weiterhin erstellen und zuweisen. Sie können sie jedoch nicht ausführen, bis die fehlende Windows-App-Abhängigkeit bereitgestellt wird.](./media/Win10CP-error-message.png)
 6. Kehren Sie zu Intune zurück, und laden Sie die Unternehmensportal-App als neue App hoch. Weisen Sie sie für die gewünschte Gruppe von Zielbenutzern als erforderliche App zu.  
 
 Weitere Informationen zur Behandlung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  
@@ -104,5 +104,4 @@ Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und zuweise
 |PfxPassword| Das Kennwort des Symantec Enterprise Mobile-Codesignaturzertifikats. |
 |PublisherId |Die Herausgeber-ID des Unternehmens. Wenn sie nicht vorhanden ist, wird das Feld "Subject" von Symantec Enterprise Mobile Code Signing Certificate verwendet.|
 |SdkPath | Der Pfad des Stammordners für das Windows SDK für Windows 10. Dieses Argument ist optional und wird standardmäßig auf „${env:ProgramFiles(x86)}\Windows Kits\10“ festgelegt.|
-
 Das Skript gibt nach der Ausführung die signierte Version der Windows 10-Unternehmensportal-App aus. Anschließend können Sie die signierte Version der Anwendung über Intune als branchenspezifische App zuweisen. Dadurch wird für die derzeit zugewiesenen Versionen ein Upgrade auf die neue App durchgeführt.  

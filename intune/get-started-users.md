@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d7ff6b4943d6cba05b9c7909882de6515ae7ce9
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d7e55df3fbf90fb60de078b19beafa4a7f4abdbe
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="get-started-with-managing-users"></a>Erste Schritte mit der Benutzerverwaltung
 
@@ -44,8 +44,8 @@ Nachdem Sie einen Benutzer erstellt haben, können Sie über das [Office 365-Por
 3. Möglicherweise nimmt das Laden aller Informationen des Benutzers einige Zeit in Anspruch. Sobald Sie geladen wurden, klicken Sie für die **Produktlizenzen** des Benutzers auf **Bearbeiten**.
 4. Weisen Sie dem Benutzer einen **Ort** zu und stellen Sie Intune auf **ein**.
 
-   > [!NOTE]
-   > Dadurch wird eine Ihrer Lizenzen für den Benutzer verwendet. Wenn Sie ihre dynamische Umgebung verwenden, können Sie später die Verwendung dieser Lizenz rückgängig machen, um Sie einem echten Benutzer zuzuweisen.
+ > [!NOTE]
+ > Dadurch wird eine Ihrer Lizenzen für den Benutzer verwendet. Wenn Sie ihre dynamische Umgebung verwenden, können Sie später die Verwendung dieser Lizenz rückgängig machen, um Sie einem echten Benutzer zuzuweisen.
 
 5. Wählen Sie **Speichern** aus.
 

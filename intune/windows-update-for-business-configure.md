@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6356cf944ce4638356a6055208e892db17e344b6
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 169030ccee695e11c58bcf3470e8d59163ddf6e8
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -46,7 +46,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
     - Windows 10
     - Windows 10 Team (für Surface Hub-Geräte)
 
-  Geräte unter Windows 10 Mobile und Windows 10 Holographic werden nicht unterstützt.
+ Geräte unter Windows 10 Mobile und Windows 10 Holographic werden nicht unterstützt.
 
 - Auf Windows-Geräten muss **Feedback und Diagnose** > **Diagnose- und Nutzungsdaten** mindestens auf **Basic** festgelegt sein.
 
@@ -64,8 +64,8 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
 1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Die drei anderen Einstellungen können zusammen mit anderen Windows 10-Updateeinstellungen beim Erstellen von Updateringen konfiguriert werden.
 
-   > [!NOTE]
-   > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Die Einstellungen werden jedoch weiterhin angewendet. Wenn Sie diese Einstellungen migriert haben und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
+  > [!NOTE]
+  > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Die Einstellungen werden jedoch weiterhin angewendet. Wenn Sie diese Einstellungen migriert haben und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
 
 2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Ein Beispiel: Falls die gleiche Einstellung mit unterschiedlichen Werten konfiguriert ist, entsteht ein Konflikt, der sich nicht ohne Weiteres diagnostizieren lässt, da die Einstellung, die im klassischen Portal konfiguriert wurde, im Azure-Portal nicht angezeigt wird.
 
@@ -78,25 +78,24 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 5. Wählen Sie auf dem Blatt mit der Updateringliste die Option **Erstellen** aus.
 6. Geben Sie auf dem Blatt **Create Update Ring** (Updatering erstellen) einen Namen und eine optionale Beschreibung für den Updatering an, und wählen Sie anschließend **Einstellungen** aus.
 7. Konfigurieren Sie auf dem Blatt **Einstellungen** folgende Informationen:
-   - **Wartungskanal**: Legen Sie den Kanal fest, für den das Gerät Windows-Updates erhält (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal).
-   - **Microsoft-Updates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
-   - **Windows drivers** (Windows-Treiber): Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
-   - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
-   - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
+    - **Wartungskanal**: Legen Sie den Kanal fest, für den das Gerät Windows-Updates erhält (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal).
+    - **Microsoft-Updates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
+    - **Windows drivers** (Windows-Treiber): Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
+    - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
+    - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
 
-     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
-   - **Rückstellungszeitraum für Funktionsupdates (Tage)**: Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
+    Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
+    - **Rückstellungszeitraum für Funktionsupdates (Tage)**: Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
 
-     Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Wartungskanal** (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
+    Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Wartungskanal** (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
 
-     Beispiel:  
-     **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X auf Windows-Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar ist. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
+    Beispiel:  
+    **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X auf Windows-Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar ist. In diesem Fall erhält das Gerät das Update erst im Februar (also 30 Tage später).
 
-     **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X im halbjährlichen Kanal (gezielt) auf Windows-Update erstmals im Januar öffentlich verfügbar ist. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
+    **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X im halbjährlichen Kanal (gezielt) auf Windows-Update erstmals im Januar öffentlich verfügbar ist. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
-   - **Übermittlungsoptimierung**: Wählen Sie die Methode dafür aus, welche Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-
-8. Klicken Sie abschließend auf **OK** und dann auf dem Blatt **Create Update Ring** (Updatering erstellen) auf **Erstellen**.
+    - **Übermittlungsoptimierung**: Wählen Sie die Methode dafür aus, welche Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Klicken Sie abschließend auf **OK** und dann auf dem Blatt **Create Update Ring** (Updatering erstellen) auf **Erstellen**.
 
 Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 
@@ -115,11 +114,11 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
 3. Wählen Sie auf dem Blatt **Intune** die Option **Softwareupdates** aus.
 4. Wählen Sie **Übersicht** auf dem Blatt **Softwareupdates** aus. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
 5. Öffnen Sie einen der folgenden Berichte: 
-
+     
    **Für alle Bereitstellungsringe**:
    1. Auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe**. 
    2. Wählen Sie **Bereitstellungsstatus pro Updatering** im Abschnitt **Überwachen** aus.
-
+                   
    **Für bestimmte Bereitstellungsringe**: 
    1. Wählen Sie auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe** den zu überprüfenden Bereitstellungsring aus.
    2. Wählen Sie im Abschnitt **Überwachen** einen der folgenden Berichte aus, um weitere Informationen zum Updatering anzuzeigen:

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 86055646c4ece4b50a557539e24112d33e98c9bc
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 00baa49411221ec520d03bb651b1b90d539e1bdc
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 
@@ -27,10 +27,8 @@ ms.lasthandoff: 01/03/2018
 
 Mit Microsoft Intune können Sie mobile Geräte zurücksetzen, die mithilfe von Exchange ActiveSync (EAS) mit dem Intune Exchange Connector verwaltet werden. In der folgenden Tabelle werden die verfügbaren Funktionen zum Zurücksetzen über Exchange ActiveSync beschrieben:
 
-
 |Typ des Zurücksetzens|Windows 8.1 und Windows RT 8.1|iOS|Android|
 |----------------|----------------------------------|--------------|-------------------|-------|-----------|
 |Vollständiges Zurücksetzen|E-Mail-Konto und zwischengespeicherte E-Mails werden entfernt.|Zurück auf XWerkseinstellungen.|Zurück auf Werkseinstellungen|
 |Selektives Zurücksetzen/E-Mail|E-Mail-Konto wird entfernt|Nicht unterstützt.|Nicht unterstützt.|
 |Selektives Zurücksetzen/Richtlinien|Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|Die Durchsetzung von XRichtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|
-

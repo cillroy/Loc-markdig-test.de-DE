@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dd1afe5175e6e40adf3672950965b2eae10af90
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 18e0608c28a6a292da7fc766fb50edfd27e5a138
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-your-android-device-with-intune"></a>Verwenden Ihres Android-Geräts mit Intune
 
@@ -43,11 +43,11 @@ Intune unterstützt derzeit Android 4.4 und höher. Dies schließt Samsung KNOX 
 - [Festlegen von PIN oder Kennwort](set-your-pin-or-password-android.md)
 - [Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens.](install-your-companys-virtual-private-network-VPN-android.md)
 - [Festlegen des Zeitraums, bevor das Gerät gesperrt wird](set-the-amount-of-time-before-your-device-is-locked-android.md)
-  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-android.md)
 - [Aufheben der Registrierung Ihres Geräts bei Ablehnung der Nutzungsbedingungen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Was geschieht, wenn Sie Ihr Android-Gerät mit der Unternehmensportal-App zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

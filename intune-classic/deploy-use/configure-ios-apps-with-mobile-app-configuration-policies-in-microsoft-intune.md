@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aa6a8f2a7e039118d88e9d5079d7a898ffa4ea04
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 014b97fdb900c0fc163a5f98d5c4e2a5bdaa237d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
 
@@ -77,14 +77,14 @@ Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** angezeigt.
 ## <a name="information-about-the-xml-file-format"></a>Informationen zum XML-Dateiformat
 
 Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
-
+    
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; oder &lt;false /&gt;
-
+     
 Weitere Informationen zu Datentypen finden Sie unter [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in der iOS Developer Library.
 
 Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
@@ -97,7 +97,7 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafte
 - \{\{username\}\} – (Beispiel: **John Doe**)
 - \{\{serialnumber\}\} – (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte
 - \{\{serialnumberlast4digits\}\} – (Beispiel: **G5V2**) für iOS-Geräte
-
+    
 Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Zuordnen einer Konfigurationsrichtlinie für mobile Apps zu einer App
@@ -139,4 +139,5 @@ Wenn Sie eine Datei für die Konfiguration mobiler Apps erstellen, können Sie e
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
+
 ```

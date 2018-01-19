@@ -1,5 +1,5 @@
 ---
-title: "Was geschieht, wenn Sie Ihr Gerät zurücksetzen? | Microsoft-Dokumentation"
+title: "Was geschieht, wenn Sie Ihr Gerät zurücksetzen? | Microsoft Docs"
 description: "Erfahren Sie mehr darüber, was geschieht, wenn Sie Ihr Gerät für jede der von Intune unterstützten Plattformen zurücksetzen."
 keywords: 
 author: barlanmsft
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4d645b23325ed3e0cef6f0d802284ed5cccd9b2d
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 97cf2d5544a74d31141593fe96d724988ae45ce5
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="what-happens-if-you-reset-your-device"></a>Was geschieht, wenn Sie Ihr Gerät zurücksetzen?
 

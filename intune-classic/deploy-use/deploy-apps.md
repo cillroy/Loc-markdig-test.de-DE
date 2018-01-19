@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 654f84c93e6ca41f902b36f62a184ea820dc4ba6
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: eaea92f2cd2208086a544a192d620e1cdd96cfc2
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Bereitstellen von Apps mit Microsoft Intune
 
@@ -48,17 +48,16 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
 |Typ des Installationsprogramms|Erforderliche Installation|Verfügbare Installation|Deinstallieren|Nicht verfügbar|
 |------------------|--------------------|---------------------|-------------|------------------|
-|Windows-App-Paket (für eine Benutzergruppe bereitgestellt)|Ja |Ja |Ja |Ja |
-|Windows-App-Paket (auf einer Gerätegruppe bereitgestellt)|Ja |Nein|Ja |Ja |
-|App-Paket für mobile Geräte (für eine Benutzergruppe bereitgestellt)|Ja |Ja |Ja |Ja |
-|App-Paket für mobile Geräte (auf einer Gerätegruppe bereitgestellt)|Ja |Nein|Ja |Ja |
-|Windows Installer (für eine Benutzergruppe bereitgestellt)|Nein|Ja |Nein|Ja |
-|Windows Installer (auf einer Gerätegruppe bereitgestellt)|Ja |Nein|Ja |Ja |
-|Externer Link (für eine Benutzergruppe bereitgestellt)|Nein|Ja |Nein|Ja |
+|Windows-App-Paket (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
+|Windows-App-Paket (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
+|App-Paket für mobile Geräte (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
+|App-Paket für mobile Geräte (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
+|Windows Installer (für eine Benutzergruppe bereitgestellt)|Nein|Ja|Nein|Ja|
+|Windows Installer (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
+|Externer Link (für eine Benutzergruppe bereitgestellt)|Nein|Ja|Nein|Ja|
 |Externer Link (auf einer Gerätegruppe bereitgestellt)|Nein|Nein|Nein|Nein|
-|Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja |Ja |Ja |Ja |
-|Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja |Nein|Ja |Ja |
-
+|Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
+|Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
 > [!TIP]
 > Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **verfügbare Installation** bereitstellen.
 

@@ -15,21 +15,21 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
-## <a name="week-of-december-11-2017"></a>Woche des 11 Dezember 2017
+## <a name="week-of-december-11-2017"></a>Woche des 11. Dezember 2017
 
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Endbenutzer-messaging für Konten<!--1573558, 1712; changes to be made for other platforms for 1801-->
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Endbenutzernachrichten für Konten<!--1573558, 1712; changes to be made for other platforms for 1801-->
 
-Benutzer von der Unternehmensportal-Website blockiert Maßnahmen, die Schreibzugriff auf Ihren Mandanten zu erfordern. Sie sehen die entsprechenden Fehler messaging erläutert, die ihrem Konto gewartet wird. Ähnliche Änderungen an den Unternehmensportal-apps für Android, iOS, Mac OS und Windows in Kürze verfügbar.
+Benutzer der Unternehmensportalwebsite werden an der Ausführung von Aktionen, die Schreibzugriff auf Ihren Mandanten erfordern, gehindert. Die Fehlermeldung, dass ihre Konten gewartet werden, wird angezeigt. Ähnliche Änderungen sind in Kürze für Unternehmensportal-Apps für Android, iOS, macOS und Windows verfügbar.
 
-![Fehlermeldung beim Konto verschieben](./media/account-move-rom-iwp-user-1712.png)
+![Fehlermeldung bei Kontoumstellung](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>Woche vom 27. November 2017
 
@@ -253,7 +253,7 @@ Die Unternehmensportal-App für Windows 10 löst nun automatisch eine Synchronis
 ![Ein Bild der Intune-Unternehmensportal-App für Windows 10 mit dem neuen automatischen Synchronisierungsstatus mit einer Meldung, die angibt, dass das Gerät synchronisiert und der Download der App versucht wird.](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Neue Anleitung für das Windows 10-Unternehmensportal <!---1058938--->
-Die Unternehmensportal-App für Windows 10 bietet eine geführte Intune-Anleitung für Geräte, die nicht identifiziert oder registriert wurden. Die neue Anleitung umfasst Schritt-für-Schritt-Anweisungen, mit denen die Registrierung bei Azure Active Directory (erforderlich für Funktionen zum bedingten Zugriff) und die MDM-Registrierung (erforderlich für Funktionen zur Geräteverwaltung) durch den Benutzer erläutert werden. Auf die geführte Anleitung kann über die Hauptseite des Unternehmensportals zugegriffen werden. Benutzer können die App weiterhin verwenden, wenn die Registrierung und Anmeldung nicht abgeschlossen werden, haben jedoch lediglich Zugriff auf einen eingeschränkten Funktionsumfang.
+Die Unternehmensportal-App für Windows 10 bietet eine geführte Intune-Anleitung für Geräte, die nicht identifiziert oder registriert wurden. Die neue Anleitung umfasst Schritt-für-Schritt-Anweisungen, mit denen die Registrierung bei Azure Active Directory (erforderlich für Funktionen zum bedingten Zugriff) und die MDM-Registrierung (erforderlich für Funktionen zur Geräteverwaltung) durch den Benutzer erläutert werden. Auf die geführte Anleitung kann über die Hauptseite des Unternehmensportals zugegriffen werden. Benutzer können die App weiter verwenden, auch wenn sie die Registrierung nicht abgeschlossen haben, erhalten aber eingeschränkte Funktionalität.
 
 Dieses Update ist nur auf Geräten unter Windows 10 Anniversary Update (Build 1607) oder höher sichtbar.
 
@@ -315,7 +315,7 @@ Das Unternehmensportal erhält auch aktualisierte Symbole für die Android-, iOS
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Statusanzeige zur Anmeldung im Android-Unternehmensportal <!--953374-->
 
-Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Der Indikator durchläuft neue Status, beginnend mit „Verbinden...“, „Anmelden...“, dann „Checking for security requirements...“ (Suche nach Sicherheitsanforderungen...), bevor dem Benutzer erlaubt wird, auf die App zuzugreifen.
+Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Die Statusanzeige durchläuft die neuen Phasen, beginnend mit „Verbindung wird aufgebaut“, „Anmeldung“ und dann „Suchen nach Sicherheitsanforderungen“, bevor dem Benutzer der Zugriff auf die App gewährt wird.
 
 <html>
 <body>
@@ -388,7 +388,7 @@ __Updates an empfohlenen Apps__ Wir haben der Website eine dedizierte Seite hinz
 
 ![Die farbigen Kacheln, die die Apps darstellen. Sie sind große farbige Quadrate unter jeder App, wobei die Farbe aus der Primärfarbe innerhalb des App-Logos gezogen wird. Der Abschnitt „Featured Apps“ (Empfohlene Apps) wird oben in der Unternehmensportal-App angezeigt.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Neuerungen in Intune](https://docs.microsoft.com/intune/whats-new)

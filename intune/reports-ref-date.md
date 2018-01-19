@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4467122ac2fd616ebf032c1337ddcb284218fd90
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 93d0f08697c8ee17ff44d599cb7b1bb262daa7ee
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
 
@@ -27,7 +27,6 @@ Die Kategorie **Datum** enthält die **Datumsentität**, die zum Definieren von 
 **Datum**
 
 Die **Datumsentität** stellt Datumsangaben dar, die auf mehrere Data Warehouse-Entitäten verweisen.
-
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
@@ -49,4 +48,3 @@ Die **Datumsentität** stellt Datumsangaben dar, die auf mehrere Data Warehouse-
 | MonthOfYear | Monat des Jahres | 7 |
 | CalendarQuarter | Kalenderquartal | 3 |
 | CalendarYear | Kalenderjahr | 2016 |
-

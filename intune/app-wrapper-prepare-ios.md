@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c06820553244920cd3cbd7f8e1addda07fa2c6f
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 331b7fb8cce93abca1f87dda11b2d39465470dd8
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -99,48 +99,48 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 4. Klicken Sie auf **Certificates, IDs & Profiles**.
 
-   ![Apple Developer-Portal](./media/iOS-signing-cert-1.png)
+  ![Apple Developer-Portal](./media/iOS-signing-cert-1.png)
 
 5. Klicken Sie auf ![das Pluszeichen im Apple Developer-Portal](./media/iOS-signing-cert-2.png) (rechts oben), um ein iOS-Zertifikat hinzuzufügen.
 
 6. Wählen Sie unter **Production** das Erstellen eines Zertifikats des Typs **In-House and Ad Hoc** aus.
 
-   ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](./media/iOS-signing-cert-3.png)
+  ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](./media/iOS-signing-cert-3.png)
 
-   >[!NOTE]
-   >Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
+  >[!NOTE]
+  >Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
 
 7. Klicken Sie unten auf der Seite auf **Next**.
 
 8. Lesen Sie die Anweisungen zum Erstellen einer **Zertifikatsignieranforderung (Certificate Signing Request, CSR)** mithilfe der Anwendung „Schlüsselbundverwaltung“ auf Ihrem macOS-Computer.
 
-   ![Lesen der Anweisungen zum Erstellen einer CSR](./media/iOS-signing-cert-4.png)
+  ![Lesen der Anweisungen zum Erstellen einer CSR](./media/iOS-signing-cert-4.png)
 
 9. Befolgen Sie die Anweisungen zum Erstellen einer Zertifikatsignieranforderung. Starten Sie auf dem macOS-Computer die Anwendung **Schlüsselbundverwaltung**.
 
 10. Wechseln Sie im macOS-Menü oben auf dem Bildschirm zu **Schlüsselbundverwaltung > Zertifikatsassistent > Zertifikat einer Zertifizierungsinstanz anfordern**.  
 
-    ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-5.png)
+  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-5.png)
 
 11. Befolgen Sie die obigen Anweisungen auf der Apple Developer-Website zum Erstellen einer CSR-Datei. Speichern Sie die CSR-Datei auf Ihrem macOS-Computer.
 
-    ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-6.png)
+  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-6.png)
 
 12. Kehren Sie zur Apple Developer-Website zurück. Klicken Sie auf **Continue**(Weiter). Laden Sie dann die CSR-Datei hoch.
 
 13. Apple generiert Ihr Signaturzertifikat. Laden Sie es herunter, und speichern Sie es an einem einprägsamen Speicherort auf Ihrem macOS-Computer.
 
-    ![Herunterladen Ihres Signaturzertifikats](./media/iOS-signing-cert-7.png)
+  ![Herunterladen Ihres Signaturzertifikats](./media/iOS-signing-cert-7.png)
 
 14. Doppelklicken Sie auf die Zertifikatsdatei, die Sie gerade heruntergeladen haben, um das Zertifikat einem Schlüsselbund hinzuzufügen.
 
 15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie rechts oben in der Suchleiste nach ihrem Namen suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**. In den Beispielbildschirmen verwenden wir ein Entwicklungszertifikat anstelle eines Produktionszertifikats.
 
-    ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-8.png)
+  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-8.png)
 
 16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge (unscharf), die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
 
-    ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-9.png)
+  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-9.png)
 
 
 
@@ -154,7 +154,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 4. Wählen Sie unter **Distribution** das Erstellen eines Bereitstellungsprofils des Typs **In House** aus.
 
-   ![Auswählen des Bereitstellungsprofils „In House“](./media/iOS-provisioning-profile-1.png)
+  ![Auswählen des Bereitstellungsprofils „In House“](./media/iOS-provisioning-profile-1.png)
 
 5. Klicken Sie auf **Continue**(Weiter). Verknüpfen Sie unbedingt das zuvor generierte Signaturzertifikat mit dem Bereitstellungsprofil.
 
@@ -215,7 +215,7 @@ Eine einfache Möglichkeit, das App Wrapping Tool auszuführen, besteht darin, a
 
 Öffnen Sie im Ordner „IntuneMAMPackager/Contents/MacOS“ `Parameters.plist` (eine leere PLIST-Vorlage) mit einem Text-Editor oder Xcode. Geben Sie Ihre Argumente für die folgenden Schlüssel:
 
-| PLIST-Schlüssel |  Standardwert| Hinweise |
+| PLIST-Schlüssel |  Standardwert| Anmerkungen |
 |------------------|--------------|-----|
 | Input Application Package Path  |empty| Identisch mit „-i“|
 | Output Application Package Path |empty| Identisch mit „-o“|
@@ -322,7 +322,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 1.  Aktivieren Sie Funktionen in Ihrer App:
 
-    ein.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
+    a.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
 
     b.  Aktivieren Sie die entsprechenden Funktionen. Ausführlichere Informationen zu jeder einzelnen Funktion und wie Sie die richtigen Werte bestimmen, finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek.
 
@@ -332,7 +332,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 2.  Aktivieren Sie Berechtigungen in Ihrem Bereitstellungsprofil:
 
-    ein.  Melden Sie sich beim „Apple Developer Member Center“ an.
+    a.  Melden Sie sich beim „Apple Developer Member Center“ an.
 
     b.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
@@ -393,7 +393,7 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 
 -   Wenn Sie den Dokumentordner auf Ihrem Gerät über eine umschlossenen App überwachen, sehen Sie möglicherweise einen Ordner namens „.msftintuneapplauncher“. Wenn Sie diese Datei ändern oder löschen, beeinträchtigt dies möglicherweise die ordnungsgemäße Funktionsweise der eingeschränkten Apps.
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen:
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Verwenden des SDK zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

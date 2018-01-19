@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03898fde9ce7d90bb8dee862247cb768af6c4c8
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Zugreifen auf die Intune Graph-API über Azure Active Directory
 
@@ -117,13 +117,13 @@ An diesem Punkt haben Sie auch folgende Möglichkeiten:
 
     Gehen Sie hierzu folgendermaßen vor:
 
-  1. Wählen sie auf dem Blatt der Anwendung **Manifest**, um das Blatt **Manifest bearbeiten** zu öffnen.
+    1. Wählen sie auf dem Blatt der Anwendung **Manifest**, um das Blatt **Manifest bearbeiten** zu öffnen.
 
-     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-  2. Ändern Sie den Wert der Einstellung `availableToOtherTenants` in `true`.
+    2. Ändern Sie den Wert der Einstellung `availableToOtherTenants` in `true`.
 
-  3. Speichern Sie die Änderungen.
+    3. Speichern Sie die Änderungen.
 
 ## <a name="intune-permission-scopes"></a>Intune-Berechtigungsbereiche
 
@@ -557,7 +557,7 @@ Gehen Sie hierzu folgendermaßen vor:
 
     Gehen Sie hierfür so vor:
 
-    ein. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
+    a. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
 
     b. Laden Sie den Benutzer ein, Gast Ihres Mandanten zu werden.
 

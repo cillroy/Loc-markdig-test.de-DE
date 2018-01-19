@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ceffa8fe52c7935890d5159b778b5aa809f5c5fe
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 
@@ -39,13 +39,13 @@ Eine Lizenz für Intune ermöglicht die Installation der Intune-Clientsoftware a
 
 Mit Ausnahme der Methode, bei denen Benutzer die Intune-Clientsoftware selbst installieren, erfordern alle Methoden, dass die Software zuerst von IT-Administratoren heruntergeladen wird, damit sie anschließend den Endbenutzern bereitgestellt werden kann.
 
-1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
+1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
 
-   ![Herunterladen des Intune-PC-Clients](../media/pc-sa-client-download.png)
+  ![Herunterladen des Intune-PC-Clients](../media/pc-sa-client-download.png)
 
 2. Klicken Sie auf der Seite **Clientsoftwaredownload** auf **Clientsoftwaredownload**. Speichern Sie anschließend das Paket **Microsoft_Intune_Setup.zip**, das die Software enthält, an einem sicheren Speicherort in Ihrem Netzwerk.
 
-   Das Installationspaket der Intune-Clientsoftware enthält eindeutige und spezifische Informationen zu Ihrem Konto, die über ein eingebettetes Zertifikat verfügbar sind. Wenn nicht autorisierte Benutzer Zugriff auf das Installationspaket erhalten, können sie PCs bei dem Konto registrieren, dem das eingebettete Zertifikat entspricht, und möglicherweise Zugriff auf Unternehmensressourcen erhalten.
+  Das Installationspaket der Intune-Clientsoftware enthält eindeutige und spezifische Informationen zu Ihrem Konto, die über ein eingebettetes Zertifikat verfügbar sind. Wenn nicht autorisierte Benutzer Zugriff auf das Installationspaket erhalten, können sie PCs bei dem Konto registrieren, dem das eingebettete Zertifikat entspricht, und möglicherweise Zugriff auf Unternehmensressourcen erhalten.
 
 3. Extrahieren Sie an dem sicheren Ort in Ihrem Netzwerk den Inhalt des Installationspakets.
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b7e38618a20fe730798333c6d9b234cb9e95b085
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 77c87d24834066c6ed58eaf004422490fcb81aa4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
 
@@ -53,8 +53,8 @@ Durch den Zugriff auf Apps, Daten und Ressourcen Ihrer Organisation wird Ihnen I
 
 8. Ihr Mac wird Ihnen eine Meldung anzeigen, die folgendermaßen lautet: **Unternehmensportal ist eine Anwendung, die aus dem Internet heruntergeladen wurde. Sind Sie sicher, dass Sie diese öffnen möchten?** Klicken Sie auf **Öffnen**.
 
-   > [!NOTE]
-   > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Wenn Ihr Computer die Unternehmensportal-App nicht öffnen möchte, versuchen Sie, [den Gatekeeper auszuschalten](https://support.apple.com/HT202491) und die App anschließend zu öffnen.
+  > [!NOTE]
+  > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Wenn Ihr Computer die Unternehmensportal-App nicht öffnen möchte, versuchen Sie, [den Gatekeeper auszuschalten](https://support.apple.com/HT202491) und die App anschließend zu öffnen.
 
 9. Der erste Bildschirm, der Ihnen in der Unternehmensportal-App angezeigt wird, fordert Sie dazu auf, sich mit dem gleichen Geschäfts-, Schul- oder Unikonto **anzumelden**, mit dem Sie sich auf der Webseite des Unternehmensportals angemeldet haben.
 

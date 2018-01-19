@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8fbf0d1b9229dc62a4ab412a03c6adfd94f07cb
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: aa78383233950e342c5ab0f83095bba3c8fda1f9
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Erste Schritte mit den Intune-Gerätekonformitätsrichtlinien
 
@@ -90,7 +90,7 @@ Sie benötigen die folgenden Abonnements, um die Gerätekonformitätsrichtlinien
 
 -   Windows 8.1
 
--   Windows Phone 8.1
+-   Windows Phone 8.1
 
 -   Windows 10
 

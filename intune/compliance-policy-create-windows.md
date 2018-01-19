@@ -15,11 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce34655113b60abec416048eb7f8da4cf293a79
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 

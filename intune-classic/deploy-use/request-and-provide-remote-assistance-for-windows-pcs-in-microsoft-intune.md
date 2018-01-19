@@ -14,11 +14,11 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8cddd66d1defaf7f6840d4e5642bf550cfd3e93
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 776fffed98a7fb8c9d38547f8782a2e25f562eff
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs
 
@@ -60,7 +60,7 @@ Bevor Sie entsprechende Einrichtungsschritte ausführen und auf Anforderungen f�
 ## <a name="respond-to-a-remote-assistance-request"></a>Reagieren auf eine Remoteunterstützungsanforderung
 
 1. Wenn ein Benutzer eine Remoteunterstützungsanforderung übermittelt, können Sie sie im Arbeitsbereich **Warnungen** unter **Überwachung** > **Remoteunterstützung** anzeigen. Beispiel:
-   > ![Screenshot einer Remoteunterstützungsanforderung](./media/team-viewer.png)
+> ![Screenshot einer Remoteunterstützungsanforderung](./media/team-viewer.png)
 
 <br>Wenn die Anforderung länger als 4 Stunden unbeantwortet bleibt, wird sie entfernt.
 2. Um die Anforderung anzunehmen, wählen Sie **Anforderung genehmigen und Remoteunterstützung starten** aus.
@@ -84,6 +84,6 @@ Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglic
 
 4.  Überprüfen Sie im Dialogfeld **Taskstatus** die aktuellen Remoteaufgaben, den Aufgabenstatus, den Gerätenamen und etwaige gemeldete Fehler.
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen:
 
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

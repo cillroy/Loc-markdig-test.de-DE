@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ae6fe2c8b07771dc969830675588935782366b0
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: b3050193c2f36f4092285686935a410fb6baf5b5
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte
 
@@ -50,4 +50,4 @@ Die Verwaltung von Windows-PCs mithilfe der modernen Verwaltung mobiler Geräte 
 - **Skalierbarkeit**: Die MDM-Verwaltung wird mit der Intune-Cloudverwaltung skaliert. Die Intune-Softwareclient ist auf 7.000 PCs beschränkt.
 - **Einfachheit**: Die MDM-Lösung verwendet moderne Verwaltungsfunktionen, die im Betriebssystem enthalten ist, ohne Rückgriff auf einen heruntergeladenen Softwareclient.
 - **Einheitlichkeit**: Ihre Windows-PCs werden wie alle anderen mobilen Geräte in Ihrer Organisation verwaltet.
-  <!-- - **Cloud optimization** - -->
+<!-- - **Cloud optimization** - -->

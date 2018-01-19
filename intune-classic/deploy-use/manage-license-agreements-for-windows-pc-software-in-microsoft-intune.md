@@ -14,11 +14,11 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d627644937ace9f1565fbd3605029e7c06fd04a
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 4cf9c062c99895c5ff59f6b8fee44d20284eaa46
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/03/2018
 Mit Microsoft Intune können Sie Lizenzvertragsinformationen für Software, die im Rahmen von Microsoft-Volumenlizenzverträgen gekauft wurde, hinzufügen und verwalten. Gleiches gilt für Microsoft- oder Nicht-Microsoft-Software, die auf anderem Wege erworben wurde. Diese Informationen lassen sich in logischen Gruppen organisieren.
 
 > [!IMPORTANT]
-> Die Funktion dient nur zum Komfort; es wird keine Genauigkeit garantiert. Sie sollten sich nicht darauf beziehen, um die Konformität von Microsoft-Volumenlizenzverträgen zu bestätigen. Die erfassten Daten werden nicht von Microsoft genutzt, um Verstöße gegen Lizenzverträge mit Microsoft bzw. um die Einhaltung solcher Verträge zu untersuchen.
+> Die Funktion dient nur zum Komfort; es wird keine Genauigkeit garantiert. Sie sollten sich nicht darauf beziehen, um die Einhaltung von Microsoft-Volumenlizenzverträgen zu bestätigen. Die erfassten Daten werden nicht von Microsoft genutzt, um Verstöße gegen Lizenzverträge mit Microsoft bzw. um die Einhaltung solcher Verträge zu untersuchen.
 >
 > Lizenzen, die Sie zu Intune hinzufügen, wirken sich nicht auf Ihre Lizenzverträge oder auf die Nutzungsberechtigungen für Ihre Software aus. Wenn Sie beispielsweise ein Lizenzvertragsnummernpaar aus Intune löschen, werden keine Lizenzverträge zwischen Ihnen und Microsoft gelöscht oder annulliert.
 
@@ -174,7 +174,6 @@ Die Listenansicht **Alle Verträge** wird angezeigt.
 ## <a name="manage-license-agreements"></a>Verwalten von Lizenzverträgen
 Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie können Lizenzgruppen verwenden, um Ihre Lizenzverträge in Einheiten zu organisieren, die für Ihre Organisation logisch sind. Darüber hinaus können Sie Lizenzverträge löschen, die Sie zuvor erstellt haben.
 
-
 |||
 |-|-|
 |Aufgabe|Details|
@@ -182,4 +181,3 @@ Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie könne
 |Umbenennen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe bearbeiten**.|
 |Löschen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe löschen**. **Tipp:** Alle Lizenzen in der Gruppe mit zu löschenden Lizenzen werden in die Lizenzgruppe **Nicht zugewiesene Verträge** verschoben.|
 |Löschen von Lizenzverträgen|Wählen Sie im Arbeitsbereich **Lizenzen** einen Vertrag aus, und klicken Sie auf **Löschen**. **Tipp:** Klicken Sie nach dem Löschen von Volumenlizenzverträgen zum Aktualisieren der Lizenzinformationen auf der Seite **Übersicht über Lizenzen** oder auf der Registerkarte **Allgemein** für eine bestimmte Lizenzgruppe auf **Jetzt aktualisieren**.|
-

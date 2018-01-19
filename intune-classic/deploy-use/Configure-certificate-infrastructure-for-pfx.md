@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ff3a035f82be7d13b80ac5b7a2db039cc004e4f
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: ae3c53339ee50b0f007c7ab6d28371a0435eebd4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>Konfigurieren der Zertifikatinfrastruktur
 
@@ -38,21 +38,21 @@ Damit Sie PFX-Zertifikatprofile verwenden können, benötigen Sie zusätzlich zu
 ## <a name="on-premises-infrastructure-description"></a>Beschreibung der lokalen Infrastruktur
 
 
-- **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
+-    **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
 
-- **Zertifizierungsstelle**: Eine Unternehmenszertifizierungsstelle (Certification Authority; CA), die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Anleitungen zum Einrichten einer Zertifizierungsstelle finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
-   Wenn die Zertifizierungsstelle unter Windows Server 2008 R2 ausgeführt wird, müssen Sie [den Hotfix von KB2483564 installieren](http://support.microsoft.com/kb/2483564/).
+-  **Zertifizierungsstelle**: Eine Unternehmenszertifizierungsstelle (Certification Authority; CA), die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Anleitungen zum Einrichten einer Zertifizierungsstelle finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
+    Wenn die Zertifizierungsstelle unter Windows Server 2008 R2 ausgeführt wird, müssen Sie [den Hotfix von KB2483564 installieren](http://support.microsoft.com/kb/2483564/).
 
-- **Computer, der mit der Zertifizierungsstelle kommunizieren kann**: Verwenden Sie alternativ den Computer der Zertifizierungsstelle selbst.
-- **Microsoft Intune-Zertifikatconnector**: Sie verwenden die Intune-Verwaltungskonsole zum Herunterladen des Installationsprogramms für den **Zertifikatconnector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten. Installieren Sie für PFX-Zertifikatprofile den Zertifikatconnector auf dem Computer, der mit der Zertifizierungsstelle kommuniziert.
-- **Webanwendungsproxy-Server** (optional): Sie können einen Server mit Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP) verwenden. Diese Konfiguration:
-   -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
-   -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
+-  **Computer, der mit der Zertifizierungsstelle kommunizieren kann**: Verwenden Sie alternativ den Computer der Zertifizierungsstelle selbst.
+-  **Microsoft Intune-Zertifikatconnector**: Sie verwenden die Intune-Verwaltungskonsole zum Herunterladen des Installationsprogramms für den **Zertifikatconnector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten. Installieren Sie für PFX-Zertifikatprofile den Zertifikatconnector auf dem Computer, der mit der Zertifizierungsstelle kommuniziert.
+-  **Webanwendungsproxy-Server** (optional): Sie können einen Server mit Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP) verwenden. Diese Konfiguration:
+    -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
+    -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
 
-  > [!NOTE]           
-  > -    Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx), das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service; NDES) verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](http://support.microsoft.com/kb/3013769)enthalten oder kann auch einzeln von [KB3011135](http://support.microsoft.com/kb/3011135)heruntergeladen werden.
-  >-  Zudem muss der Server, der den WAP hostet, über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wird. Ferner muss das SSL-Zertifikat, das auf dem NDES-Server verwendet wird, vertrauenswürdig sein. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Server herzustellen.
-   Weitere Informationen über Zertifikate für WAP finden Sie im Abschnitt **Planen von Zertifikaten** des Themas [Installieren und Konfigurieren des Webanwendungsproxys für die Veröffentlichung interner Anwendungen](https://technet.microsoft.com/library/dn383650.aspx). Allgemeine Informationen zu WAP-Servern finden Sie unter [Verwenden des Webanwendungsproxys](http://technet.microsoft.com/library/dn584113.aspx).|
+ > [!NOTE]           
+> -    Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx), das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service; NDES) verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](http://support.microsoft.com/kb/3013769)enthalten oder kann auch einzeln von [KB3011135](http://support.microsoft.com/kb/3011135)heruntergeladen werden.
+>-  Zudem muss der Server, der den WAP hostet, über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wird. Ferner muss das SSL-Zertifikat, das auf dem NDES-Server verwendet wird, vertrauenswürdig sein. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Server herzustellen.
+    Weitere Informationen über Zertifikate für WAP finden Sie im Abschnitt **Planen von Zertifikaten** des Themas [Installieren und Konfigurieren des Webanwendungsproxys für die Veröffentlichung interner Anwendungen](https://technet.microsoft.com/library/dn383650.aspx). Allgemeine Informationen zu WAP-Servern finden Sie unter [Verwenden des Webanwendungsproxys](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### <a name="certificates-and-templates"></a>Zertifikate und Vorlagen
@@ -94,7 +94,7 @@ Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
     Um die Zertifizierungsstelle so zu konfigurieren, dass der Antragsteller die Gültigkeitsdauer festlegen kann, führen Sie auf der Zertifizierungsstelle die folgenden Befehle aus:
 
-    ein.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
     b.  **net stop certsvc**
 
@@ -102,7 +102,7 @@ Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
 3.  Verwenden Sie auf der ausstellenden Zertifizierungsstelle das Zertifizierungsstellen-Snap-In, um die Zertifikatvorlage zu veröffentlichen.
 
-    ein.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion**-&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
+    a.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion**-&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
 
     b.  Überprüfen Sie, ob die Vorlage veröffentlicht wurde, indem Sie sie im Ordner **Zertifikatvorlagen** anzeigen.
 
@@ -123,36 +123,36 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>So wird der Certificate Connector heruntergeladen, installiert und konfiguriert
 
-1. Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie anschließend auf **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Certificate Connector** &gt; **Certificate Connector herunterladen**.
+1.  Öffnen Sie die [Intune-Verwaltungskonsole](https://manage.microsoft.com), und klicken Sie anschließend auf **Verwaltung** &gt; **Verwaltung mobiler Geräte** &gt; **Certificate Connector** &gt; **Certificate Connector herunterladen**.
 
-2. Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) aus.
+2.  Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) aus.
 
-   Führen Sie das Installationsprogramm auf dem Computer aus, der eine Verbindung mit der Zertifizierungsstelle herstellen kann. Wählen Sie die Option „PFX-Verteilung“ aus, und klicken Sie auf **Installieren**. Fahren Sie nach Abschluss der Installation mit dem Erstellen eines Zertifikatprofils fort, wie unter [Konfigurieren von Zertifikatprofilen](configure-intune-certificate-profiles.md) beschrieben.
+  Führen Sie das Installationsprogramm auf dem Computer aus, der eine Verbindung mit der Zertifizierungsstelle herstellen kann. Wählen Sie die Option „PFX-Verteilung“ aus, und klicken Sie auf **Installieren**. Fahren Sie nach Abschluss der Installation mit dem Erstellen eines Zertifikatprofils fort, wie unter [Konfigurieren von Zertifikatprofilen](configure-intune-certificate-profiles.md) beschrieben.
 
    <!-- Not sure about step 3 below -->
 
-3. Wenn Sie zur Eingabe des Clientzertifikats für den Certificate Connector aufgefordert werden, wählen Sie **Auswählen** aus, und wählen Sie das **Clientauthentifizierungszertifikat** aus, das Sie in Aufgabe 3 installiert haben.
+3.  Wenn Sie zur Eingabe des Clientzertifikats für den Certificate Connector aufgefordert werden, wählen Sie **Auswählen** aus, und wählen Sie das **Clientauthentifizierungszertifikat** aus, das Sie in Aufgabe 3 installiert haben.
 
-   Nachdem Sie das Clientauthentifizierungszertifikat ausgewählt haben, wird erneut die Oberfläche **Clientzertifikat für den Microsoft Intune-Zertifikatconnector** angezeigt. Auch wenn das ausgewählte Zertifikat nicht angezeigt wird, klicken Sie auf **Weiter**, um die Eigenschaften des Zertifikats anzuzeigen. Wählen Sie **Weiter**, und klicken Sie anschließend **Installieren**.
+    Nachdem Sie das Clientauthentifizierungszertifikat ausgewählt haben, wird erneut die Oberfläche **Clientzertifikat für den Microsoft Intune-Zertifikatconnector** angezeigt. Auch wenn das ausgewählte Zertifikat nicht angezeigt wird, klicken Sie auf **Weiter**, um die Eigenschaften des Zertifikats anzuzeigen. Wählen Sie **Weiter**, und klicken Sie anschließend **Installieren**.
 
-4. Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
+4.  Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
 
-   > [!TIP]
-   > Wenn Sie den Assistenten schließen, bevor Sie die Benutzeroberfläche des Zertifikatconnectors starten, können Sie sie mit dem folgenden Befehl erneut öffnen:
-   >
-   > **&lt;Installationspfad&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+    > [!TIP]
+    > Wenn Sie den Assistenten schließen, bevor Sie die Benutzeroberfläche des Zertifikatconnectors starten, können Sie sie mit dem folgenden Befehl erneut öffnen:
+    >
+    > **&lt;Installationspfad&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5. Gehen Sie auf der Benutzeroberfläche von **Zertifikatconnector** so vor:
+5.  Gehen Sie auf der Benutzeroberfläche von **Zertifikatconnector** so vor:
 
-   ein. Klicken Sie auf **Anmelden**, und geben Sie die Anmeldeinformationen des Intune-Dienstadministrators oder eines Mandantenadministrators mit der globalen Administratorberechtigung ein.
+    a. Klicken Sie auf **Anmelden**, und geben Sie die Anmeldeinformationen des Intune-Dienstadministrators oder eines Mandantenadministrators mit der globalen Administratorberechtigung ein.
 
-   b. Wählen Sie die Registerkarte **Erweitert** aus, und geben Sie anschließend die Anmeldeinformationen für ein Konto ein, das über die Berechtigung **Zertifikate ausstellen und verwalten** für die ausstellende Zertifizierungsstelle verfügt.
+    b. Wählen Sie die Registerkarte **Erweitert** aus, und geben Sie anschließend die Anmeldeinformationen für ein Konto ein, das über die Berechtigung **Zertifikate ausstellen und verwalten** für die ausstellende Zertifizierungsstelle verfügt.
 
-   c. Wählen Sie **Anwenden** aus.
+    c. Wählen Sie **Anwenden** aus.
 
-   Sie können jetzt die Benutzeroberfläche des Zertifikatconnectors schließen.
+    Sie können jetzt die Benutzeroberfläche des Zertifikatconnectors schließen.
 
-6. Öffnen Sie eine Eingabeaufforderung, und geben Sie **services.msc** ein. Drücken Sie anschließend die **EINGABETASTE**, führen Sie einen Rechtsklick auf **Intune-Connectordienst** aus, und wählen Sie **Neu starten** aus.
+6.  Öffnen Sie eine Eingabeaufforderung, und geben Sie **services.msc** ein. Drücken Sie anschließend die **EINGABETASTE**, führen Sie einen Rechtsklick auf **Intune-Connectordienst** aus, und wählen Sie **Neu starten** aus.
 
 
 ### <a name="next-steps"></a>Nächste Schritte

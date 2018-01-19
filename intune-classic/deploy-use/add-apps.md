@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ede143161106efee73c44414bebc4ce9e8b2a696
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d2547ee2270cdfd9eb9baf52249cfc3e91ef693e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Hinzufügen von Apps mit Microsoft Intune
 
@@ -39,7 +39,6 @@ Nehmen Sie sich vor der Bereitstellung von Apps mit Microsoft Intune etwas Zeit,
 |**Windows Phone-App-Paket (&#42;.xap, .appx, .appxbundle)**|Sie benötigen ein Codesignaturzertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows Phone-Verwaltung mit Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows-App-Paket (.appx, .appxbundle)**|Sie benötigen ein Codesignaturzertifikat für mobile Geräte, um Apps bereitstellen zu können. Weitere Informationen finden Sie unter [Einrichten der Windows-Geräteverwaltung mit Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer über MDM (&#42;.msi)**|Mit dieser App können Sie Windows Installer-basierte Apps auf registrierten PCs erstellen und bereitstellen, auf denen Windows 10 ausgeführt wird. Diese PCs werden mithilfe der Verwaltung mobiler Geräte (MDM) verwaltet.<br /><br />Sie können nur eine einzelne Datei mit der Erweiterung „MSI“ hochladen.<br><br>Produktcode und Produktversion der Datei werden zur Erkennung der App verwendet.<br><br>Es wird das standardmäßige Verhalten bei Neustart der App verwendet. Intune steuert dieses Verhalten nicht.<br><br>Pro Benutzer definierte MSI-Pakete werden für einen einzelnen Benutzer installiert.<br><br>Pro Gerät definierte MSI-Pakete werden für alle Benutzer des Geräts installiert.<br><br>MSI-Pakete im Dualmodus werden zurzeit nur für alle Benutzer des Geräts installiert.<br><br>App-Updates werden unterstützt, wenn jede Version den gleichen MSI-Produktcode aufweist.<br>
-
 Alle App-Typen mit Softwareinstallationsprogramm sind in Ihren Cloudspeicher hochgeladen.
 
 ### <a name="external-link"></a>**Externer Link**

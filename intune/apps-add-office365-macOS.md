@@ -1,7 +1,7 @@
 ---
-title: "Installieren Sie Office 365 für MacOS-Geräte mit Intune"
+title: "Installieren von Office 365 für macOS-Geräte mit Intune"
 titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Intune verwenden, installieren Sie Office 365-apps auf Geräten MacOS erleichtern."
+description: "Erfahren Sie, wie Sie Intune verwenden können, um Office 365-Apps einfacher auf macOS-Geräten installieren zu können."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -16,64 +16,64 @@ ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/12/2018
 ---
-# <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu MacOS-Geräten mit Microsoft Intune
+# <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
-Diese app-Typ ganz einfach für Office 365-apps auf Geräten MacOS zuweisen. Diese neue Art der app können Sie Word, Excel, PowerPoint, Outlook und OneNote installieren. Diese apps werden auch mit dem Microsoft AutoUpdate (MAU), um die apps sicherer und auf dem neuesten Stand zu halten. Die Apps, die als eine App in der Liste der Apps in der Intune-Konsole erscheinen sollen.
+Dieser App-Typ macht es Ihnen einfach, Office 365-Apps macOS-Geräten zuzuweisen. Dieser neue App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese Apps sind auch im Lieferumfang von Microsoft AutoUpdate (MAU) enthalten, um die Apps sicherer und auf dem neuesten Stand zu halten. Die Apps, die als eine App in der Liste der Apps in der Intune-Konsole erscheinen sollen.
 
 
 ## <a name="before-you-start"></a>Vorbereitung
 
-- Geräte, die auf die Bereitstellung dieser apps müssen MacOS 10.10 oder höher ausgeführt werden.
-- Intune unterstützt nur Hinzufügen von Office-apps, die mit Office 2016 für Mac-Suite enthalten.
-- Wenn alle Office-apps geöffnet werden, wenn Intune das app-Suite installiert wird, können Endbenutzer-Daten aus nicht gespeicherte Dateien verloren gehen.
+- Auf Geräten, für die Sie diese Apps bereitstellen, muss macOS 10.10 oder höher ausgeführt werden.
+- Intune unterstützt nur das Hinzufügen von Office-Apps, die in der Office 2016 für Mac-Suite enthalten sind.
+- Wenn bei der Installation der App-Suite durch Intune Office-Apps geöffnet sind, verlieren Endbenutzer möglicherweise Daten aus nicht gespeicherten Dateien.
 
 
 ## <a name="get-started"></a>Erste Schritte
-Fügen Sie Office 365 using der **Apps** Blatt.
+Fügen Sie Office 365 auf dem Blatt **Apps** hinzu.
 1.  Melden Sie sich beim Azure-Portal an.
 2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3.  Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-4.  In der **mobilapps** arbeitsauslastung, wählen Sie **Apps** in der **verwalten** Gruppe. Wählen Sie **Hinzufügen** aus.
-5.  Auf der **App hinzufügen** Blatt, wählen Sie **Office 365** > **MacOS**.
+4.  Klicken Sie in der Workload **Mobile Apps** auf **Apps** in der Gruppe **Verwalten**. Wählen Sie **Hinzufügen** aus.
+5.  Wählen Sie auf dem Blatt **App hinzufügen** die Optionen **Office 365** > **macOS** aus.
 6.  Wählen Sie **Hinzufügen** aus.
 
 ## <a name="configure-the-app-suite"></a>Konfigurieren der App-Sammlung
 
-Geben Sie Informationen zu den app-Suite. Diese Informationen helfen Ihnen, die Sammlung in Intune zu identifizieren, und Endbenutzer können sie in der Unternehmensportal-App finden.
+Stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen Ihnen, die Sammlung in Intune zu identifizieren, und Endbenutzer können sie in der Unternehmensportal-App finden.
 
 1.  Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Suite Information** (Informationen über die App-Sammlung) aus.
 2.  Geben Sie die folgenden Informationen an:
     - **Sammlungsname:** Geben Sie den Namen der App-Sammlung ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Sammlungsnamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Sammlungsbeschreibung:** Geben Sie eine Beschreibung für die Sammlung ein.
-    - **Publisher** -Microsoft angezeigt wird, wie der Verleger.
+    - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
     - **Kategorie:** Wählen Sie optional eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch wird es für Benutzer leichter, die App-Sammlung im Unternehmensportal zu finden.
-    - **Als ausgewählte app im Unternehmensportal anzeigen** -Dies zeigt die app-Suite herausgehoben auf der Hauptseite des Unternehmensportals, wenn Benutzer nach apps suchen.
+    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Hierdurch wird die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben angezeigt, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen:** Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
-    - **Entwickler** -Microsoft wird als der Entwickler angezeigt.
-    - **Besitzer** -Microsoft als Besitzer wird angezeigt.
+    - **Entwickler**: Als Entwickler wird Microsoft angezeigt.
+    - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
     - **Anmerkungen:** Geben Sie Hinweise zu dieser App ein.
     - **Symbol hochladen:** Laden Sie ein Symbol hoch, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
-3.  Wählen Sie **OK** aus. Die Suite wird in der Liste der apps als einzelnen Eintrag angezeigt.
+3.  Wählen Sie **OK** aus. Die Suite wird in der Liste der Apps als einzelnen Eintrag angezeigt.
 
-## <a name="configure-app-assignments"></a>Konfigurieren von app-Zuweisungen
+## <a name="configure-app-assignments"></a>Konfigurieren von App-Zuweisungen
 
-Konfigurieren Sie in diesem Schritt die Zuweisungen für die app-Suite. Beachten Sie, dass der verfügbare app-Typ in Kürze verfügbar ist.
+In diesem Schritt konfigurieren Sie Zuweisungen für die App-Suite. Beachten Sie, dass der verfügbare App-Typ in Kürze verfügbar ist.
 
-1.  Wählen Sie die app-Sammlung in der Liste der apps und **Zuweisungen**.
-2.  Wählen Sie **wählen Sie Gruppen**.
-3.  Weisen Sie die Sammlung an die Gruppen, denen, die Sie auswählen. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](/intune/apps-deploy).
+1.  Wählen Sie die App-Suite in der Liste der Apps und dann **Zuweisungen** aus.
+2.  Klicken Sie auf **Gruppen auswählen**.
+3.  Ordnen Sie die Suite den von Ihnen ausgewählten Gruppen zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](/intune/apps-deploy).
 4.  Wählen Sie für jede Gruppe **erfordern installieren**.
         >[!Note]
         > You cannot uninstall Office 365 through Intune.
 
-5. Wählen Sie **speichern** um Ihre Zuweisungen zu übernehmen.
+5. Wählen Sie **Speichern**, um Ihre Zuweisungen zu committen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Zum Hinzufügen von Office 365-apps auf Windows 10-Gerät finden Sie unter [Zuweisen von Office 365 ProPlus 2016 apps für Windows 10-Geräte mit Microsoft Intune](/intune/apps-add-office365).
+Weitere Informationen zum Hinzufügen von Office 365-Apps zu Windows 10-Geräten finden Sie unter [Wie Sie Office 365 ProPlus 2016-Apps mit Microsoft Intune](/intune/apps-add-office365) Windows 10-Geräten zuweisen.

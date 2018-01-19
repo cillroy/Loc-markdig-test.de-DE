@@ -1,6 +1,6 @@
 ---
 title: "Einstellungen für Konformitätsrichtlinien für iOS-Geräte"
-description: "Dieses Thema beschreibt die Regeln und Einstellungen, die Sie in einer Konformitätsrichtlinie für iOS-Geräte festlegen können."
+description: "Dieses Thema beschreibt die Regeln und Einstellungen, die Sie in einer Kompatibilitätsrichtlinie für iOS-Geräte festlegen können."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7b715e9f950db712dbd632ad360aed62a1922ac2
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 5486edbecfcd349ff03b0f72b66e32cb7fc61e2c
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte in Microsoft Intune
 
@@ -29,9 +29,9 @@ Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte m
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folgenden Optionen:
 > [!div class="op_single_selector"]
-> - [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
-> - [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
-> - [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+- [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 ### <a name="password"></a>Kennwort

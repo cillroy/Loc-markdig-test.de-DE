@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21b09f2ea4944fc327fc38943ea34273622fd0c2
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 9b003afe6cc5b6a3630f049e8f51de9b5e41b35e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Blockieren von Apps, die keine moderne Authentifizierung verwenden (ADAL)
 
@@ -34,6 +34,7 @@ Zum Blockieren dieser Apps wird Folgendes empfohlen:
 
 ```
  Set-SPOTenant -LegacyAuthProtocolsEnabled $false
+
 ```
 
 

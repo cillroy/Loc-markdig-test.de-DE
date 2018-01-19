@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf37c6929040b12592776a9f40f63223ad2ef101
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 2d494dd0270cddac8ec449689357616c3ac7c48b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -49,8 +49,8 @@ Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Gerä
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Ja |Ja |
-|**Android**| Nein |Ja |
+|**iOS** |Ja|Ja|
+|**Android**| Nein |Ja|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 Das App SDK ist in erster Linie für Kunden konzipiert, die über Apps im Apple App Store oder Google Play Store verfügen und diese Apps mit Intune verwalten möchten. Das SDK kann jedoch in jede App integriert werden, auch in branchenspezifische Apps.
@@ -102,7 +102,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Angestrebte Anwendungskonfiguration |X||
 |Unterstützung von mehreren Identitäten|X||
 |Anpassbarer Stil |X|||
-
 ## <a name="next-steps"></a>Nächste Schritte
 
 Weitere Informationen zu App-Schutzrichtlinien und Intune finden Sie in den folgenden Themen:

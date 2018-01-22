@@ -14,11 +14,11 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 9bb4d39545964dd5c8e0bb5efe767e1315c7f6de
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4a9413e36fe16882aac243cbb51ed72db4102ffe
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Installieren von Lookout for Work auf Ihrem iOS-Gerät
 
@@ -28,17 +28,17 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt Ihr Unternehmen von Ihnen,
 
 ## <a name="what-you-need-to-do"></a>Auszuführende Schritte
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
+1. Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von Lookout for Work auf Ihrem Gerät zuzulassen.
 
-  ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-mtd-install-app-request.png)
+   ![Auf „Installieren“ tippen, um Lookout for Work zu installieren](./media/ios-mtd-install-app-request.png)
 
 2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
 
-  ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-location-services.png)
+   ![Tippen auf „Einstellungen“ und anschließend auf „Ortungsdienste“](./media/ios-lfw-allow-location-services.png)
 
 3. Überprüfen Sie die Berechtigungen, die Lookout for Work benötigt, und tippen Sie auf **Weiter**.
 
-  ![Sie sind jetzt mit Lookout for Work verbunden](./media/ios-lfw-permissions-lookout-needs.png)
+   ![Sie sind jetzt mit Lookout for Work verbunden](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Tippen Sie bei der Aufforderung, bei der Sie gefragt werden, ob Sie Benachrichtigungen von Lookout for Work zulassen möchten, auf **Zulassen**.
 

@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aab3c202272d91f9e1596eae6f740f68f049a657
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 6286a0a844cf1d9e665ed29d1eba7fb25876a8e6
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="implement-your-intune-plan"></a>Implementieren Ihres Intune-Plans
 
@@ -66,8 +66,8 @@ Dieser Schritt ist optional. Sie benötigen ein Office 365-Abonnement, wenn Sie 
 Möglicherweise müssen Sie je nach den Anwendungsszenarios und Anforderungen Ihrer Intune-Bereitstellung Benutzer oder Sicherheitsgruppen in Active Directory oder Azure Active Directory hinzufügen. Überprüfen Sie Ihre aktuellen Benutzer und Sicherheitsgruppen in Active Directory oder Azure Active Directory, und ermitteln Sie, ob diese vollständig Ihren Anforderungen entsprechen. Wenn Sie neue Benutzer und Sicherheitsgruppen hinzufügen, wird empfohlen, diese in Active Directory hinzuzufügen und sie über Azure AD Connect mit Azure Active Directory zu synchronisieren.
 
 
--   Weitere Informationen zum [Hinzufügen von Benutzern/Gruppen in Intune](users-permissions-add.md).
-<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
+- Weitere Informationen zum [Hinzufügen von Benutzern/Gruppen in Intune](users-permissions-add.md).
+  <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
 
 
 

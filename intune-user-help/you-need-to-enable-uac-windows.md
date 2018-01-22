@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8f24629cbf6768e49c244ee6dfe31f0035d052a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 317cf77f27597f460826cc13572761923df34508
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-enable-user-access-control"></a>Aktivieren der Benutzerzugriffssteuerung
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 55fd0e87545666220721c4e874bcf0cc6e9b5e88
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: cd5c4a2cbd0e746096c4f9fbe6ab894d781d373c
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung
 

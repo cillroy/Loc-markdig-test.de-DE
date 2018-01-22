@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 961f59dbadfb4ddd5c087497f787d6ee30c46a87
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bbc1ae638b4e18d3b8bf0614da4016e5be1f2cf8
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
@@ -63,13 +63,13 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 2. Geben Sie im Abschnitt „Anwendungskonfiguration“ die folgende Einstellung ein:
 
-  **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
+   **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
-  Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
+   Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 
@@ -100,5 +100,5 @@ Die Richtlinieneinstellung **Require app PIN (App-PIN erforderlich)** kann einfa
 Kümmern Sie sich zuerst um das [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für die iOS-App. Unter [Überprüfen der App-Schutzrichtlinien](app-protection-policies-validate.md) erhalten Sie weitere Informationen zum Testen einer App-Schutzrichtlinie.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policy.md)

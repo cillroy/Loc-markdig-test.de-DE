@@ -5,12 +5,12 @@
   - Mac OS X 10.9 und höher
 
 ### <a name="google"></a>Google
-  - Android 4.4 und höher (einschließlich Samsung KNOX Standard 4.4 und höher)*
-  - Android for Work ([Voraussetzungen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
+- Android 4.4 und höher (einschließlich Samsung KNOX Standard 4.4 und höher)*
+- Android for Work ([Voraussetzungen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 ### <a name="microsoft"></a>Microsoft
   - Windows 10 (Home, S, Pro, Education und Enterprise)
-  - Windows 10 Mobile
+  - Windows 10 Mobile
   - Geräte unter Windows 10 IoT Enterprise (x86, x64)
   - Geräte unter Windows 10 IoT Mobile Enterprise
   - Windows Holographic und Windows Holographic Enterprise

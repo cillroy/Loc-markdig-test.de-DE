@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1a7e47b92a2b10996ba9312713234b0d0af9468e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7cdb89431b18cd46d54f76bce9e67f2a40f157a8
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>Verwenden Ihres iOS-Geräts mit Intune
 
@@ -40,7 +40,7 @@ Intune unterstützt derzeit iOS 9.0 und höher.
 
 - [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 - [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
 - [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-ios.md)

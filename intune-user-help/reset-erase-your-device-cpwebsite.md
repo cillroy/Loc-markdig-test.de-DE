@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69cfa31fc1a819bb26a09bee4e5678899470342c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3ef122b5e22b1bf562ed4d75c726e697f08abbe5
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
 
@@ -33,17 +33,17 @@ Wenn Sie Ihr Gerät zurücksetzen, wird es im Unternehmensportal nicht mehr aufg
 
 So setzen Sie Ihr Gerät zurück:
 
-1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __menu__ (Menü) und dann auf __My Devices__ (Meine Geräte).
+1. Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __menu__ (Menü) und dann auf __My Devices__ (Meine Geräte).
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie umbenennen möchten.
 
-  ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die **Rücksetztaste**.
+3. Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die **Rücksetztaste**.
 
-    ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
+   ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
 
-4.  Eine Warnmeldung wird angezeigt, dass Sie im Begriff sind, durch das Zurücksetzen auf die Werkseinstellungen alle Inhalte Ihres Geräts zu löschen. Tippen Sie auf **Zurücksetzen**, um den Vorgang zu bestätigen.
+4. Eine Warnmeldung wird angezeigt, dass Sie im Begriff sind, durch das Zurücksetzen auf die Werkseinstellungen alle Inhalte Ihres Geräts zu löschen. Tippen Sie auf **Zurücksetzen**, um den Vorgang zu bestätigen.
 
 Ihr Gerät wurde zurückgesetzt.
 

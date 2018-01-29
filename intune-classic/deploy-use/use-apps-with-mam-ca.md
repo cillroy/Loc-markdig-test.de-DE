@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4eebc3c78626b9ef1ddbcef976f5b49cadc4b5ff
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a8873a300e34bd62e184b9df1727f856eac71b81
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Was ist bei der Verwendung einer App mit App-basierter Zertifizierungsstelle (CA) zu erwarten?
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die App-basierte CA überprüft die Identität der genehmigten Anwendung mithilfe einer Broker-App, die auf dem Gerät vorhanden sein muss:
 *  Unter **iOS** ist die **Azure Authenticator-App** die Broker-App.
@@ -40,8 +40,8 @@ Im Folgenden finden Sie eine Liste der Eigenschaften, die direkt vom Gerät abge
 
 > [!NOTE]
 > Auf Android-Geräten:
-  * Die Unternehmensportal-App muss auf dem Gerät installiert sein, der Endbenutzer muss sich aber nicht bei der App anmelden.
-  * Die Geräteregistrierung muss über die OneDrive- oder Outlook-App erfolgen.
+>   * Die Unternehmensportal-App muss auf dem Gerät installiert sein, der Endbenutzer muss sich aber nicht bei der App anmelden.
+>   * Die Geräteregistrierung muss über die OneDrive- oder Outlook-App erfolgen.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>So entfernen Sie ein Gerät aus der Azure AD-Registrierung.
 Eine Möglichkeit ist, die Geräteregistrierung über die Azure AD-Verwaltungskonsole zu entfernen, was normalerweise vom IT-Administrator durchgeführt wird.  Es kann aber auch vom Endbenutzer auf dem Gerät selbst durchgeführt werden.
@@ -52,7 +52,7 @@ Eine Möglichkeit ist, die Geräteregistrierung über die Azure AD-Verwaltungsko
 
 ## <a name="app-based-ca-with-device-based-ca"></a>App-basierte Zertifizierungsstelle mit gerätebasierter Zertifizierungsstelle  
 
-Sie können über die [Intune-Administratorkonsole](https://manage.microsoft.com) oder die [Azure AD Premium-Verwaltungskonsole] (https://manage.windowsazure.com) einen [bedingten Zugriff basierend auf Gerätekompatibilität](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**bedingten Zugriff für Geräte**) konfigurieren. Bei diesem bedingten Zugriff dürfen Benutzer nur über mit Intune verwaltete Geräte, die mit der Intune-Gerätekompatibilitätsrichtlinie kompatibel sind, oder über in die Domäne eingebundene PCs eine Verbindung mit Exchange Online herstellen.  Wenn ein Benutzer mindestens einer Sicherheitsgruppe angehört, die sowohl für die App-basierte CA als auch für Richtlinien für den bedingten Zugriff für Geräte (Device CA) vorgesehen ist, muss der Benutzer eine der beiden folgenden Anforderungen erfüllen:
+Sie können konfigurieren, [bedingten Zugriff basierend auf dem Gerätekompatibilität](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>Gerät Zertifizierungsstelle</strong>) auf die [Intune-Administratorkonsole](https://manage.microsoft.com) oder die [Azure AD Premium Verwaltungskonsole](https://manage.windowsazure.com). Bei diesem bedingten Zugriff dürfen Benutzer nur über mit Intune verwaltete Geräte, die mit der Intune-Gerätekompatibilitätsrichtlinie kompatibel sind, oder über in die Domäne eingebundene PCs eine Verbindung mit Exchange Online herstellen.  Wenn ein Benutzer mindestens einer Sicherheitsgruppe angehört, die sowohl für die App-basierte CA als auch für Richtlinien für den bedingten Zugriff für Geräte (Device CA) vorgesehen ist, muss der Benutzer eine der beiden folgenden Anforderungen erfüllen:
 * Die App, die für den Zugriff auf den Dienst verwendet wird, ist eine mobile App, die von 
 * unterstützt wird. Auf dem Gerät auf dem die App ausgeführt wird, ist **iOS Authenticator (für iOS-Geräte)** bzw. die **Unternehmensportal-App (für Android-Geräte)** installiert.
 * Das Gerät, das für den Zugriff auf den Dienst verwendet wird, wird von **Intune verwaltet und ist kompatibel** mit der Intune-Gerätekompatibilitätsrichtlinie, oder es handelt sich um einen **in die Domäne eingebundenen PC**.  Im Folgenden finden Sie einige Beispiele zur Veranschaulichung:
@@ -64,6 +64,6 @@ Sie können über die [Intune-Administratorkonsole](https://manage.microsoft.com
 
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](block-apps-with-no-modern-authentication.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

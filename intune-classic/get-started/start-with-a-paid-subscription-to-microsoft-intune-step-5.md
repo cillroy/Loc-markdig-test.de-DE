@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32816a2cde9619586afbef10d67302f5ee0fff4e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8427e2dcb8d3bc3ac4c46fd13c719aca2b3dc81
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Erstellen von Gruppen zum Organisieren von Benutzern und Geräten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema erfahren Administratoren, wie sie Benutzergruppen in Intune erstellen können.
 
@@ -69,7 +69,7 @@ Sie finden die neue Gruppe in der Liste **Gruppen** im Arbeitsbereich **Gruppen*
 ## <a name="create-a-user-group"></a>Erstellen einer Benutzergruppe
 Verwenden Sie Benutzergruppen, um Software- und Geräterichtlinien bereitzustellen. Richten Sie z. B. die Gruppe „Intune-Benutzer“ mithilfe der folgenden Schritte ein:
 
-1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Gruppen** > **Übersicht** > **Gruppe erstellen** aus.
+1.  Wählen Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) **Gruppen** > **Übersicht** > **Gruppe erstellen** aus.
 
 2.  Geben Sie unter **Gruppenname** „Intune-Benutzer“ ein, und wählen Sie aus der übergeordneten Gruppenliste **Alle Benutzer** und anschließend **Weiter** aus.
 
@@ -83,5 +83,5 @@ Verwenden Sie Benutzergruppen, um Software- und Geräterichtlinien bereitzustell
 
 Sie finden die neue Gruppe in der Liste **Gruppen** im Arbeitsbereich **Gruppen** unter **Alle Benutzer**. Hier können Sie die Gruppe auch bearbeiten oder löschen.
 
->[!div class="step-by-step"]
-/intune/licenses-assign [&larr; **Verwalten von Intune-Lizenzen**](/intune/licenses-assign)       [**Erstellen von Richtlinien und Apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign [&larr; **Verwalten von Intune-Lizenzen**](/intune/licenses-assign)       [**Erstellen von Richtlinien und Apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

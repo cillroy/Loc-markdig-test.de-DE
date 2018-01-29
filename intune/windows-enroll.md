@@ -14,15 +14,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f5641097ec2bca9bfd81c149f1f0558b8714d067
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-windows-devices"></a>Windows-Geräte registrieren
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema hilft IT-Administratoren, die Windows-Registrierung für ihre Benutzer zu vereinfachen. Sobald Sie [Intune eingerichtet](setup-steps.md) haben, können Benutzer Windows-Geräte registrieren, indem sie sich mit ihrem Geschäfts-, Schul- oder Unikonto [anmelden](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).  
 
@@ -47,7 +47,7 @@ Organisationen, die die automatische Registrierung nutzen, können mithilfe der 
 **Unterstützung mehrerer Benutzer**<br>
 Für Geräte, die das Windows 10 Creators Update ausführen und in die Azure Active Directory-Domäne eingebunden sind, haben wir Unterstützung für die Mehrbenutzerverwaltung hinzugefügt. Wenn sich Standardbenutzer mit ihren Azure AD-Anmeldeinformationen anmelden, erhalten sie Apps und Richtlinien, die ihrem Benutzernamen zugewiesen wurden. Benutzer können das Unternehmensportal derzeit nicht für Self-Service-Szenarien beispielsweise zum Installieren von Apps verwenden.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Vereinfachen der Windows-Registrierung ohne Azure AD Premium
 Sie können die Registrierung für Ihre Benutzer vereinfachen, indem Sie einen Domänennamenserver-Alias (DNS) (Eintragstyp CNAME) erstellen, der Registrierungsanforderungen automatisch an Intune-Server umleitet. Wenn Sie keinen DNS-CNAME-Ressourceneintrag erstellen, müssen Benutzer beim Herstellen einer Verbindung mit Intune den Intune-Servernamen angeben.

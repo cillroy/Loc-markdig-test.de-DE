@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4c9010093f41ad30d781e5975b2d0946eb7327a9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
@@ -26,7 +27,7 @@ Wenn Ihnen in einer Meldung angezeigt wird, dass die niedrigste zulässige Andro
 
 Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **Geräteinformationen**, und überprüfen Sie, ob sich das Wort „KNOX“ irgendwo auf dem Bildschirm befindet. Wenn dies der Fall ist, befolgen Sie die nachstehenden Anweisungen für Samsung KNOX.
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 ## <a name="for-most-android-devices-non-samsung-knox"></a>Für die meisten Android-Geräte (nicht Samsung KNOX)
 

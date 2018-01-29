@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: db38b3861a6ffbc88c796f4294242411131e051b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b704cb944340f7d53baf26ceec34d9d53d06f77f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Verwenden von Warnungen, um Benachrichtigungen durch Microsoft Intune zu erhalten
 
-[!INCLUDE[classic portal](../includes/classic-portal.md)]
+[!INCLUDE [classic portal](../includes/classic-portal.md)]
 
 Warnungen halten Sie über Ereignisse in Microsoft Intune auf dem Laufenden. Warnungen können Sie z. B. bei den folgenden Ereignissen benachrichtigen:
 - Ein Problem mit dem Exchange-Connector beeinflusst die Verwaltung mobiler Geräte.

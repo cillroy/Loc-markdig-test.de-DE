@@ -14,15 +14,15 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e2deb008b63fd9e9e9f37674c81745a0c8ccb04
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: c54613db5f8ae3c22b7ab811887874e792cf55bb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-conditional-access"></a>Was ist bedingter Zugriff?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Dieses Thema beschreibt den bedingten Zugriff für Enterprise Mobility + Security (EMS) und erläutert anschließend häufige Szenarien mit bedingtem Zugriff bei Verwendung von Intune.
 

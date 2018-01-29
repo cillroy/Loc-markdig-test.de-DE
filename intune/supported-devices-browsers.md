@@ -14,15 +14,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 134971bfa9a4f4f5b74e5a4c014ab3e465721f1f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 5ad660a18c8617351808af9b0b16b4757f997dd0
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="supported-devices-and-browsers"></a>Unterstützte Geräte und Browser
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Dieser Artikel richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zur Installation von Intune auf Ihrem Telefon finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions).
 
@@ -37,7 +37,7 @@ Sie sollten sich auch mit der [Nutzung der Netzwerkbandbreite durch Intune](netw
 
 Sie können die folgenden Geräte mit Intune MDM (Verwaltung mobiler Geräte, Mobile Device Management) verwalten:
 
-[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Unterstützte Samsung KNOX Standard-Geräte
 

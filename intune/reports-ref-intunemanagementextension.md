@@ -14,11 +14,11 @@ ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30908e4dbb55e16db0e253330175f65fb127d523
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 76b7b58a7d530ae0c4b60891fe3b1fb1108f2ee8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
 
@@ -50,10 +50,12 @@ Die Entität **IntuneManagementExtensionVersion** listet alle von IntuneManageme
 Die **IntuneManagementExtension** listet täglich den Integritätsstatus von IntuneManagementExtension auf jedem Windows 10-Gerät auf.
 Die Daten der letzten 60 Tage werden aufbewahrt. 
 
-| Eigenschaft  | Beschreibung | Beispiel |
-|---------|------------|--------|
-| DateKey |Eindeutiger Datumsbezeichner | 123 |
-| TenantKey |Eindeutiger Mandantenbezeichner | 456 |
-| DeviceKey |Eindeutiger Bezeichner des Geräts | 789 |
-| ExtensionVersionKey |Eindeutiger Bezeichner für die IntuneManagementExtension-Version. | 1 |
-| ExtensionStateKey|Eindeutiger Bezeichner des Integritätszustands | 2 |
+
+|      Eigenschaft       |                         Beschreibung                         | Beispiel |
+|---------------------|-------------------------------------------------------------|---------|
+|       DateKey       |               Eindeutiger Datumsbezeichner                |   123   |
+|      TenantKey      |              Eindeutiger Mandantenbezeichner               |   456   |
+|      DeviceKey      |              Eindeutiger Bezeichner des Geräts               |   789   |
+| ExtensionVersionKey | Eindeutiger Bezeichner für die IntuneManagementExtension-Version. |    1    |
+|  ExtensionStateKey  |             Eindeutiger Bezeichner des Integritätszustands              |    2    |
+

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 15f000fa464f613f4a77241e1271f323cabab248
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 283818c9e83d123d336ef7ad99c6225f4f783d7e
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können ein App-bezogenes VPN-Profil für Android 5.0-Geräte oder höher erstellen, die von Intune verwaltet werden. Erstellen Sie zunächst ein VPN-Profil, das den Pulse Secure- oder Citrix-Verbindungstyp verwendet. Erstellen Sie anschließend eine benutzerdefinierte Konfigurationsrichtlinie, die das VPN-Profil angegebenen Apps zuordnet. 
 
@@ -52,7 +52,7 @@ Nachdem Sie die Richtlinie auf Ihrem Android-Gerät oder für Ihre Benutzergrupp
    3. Wählen Sie unter **OMA-URI-Einstellungen** **Hinzufügen** aus.
    4. Geben Sie einen Einstellungsnamen ein.
    5. Geben Sie für **Datentyp** **Zeichenfolge** an.
-   6. Geben Sie für **OMA-URI** diese Zeichenfolge an: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**. *Name* ist der Name des VPN-Profils, den Sie in Schritt 1 notiert haben. Bei unserem Beispiel lautet die Zeichenfolge **./Vendor/MSFT/VPN/Profile/MeineApp-VPN-Profil/PackageList**.
+   6. Für **OMA-URI**, geben Sie diese Zeichenfolge: **./Vendor/MSFT/VPN/Profile/*Namen*/PackageList**, wobei *Namen* ist das VPN-Profil nennen Sie Sie in Schritt 1 notiert haben. Bei unserem Beispiel lautet die Zeichenfolge **./Vendor/MSFT/VPN/Profile/MeineApp-VPN-Profil/PackageList**.
    7.   Erstellen Sie für **Wert** eine durch Semikolons getrennte Liste der Pakete, die dem Profil zugeordnet werden sollen. Wenn z.B. Excel und der Google-Browser Chrome die VPN-Verbindung verwenden sollen, geben Sie Folgendes ein: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Beispiel einer benutzerdefinierten Richtlinie für ein App-bezogenes VPN für Android](./media/android_per_app_vpn_oma_uri.png)
@@ -63,7 +63,7 @@ Alternativ können Sie den Wert **WHITELIST** verwenden, um eine Liste von Apps 
   1.    Wählen Sie unter **OMA-URI-Einstellungen** **Hinzufügen** aus.
   2.    Geben Sie einen Einstellungsnamen ein.
   3.    Geben Sie für **Datentyp** **Zeichenfolge** an.
-  4.    Verwenden Sie für **OMA-URI** diese Zeichenfolge: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**. *Name* ist der Name des VPN-Profils, den Sie in Schritt 1 notiert haben. Bei unserem Beispiel lautet die Zeichenfolge **./Vendor/MSFT/VPN/Profile/MeineApp-VPN-Profil/Mode**.
+  4.    Für **OMA-URI**, verwenden Sie diese Zeichenfolge: **./Vendor/MSFT/VPN/Profile/*Namen*/Mode**, wobei *Namen* wird von den in Schritt notiert haben Namen für die VPN-Profils 1. Bei unserem Beispiel lautet die Zeichenfolge **./Vendor/MSFT/VPN/Profile/MeineApp-VPN-Profil/Mode**.
   5.    Geben Sie für **Wert** entweder **BLACKLIST** oder **WHITELIST** ein.
 
 

@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c1ade50ff6a458633598d2788d176dd79cbfebd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 848545c52b641430604c954c26826fef9a1c8510
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
@@ -64,10 +65,10 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
 2. Wählen Sie Ihr Geschäfts-, Schul- oder Unikonto aus. Abhängig von der Einrichtung des Supports Ihres Unternehmens werden Ihnen möglicherweise zwei Konten angezeigt, die ähnlich wie im nachstehenden Beispiel aussehen. Neben einem Konto wird eine Aktentasche angezeigt und neben dem anderen das Microsoft-Logo.
 
-    - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
-    - Wenn Ihnen nur das Konto mit dem Microsoft-Logo angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
+   - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
+   - Wenn Ihnen nur das Konto mit dem Microsoft-Logo angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
 
-    ![Auswählen Ihres Kontonamens neben der Aktentasche oder dem Microsoft-Logo](./media/win10pc-rs1-sync-info-button.png)
+     ![Auswählen Ihres Kontonamens neben der Aktentasche oder dem Microsoft-Logo](./media/win10pc-rs1-sync-info-button.png)
 
 3. Wählen Sie die Schaltfläche **Info** aus. Ein Dialogfeld wird geöffnet, das ähnlich wie im folgenden Beispiel aussieht.
 
@@ -91,7 +92,7 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
    Die Schaltfläche wird solange ausgegraut, bis die Synchronisierung fertig ist.
 
-### <a name="windows-10-mobile"></a>Windows 10 Mobile
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
 So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
    1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Konten**.
@@ -112,7 +113,7 @@ So synchronisieren Sie Ihr Windows 10 Mobile-Gerät manuell, um eine langsame 
 
        Oben auf dem Bildschirm wird die Meldung „Ihr Konto wird synchronisiert“ angezeigt. Die Schaltfläche **Sync** wird ausgegraut, bis die Synchronisierung des Geräts abgeschlossen ist.
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 So synchronisieren Sie Ihr Windows Phone 8.1-Gerät manuell, um eine langsame App-Installation zu beschleunigen:
 
 1. Wechseln Sie zu **Alle Apps** > **Einstellungen** > **Arbeitsplatz**.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56e288559f5556f08060f80a5f195e93124a9d63
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ed6bdddf063d64ec907755e64be047a231c47f44
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>Verwenden des SDKs zum Aktivieren von Apps für die Verwaltung von mobilen Anwendungen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie das Microsoft Intune App SDK, um es Intune zu ermöglichen, bestimmte Features Ihrer iOS- oder Android-Apps zu verwalten. Nachdem Ihre App aktiviert ist, können Sie für die App Richtlinien bereitstellen. Diese Richtlinien verwenden diese Funktionen zum Schutz Ihrer Unternehmensdaten. Beispiele für die Arten von Schutz, die Sie mit dem SDK implementieren können:
 

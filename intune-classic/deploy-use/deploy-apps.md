@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eaea92f2cd2208086a544a192d620e1cdd96cfc2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 69bffb78cb551bd57fd14998bf9b8dcecc9346bc
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Bereitstellen von Apps mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema werden einige Grundlagen erläutert, die Sie kennen müssen, bevor Sie mit dem Bereitstellen von Apps mit Microsoft Intune beginnen.
 
@@ -46,18 +46,19 @@ Wenn Sie Apps bereitstellen, können Sie eine der folgenden Bereitstellungsaktio
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Verfügbare Bereitstellungsaktionen für die verschiedenen Installationsprogrammtypen
 
-|Typ des Installationsprogramms|Erforderliche Installation|Verfügbare Installation|Deinstallieren|Nicht verfügbar|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Windows-App-Paket (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
-|Windows-App-Paket (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
-|App-Paket für mobile Geräte (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
-|App-Paket für mobile Geräte (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
-|Windows Installer (für eine Benutzergruppe bereitgestellt)|Nein|Ja|Nein|Ja|
-|Windows Installer (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
-|Externer Link (für eine Benutzergruppe bereitgestellt)|Nein|Ja|Nein|Ja|
-|Externer Link (auf einer Gerätegruppe bereitgestellt)|Nein|Nein|Nein|Nein|
-|Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)|Ja|Ja|Ja|Ja|
-|Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt)|Ja|Nein|Ja|Ja|
+|                         Typ des Installationsprogramms                          | Erforderliche Installation | Verfügbare Installation | Deinstallieren | Nicht verfügbar |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Windows-App-Paket (für eine Benutzergruppe bereitgestellt)          |       Ja         |        Ja         |    Ja     |      Ja        |
+|        Windows-App-Paket (auf einer Gerätegruppe bereitgestellt)         |       Ja         |        Nein         |    Ja     |      Ja        |
+|    App-Paket für mobile Geräte (für eine Benutzergruppe bereitgestellt)    |       Ja         |        Ja         |    Ja     |      Ja        |
+|   App-Paket für mobile Geräte (auf einer Gerätegruppe bereitgestellt)   |       Ja         |        Nein         |    Ja     |      Ja        |
+|          Windows Installer (für eine Benutzergruppe bereitgestellt)           |        Nein        |        Ja         |    Nein     |      Ja        |
+|         Windows Installer (auf einer Gerätegruppe bereitgestellt)          |       Ja         |        Nein         |    Ja     |      Ja        |
+|            Externer Link (für eine Benutzergruppe bereitgestellt)             |        Nein        |        Ja         |    Nein     |      Ja        |
+|           Externer Link (auf einer Gerätegruppe bereitgestellt)            |        Nein        |        Nein         |    Nein     |       Nein       |
+|  Verwaltete iOS-App aus dem App Store (für eine Benutzergruppe bereitgestellt)  |       Ja         |        Ja         |    Ja     |      Ja        |
+| Verwaltete iOS-App aus dem App Store (auf einer Gerätegruppe bereitgestellt) |       Ja         |        Nein         |    Ja     |      Ja        |
+
 > [!TIP]
 > Wenn Sie beim Bereitstellen von Apps sowohl Benutzer- als auch Gerätegruppen auswählen, können Sie die App nur als **verfügbare Installation** bereitstellen.
 

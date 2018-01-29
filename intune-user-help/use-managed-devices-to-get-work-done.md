@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1326d5a9ac0e558a0531f3d03b388c7af700edc2
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.

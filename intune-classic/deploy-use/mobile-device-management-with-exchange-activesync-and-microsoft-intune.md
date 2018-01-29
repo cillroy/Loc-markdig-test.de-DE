@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa469863aa3305838fb80231dad70cd5cf695c9f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f5e9bd3dd2026096c323858fc7faa915895ed55d
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Damit mobile Geräte direkt mit Microsoft Intune verwaltet werden können, müssen sie [bei Intune registriert](prerequisites-for-enrollment.md) sein. Alternativ können Administratoren eine eingeschränktere Verwaltungslösung ermöglichen, bei der die Exchange ActiveSync-Verwaltung (EAS) mit einem Exchange Connector verwendet wird. Geräte können entweder mit lokalen Exchange-Servern oder mit Exchange Online unter Verwendung von Office 365 verwaltet werden. Intune unterstützt pro Abonnement nur eine Exchange Connector-Verbindung eines beliebigen Typs.
 

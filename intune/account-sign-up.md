@@ -14,15 +14,15 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9ced2c159e61d41a85d432a524893c1b0ab8f2bc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: c50884e4297f01318dd14c34d5ef59bdcabd692b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="sign-up-or-sign-in-to-intune"></a>Registrieren oder Anmelden bei Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 In diesem Thema werden Systemadministratoren darauf hingewiesen, wie Sie sich für ein Intune-Konto anmelden können.
 
@@ -35,11 +35,11 @@ Wenn Sie bereits über ein Arbeits- oder Schulkonto verfügen, **melden Sie sich
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Registrieren oder Anmelden bei Intune
 
-1.  Besuchen Sie die Seite für die [Intune-Registrierung](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Besuchen Sie die Seite für die [Intune-Registrierung](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Screenshot der Website für die Registrierung für das Microsoft Intune-Testkonto](./media/account-sign-up-site.png)
+   ![Screenshot der Website für die Registrierung für das Microsoft Intune-Testkonto](./media/account-sign-up-site.png)
 
-2.  Registrieren Sie sich auf der Registrierungsseite, oder melden Sie sich an, um ein neues Intune-Abonnement zu verwalten.
+2. Registrieren Sie sich auf der Registrierungsseite, oder melden Sie sich an, um ein neues Intune-Abonnement zu verwalten.
 
 ## <a name="post-sign-up-considerations"></a>Überlegungen nach der Registrierung
 Nachdem Sie sich für ein neues Abonnement registriert haben, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihr Abonnement aktiv ist.

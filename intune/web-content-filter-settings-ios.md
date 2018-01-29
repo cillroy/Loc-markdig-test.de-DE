@@ -15,15 +15,15 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89641cee439d7da9f73d56c2ab3d6d8299164700
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fbf2fa33925e049aa1a184a09f2764df558529cd
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konfigurieren Sie mit diesen Einstellungen URLs, auf die Endbenutzer in Webbrowsern auf iOS-Geräten zugreifen oder nicht zugreifen dürfen. Ihnen stehen zwei Verfahren zur Konfigurierung von URLs zur Verfügung:
 
@@ -61,7 +61,7 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 2. Klicken Sie auf **Hinzufügen**, wenn Sie die Informationen für die jeweilige Website eingegeben haben.
 3. Klicken Sie zum Abschluss auf **OK**.
 
->[!IMPORTANT] 
+> [!IMPORTANT]
 > Die folgenden URLs werden von Intune automatisch zugelassen.
 > - www.microsoft.com
 > - www.microsoft.net

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5076f04d55bf6561eab5b06607810f56431cd549
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3021efd07d4051de3a204eff7118758eebbee5eb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Kategorisieren von Geräten mithilfe der Gerätegruppenzuordnung in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie die **Gerätegruppenzuordnung** in Microsoft Intune, damit Geräte basierend auf Kategorien, die Sie definieren, automatisch zu Gruppen hinzugefügt werden, sodass Sie diese Geräte einfacher verwalten können. 
 
@@ -67,10 +67,10 @@ Da die Azure Active Directory-basierten Sicherheitsgruppen schrittweise implemen
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Schritt 1: Erstellen von Gerätekategorien in der Intune-Verwaltungskonsole
 1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Verwaltung** aus.
-3. Erweitern Sie im Arbeitsbereich **Verwaltung** die **Verwaltung mobiler Geräte**, und wählen Sie anschließend **Gerätekategorien** aus.
-4. Auf der Seite **Gerätekategorien** wird eine Liste angezeigt, in der Sie Gerätekategorien konfigurieren können: 
-- Geben Sie einen Namen ein, und klicken Sie auf **Hinzufügen**, um die Kategorie als neue Gerätekategorie hinzuzufügen.
-- Darüber hinaus können Sie eine Kategorie zum **Löschen** auswählen.
+2. Erweitern Sie im Arbeitsbereich **Verwaltung** die **Verwaltung mobiler Geräte**, und wählen Sie anschließend **Gerätekategorien** aus.
+3. Auf der Seite **Gerätekategorien** wird eine Liste angezeigt, in der Sie Gerätekategorien konfigurieren können: 
+4. Geben Sie einen Namen ein, und klicken Sie auf **Hinzufügen**, um die Kategorie als neue Gerätekategorie hinzuzufügen.
+5. Darüber hinaus können Sie eine Kategorie zum **Löschen** auswählen.
 
 Verwenden Sie den Kategorienamen des Geräts zum Erstellen von Azure Active Directory-Sicherheitsgruppen in Schritt 2.
 
@@ -93,5 +93,5 @@ Nach Auswahl der Kategorie wird das Gerät automatisch zur entsprechenden Gruppe
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwenden von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

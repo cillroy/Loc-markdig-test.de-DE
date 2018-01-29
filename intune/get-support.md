@@ -15,15 +15,15 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc45e57a3ef9e5c043073ee67a961832294eef48
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b816ddacec9632c368bc4bfb421039e3e9594b90
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
@@ -34,7 +34,7 @@ Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technische
 
 Als IT-Administrator können Sie ein Supportticket über das Azure-Portal erstellen, indem Sie wie folgt vorgehen:
 
-1. Melden Sie sich beim Azure-Portal (https://portal.azure.com) mit Ihren Intune-Administratoranmeldeinformationen an, wählen Sie das Symbol **?** in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank) zu gelangen.
+1. Melden Sie sich beim Azure-Portal (<https://portal.azure.com>) mit Ihren Administratoranmeldeinformationen Intune wählen Sie die <strong>?</strong> in der oberen rechten Ecke des Portals aus, und wählen Sie dann <strong>Hilfe und Support</strong> aus, um zur Seite [Azure Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank) zu gelangen.
 
     ![Screenshot des Fragezeichen-Links zu Hilfe und Support im Azure-Portal mit hervorgehobenem Link „Hilfe und Support“](./media/azure-get-support.png)
 
@@ -42,30 +42,30 @@ Als IT-Administrator können Sie ein Supportticket über das Azure-Portal erstel
 
     ![Screenshot der Azure-Portal-Seite Hilfe und Support mit hervorgehobenem Link „Neue Supportanfrage“](./media/azure-support-ticket-link.png)
 3. Für die meisten Probleme mit dem technischen Support von Intune wählen Sie auf dem Blatt **Grundeinstellungen** folgende Optionen aus:
-    - **Problemtyp**: **Technical** (Technisch)
-    - **Dienst**: **Microsoft Intune**
-    - **Supportplan**: **Technischer Support – Enthalten** (Bei technischen Problemen mit Intune ist der Support kostenlos.)
+   - **Problemtyp**: **Technical** (Technisch)
+   - **Dienst**: **Microsoft Intune**
+   - **Supportplan**: **Technischer Support – Enthalten** (Bei technischen Problemen mit Intune ist der Support kostenlos.)
 
-    >[!IMPORTANT]
-    >Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://www.microsoft.com/microsoftservices/services-list.aspx) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
+     >[!IMPORTANT]
+     >Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://www.microsoft.com/microsoftservices/services-list.aspx) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
 
-    Klicken Sie auf **Weiter**, um fortzufahren.
+     Klicken Sie auf **Weiter**, um fortzufahren.
 4. Um sicherzustellen, dass Ihre Anfrage an den richtigen fachlichen Ansprechpartner für Ihr Problem gerichtet ist, wählen Sie auf dem Blatt **Problem** die folgenden Optionen aus:
-    - **Schweregrad**
-    - **Problemtyp**
-    - **Kategorie**
+   - **Schweregrad**
+   - **Problemtyp**
+   - **Kategorie**
 
-    Durch diese Informationen können wir auch **verwandte Hilfethemen** bereitstellen, durch die Sie Ihr Problem möglicherweise lösen können, ohne ein Ticket zu erstellen.
+     Durch diese Informationen können wir auch **verwandte Hilfethemen** bereitstellen, durch die Sie Ihr Problem möglicherweise lösen können, ohne ein Ticket zu erstellen.
 
-    ![Screenshot der Azure-Portal-Seite Hilfe und Support mit ausgefüllten Problemelementen und angezeigten Lösungen basierend auf Ihrem Problem](./media/support-need-solutions.png)
+     ![Screenshot der Azure-Portal-Seite Hilfe und Support mit ausgefüllten Problemelementen und angezeigten Lösungen basierend auf Ihrem Problem](./media/support-need-solutions.png)
 
-    Um uns bei der Untersuchung und Lösung Ihres Problems zu unterstützen, geben Sie die folgenden Informationen ein:
-    -   **Details**
-    - **Datum**
-    - **Uhrzeit**
-    - Zusätzliche Daten
+     Um uns bei der Untersuchung und Lösung Ihres Problems zu unterstützen, geben Sie die folgenden Informationen ein:
+   - **Details**
+   - **Datum**
+   - **Uhrzeit**
+   - Zusätzliche Daten
 
-    Klicken Sie auf **Weiter**.
+     Klicken Sie auf **Weiter**.
 5. Geben Sie **Kontaktinformationen** für diese Supportanfrage an. Der Microsoft-Support verwendet diese Informationen, um Sie zu kontaktieren.
 6. Wählen Sie **Erstellen** aus, um Ihre Supportanfrage zu übermitteln.
 

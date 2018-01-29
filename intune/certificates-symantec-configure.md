@@ -15,15 +15,15 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: de9cf4817681ddaad7840b0476fb6e55ff4e561c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Einrichten des Intune Certificate Connectors für den Symantec PKI-Manager-Webdienst
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In diesem Artikel erfahren Sie, wie Sie den Intune Certificate Connector installieren und konfigurieren, um PKCS-Zertifikate aus dem Symantec PKI-Manager-Webdienst für mit Intune verwaltete Geräte auszustellen.
 

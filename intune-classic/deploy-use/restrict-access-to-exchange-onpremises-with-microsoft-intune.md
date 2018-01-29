@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00252927116b86d97fa38bb58977aca7860b468f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 9c3af93382c61476b3293ccd2e68f96f3992f099
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Schützen des E-Mail-Zugriffs auf lokale Exchange- und ältere Exchange Online Dedicated-Umgebungen mit Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können den E-Mail-Zugriff auf lokales Exchange oder auf die ältere Exchange Online Dedicated-Umgebung mithilfe von Microsoft Intune konfigurieren.
 Weitere Informationen zur Funktionsweise des bedingten Zugriffs finden Sie im Artikel [Protect access to email and O365 services (Schützen des Zugriffs auf E-Mail- und Office 365-Dienste)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -53,13 +53,13 @@ Stellen Sie Folgendes sicher:
 
 Wenn Sie Richtlinien für bedingten Zugriff konfigurieren und auf einen Benutzer anwenden, muss das **Gerät**, das der Benutzer zum Abrufen von E-Mails verwendet, folgende Voraussetzungen erfüllen:
 
--  Es muss ein in die Domäne eingebundener PC oder bei Intune **registriert** sein.
+- Es muss ein in die Domäne eingebundener PC oder bei Intune **registriert** sein.
 
--  **Es muss in Azure Active Directory registriert sein**. Darüber hinaus muss die Exchange ActiveSync-ID des Clients in Azure Active Directory registriert sein.
+- **Es muss in Azure Active Directory registriert sein**. Darüber hinaus muss die Exchange ActiveSync-ID des Clients in Azure Active Directory registriert sein.
 
   Der Azure Active Directory-Geräteregistrierungsdienst wird automatisch für Intune- und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte im lokalen Active Directory. **Dies gilt nicht für Windows-PCs und Windows Phone-Geräte.**
 
--   Es muss mit allen für das Gerät festgelegten Intune-Konformitätsrichtlinien **übereinstimmen**.
+- Es muss mit allen für das Gerät festgelegten Intune-Konformitätsrichtlinien **übereinstimmen**.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>So funktioniert der bedingte Zugriff bei lokalem Exchange
 
@@ -91,35 +91,35 @@ Folgendes wird unterstützt:
 
 ##  <a name="configure-a-conditional-access-policy"></a>Konfigurieren einer Richtlinie für bedingten Zugriff
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Bedingter Zugriff** > **Richtlinie für lokales Exchange**.
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) auf **Richtlinie** > **Bedingter Zugriff** > **Richtlinie für lokales Exchange**.
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Konfigurieren Sie die Richtlinie mit den Einstellungen, die Sie benötigen: ![Screenshot der Seite mit der Richtlinie für lokales Exchange](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. Konfigurieren Sie die Richtlinie mit den Einstellungen, die Sie benötigen: ![Screenshot der Seite mit der Richtlinie für lokales Exchange](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Blockieren Sie den lokalen Exchange-Zugriff von E-Mail-Apps, wenn das Gerät nicht konform oder nicht bei Microsoft Intune registriert ist**: Bei Auswahl dieser Option wird der Zugriff auf Exchange-Dienste für Geräte blockiert, die nicht von Intune verwaltet werden oder eine Konformitätsrichtlinie nicht erfüllen.
+   - **Blockieren Sie den lokalen Exchange-Zugriff von E-Mail-Apps, wenn das Gerät nicht konform oder nicht bei Microsoft Intune registriert ist**: Bei Auswahl dieser Option wird der Zugriff auf Exchange-Dienste für Geräte blockiert, die nicht von Intune verwaltet werden oder eine Konformitätsrichtlinie nicht erfüllen.
 
-  - **Standardregelüberschreibung – Den Zugriff auf Exchange durch registrierte und kompatible Geräte immer zulassen**: Wenn Sie diese Option aktivieren, dürfen Geräte, die bei Intune angemeldet sind und die Kompatibilitätsrichtlinie erfüllen, auf Exchange zugreifen.
-  Diese Regel setzt die **Standardregel** außer Kraft, was bedeutet, dass, selbst wenn Sie die **Standardregel** so festlegen, dass der Zugriff isoliert bzw. blockiert wird, registrierte und kompatible Geräte weiterhin auf Exchange zugreifen können.
+   - **Standardregelüberschreibung – Den Zugriff auf Exchange durch registrierte und kompatible Geräte immer zulassen**: Wenn Sie diese Option aktivieren, dürfen Geräte, die bei Intune angemeldet sind und die Kompatibilitätsrichtlinie erfüllen, auf Exchange zugreifen.
+     Diese Regel setzt die **Standardregel** außer Kraft, was bedeutet, dass, selbst wenn Sie die **Standardregel** so festlegen, dass der Zugriff isoliert bzw. blockiert wird, registrierte und kompatible Geräte weiterhin auf Exchange zugreifen können.
 
-  - **Zielgruppen**: Wählen Sie die Intune-Benutzergruppen aus, die ihr Gerät bei Intune registrieren müssen, um auf Exchange zugreifen zu können.
+   - **Zielgruppen**: Wählen Sie die Intune-Benutzergruppen aus, die ihr Gerät bei Intune registrieren müssen, um auf Exchange zugreifen zu können.
 
-  - **Ausgenommene Gruppen**: Wählen Sie die Intune-Benutzergruppen aus, die von der Richtlinie für bedingten Zugriff ausgenommen werden sollen. Benutzer in dieser Liste werden ausgenommen, auch wenn sie auch in der Liste **Zielgruppen** befinden.
+   - **Ausgenommene Gruppen**: Wählen Sie die Intune-Benutzergruppen aus, die von der Richtlinie für bedingten Zugriff ausgenommen werden sollen. Benutzer in dieser Liste werden ausgenommen, auch wenn sie auch in der Liste **Zielgruppen** befinden.
 
-  - **Plattformausnahmen**: Wählen Sie **Regel hinzufügen** aus, um eine Regel zu konfigurieren, die Zugriffsebenen für angegebene mobile Gerätefamilien und -modelle definiert. Da diese Geräte einen beliebigen Typ aufweisen können, können Sie auch Gerätetypen konfigurieren, die nicht von Intune unterstützt werden.
+   - **Plattformausnahmen**: Wählen Sie **Regel hinzufügen** aus, um eine Regel zu konfigurieren, die Zugriffsebenen für angegebene mobile Gerätefamilien und -modelle definiert. Da diese Geräte einen beliebigen Typ aufweisen können, können Sie auch Gerätetypen konfigurieren, die nicht von Intune unterstützt werden.
 
-  - **Standardregel**: Bei Geräten, die durch keine der anderen Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert oder das Gerät unter Quarantäne gestellt werden soll. Wenn Sie die Regel so festlegen, dass der Zugriff zugelassen wird, wird iOS-, Windows- und Samsung KNOX-Geräten, die registriert und kompatibel sind, der E-Mail-Zugriff automatisch gewährt. Benutzer müssen keinen Prozess durchlaufen, um an ihre E-Mails zu gelangen.
-      - Auf Android-Geräten, die nicht unter Samsung KNOX ausgeführt werden, erhalten Benutzer eine Quarantäne-E-Mail. Diese Mail enthält eine exemplarische Vorgehensweise, mit der die Benutzer die Registrierung und Kompatibilität überprüfen müssen, bevor der Zugriff auf die E-Mail erfolgen kann. Wenn Sie die Regel so festlegen, dass der Zugriff blockiert wird oder Geräte isoliert werden, wird der Zugriff aller Geräte auf Exchange blockiert, unabhängig davon, ob sie bereits bei Intune registriert sind oder nicht. Um zu verhindern, dass registrierte und kompatible Geräte von dieser Regel betroffen sind, aktivieren Sie die Option **Standardregelüberschreibung**.
->[!TIP]
->Wenn Sie beabsichtigen, zuerst alle Geräte zu blockieren, bevor Sie den Zugriff auf E-Mail gewähren, wählen Sie die Regel „Zugriff blockieren“ oder „Quarantäne“ aus. Die Standardregel gilt für alle Gerätetypen, sodass Gerätetypen, die Sie als Plattformausnahmen konfiguriert haben und die nicht von Intune unterstützt werden, ebenfalls betroffen sind.
+   - **Standardregel**: Bei Geräten, die durch keine der anderen Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert oder das Gerät unter Quarantäne gestellt werden soll. Wenn Sie die Regel so festlegen, dass der Zugriff zugelassen wird, wird iOS-, Windows- und Samsung KNOX-Geräten, die registriert und kompatibel sind, der E-Mail-Zugriff automatisch gewährt. Benutzer müssen keinen Prozess durchlaufen, um an ihre E-Mails zu gelangen.
+     - Auf Android-Geräten, die nicht unter Samsung KNOX ausgeführt werden, erhalten Benutzer eine Quarantäne-E-Mail. Diese Mail enthält eine exemplarische Vorgehensweise, mit der die Benutzer die Registrierung und Kompatibilität überprüfen müssen, bevor der Zugriff auf die E-Mail erfolgen kann. Wenn Sie die Regel so festlegen, dass der Zugriff blockiert wird oder Geräte isoliert werden, wird der Zugriff aller Geräte auf Exchange blockiert, unabhängig davon, ob sie bereits bei Intune registriert sind oder nicht. Um zu verhindern, dass registrierte und kompatible Geräte von dieser Regel betroffen sind, aktivieren Sie die Option **Standardregelüberschreibung**.
+       >[!TIP]
+       >Wenn Sie beabsichtigen, zuerst alle Geräte zu blockieren, bevor Sie den Zugriff auf E-Mail gewähren, wählen Sie die Regel „Zugriff blockieren“ oder „Quarantäne“ aus. Die Standardregel gilt für alle Gerätetypen, sodass Gerätetypen, die Sie als Plattformausnahmen konfiguriert haben und die nicht von Intune unterstützt werden, ebenfalls betroffen sind.
 
-  - **Benutzerbenachrichtigung**: Zusätzlich zu der von Exchange gesendeten Benachrichtigungs-E-Mail sendet Intune eine E-Mail mit Schritten zum Entsperren des Geräts. Sie können die Standardnachricht bearbeiten, um Sie an Ihre Bedürfnisse anzupassen. Da die Benachrichtigungs-E-Mail von Intune mit den Lösungsanweisungen an das Exchange-Postfach des Benutzers gesendet wird, kann es vorkommen, dass das Gerät blockiert wird, bevor der Benutzer die E-Mail-Nachricht erhält. In diesem Fall besteht die Möglichkeit, die Nachricht über ein freigeschaltetes Gerät oder eine andere Exchange-Zugriffsmethode anzuzeigen.
-      - Dies gilt insbesondere, wenn die **Standardregel** für die Blockierung oder Quarantäne festgelegt ist. In diesem Fall muss der Benutzer seinen App Store besuchen, die Microsoft-Unternehmensportal-App herunterladen und sein Gerät registrieren. Dies gilt für iOS-, Windows- und Samsung KNOX-Geräte. Für Geräte, auf denen Samsung KNOX nicht ausgeführt wird, müssen Sie die Quarantäne-E-Mail an ein alternatives E-Mail-Konto senden. Der Benutzer muss die E-Mail auf sein blockiertes Gerät kopieren, um den Registrierungs- und Kompatibilitätsprozess abzuschließen.
-  > [!NOTE]
-  > Damit die Benachrichtigungs-E-Mail von Exchange gesendet werden kann, müssen Sie das Konto angeben, das dafür verwendet werden soll.
-  >
-  > Weitere Informationen finden Sie unter [Konfigurieren des lokalen Exchange Connectors für lokales oder gehostetes Exchange](intune-on-premises-exchange-connector.md).
+   - **Benutzerbenachrichtigung**: Zusätzlich zu der von Exchange gesendeten Benachrichtigungs-E-Mail sendet Intune eine E-Mail mit Schritten zum Entsperren des Geräts. Sie können die Standardnachricht bearbeiten, um Sie an Ihre Bedürfnisse anzupassen. Da die Benachrichtigungs-E-Mail von Intune mit den Lösungsanweisungen an das Exchange-Postfach des Benutzers gesendet wird, kann es vorkommen, dass das Gerät blockiert wird, bevor der Benutzer die E-Mail-Nachricht erhält. In diesem Fall besteht die Möglichkeit, die Nachricht über ein freigeschaltetes Gerät oder eine andere Exchange-Zugriffsmethode anzuzeigen.
+     - Dies gilt insbesondere, wenn die **Standardregel** für die Blockierung oder Quarantäne festgelegt ist. In diesem Fall muss der Benutzer seinen App Store besuchen, die Microsoft-Unternehmensportal-App herunterladen und sein Gerät registrieren. Dies gilt für iOS-, Windows- und Samsung KNOX-Geräte. Für Geräte, auf denen Samsung KNOX nicht ausgeführt wird, müssen Sie die Quarantäne-E-Mail an ein alternatives E-Mail-Konto senden. Der Benutzer muss die E-Mail auf sein blockiertes Gerät kopieren, um den Registrierungs- und Kompatibilitätsprozess abzuschließen.
+       > [!NOTE]
+       > Damit die Benachrichtigungs-E-Mail von Exchange gesendet werden kann, müssen Sie das Konto angeben, das dafür verwendet werden soll.
+       >
+       > Weitere Informationen finden Sie unter [Konfigurieren des lokalen Exchange Connectors für lokales oder gehostetes Exchange](intune-on-premises-exchange-connector.md).
 
-3.  Wenn Sie fertig sind, wählen Sie **Speichern** aus.
+3. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
 -   Die Richtlinie für bedingten Zugriff wird sofort wirksam und muss nicht explizit bereitgestellt werden.
 

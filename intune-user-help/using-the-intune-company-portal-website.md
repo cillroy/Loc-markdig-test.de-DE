@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f28fd52aecba3db6539233c1e3a6ce18a47dd3b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: cdc40e2299d3601571cc1a4197e075e3dd1bea54
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-intune-company-portal-website"></a>Verwenden der Intune-Unternehmensportal-Website
 Die [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) ist eine Webseite, die Endbenutzer verwenden können, um Computer und Geräte zu verwalten, die sie in Intune registriert haben.

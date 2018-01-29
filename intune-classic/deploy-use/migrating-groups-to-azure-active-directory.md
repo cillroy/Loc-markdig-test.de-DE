@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e1c9350819019282c80e92e14cc5b6c679d69664
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7d20f15d42eb299a67b70a5d012007047db54a4a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Eine neue Art der Verwendung von Gruppen in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Wir haben Ihr Feedback berücksichtigt und einige Änderungen für das Arbeiten mit Gruppen in Microsoft Intune vorgenommen.
 Wir sind dabei, alle Intune-Gruppen unserer Kunden in Azure Active Directory-Sicherheitsgruppen zu migrieren.
@@ -45,7 +45,7 @@ Einige bisherige Funktionen von Intune-Gruppen sind in Azure AD nicht verfügbar
 - Die derzeit in der Intune-Konsole vorhandene Option zum **Ausschließen bestimmter Mitglieder** aus einer Gruppe gibt es im Azure-Portal nicht. Sie können jedoch eine Azure Active Directory-Sicherheitsgruppe mit erweiterter Regeln verwenden, um dieses Verhalten zu replizieren. So könnten Sie beispielsweise die erweiterte Regel `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")` erstellen, die alle Mitarbeiter der Abteilung „Vertrieb“ in einer Sicherheitsgruppe enthält, mit Ausnahme der Personen, deren Position das Wort „Assistent“ aufweist.
 - Die Gruppe **Alle mit Exchange ActiveSync verwalteten Geräte**, die in der Intune-Konsole integriert ist, wird nicht zu Azure AD migriert. Allerdings können Sie im Azure-Portal weiter auf Informationen zu mit Exchange ActiveSync verwalteten Geräten zugreifen.
 - In der klassischen Intune-Verwaltungskonsole können Berichte nicht nach Gruppen gefiltert werden.
-<!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
+  <!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
 
 ## <a name="how-to-get-ready"></a>Vorbereitungen
 

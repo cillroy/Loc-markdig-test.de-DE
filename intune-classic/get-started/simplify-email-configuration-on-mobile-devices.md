@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e2ef770a531043c2479683f09be3b2309e792b87
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ce3edb95bcb4211c4592887f9654ab77800e907e
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Erste Schritte: Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune spart Ihrem Unternehmen Zeit und Ressourcen, indem es Ihnen ermöglicht wird, E-Mail-Profile (sowie VPN- und WLAN-Profile) für Windows-, iOS- und Android-Mobilgeräte bereitzustellen, die vom Intune-Dienst verwaltet werden. Die automatische Konfiguration von E-Mail-Profilen kann die Endbenutzererfahrung erheblich verbessern und die Kundenzufriedenheit erhöhen sowie gleichzeitig die Kosten für den Helpdesk reduzieren.
 

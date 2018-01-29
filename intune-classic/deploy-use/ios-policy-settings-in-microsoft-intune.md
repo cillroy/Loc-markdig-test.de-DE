@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e717295d097ca382f54b2b12713f723779525e72
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 8fa52a434b6471ad362d1da0c0b72a3c55158d2d
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-Richtlinieneinstellungen in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf iOS-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind.
 
@@ -45,20 +45,22 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 ### <a name="security-settings"></a>Sicherheitseinstellungen
 Alle Einstellungen beziehen sich auf iOS 8.0 und höher.
 
-|Name der Einstellung|Details|
-|----------------|-------|
-|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob der Benutzer ein Kennwort eingeben muss, um auf sein Gerät zuzugreifen.|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.|
-|**Erforderliche Anzahl komplexer Zeichen im Kennwort**|Gibt die Anzahl von Symbolzeichen (wie **#** oder **@**) an, die im Kennwort enthalten sein müssen.|
-|**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|
-|**Einfache Kennwörter zulassen**|Lässt einfache Kennwörter wie **0000** und **1234** zu.|
-|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt die Anzahl fehlerhafter Anmeldeversuche an, bevor das Gerät durch diese Einstellung zurückgesetzt wird.|
-|**Minuten Inaktivität vor Anforderung des Kennworts**<sup>1</sup>|Gibt an, wie lange das Gerät im Leerlauf bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss.|
-|**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|
-|**Kennwortverlauf speichern**|Gibt an, ob der Benutzer zuvor verwendete Kennwörter wiederverwenden kann.|
-|**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.|
-|**Minuten Inaktivität bis zur Abschaltung des Bildschirms**<sup>1</sup>|Geben Sie die Anzahl der Minuten an, bevor die Anzeige des Geräts deaktiviert wird.|
-|**Fingerabdruckentsperrung zulassen**|Lässt das Entsperren des Geräts mittels Fingerabdruck zu.|
+
+|                                           Name der Einstellung                                            |                                                            Details                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Anfordern eines Kennworts zum Entsperren mobiler Geräte</strong>                    |                        Gibt an, ob der Benutzer ein Kennwort eingeben muss, um auf sein Gerät zuzugreifen.                        |
+|                              <strong>Erforderlicher Kennworttyp</strong>                              |                   Gibt den erforderlichen Typ des Kennworts an, z. B. nur numerisch oder alphanumerisch.                    |
+|                <strong>Erforderliche Anzahl komplexer Zeichen im Kennwort</strong>                 | Gibt die Anzahl von Symbolzeichen (wie <strong>#</strong> oder <strong>@</strong>) an, die im Kennwort enthalten sein müssen. |
+|                             <strong>Minimale Kennwortlänge</strong>                              |                                   Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.                                    |
+|                              <strong>Einfache Kennwörter zulassen</strong>                              |                          Lässt einfache Kennwörter wie <strong>0000</strong> und <strong>1234</strong> zu.                          |
+|     <strong>Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird</strong>      |                       Gibt die Anzahl fehlerhafter Anmeldeversuche an, bevor das Gerät durch diese Einstellung zurückgesetzt wird.                        |
+|          <strong>Minuten Inaktivität vor Anforderung des Kennworts</strong><sup>1</sup>           |                   Gibt an, wie lange das Gerät im Leerlauf bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss.                    |
+|                            <strong>Kennwortablauf (Tage)</strong>                            |                             Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.                             |
+|                            <strong>Kennwortverlauf speichern</strong>                             |                           Gibt an, ob der Benutzer zuvor verwendete Kennwörter wiederverwenden kann.                           |
+| <strong>Kennwortverlauf speichern</strong> – <strong>Wiederverwendung vorheriger Kennwörter verhindern</strong> |                           Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.                           |
+|            <strong>Minuten Inaktivität bis zur Abschaltung des Bildschirms</strong><sup>1</sup>             |                             Geben Sie die Anzahl der Minuten an, bevor die Anzeige des Geräts deaktiviert wird.                             |
+|                             <strong>Fingerabdruckentsperrung zulassen</strong>                             |                                        Lässt das Entsperren des Geräts mittels Fingerabdruck zu.                                         |
+
 <sup>1</sup> Wenn Sie für iOS-Geräte die Einstellungen **Minuten Inaktivität bis zur Abschaltung des Bildschirms** und **Minuten Inaktivität vor Anforderung des Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 ### <a name="system-settings"></a>Systemeinstellungen
@@ -180,32 +182,33 @@ Richtlinien mit kompatiblen und nicht kompatiblen App-Einstellungen müssen für
 
 ### <a name="kiosk-mode-settings"></a>Einstellungen für den Kioskmodus
 
-|Name der Einstellung|Details|
-|----------------|--------------------|
-|**Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet**|Wählen Sie **Durchsuchen** aus, und geben Sie dann die verwaltete App oder eine App aus einem Store an, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.|
-|**Toucheingabe zulassen**|Aktiviert oder deaktiviert den Touchscreen des Geräts.|
-|**Bildschirmdrehung zulassen**|Aktiviert oder deaktiviert das Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht.|
-|**Lautstärkeregler zulassen**|Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.|
-|**Ruftonschalter zulassen**|Aktiviert oder deaktiviert den Ruftonschalter (Stummschaltung) am Gerät.|
-|**Schaltfläche für Standby und Aktivieren zulassen**|Aktiviert oder deaktiviert die Schaltfläche für das Standby/die Aktivierung des Bildschirms am Gerät.|
-|**Automatische Sperrung zulassen**|Aktiviert oder deaktiviert die automatische Sperrung des Geräts.|
-|**Mono/Audio aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Mono/Audio**.|
-|**Voice-over aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **VoiceOver**, die den Text auf dem Gerätedisplay laut vorliest.|
-|**Voice-over-Anpassungen aktivieren**|Aktiviert oder deaktiviert Voice-over-Anpassungen, die dem Benutzer das Anpassen der VoiceOver-Funktion ermöglichen (z. B. wie schnell Bildschirmtext laut vorgelesen wird).|
-|**Zoom aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Zoom**, die dem Benutzer das Vergrößern des Inhalts auf dem Gerätedisplay durch Tippen ermöglicht.|
-|**Zoom-Anpassungen aktivieren**|Aktiviert oder deaktiviert Zoom-Anpassungen zur individuellen Verwendung der Zoomfunktion.|
-|**Farben umkehren zulassen**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Farben umkehren**, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.|
-|**Farbumkehr-Anpassungen aktivieren**|Aktiviert oder deaktiviert Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann.|
-|**Touch-Unterstützung aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u. U. Schwierigkeiten bereiten.|
-|**Touch-Unterstützungsanpassungen aktivieren**|Aktiviert oder deaktiviert Touch-Unterstützungsanpassungen, mit denen der Benutzer die Touch-Unterstützung individuell verwenden kann.|
-|**Sprachauswahl aktivieren**|Aktiviert oder deaktiviert die Barrierefreiheitseinstellung **Auswahl vorlesen**, mit der der vom Benutzer ausgewählte Text laut vorgelesen werden kann.|
+|                                            Name der Einstellung                                            |                                                                                                                                      Details                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Wählen Sie eine verwalteten App aus, die ausgeführt werden darf, während sich das Gerät im Kiosk-Modus befindet</strong> | Wählen Sie <strong>Durchsuchen</strong> aus, und geben Sie dann die verwaltete App oder eine App aus einem Store an, die ausgeführt werden darf, wenn sich das Gerät im Kioskmodus befindet. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema. |
+|                                    <strong>Toucheingabe zulassen</strong>                                    |                                                                                                                  Aktiviert oder deaktiviert den Touchscreen des Geräts.                                                                                                                  |
+|                               <strong>Bildschirmdrehung zulassen</strong>                               |                                                                                                Aktiviert oder deaktiviert das Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht.                                                                                                 |
+|                               <strong>Lautstärkeregler zulassen</strong>                                |                                                                                                           Aktiviert oder deaktiviert die Verwendung der Lautstärkeregler am Gerät.                                                                                                           |
+|                                <strong>Ruftonschalter zulassen</strong>                                |                                                                                                             Aktiviert oder deaktiviert den Ruftonschalter (Stummschaltung) am Gerät.                                                                                                              |
+|                          <strong>Schaltfläche für Standby und Aktivieren zulassen</strong>                           |                                                                                                           Aktiviert oder deaktiviert die Schaltfläche für das Standby/die Aktivierung des Bildschirms am Gerät.                                                                                                            |
+|                                  <strong>Automatische Sperrung zulassen</strong>                                  |                                                                                                                 Aktiviert oder deaktiviert die automatische Sperrung des Geräts.                                                                                                                 |
+|                                 <strong>Mono/Audio aktivieren</strong>                                 |                                                                                                      Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>Mono/Audio</strong>.                                                                                                      |
+|                                 <strong>Voice-over aktivieren</strong>                                 |                                                                               Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>VoiceOver</strong>, die den Text auf dem Gerätedisplay laut vorliest.                                                                                |
+|                           <strong>Voice-over-Anpassungen aktivieren</strong>                           |                                                                  Aktiviert oder deaktiviert Voice-over-Anpassungen, die dem Benutzer das Anpassen der VoiceOver-Funktion ermöglichen (z. B. wie schnell Bildschirmtext laut vorgelesen wird).                                                                   |
+|                                    <strong>Zoom aktivieren</strong>                                    |                                                                         Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>Zoom</strong>, die dem Benutzer das Vergrößern des Inhalts auf dem Gerätedisplay durch Tippen ermöglicht.                                                                         |
+|                              <strong>Zoom-Anpassungen aktivieren</strong>                              |                                                                                                  Aktiviert oder deaktiviert Zoom-Anpassungen zur individuellen Verwendung der Zoomfunktion.                                                                                                  |
+|                               <strong>Farben umkehren zulassen</strong>                                |                                                                    Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>Farben umkehren</strong>, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.                                                                    |
+|                         <strong>Farbumkehr-Anpassungen aktivieren</strong>                          |                                                                                         Aktiviert oder deaktiviert Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann.                                                                                         |
+|                              <strong>Touch-Unterstützung aktivieren</strong>                               |                                                     Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>Touch-Unterstützung</strong>, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u. U. Schwierigkeiten bereiten.                                                     |
+|                        <strong>Touch-Unterstützungsanpassungen aktivieren</strong>                         |                                                                                       Aktiviert oder deaktiviert Touch-Unterstützungsanpassungen, mit denen der Benutzer die Touch-Unterstützung individuell verwenden kann.                                                                                       |
+|                              <strong>Sprachauswahl aktivieren</strong>                              |                                                                        Aktiviert oder deaktiviert die Barrierefreiheitseinstellung <strong>Auswahl vorlesen</strong>, mit der der vom Benutzer ausgewählte Text laut vorgelesen werden kann.                                                                         |
+
 > [!NOTE]
 > Die folgenden Hinweise gelten für Kiosk-Moduseinstellungen für iOS-Geräte:
 >
 > -   Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das [Apple Configurator-Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder das [Apple-Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 > -   Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Referenzinformationen für kompatible und nicht kompatible Apps
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Referenzinformationen für konforme und nicht konforme Apps
 
 Im **Bericht über nicht kompatible Apps** können Sie sich über die Konformität zulässiger und blockierter Anwendungen informieren.
 
@@ -349,8 +352,6 @@ Verwenden Sie die Informationen in dieser Liste zur Identifizierung des Namens, 
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 
@@ -366,7 +367,7 @@ Diese Funktion ermöglicht die Bereitstellung von iOS-Einstellungen, die nicht m
 Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigurationsdatei mit den Einstellungen erstellt haben, die Sie für Benutzer oder Geräte bereitstellen möchten. Um Apple Configurator herunterzuladen und mehr darüber zu erfahren, besuchen Sie den [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
-> Intune meldet nicht die Kompatibilität der einzelnen Einstellungen einer benutzerdefinierten iOS-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
+> Intune meldet nicht die Konformität der einzelnen Einstellungen einer benutzerdefinierten iOS-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -383,5 +384,5 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 |**Konfigurationsprofildatei**|Wählen Sie **Importieren** aus, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Hinweis:** Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der iOS-Version auf den Geräten kompatibel sind, für die Sie die benutzerdefinierte iOS-Richtlinie bereitstellen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie auf der [Apple Developer-Website](https://developer.apple.com/) nach der **Referenz zu Konfigurationsprofilen** und der **Referenz zum Protokoll für die Verwaltung mobiler Geräte**.|
     |**Details zum Konfigurationsprofil**|Zeigt den XML-Code des importierten Konfigurationsprofils an.|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

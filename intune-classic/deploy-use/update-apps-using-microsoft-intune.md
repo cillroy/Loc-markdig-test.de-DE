@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0974d2cc4298b617d8246190d3ae116238e07fd5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8495c50a040e6c6a7fe7777b9e415333088b5ac
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="update-apps-using-microsoft-intune"></a>Aktualisieren von Apps mit 
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune unterstützt Sie bei der Verwaltung von App-Updates. Verwenden Sie die Informationen in diesem Thema, um zu erfahren, wie Sie Apps aktualisieren, wenn eine neue Version erforderlich ist.
 

@@ -15,16 +15,15 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 141d0499f055441ff099a5bec1c4ea695f77326c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: df23b2d1bb5fd082d2587d22b051c1f13f3fca68
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps (LOB) in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
@@ -69,7 +68,9 @@ Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Hinweis: Damit der Intune-Dienst eine neue APK-Datei erfolgreich auf dem Gerät bereitstellt, müssen Sie die Zeichenfolge „android:versionCode“ in der Datei „AndroidManifest.xml“ in Ihrem APK-Paket erhöhen.
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+Hinweis: Für die Intune-Dienst erfolgreich eine neue APK-Datei auf dem Gerät bereitstellen müssen Sie die Zeichenfolge "Android: VersionCode" in der Datei "AndroidManifest.xml" im APK-Paket erhöhen
 
 ## <a name="next-steps"></a>Nächste Schritte
 

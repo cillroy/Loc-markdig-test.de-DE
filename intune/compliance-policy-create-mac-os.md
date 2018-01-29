@@ -15,16 +15,16 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 18a436f39ee20f99407cf791da3469ce5ba41042
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -40,14 +40,15 @@ In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwalte
 -------------------------------
 
 
-| **Richtlinieneinstellung** | **macOS 10.11 und höher** |
-| --- | --- |
-| **PIN- oder Kennwortkonfiguration** | Wiederhergestellt |   
-| **Geräteverschlüsselung** | Wiederhergestellt (durch Festlegen der PIN) |
-| **E-Mail-Profil** | Isoliert |
-|**Minimale Version des Betriebssystems** | Isoliert |
-| **Maximale Version des Betriebssystems** | Isoliert |  
-| **Windows-Integritätsnachweis** | Nicht verfügbar |  
+|        <strong>Richtlinieneinstellung</strong>         | <strong>macOS 10.11 und höher</strong> |
+|------------------------------------------------|----------------------------------------|
+| <strong>PIN- oder Kennwortkonfiguration</strong> |               Wiederhergestellt               |
+|       <strong>Geräteverschlüsselung</strong>       |      Wiederhergestellt (durch Festlegen der PIN)       |
+|         <strong>E-Mail-Profil</strong>         |              Isoliert               |
+|      <strong>Minimale Version des Betriebssystems</strong>       |              Isoliert               |
+|      <strong>Maximale Version des Betriebssystems</strong>       |              Isoliert               |
+|  <strong>Windows-Integritätsnachweis</strong>   |             Nicht verfügbar             |
+
 ----------------------------
 
 

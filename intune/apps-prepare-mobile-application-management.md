@@ -14,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d494dd0270cddac8ec449689357616c3ac7c48b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d0bd16585a64620d29e88d34731af8b76fbbd1a5
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Sie können die Verwendung von App-Schutzrichtlinien bei Ihren Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
@@ -49,8 +49,8 @@ Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Gerä
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Ja|Ja|
-|**Android**| Nein |Ja|
+|**iOS** |Ja |Ja |
+|**Android**| Nein |Ja |
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 Das App SDK ist in erster Linie für Kunden konzipiert, die über Apps im Apple App Store oder Google Play Store verfügen und diese Apps mit Intune verwalten möchten. Das SDK kann jedoch in jede App integriert werden, auch in branchenspezifische Apps.
@@ -78,30 +78,31 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 > [!NOTE]
 > Das App Wrapping Tool kann mit eigenständigen Intune-Bereitstellungen oder mit Intune mit Configuration Manager verwendet werden.
 
-|Komponente|App SDK|App Wrapping Tool|
-|-----------|---------------------|-----------|
-|Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser|X|X|
-|Verhindern von Android-, iTunes- oder iCloud-Sicherungen|X|X|
-|App Übertragung von Daten an andere Apps erlauben|X|X|
-|App Empfang von Daten aus anderen Apps erlauben|X|X|
-|Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|X|X|
-|Einfache PIN für Zugriff erforderlich|X|X|
-|Ersetzen der integrierten App-PIN durch die Intune-PIN|X||
-|Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN|X|X|
-|Fingerabdruck anstelle von PIN zulassen |X|X|
-|Unternehmensanmeldeinformationen für Zugriff erforderlich|X|X|
-|Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten|X|X|
-|App-Daten verschlüsseln|X|X|
-|Erneutes Überprüfen der Zugriffsanforderungen nach einer angegebenen Anzahl von Minuten|X|X|
-|Angeben der Offlinetoleranzperiode|X|X|
-|Blockieren von Bildschirmaufnahmen (nur Android)|X|X|
-|Unterstützung von MAM ohne Geräteregistrierung|X|X|
-|Vollständiges Zurücksetzen|X|X|
-|Selektives Zurücksetzen <br></br>**Hinweis:** Für iOS wird die App auch entfernt, wenn das Verwaltungsprofil entfernt wird.|X||
-|Verhindern von „Speichern unter“ |X||
-|Angestrebte Anwendungskonfiguration |X||
-|Unterstützung von mehreren Identitäten|X||
-|Anpassbarer Stil |X|||
+|                                                         Komponente                                                          | App SDK | App Wrapping Tool |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser                              |    X    |         X         |
+|                                        Verhindern von Android-, iTunes- oder iCloud-Sicherungen                                        |    X    |         X         |
+|                                         App Übertragung von Daten an andere Apps erlauben                                         |    X    |         X         |
+|                                        App Empfang von Daten aus anderen Apps erlauben                                         |    X    |         X         |
+|                                      Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken                                       |    X    |         X         |
+|                                              Einfache PIN für Zugriff erforderlich                                               |    X    |         X         |
+|                                         Ersetzen der integrierten App-PIN durch die Intune-PIN                                         |    X    |                   |
+|                                     Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN                                      |    X    |         X         |
+|                                             Fingerabdruck anstelle von PIN zulassen                                             |    X    |         X         |
+|                                         Unternehmensanmeldeinformationen für Zugriff erforderlich                                         |    X    |         X         |
+|                             Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten                              |    X    |         X         |
+|                                                     App-Daten verschlüsseln                                                     |    X    |         X         |
+|                           Erneutes Überprüfen der Zugriffsanforderungen nach einer angegebenen Anzahl von Minuten                            |    X    |         X         |
+|                                             Angeben der Offlinetoleranzperiode                                             |    X    |         X         |
+|                                           Blockieren von Bildschirmaufnahmen (nur Android)                                            |    X    |         X         |
+|                                        Unterstützung von MAM ohne Geräteregistrierung                                         |    X    |         X         |
+|                                                        Vollständiges Zurücksetzen                                                         |    X    |         X         |
+| Selektives Zurücksetzen <br></br><strong>Hinweis:</strong> Für iOS wird die App auch entfernt, wenn das Verwaltungsprofil entfernt wird. |    X    |                   |
+|                                                    Verhindern von „Speichern unter“                                                     |    X    |                   |
+|                                            Angestrebte Anwendungskonfiguration                                            |    X    |                   |
+|                                                Unterstützung von mehreren Identitäten                                                |    X    |                   |
+|                                                    Anpassbarer Stil                                                    |    X    |                   |
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Weitere Informationen zu App-Schutzrichtlinien und Intune finden Sie in den folgenden Themen:

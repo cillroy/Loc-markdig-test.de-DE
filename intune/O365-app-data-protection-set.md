@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa850a61ab578d7dfebe2c76531ab9271e501cd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b0c74722d0bc8c258e8549a226dc0fef388ecbc8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>So erleben Ihre Benutzer den grundlegenden Schutz in verwalteten Office 365-Apps
 
@@ -49,13 +49,13 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des OneDrive-Anmeldebildschirm unter iOS](./media/onedrive-ios-sign-in.png)
 2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldeseite](./media/o365-sign-in-ios.png)
 3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory werden die App-Schutzrichtlinien angewendet, und Sie werden aufgefordert, die OneDrive for Business-App neu zu starten.  <br/>![Abbildung der Aufforderung zum Neustart für iOS](./media/ios-restart-prompt.png)    
-  > [!NOTE]
-  > Die Meldung „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
+   > [!NOTE]
+   > Die Meldung „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
 
 
 4. Starten Sie die OneDrive for Business-App neu. Die Anwendung wird mit aktivierten App-Schutzrichtlinien gestartet, und Sie werden aufgefordert, eine PIN für das Gerät festzulegen (sofern Sie noch keine PIN für das Gerät konfiguriert haben). <br/> ![Abbildung der Aufforderung für die PIN-Erstellung](./media/pin-prompt-ios.png)    
-  > [!NOTE]
-  > Den meisten Benutzern wird diese Aufforderung nicht angezeigt. Nur Benutzer, die auf ihrem iOS-Gerät keine PIN aktiviert haben, werden diese Meldung sehen.
+   > [!NOTE]
+   > Den meisten Benutzern wird diese Aufforderung nicht angezeigt. Nur Benutzer, die auf ihrem iOS-Gerät keine PIN aktiviert haben, werden diese Meldung sehen.
 
 
 5. Nachdem Sie die PIN festgelegt und bestätigt haben, kehren Sie zur OneDrive for Business-App zurück. Sie sehen eine einmalige Benachrichtigung, dass der IT-Administrator Arbeitsdaten in OneDrive jetzt schützt. <br/> ![Abbildung der einmaligen Benachrichtigung von Ihrem IT-Administrator](./media/one-time-notice.png)
@@ -70,8 +70,8 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des Begrüßungsbildschirms der OneDrive-App](./media/onedrive-android-welcome.png)
 2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldung unter Android](./media/o365-sign-in-android.png)
 3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.    
-  > [!IMPORTANT]
-  > Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine App-Schutzrichtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
+   > [!IMPORTANT]
+   > Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine App-Schutzrichtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
 
 4. Sie befinden sich nun im Google Play Store, von wo Sie die Unternehmensportal-App herunterladen und installieren können. Die App hilft Ihnen, Ihre Daten zu schützen. <br/> ![Abbildung der App im Google Play Store](./media/google-play-get-app-android.png)
 5. Wählen Sie nach Abschluss der App-Installation **Annehmen** aus, um die Bedingungen zu akzeptieren. Die OneDrive for Business-App wird automatisch gestartet.
@@ -86,6 +86,7 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>Welche Richtlinien legt dieser Assistent fest?
+
 |     |       | |
 |----|--------|-|
 |**Name**|Verwalten von Office 365-Apps| |
@@ -99,14 +100,14 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 |"Speichern unter" verhindern | Nein | Nein|
 |Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken | Jede App | Jede App |
 |Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser | Nein| Nein|
-|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja|
+|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja |
 |Kontaktsynchronisierung deaktivieren | Nein| Nein|
 |Drucken deaktivieren | Nein | Nein|
-|PIN für Zugriff anfordern | Nein | Ja|
+|PIN für Zugriff anfordern | Nein | Ja |
 |Anzahl der Versuche vor dem Zurücksetzen der PIN | N/V |5|
-|Einfache PIN zulassen | N/V |Ja|
+|Einfache PIN zulassen | N/V |Ja |
 |PIN-Länge | N/V | 4|
-|Fingerabdruck anstelle von PIN zulassen | N/V | Ja |
+|Fingerabdruck anstelle von PIN zulassen | N/V | Ja  |
 |Unternehmensanmeldeinformationen für Zugriff erforderlich | Nein | Nein|
 |Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten | Nein | Nein|
 |Zugriffsanforderungen nach (Minuten) erneut überprüfen – Timeout | 30 | 30|

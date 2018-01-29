@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9068e9462226f70150f06cd65e9ba044dc96ac99
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fd1d3035fd74550ae9f2de0d0ab07574301c5102
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>Erstellen von Richtlinien und Veröffentlichen von Apps
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema erfahren Administratoren, wie Sie Richtlinien erstellen und Apps veröffentlichen können, die sie für verwaltetet Geräte bereitstellen können.
 
@@ -63,12 +63,12 @@ Zunächst müssen Sie die Apps mithilfe einer der folgenden Methoden in Intune v
 Sobald die App in Intune zur Verfügung steht, können Sie sie auf verwalteten Geräten bereitstellen:
 - [Bereitstellen von Apps auf Geräten](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Bereitstellen von Apps aus einem Volumenprogramm:
-    - [iOS: Volume Purchase Program (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [Microsoft Store für Unternehmen](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS: Volume Purchase Program (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [Microsoft Store für Unternehmen](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     Nachdem Sie die Apps für die Bereitstellung konfiguriert haben, können Sie [Apps konfigurieren](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
->[!div class="step-by-step"]
-
->[&larr; **Organisieren von Benutzern und Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Anpassen des Unternehmensportals** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr; **Organisieren von Benutzern und Geräten**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Anpassen des Unternehmensportals** &rarr;](/intune/company-portal-customize)  

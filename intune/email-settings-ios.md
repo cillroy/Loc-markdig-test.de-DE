@@ -15,17 +15,15 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1785c18ab1c61465c230b615eebc2f74fed2413
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ff590506f1549b42554f75dc6f9f1ef29e7f728c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Einstellungen für das E-Mail-Profil für iOS-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 - **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
 - **Kontoname:** Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.

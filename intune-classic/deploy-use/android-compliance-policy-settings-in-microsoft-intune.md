@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: af33c565094014bda046ec9add6f7b02023c649c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3d28bfa6430cf22d9fa6b1c89f6af1071217a4b1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit Android 4.0 und höher oder Samsung KNOX 4.0 und höher.
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folgenden Optionen:
 > [!div class="op_single_selector"]
-- [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Konformitätsrichtlinien für Android for Work-Geräte](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Konformitätsrichtlinien für Android for Work-Geräte](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 ### <a name="password"></a>Kennwort
@@ -39,7 +39,7 @@ Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folge
 
 -  **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
 
-- **Kennwortstärke:** Mit dieser Einstellung wird erkannt, ob die von Ihnen angegebenen Kennwortanforderungen auf dem Gerät eingerichtet wurden. Aktivieren Sie diese Einstellung, um festzulegen, dass Benutzer für Android-Geräte bestimmte Kennwortanforderungen erfüllen müssen. Wählen Sie aus:
+- **Kennwortstärke:** Mit dieser Einstellung wird erkannt, ob die von Ihnen angegebenen Kennwortanforderungen auf dem Gerät eingerichtet wurden. Aktivieren Sie diese Einstellung, um festzulegen, dass Benutzer für Android-Geräte bestimmte Kennwortanforderungen erfüllen müssen. Es stehen die folgenden Optionen zur Auswahl:
 
   -   **Biometrie auf niedriger Sicherheitsstufe**
   -   **Erforderlich**

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf5953aa59dca5247eef7d49b8f17b26a745ce69
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e0857ac8e7f57779c46968996c467544ba9fbb35
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie die Verfahren in diesem Thema, um eine benutzerdefinierte Microsoft Intune-Richtlinie zu erstellen, die eine der folgenden Listen erstellt:
 
@@ -39,21 +39,21 @@ Diese Einstellungen können nur von Geräten verwendet werden, auf denen Samsung
 3. Geben Sie einen Namen und optional eine Beschreibung für die Richtlinie an, und wählen Sie anschließend im Abschnitt **OMA-URI-Einstellungen** **Hinzufügen** aus.
 4. Geben Sie im Dialogfeld **OMA-URI-Einstellung hinzufügen oder bearbeiten** Folgendes an: Für eine Liste von Apps, deren Ausführung auf dem Gerät blockiert wird:
     
-    - **Name der Einstellung.** Geben Sie **PreventStartPackages** ein.
-    - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, deren Ausführung blockiert wird“ ein.
-    -   **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
-    -   **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
-    -   **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie blockieren möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
+   - **Name der Einstellung.** Geben Sie **PreventStartPackages** ein.
+   - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, deren Ausführung blockiert wird“ ein.
+   - **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
+   - **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** ein.
+   - **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie blockieren möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
 
-    Für eine Liste von Apps, die Benutzer des Geräts aus Google Play Store installieren dürfen, wobei alle anderen Apps ausgeschlossen werden:
+     Für eine Liste von Apps, die Benutzer des Geräts aus Google Play Store installieren dürfen, wobei alle anderen Apps ausgeschlossen werden:
 
-    - **Name der Einstellung.** Geben Sie **AllowInstallPackages** ein.
-    - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, die Benutzer aus Google Play Store installieren dürfen“ ein.
-    - **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
-    - **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages** ein.
-    - **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie zulassen möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
+   - **Name der Einstellung.** Geben Sie **AllowInstallPackages** ein.
+   - **Beschreibung der Einstellung.** Geben Sie optional eine Beschreibung wie z.B. „Liste der Apps, die Benutzer aus Google Play Store installieren dürfen“ ein.
+   - **Datentyp.** Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
+   - **OMA-URI.** Geben Sie **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages** ein.
+   - **Wert.** Geben Sie eine Liste mit den Namen der App-Pakete ein, die Sie zulassen möchten. Sie können **; : ,** oder **|** als Trennzeichen verwenden. (Beispiel: Paket1; Paket2;)
 
-4. Klicken Sie auf **OK**, und klicken Sie anschließend auf **Richtlinie speichern**. 
+5. Klicken Sie auf **OK**, und klicken Sie anschließend auf **Richtlinie speichern**. 
 
 >[!TIP]
 > Sie finden die Paket-ID einer App, indem Sie im Google Play Store zu der App navigieren. Die Paket-ID ist in der URL der Seite der App enthalten. Die Paket-ID der Microsoft Word-App lautet z.B. **com.microsoft.office.word**.
@@ -70,5 +70,5 @@ Die App-Einstellungen werden beim nächsten Einchecken jedes Zielgeräts angewen
  
 Wenn Sie eine bereitgestellte Richtlinie auswählen, können Sie weitere Informationen zur Bereitstellung im unteren Teil der Richtlinienliste anzeigen.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Einstellungen für Android- und Samsung KNOX-Richtlinien in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)

@@ -14,15 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf667af86a6e885416cdf15e0a63f6219355466e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7d1a89443ca9d5b610f869120c2f1fd7b8b0c564
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Gängige Arten der Verwendung von Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Bevor die Implementierungsaufgaben behandelt werden, ist es wichtig, dass die Enterprise Mobility-Beteiligten Ihres Unternehmens dieselben Geschäftsziele verfolgen.  Dies ist wichtig, unabhängig davon, ob Enterprise Mobility für Sie völlig neu ist oder Sie von einem anderen Produkt migrieren.  
 

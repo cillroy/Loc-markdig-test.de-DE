@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3269491d1b3a90ee2b8079f28b4a3796a8053a71
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot Deployment-Programms
 Das Windows AutoPilot Deployment-Programm vereinfacht die Bereitstellung von Geräten. Heutzutage dauert das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems sehr lange. Es kann ebenfalls viel Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie z.B. Richtlinien, Profile und Apps auf den Geräten verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -42,7 +42,7 @@ AutoPilot-Bereitstellungsprofile werden verwendet, um die AutoPilot-Geräte zu k
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
 4. Klicken Sie auf dem Blatt **Windows-Registrierung** im Abschnitt **Windows AutoPilot Deployment-Programm** auf **Bereitstellungsprofile**.
 5. Klicken Sie auf **Profil erstellen**, und wählen Sie einen Namen und optional eine Beschreibung. 
-6. Wählen Sie **In Azure AD eingebunden** für **Join type** (Jointyp) aus.
+6. Wählen Sie **In Azure AD eingebunden** für **Join type** (Jointyp) aus. 
 7. Konfigurieren Sie für die **Out-of-Box-Experience (OOBE)** folgende Optionen, und klicken Sie dann auf **OK**: 
    - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden. 
    - **Lizenzbedingungen**: Wählen Sie, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.

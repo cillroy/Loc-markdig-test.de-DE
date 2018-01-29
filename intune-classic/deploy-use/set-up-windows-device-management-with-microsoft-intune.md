@@ -14,15 +14,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf95093d9cfe3a7066779ca21c47e32ea7c57bb3
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-windows-device-management"></a>Einrichten der Windows-Geräteverwaltung
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dieses Thema hilft IT-Administratoren, die Windows-Registrierung für ihre Benutzer zu vereinfachen.  Windows-Geräte können ohne zusätzliche Schritte registriert werden, aber Sie können die Registrierung für Ihre Benutzer vereinfachen.
 
@@ -35,7 +35,7 @@ Zwei Faktoren bestimmen, wie Sie die Registrierung von Windows-Geräten vereinfa
 |**Windows 10**|[Automatische Registrierung](#enable-windows-10-automatic-enrollment) |[Benutzerregistrierung](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Frühere Windows-Versionen**|[Benutzerregistrierung](#enable-windows-enrollment-without-automatic-enrollment)|[Benutzerregistrierung](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Aktivieren der Windows-Registrierung ohne automatische Registrierung
 Sie können Benutzern das Registrieren ihrer Geräte ohne automatische Azure AD Premium-Registrierung ermöglichen. Weisen Sie Benutzern Lizenzen zu, damit sie sich registrieren können, sobald sie den privat genutzten Geräten ihre Geschäftskonten hinzugefügt haben oder Ihrer Azure AD mit den firmeneigenen Geräten beigetreten sind. Das Erstellen einer DNS-Alias (CNAME-Eintragstyp) erleichtert Benutzern das Registrieren ihrer Geräte. Wenn Sie DNS-CNAME-Ressourceneinträge erstellen, können Benutzer sich mit Intune verbinden und dort registrieren, ohne einen Servernamen eingeben zu müssen.

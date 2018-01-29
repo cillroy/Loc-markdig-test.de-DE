@@ -15,16 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 2f91f03831fc848d91adca26d4fd817977df2a78
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konformitätsrichtlinien werden für jede Plattform erstellt.  Sie können eine Konformitätsrichtlinie im Azure-Portal erstellen. Weitere Informationen dazu, was eine Konformitätsrichtlinie ist, finden Sie unter dem Thema [Was ist Gerätekonformität](device-compliance.md). Weitere Informationen zu den Voraussetzungen für das Erstellen einer Konformitätsrichtlinie finden Sie unter dem Thema [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
 
@@ -33,15 +33,16 @@ In der Tabelle unten wird beschrieben, wie nicht konforme Einstellungen verwalte
 -------------------------------
 
 
-| **Richtlinieneinstellung** | **iOS 8.0 und höher** |
-| --- | --- |
-| **PIN- oder Kennwortkonfiguration** | Wiederhergestellt |   
-| **Geräteverschlüsselung** | Wiederhergestellt (durch Festlegen der PIN) |
-| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Unter Quarantäne gestellt (keine Einstellung)
-| **E-Mail-Profil** | Isoliert |
-|**Minimale Version des Betriebssystems** | Isoliert |
-| **Maximale Version des Betriebssystems** | Isoliert |  
-| **Windows-Integritätsnachweis** | Nicht verfügbar |  
+|        <strong>Richtlinieneinstellung</strong>         | <strong>iOS 8.0 und höher</strong> |
+|------------------------------------------------|------------------------------------|
+| <strong>PIN- oder Kennwortkonfiguration</strong> |             Wiederhergestellt             |
+|       <strong>Geräteverschlüsselung</strong>       |    Wiederhergestellt (durch Festlegen der PIN)     |
+|  <strong>Per Jailbreak oder Rootzugriff manipuliertes Gerät</strong>  |    Unter Quarantäne gestellt (keine Einstellung)     |
+|         <strong>E-Mail-Profil</strong>         |            Isoliert             |
+|      <strong>Minimale Version des Betriebssystems</strong>       |            Isoliert             |
+|      <strong>Maximale Version des Betriebssystems</strong>       |            Isoliert             |
+|  <strong>Windows-Integritätsnachweis</strong>   |           Nicht verfügbar           |
+
 ----------------------------
 
 

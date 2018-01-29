@@ -15,15 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e4dd377bf878b3fb2d910df490e4fbc205f4f368
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mithilfe der Informationen in diesem Thema können Sie die branchenspezifischen iOS-Apps zu Intune hinzufügen.
 
@@ -73,7 +73,9 @@ Die von Ihnen erstellte App erscheint in der Liste der Apps, in der Sie sie den 
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Hinweis: Damit der Intune-Dienst eine neue IPA-Datei erfolgreich auf dem Gerät bereitstellt, müssen Sie die Zeichenfolge „CFBundleVersion“ in der Datei „Info.plist“ in Ihrem IPA-Paket erhöhen.
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+Hinweis: Für die Intune-Dienst erfolgreich eine neue IPA-Datei auf dem Gerät bereitstellen müssen Sie die CFBundleVersion-Zeichenfolge in der Datei "Info.plist" in Ihrer Datei IPA-Paket erhöhen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

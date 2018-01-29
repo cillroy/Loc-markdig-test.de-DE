@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0224238f4f84c0731f27469e03f16eece313ec60
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Die meisten branchenspezifischen Apps erfordern eine bestimmte Form von Benutzerauthentifizierung, um Sicherheitsfeatures unterstützen zu können. In vielen Fällen muss der Benutzer hierfür die gleichen Anmeldeinformationen mehrfach eingeben, was sich als frustrierend erweisen kann. Zur Verbesserung der Benutzerfreundlichkeit können Entwickler Apps erstellen, die einmaliges Anmelden verwenden. So kann die Häufigkeit reduziert werden, mit der ein Benutzer Anmeldeinformationen angeben muss.
 

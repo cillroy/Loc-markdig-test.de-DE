@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 48bba8210c1b66f951c62bbe3a014b67b0c665f0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f28e90edd9940ea06df6504ae07c9995af6fa058
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="choose-how-to-manage-devices"></a>Auswählen der Methode zum Verwalten von Geräten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Um Vorteile aus den zahlreichen Funktionen zu ziehen, die Intune anbietet, wie z.B. die App-Bereitstellung und die Steuerung von Geräteeinstellungen, müssen Ihre Geräte *verwaltet* werden. Die Art, wie Sie Geräte verwalten, hängt von den Intune-Funktionen ab, die Sie verwenden möchten. Dieses Thema hilft Ihnen bei der Auswahl der Methode, die Ihren Bedürfnissen entspricht.
 

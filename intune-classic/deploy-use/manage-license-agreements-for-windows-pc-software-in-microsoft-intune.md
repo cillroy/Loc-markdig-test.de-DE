@@ -14,20 +14,20 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4cf9c062c99895c5ff59f6b8fee44d20284eaa46
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 901158ce14c5b686e43916727fa31280c17fd003
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mit Microsoft Intune können Sie Lizenzvertragsinformationen für Software, die im Rahmen von Microsoft-Volumenlizenzverträgen gekauft wurde, hinzufügen und verwalten. Gleiches gilt für Microsoft- oder Nicht-Microsoft-Software, die auf anderem Wege erworben wurde. Diese Informationen lassen sich in logischen Gruppen organisieren.
 
 > [!IMPORTANT]
-> Die Funktion dient nur zum Komfort; es wird keine Genauigkeit garantiert. Sie sollten sich nicht darauf beziehen, um die Einhaltung von Microsoft-Volumenlizenzverträgen zu bestätigen. Die erfassten Daten werden nicht von Microsoft genutzt, um Verstöße gegen Lizenzverträge mit Microsoft bzw. um die Einhaltung solcher Verträge zu untersuchen.
+> Die Funktion dient nur zum Komfort; es wird keine Genauigkeit garantiert. Sie sollten sich nicht darauf beziehen, um die Konformität von Microsoft-Volumenlizenzverträgen zu bestätigen. Die erfassten Daten werden nicht von Microsoft genutzt, um Verstöße gegen Lizenzverträge mit Microsoft bzw. um die Einhaltung solcher Verträge zu untersuchen.
 >
 > Lizenzen, die Sie zu Intune hinzufügen, wirken sich nicht auf Ihre Lizenzverträge oder auf die Nutzungsberechtigungen für Ihre Software aus. Wenn Sie beispielsweise ein Lizenzvertragsnummernpaar aus Intune löschen, werden keine Lizenzverträge zwischen Ihnen und Microsoft gelöscht oder annulliert.
 
@@ -174,10 +174,12 @@ Die Listenansicht **Alle Verträge** wird angezeigt.
 ## <a name="manage-license-agreements"></a>Verwalten von Lizenzverträgen
 Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie können Lizenzgruppen verwenden, um Ihre Lizenzverträge in Einheiten zu organisieren, die für Ihre Organisation logisch sind. Darüber hinaus können Sie Lizenzverträge löschen, die Sie zuvor erstellt haben.
 
-|||
-|-|-|
-|Aufgabe|Details|
-|Erstellen einer Lizenzgruppe|Wählen Sie auf der Seite **Übersicht** des Arbeitsbereichs **Lizenzen** im Menü **Aufgaben** die Option **Lizenzgruppe erstellen** aus. **Hinweis:** Sie können insgesamt bis zu 500 Lizenzgruppen erstellen.|
-|Umbenennen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe bearbeiten**.|
-|Löschen einer Lizenzgruppe|Wählen Sie im Arbeitsbereich **Lizenzen** eine Lizenzgruppe aus, und klicken Sie anschließend im Menü **Aufgaben** auf die Option **Lizenzgruppe löschen**. **Tipp:** Alle Lizenzen in der Gruppe mit zu löschenden Lizenzen werden in die Lizenzgruppe **Nicht zugewiesene Verträge** verschoben.|
-|Löschen von Lizenzverträgen|Wählen Sie im Arbeitsbereich **Lizenzen** einen Vertrag aus, und klicken Sie auf **Löschen**. **Tipp:** Klicken Sie nach dem Löschen von Volumenlizenzverträgen zum Aktualisieren der Lizenzinformationen auf der Seite **Übersicht über Lizenzen** oder auf der Registerkarte **Allgemein** für eine bestimmte Lizenzgruppe auf **Jetzt aktualisieren**.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Aufgabe            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
+|   Erstellen einer Lizenzgruppe   |                                                            Wählen Sie auf der Seite <strong>Übersicht</strong> des Arbeitsbereichs <strong>Lizenzen</strong> im Menü <strong>Aufgaben</strong> die Option <strong>Lizenzgruppe erstellen</strong> aus. <strong>Hinweis:</strong> Sie können insgesamt bis zu 500 Lizenzgruppen erstellen.                                                             |
+|   Umbenennen einer Lizenzgruppe   |                                                                                                      Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> eine Lizenzgruppe aus, und klicken Sie anschließend im Menü <strong>Aufgaben</strong> auf die Option <strong>Lizenzgruppe bearbeiten</strong>.                                                                                                       |
+|   Löschen einer Lizenzgruppe   |                                 Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> eine Lizenzgruppe aus, und klicken Sie anschließend im Menü <strong>Aufgaben</strong> auf die Option <strong>Lizenzgruppe löschen</strong>. <strong>Tipp:</strong> Alle Lizenzen in der Gruppe mit zu löschenden Lizenzen werden in die Lizenzgruppe <strong>Nicht zugewiesene Verträge</strong> verschoben.                                 |
+| Löschen von Lizenzverträgen | Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> einen Vertrag aus, und klicken Sie auf <strong>Löschen</strong>. <strong>Tipp:</strong> Klicken Sie nach dem Löschen von Volumenlizenzverträgen zum Aktualisieren der Lizenzinformationen auf der Seite <strong>Übersicht über Lizenzen</strong> oder auf der Registerkarte <strong>Allgemein</strong> für eine bestimmte Lizenzgruppe auf <strong>Jetzt aktualisieren</strong>. |
+

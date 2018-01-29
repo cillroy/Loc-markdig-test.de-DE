@@ -15,11 +15,11 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: cd071927955f5047067ba1d982e7078d89675cd0
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
@@ -65,12 +65,12 @@ Stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen
 
 In diesem Schritt konfigurieren Sie Zuweisungen für die App-Suite. Beachten Sie, dass der verfügbare App-Typ in Kürze verfügbar ist.
 
-1.  Wählen Sie die App-Suite in der Liste der Apps und dann **Zuweisungen** aus.
-2.  Klicken Sie auf **Gruppen auswählen**.
-3.  Ordnen Sie die Suite den von Ihnen ausgewählten Gruppen zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](/intune/apps-deploy).
-4.  Wählen Sie für jede Gruppe **erfordern installieren**.
-        >[!Note]
-        > You cannot uninstall Office 365 through Intune.
+1. Wählen Sie die App-Suite in der Liste der Apps und dann **Zuweisungen** aus.
+2. Klicken Sie auf **Gruppen auswählen**.
+3. Ordnen Sie die Suite den von Ihnen ausgewählten Gruppen zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](/intune/apps-deploy).
+4. Wählen Sie für jede Gruppe **erfordern installieren**.
+       >[!Note]
+       > You cannot uninstall Office 365 through Intune.
 
 5. Wählen Sie **Speichern**, um Ihre Zuweisungen zu committen.
 

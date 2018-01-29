@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 5d094e59b374ca306482cd1cb87f8a950df7fe14
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 023ddf464d64c414184384e7d982818121d432a8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-Glossar
 
@@ -38,11 +38,13 @@ ms.lasthandoff: 12/19/2017
 |Azure-Portal|Die neue Konsole für Intune [Weitere Informationen](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring Your Own Device](/intune/device-enrollment). Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Zertifikatprofil|Dieser Richtlinientyp wird verwendet, um [sicheren Zugriff auf Unternehmensressourcen mit Zertifikaten](/intune/certificates-configure) sicherzustellen, wenn Sie Wi-Fi-, E-Mail- oder VPN-Profile verwenden.|
@@ -54,6 +56,7 @@ ms.lasthandoff: 12/19/2017
 |Benutzerdefinierte Richtlinie|[Diese Richtlinien werden verwendet](/intune/custom-settings-configure), wenn eine allgemeine Konfigurationsrichtlinie keine integrierte Einstellung enthält, die Ihren Anforderungen entspricht. Sie könnten eine benutzerdefinierte Richtlinie verwenden, um eine Einstellung auf andere Weise zu erstellen, beispielsweise mithilfe von Apple Configurator oder OMA-URI.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Bereitstellung|Der Vorgang des Sendens einer App oder einer Richtlinie an ein Gerät oder einen Benutzer, das/den Sie verwalten. Diese Aktion heißt jetzt *zuweisen*.|
@@ -61,6 +64,7 @@ ms.lasthandoff: 12/19/2017
 |Geräteprofile|[Diese Profile](/intune/device-profile-create) ermöglichen Ihnen das Konfigurieren einer großen Vielzahl von Sicherheits-, Feature- und Zugriffseinstellungen auf von Ihnen verwalteten Geräten.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-Mail-Profil|Diese Richtlinie kann verwendet werden, um [E-Mail-Zugriffseinstellungen](/intune/email-settings-configure) auf mobilen Geräten einzurichten, sodass der Einrichtungsaufwand für den Endbenutzer minimiert wird.|
@@ -69,21 +73,25 @@ ms.lasthandoff: 12/19/2017
 |Registrieren|Microsoft Intune verwendet die [Registrierung](/intune/device-enrollment) dazu, Geräte in die Verwaltung aufzunehmen und den Zugriff auf Ressourcen zu ermöglichen.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Ein [Microsoft-Dienst](https://technet.microsoft.com/library/mt228265.aspx) für Intune-Benutzer mit 150 Lizenzen in einem berechtigten Plan. Über diesen Dienst können Microsoft-Spezialisten mit Ihnen zusammenarbeiten, um Sie beim Einrichten und Ausführen von Intune zu unterstützen.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Gruppen|Mithilfe von Gruppen können Sie [Benutzer oder Geräte logisch zusammenstellen](/intune/groups-get-started). Sie könnten beispielsweise eine Gruppe aller Windows-PCs erstellen. Sie können dann diesen Gruppen Apps und Profile zuweisen.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Hybrid|Eine Konfiguration, bei der Sie in Intune registrierte Geräte über die System Center Configuration Manager-Konsole verwalten können.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure-Portal|Das Azure-Portal, das Sie für die meisten Intune-Verwaltungsvorgänge verwenden.|
@@ -92,11 +100,13 @@ ms.lasthandoff: 12/19/2017
 |Inventarisierung|Damit können Sie die [Hardware und die installierte Software](/intune/device-inventory) von Geräten anzeigen, die Sie verwalten.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Kioskmodus|Mit diesem als Teil eines [Geräteeinschränkungsprofils](/intune/device-restrictions-configure) konfigurierten Modus können Sie Geräte sperren. Sie könnten beispielsweise ein Gerät in einer Filiale so konfigurieren, dass nur einige App darauf ausgeführt werden können.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Eine [Webbrowseranwendung](/intune/app-configuration-managed-browser), die Sie mit Intune in Ihrer Organisation zuweisen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.|
@@ -109,17 +119,20 @@ ms.lasthandoff: 12/19/2017
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Ein Geräteverwaltungsprotokoll gemäß Industriestandard, das von vielen Hardwareherstellern verwendet wird, um die Steuerung von Funktionen von mobilen Geräten und PCs zu ermöglichen.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Diese Elemente dienen zur Identifizierung einzelner Geräteeinstellungen, die dem OMA-DM-Standard entsprechen. Diese Einstellungen können in [benutzerdefinierten Intune-Profilen](/intune/custom-settings-configure) verwendet werden, wenn es keine integrierte Einstellung gibt, die Ihren Anforderungen entspricht.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Zurücksetzen der Kennung|Eine Intune-Funktion, mit der Sie auf unterstützten Geräten den Endbenutzer zum [Zurücksetzen der Kennung](/intune/device-passcode-reset) zwingen können.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Remotesperre|Eine Intune-Funktion, mit der Sie [unterstützte Geräte sperren](/intune/device-remote-lock) können, auch wenn Sie nicht im Besitz des Geräts sind.|
@@ -127,6 +140,7 @@ ms.lasthandoff: 12/19/2017
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Selektives Zurücksetzen|Bei einer [selektiven Zurücksetzung](/intune/device-company-data-remove) werden nur Unternehmensdaten, die von der App-Schutzrichtlinie geschützt werden, einschließlich Einstellungen und E-Mail-Profile, vom Gerät entfernt. Die persönlichen Daten des Benutzers bleiben beim selektiven Zurücksetzen auf dem Gerät erhalten.|
@@ -134,6 +148,7 @@ ms.lasthandoff: 12/19/2017
 |Abonnement|Die von Ihnen eingegangene Vereinbarung, die Ihnen den Zugriff auf einen Intune-Mandanten ermöglicht.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Eine Drittanbieteranwendung, die mit Intune verwendet werden kann, um [Funktionen der Remoteunterstützung](/intune/device-profile-android-teamviewer) für Android-Geräte bereitzustellen, die Sie mit Intune verwalten.|
@@ -141,12 +156,15 @@ ms.lasthandoff: 12/19/2017
 |Nutzungsbedingungen|Ein Richtlinientyp, den Sie Benutzern zuweisen und der Informationen enthält, die die Benutzer [lesen und akzeptieren](/intune/terms-and-conditions-create) müssen, bevor sie das Unternehmensportal zum Registrieren und zum Zugreifen auf ihre Arbeit verwenden können.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Per Volumenlizenz erworbene Apps und Bücher|Einige App-Stores bieten die Möglichkeit, mehrere Lizenzen für Apps oder Bücher zu erwerben, die in Ihrem Unternehmen verwendet werden sollen. Intune hilft Ihnen beim Verwalten von Apps und Büchern, [die Sie über ein solches Programm erworben haben](/intune/vpp-apps). Sie können die Volumenlizenzinformationen aus dem App-Store importieren, die Anzahl der verwendeten Lizenzen nachverfolgen und sich daran hindern, mehr Kopien einer App zu installieren, als Sie besitzen.|
 |VPN-Profil|Eine Richtlinie, die [VPN-Einstellungen](/intune/vpn-settings-configure) für von Ihnen verwaltete Geräte zuweist, wodurch der erforderliche Einrichtungsaufwand für Endbenutzer minimiert wird.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|WLAN-Profil|Eine Richtlinie, die [WLAN-Einstellungen](/intune/wi-fi-settings-configure) für Geräte bereitstellt, sodass Benutzer eine Verbindung mit Ihrem Firmennetzwerk herstellen können, ohne entsprechende Einstellungen kennen oder konfigurieren zu müssen.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WLAN-Profil | Eine Richtlinie, die [WLAN-Einstellungen](/intune/wi-fi-settings-configure) für Geräte bereitstellt, sodass Benutzer eine Verbindung mit Ihrem Firmennetzwerk herstellen können, ohne entsprechende Einstellungen kennen oder konfigurieren zu müssen. |
+

@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e2935404bb3f196cea61f01d1f1cf8b37b307752
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.        
 
@@ -36,14 +36,14 @@ Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertr
 Der Unternehmensname wird als Titel des Unternehmensportals angezeigt. Die Kontaktinformationen werden Benutzern im Unternehmensportal auf dem Bildschirm **An IT-Abteilung wenden** angezeigt. Die Datenschutzerklärung wird angezeigt, wenn ein Benutzer auf den Datenschutzlink klickt.        
 
 
-|Feldname|Max. Länge|Weitere Informationen|        
-|-|-|-|     
-|**Firmenname**|40|Dieser Name wird als Titel des Unternehmensportals angezeigt.|        
-|**Kontaktname für IT-Abteilung**|40|Dieser Name wird auf der Seite **An IT-Abteilung wenden** angezeigt.|      
-|**Telefonnummer der IT-Abteilung**|20|Diese Telefonnummer wird auf der Seite **An IT-Abteilung wenden** angezeigt.|        
-|E-Mail-Adresse der IT-Abteilung|40|Diese Kontaktadresse wird auf der Seite **An IT-Abteilung** wenden angezeigt. Sie müssen eine gültige E-Mail-Adresse im Format **alias@domainname.com** eingeben.|     
-|**Weitere Informationen**|120|Dies wird auf der Seite **An IT-Abteilung wenden** angezeigt.|      
-|**URL der Datenschutzrichtlinie des Unternehmens**|79|Sie können eine eigene Datenschutzerklärung für Ihr Unternehmen angeben. Diese wird angezeigt, wenn die Benutzer im Unternehmensportal auf die Datenschutzlinks klicken. Sie müssen eine gültige URL im Format **http://www.contoso.com** eingeben.|        
+|                   Feldname                   | Max. Länge |                                                                                                Weitere Informationen                                                                                                |
+|------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>Firmenname</strong>          |     40     |                                                                           Dieser Name wird als Titel des Unternehmensportals angezeigt.                                                                           |
+|  <strong>Kontaktname für IT-Abteilung</strong>   |     40     |                                                                        Dieser Name wird auf der Seite <strong>An IT-Abteilung wenden</strong> angezeigt.                                                                         |
+|  <strong>Telefonnummer der IT-Abteilung</strong>   |     20     |                                                                   Diese Telefonnummer wird auf der Seite <strong>An IT-Abteilung wenden</strong> angezeigt.                                                                    |
+|          E-Mail-Adresse der IT-Abteilung           |     40     |                      Diese Kontaktadresse wird auf der Seite <strong>An IT-Abteilung</strong> wenden angezeigt. Sie müssen eine gültige E-Mail-Adresse im Format <strong>alias@domainname.com</strong> eingeben.                      |
+|    <strong>Weitere Informationen</strong>     |    120     |                                                                               Dies wird auf der Seite <strong>An IT-Abteilung wenden</strong> angezeigt.                                                                               |
+| <strong>URL der Datenschutzrichtlinie des Unternehmens</strong> |     79     | Sie können eine eigene Datenschutzerklärung für Ihr Unternehmen angeben. Diese wird angezeigt, wenn die Benutzer im Unternehmensportal auf die Datenschutzlinks klicken. Sie müssen eine gültige URL im Format <strong>http://www.contoso.com</strong> eingeben. |
 
 ## <a name="support-contacts"></a>Supportkontakte     
 Die Supportwebsite wird Benutzern im Unternehmensportal angezeigt, um ihnen Zugriff auf Onlinesupport zu ermöglichen.        

@@ -15,15 +15,15 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24ec619a2e11a81c5988f6c95a268222a454360e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0ceedc19e562f2b5467de1b5096d7446e1b74799
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie erhalten auch Informationen zu [bevorstehenden Änderungen](#whats-coming), [wichtige Hinweise](#notices) zum Dienst und Informationen zu [vorherigen Versionen](whats-new-archive.md).
 
@@ -42,7 +42,7 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
  
 -->   
 
-## <a name="week-of-december-11-2017"></a>Woche des 11 Dezember 2017
+## <a name="week-of-december-11-2017"></a>Woche des 11. Dezember 2017
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -61,7 +61,7 @@ IT-Administratoren können auch anpassen, welche Benutzer Benachrichtigungen emp
 
 #### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755---"></a>Unterstützung für mehrere Connectors für die Behandlung von SCEP- und PFX-Zertifikaten <!-- 1361755 -->
 
-Kunden, die den lokalen NDES-Connector verwenden, um Zertifikate auf Geräten zu übermitteln, können jetzt mehrere Connectors in einem einzigen Mandanten konfigurieren.
+Kunden, die den lokalen NDES-Connector zum Übermitteln von Zertifikaten an Geräte verwenden, können ab sofort mehrere Connectors in einem einzelnen Mandanten konfigurieren.
 
 Diese neue Funktion unterstützt das folgende Szenario:
 
@@ -69,27 +69,27 @@ Diese neue Funktion unterstützt das folgende Szenario:
 
 Jeder NDES-Connector bezieht Zertifikatanforderungen mithilfe von Pull von Intune.  Wenn ein NDES-Connector offline geschaltet wird, kann der andere Connector weiterhin Anforderungen verarbeiten.
 
-#### <a name="customer-subject-name-can-use-aaddeviceid-variable-----1468599---"></a>Antragstellername Kunden kann AAD_DEVICE_ID Variable verwenden.<!-- 1468599 -->
+#### <a name="customer-subject-name-can-use-aaddeviceid-variable-----1468599---"></a>Möglichkeit zur Verwendung der Variable AAD_DEVICE_ID im benutzerdefinierten Antragstellernamen <!-- 1468599 -->
 
-Beim Erstellen eines SCEP-Zertifikatprofils in Intune können Sie jetzt die AAD_DEVICE_ID Variable verwenden, bei der Erstellung der benutzerdefinierten Antragstellername.   Wenn das Zertifikat mit diesem SCEP-Profil angefordert wird, wird die Variable durch die AAD-Geräte-ID des Geräts anfordernde Zertifikat ersetzt.
+Wenn Sie ein SCEP-Zertifikatprofil in Intune erstellen, können Sie beim Erstellen des benutzerdefinierten Antragstellernamens ab sofort die Variable AAD_DEVICE_ID verwenden.   Wenn das Zertifikat mithilfe dieses SCEP-Profils angefordert wird, wird die Variable durch die AAD-Geräte-ID des Geräts ersetzt, das die Zertifikatsanforderung ausführt.
 
 
 ### <a name="device-management"></a>Geräteverwaltung
 
 #### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Verwalten von über Jamf registrierten macOS-Geräten mit dem Gerätekonformitätsmodul von Intune <!-- 1592747 -->
-Sie können jetzt Jamf verwenden, MacOS Zustandsinformationen Gerät in Intune, senden, der dann es für die Einhaltung von Richtlinien, die in der Intune-Verwaltungskonsole definiert ausgewertet wird. Basierend auf dem Konformitätszustand des Geräts und anderen Bedingungen (z.B. Standort, Benutzerrisiko usw.) wird die Konformität für macOS-Geräte, die auf mit Azure AD verbundene Cloud- und lokale Anwendungen zugreifen (einschließlich Office 365) mithilfe des bedingten Zugriffs erzwungen. Erfahren Sie mehr über [Jamf-Integration einrichten](conditional-access-integrate-jamf.md) und [Erzwingen der Kompatibilität für Geräte verwaltet werden Jamf](conditional-access-assign-jamf.md).
+Ab sofort können Sie mit Jamf Informationen über den macOS-Gerätezustand an Intune senden. Dort werden sie im Hinblick auf Konformität mit den Richtlinien ausgewertet, die in der Intune-Konsole definiert sind. Basierend auf dem Konformitätszustand des Geräts und anderen Bedingungen (z.B. Standort, Benutzerrisiko usw.) wird die Konformität für macOS-Geräte, die auf mit Azure AD verbundene Cloud- und lokale Anwendungen zugreifen (einschließlich Office 365) mithilfe des bedingten Zugriffs erzwungen. Erfahren Sie mehr über die [Einrichtung der Jamf-Integration](conditional-access-integrate-jamf.md) und [Erzwingung der Konformität für Jamf-verwaltete Geräte](conditional-access-assign-jamf.md).
 
 #### <a name="new-ios-device-action------1424701---"></a>Neue iOS-Geräteaktion <!-- 1424701 -->
 
-Sie können jetzt iOS 10.3 überwachte Geräten Herunterfahren. Diese Aktion fährt das Gerät sofort und ohne Warnung für den Endbenutzer herunter. Die Aktion **Herunterfahren (nur überwacht)** finden Sie in den Geräteeigenschaften bei der Auswahl eines Geräts in der Workload **Gerät**.
+Sie können nun überwachte iOS 10.3-Geräte herunterfahren. Diese Aktion fährt das Gerät sofort und ohne Warnung für den Endbenutzer herunter. Die Aktion **Herunterfahren (nur überwacht)** finden Sie in den Geräteeigenschaften bei der Auswahl eines Geräts in der Workload **Gerät**.
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Zu unterbinden, Datum/Uhrzeit-Änderungen für Samsung KNOX-Geräte<!-- 1468103 -->
 
-Wir haben ein neues Feature hinzugefügt, das Blockieren von Datum und Uhrzeit der Änderungen für Samsung KNOX-Geräte ermöglicht. Sie finden diese in **Konfiguration Geräteprofile** > **geräteeinschränkungen (Android)** > **allgemeine**.
+Wir haben ein neues Feature hinzugefügt, das Blockieren von Datum und Uhrzeit der Änderungen für Samsung KNOX-Geräte ermöglicht. Sie finden dieses unter **Gerätekonfigurationsprofile** > **Geräteeinschränkungen (Android)** > **Allgemein**.
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>Unterstützung für Surface Hub-Ressourcenkonto <!-- 1566442  -->
 
-Eine neue Gerät-Aktion wurde hinzugefügt, damit Administratoren definieren und der Ressource, das ein Surface Hub zugeordnet aktualisieren werden können.
+Eine neue Geräteaktion wurde hinzugefügt, damit Administratoren das einem Surface Hub zugeordnete Ressourcenkonto definieren und aktualisieren können.
 
 Das Ressourcenkonto wird von einem Surface Hub für die Authentifizierung bei Skype/Exchange verwendet, um seine Teilnahme an einer Besprechung zu ermöglichen. Sie können ein eindeutiges Ressourcenkonto erstellen, damit der Surface Hub in der Besprechung als Konferenzraum angezeigt wird. Beispielsweise kann das Ressourcenkonto als *Konferenzraum B41/6233* angezeigt werden. Das Ressourcenkonto (auch als Gerätekonto bezeichnet) für den Surface Hub muss in der Regel für den Standort des Konferenzraums konfiguriert werden, wenn andere Parameter des Ressourcenkontos geändert werden müssen.
 
@@ -109,11 +109,11 @@ Administratoren können folgende Einstellungen konfigurieren:
 
 - **Optionaler Ressourcenkontoparameter** (muss über das angegebene Ressourcenkonto festgelegt werden)
 
-   - **Kennwort Drehung Zeitraum**
+   - **Zeitraum für Kennwortrotation**
 
      Stellt sicher, dass das Kontokennwort aus Sicherheitsgründen jede Woche automatisch durch den Surface Hub aktualisiert wird. Um nach dem Aktivieren dieser Option Parameter zu konfigurieren, muss das Kennwort für das Konto in Azure Active Directory zuerst zurückgesetzt werden.
 
-   - **SIP (Session Initiation Protocol)-Adresse**
+   - **SIP-Adresse (Session Initiation-Protokoll)**
 
      Wird nur verwendet, wenn die AutoErmittlung nicht möglich ist.
 
@@ -121,27 +121,27 @@ Administratoren können folgende Einstellungen konfigurieren:
 
      E-Mail-Adresse des Geräte-/Ressourcenkontos.
 
-   - **Exchange-server**
+   - **Exchange-Server**
 
      Nur erforderlich, wenn die AutoErmittlung nicht möglich ist.
 
-   - **Calendar-Synchronisierung**
+   - **Kalendersynchronisierung**
 
      Gibt an, ob die Kalendersynchronisierung und andere Exchange-Serverdienste aktiviert sind. Beispiel: die Besprechungssynchronisierung.
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>Installieren von Office-Apps auf macOS-Geräten <!-- 1494311 -->
-Sie werden können Office-apps auf Geräten MacOS installieren. Dieser neue App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese apps werden auch mit dem Microsoft AutoUpdate (MAU), um Ihre apps sicher und auf dem neuesten Stand zu halten.
+Sie können nun Office-Apps auf macOS-Geräten installieren. Dieser neue App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese Apps sind auch im Lieferumfang von Microsoft AutoUpdate (MAU) enthalten, um Ihre Apps sicher und auf dem neuesten Stand zu halten.
 
 ### <a name="app-management"></a>App-Verwaltung
 
 #### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Löschen eines iOS Volume Purchase Program-Tokens <!-- 820879 -->
-Sie können das iOS Volume Erwerb Program (VPP) an, die mithilfe der Konsole löschen. Dies kann erforderlich sein, wenn doppelte Instanzen eines VPP-Tokens vorliegen.
+Sie können das iOS-VPP-Token (Volume Purchase Program) über die Konsole löschen. Dies kann erforderlich sein, wenn doppelte Instanzen eines VPP-Tokens vorliegen.
 
 ### <a name="intune-apps"></a>Intune-Apps
 
-#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>Endbenutzer-messaging für Konten<!--1573558 for 1712-->
+#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>Endbenutzernachrichten für Konten<!--1573558 for 1712-->
 
-Benutzer von der Unternehmensportal-Website blockiert Maßnahmen, die Schreibzugriff auf Ihren Mandanten zu erfordern. Sie sehen die entsprechenden Fehler messaging erläutert, die ihrem Konto gewartet wird. Ähnliche Änderungen an den Unternehmensportal-apps für Android, iOS, Mac OS und Windows in Kürze verfügbar. Sie können daher die Fehlermeldung in der [Neuheiten bei app-Benutzeroberfläche](whats-new-app-ui.md). 
+Benutzer der Unternehmensportalwebsite werden an der Ausführung von Aktionen, die Schreibzugriff auf Ihren Mandanten erfordern, gehindert. Die Fehlermeldung, dass ihre Konten gewartet werden, wird angezeigt. Ähnliche Änderungen sind in Kürze für Unternehmensportal-Apps für Android, iOS, macOS und Windows verfügbar. Sie können diese Fehlermeldung auf der Seite [Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune](whats-new-app-ui.md) anzeigen. 
 
 
 
@@ -149,14 +149,14 @@ Benutzer von der Unternehmensportal-Website blockiert Maßnahmen, die Schreibzug
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>Eine neue Entitätssammlung namens „Aktueller Benutzer“ ist auf die Daten der momentan aktiven Benutzer beschränkt.<!-- 1667026 -->
 
-Die **Benutzer** entitätsauflistung enthält alle Azure Active Directory (Azure AD)-Benutzer mit zugewiesenen Lizenzen in Ihrem Unternehmen. Beispielsweise kann ein Benutzer in Intune hinzugefügt und dann im Verlauf des letzten Monats entfernt worden sein. Auch wenn dieser Benutzer zum Zeitpunkt der Berichterstellung nicht vorhanden ist, liegen Angaben zu Benutzer und Zustand in den Daten vor. Sie können einen Bericht erstellen, der die Dauer der Präsenz des Benutzers in Ihren Daten zeigt.
+Die Entitätssammlung **Benutzer** listet alle Benutzer von Azure Active Directory (Azure AD) mit zugewiesenen Lizenzen in Ihrem Unternehmen auf. Beispielsweise kann ein Benutzer in Intune hinzugefügt und dann im Verlauf des letzten Monats entfernt worden sein. Auch wenn dieser Benutzer zum Zeitpunkt der Berichterstellung nicht vorhanden ist, liegen Angaben zu Benutzer und Zustand in den Daten vor. Sie können einen Bericht erstellen, der die Dauer der Präsenz des Benutzers in Ihren Daten zeigt.
 
 Im Gegensatz dazu enthält die neue Entitätssammlung **Aktueller Benutzer** nur Benutzer, die nicht entfernt wurden. Die Entitätssammlung **Aktueller Benutzer** enthält nur die derzeit aktiven Benutzer. Informationen zur Entitätssammlung **Aktueller Benutzer** finden Sie unter [Referenz für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
 
 
 ### <a name="updated-graph-apis----1736360---"></a>Aktualisierte Graph-APIs<!-- 1736360 -->
 
-In dieser Version haben wir ein Paar von der Graph-API für Intune, mit denen in der Betaversion werden aktualisiert. Überprüfen Sie die monatlichen [Graph-API Änderungsprotokoll](https://developer.microsoft.com/graph/docs/concepts/changelog) für Weitere Informationen.
+In diesem Release haben wir einige der Graph-APIs für Intune aktualisiert, die sich in der Betaphase befinden. Weitere Informationen finden Sie im monatlichen [Graph-API-Änderungsprotokoll](https://developer.microsoft.com/graph/docs/concepts/changelog).
 
 
 ## <a name="week-of-december-4-2017"></a>Woche des 4. Dezember 2017
@@ -252,7 +252,7 @@ Der Prozess und die Tools zum Verschieben von Benutzern und deren zugehörigen G
 Ausführlichere Angaben finden Sie unter [Migrieren von Benutzern und Geräten in einer MDM-Hybridlösung zu eigenständigem Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 #### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Hochverfügbarkeit der Unterstützung von lokalem Exchange-Connector <!-- 676614 -->
-Nachdem der Exchange-Connector eine Verbindung mit Exchange, die mit dem angegebenen CAS erstellt wurde, kann der Connector jetzt mit der Ermittlung andere CASs. Die primäre Zertifizierungsstellen nicht verfügbar, der Connector Failover wird auf einem anderen Zertifizierungsstellen, falls verfügbar, bis die primäre Zertifizierungsstellen verfügbar ist. Weitere Informationen finden Sie unter [auf lokales Exchange Connector-Unterstützung für hohe Verfügbarkeit](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
+Nachdem der Exchange-Connector mit dem angegebenen CAS eine Verbindung mit Exchange hergestellt hat, weist der Connector nun die Möglichkeit zur Ermittlung anderer CAS auf. Wenn der primäre CAS nicht mehr verfügbar ist, wird für den Connector ggf. ein Failover auf einen anderen CAS durchgeführt, bis der primäre CAS verfügbar wird. Einzelheiten finden Sie unter [Hochverfügbarkeitsunterstützung für lokalen Exchange Connector](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
 
 #### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>Remote-Neustart von iOS-Geräten (nur überwacht) <!-- 1424595 -->
 
@@ -539,7 +539,7 @@ The Company Portal app for Android can now use geofencing to protect access to c
 #### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Unterstützen Ihrer Benutzer bei der eigenständigen Problemlösung über die Unternehmensportal-App für Android <!-- 1573324, 1573150, 1558616, 1564878 -->
 
 In der Unternehmensportal-App für Android wurden Anweisungen für Benutzer hinzugefügt, um ihnen Anwendungsfälle zu erläutern und ihnen nach Möglichkeit das eigenständige Lösen dieser Anwendungsfälle zu ermöglichen.
-- Endbenutzer der Assistent unterstützt Sie auf die [Azure Active Directory-Portal](https://account.activedirectory.windowsazure.com/r/#/profile) ein Gerät zu entfernen, wenn sie die maximale Anzahl von Geräten, die sie erreicht haben hinzufügen dürfen.
+- Die Endbenutzer werden für das Entfernen eines Geräts zum [Azure Active Directory-Portal](https://account.activedirectory.windowsazure.com/r/#/profile) weitergeleitet, wenn sie die maximale Anzahl von Geräten, die hinzugefügt werden dürfen, überschritten haben.
 - Den Benutzern wird eine Anleitung zur Verfügung gestellt, die ihnen dabei helfen soll, [Fehler bei der Aktivierung auf Samsung KNOX-Geräten zu beheben](https://go.microsoft.com/fwlink/?linkid=859718) oder [den Energiesparmodus zu deaktivieren](/intune-user-help/power-saving-mode-android). Wenn keine dieser Lösungen bei der Behebung des Problems hilft, werden wir eine Erklärung zur Verfügung stellen, in der beschrieben wird, [wie Protokolle an Microsoft übermittelt werden können](/intune-user-help/send-logs-to-microsoft-ios).
 
 #### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Neue „Lösungs“-Aktion für Android-Geräte verfügbar <!-- 1583480 -->
@@ -730,8 +730,8 @@ In der Unternehmensportal-App für Windows 10 können Benutzer die Daten nun akt
 
 ## <a name="notices"></a>Benachrichtigungen
 
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Planen der Änderung: Easy Assist End of Life<!-- 1556480 -->
-Intune verwendet Microsoft Easy Assist, für die Remoteunterstützung für PC-Verwaltung. Eine Sache, die Sie möglicherweise nicht bekannt ist, dass Microsoft Easy Assist ist eine Komponente von Office Live Meeting, einen Dienst, der 31 Dezember 2017 als veraltet eingestuft ist. Aus diesem Grund wird Intune Easy Assist Angebot auch Ende ihrer Lebensdauer auf 31 Dezember 2017 erreichen.
+### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Änderungsplan: Ende der Lebensdauer von Easy Assist<!-- 1556480 -->
+Intune verwendet für die Remoteunterstützung der PC-Verwaltung den Microsoft Easy Assist. Ein Punkt, der Ihnen möglicherweise neu sein mag, ist die Tatsache, dass es sich beim Microsoft Easy Assist um eine Komponente von Office Live Meeting handelt – einem Dienst, der am 31. Dezember 2017 als veraltet markiert wird. Aus diesem Grund wird das Easy Assist-Angebot von Intune am 31. Dezember 2017 ebenfalls das Ende der Lebensdauer erreichen.
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Verwalten von Android for Work-Geräten unabhängig von Android-Geräten <!-- 1490731 EEready-->    
 **Hinweis**: Die folgenden Änderungen werden mit dem Update vom November eingeführt. Allerdings kann es einige Zeit dauern, bis sie auch für Ihr Konto erfolgen. Sie erhalten im Office 365-Portal eine Bestätigungsnachricht, wenn diese Änderungen auf Ihrem Konto vorgenommen worden sind. Nach dem Rollout werden Ihnen zusätzliche Verwaltungsfunktionen geboten. Während des Rollouts kommt es zu keinen Änderungen an der Benutzeroberfläche.
@@ -807,7 +807,7 @@ Apple hat angekündigt, dass bestimmte Anforderungen für die Transportsicherhei
 
 Wir haben im Apple TestFlight-Programm eine Version der Unternehmensportal-App für iOS zur Verfügung gestellt, die die neuen ATS-Anforderungen erzwingt. Wenn Sie sie ausprobieren möchten, um Ihre ATS-Konformität zu testen, senden Sie eine E-Mail mit Angaben zu Vorname, Nachname, E-Mail-Adresse und Firmenname an <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a>. Unter [Intune support blog (Intune-Supportblog)](https://aka.ms/compportalats) finden Sie weitere Informationen.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What‘s new in the Intune App UI (Neues auf der Intune-App-Benutzeroberfläche)](whats-new-app-ui.md)

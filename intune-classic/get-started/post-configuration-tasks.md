@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1d5881895eec857fbf52e6ac3a28d5888a2834d
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 8c0095e75e1302bf0c9aeb64e8304f38ea43a6d1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="post-configuration-tasks"></a>Aufgaben nach der Konfiguration
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nach Abschluss der anfänglichen Konfigurationsschritte für ein kostenpflichtiges Intune-Abonnement können Sie zusätzliche Verwaltungsfunktionen für mobile Geräte aktivieren.
 

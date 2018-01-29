@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5628dcdf35aef4c208e7a1150c21df4891f81852
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: df528e03abfd2ce2d70938567c108f9aacbc3d83
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Behinderungen
 Microsoft ist bestrebt, seine Produkte und Dienste für alle benutzerfreundlicher zu gestalten. In den folgenden Hilfethemen finden Sie Informationen zu den Funktionen, Produkten und Diensten, die den Zugriff auf Microsoft Intune für Personen mit Behinderungen vereinfachen:

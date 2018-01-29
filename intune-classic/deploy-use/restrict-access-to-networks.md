@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f96ed2a203f1b0edf28bebac9f79680b046fe0dd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bd236fd7ba6d011e69c654cec0f913765c704fa1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Verwenden von Cisco ISE mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die Intune-Integration mit Cisco Identity Services Engine (ISE) erlaubt Ihnen, in Ihrer ISE-Umgebung Netzwerkrichtlinien mithilfe der Intune-Geräteregistrierung und des Kompatibilitätszustands zu verfassen. Sie können diese Richtlinien so einsetzen, dass der Zugriff auf Ihr Unternehmensnetzwerk auf Geräte beschränkt wird, die von Intune verwaltet werden und mit Intune-Richtlinien kompatibel sind.
 
@@ -37,7 +37,7 @@ Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD
 #### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
-   a. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
+   ein. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
 
    b. Wählen Sie das Schlosssymbol in der Adressleiste und **Anzeigen von Zertifikaten** aus.
 
@@ -53,7 +53,7 @@ Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD
 
 #### <a name="safari"></a>Safari
 
- a. Melden Sie sich bei der Azure AD-Konsole an.
+ ein. Melden Sie sich bei der Azure AD-Konsole an.
 
 b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 
@@ -70,13 +70,13 @@ b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>Abrufen eines selbstsignierten Zertifikats von ISE 
 
-1.  Wechseln Sie in der ISE-Konsole zu **Verwaltung** > **Zertifikate** > **Systemzertifikaten** > **Selbstsigniertes Zertifikat generieren**.  
-2.       Exportieren Sie das selbstsignierte Zertifikat.
+1. Wechseln Sie in der ISE-Konsole zu **Verwaltung** > **Zertifikate** > **Systemzertifikaten** > **Selbstsigniertes Zertifikat generieren**.  
+2. Exportieren Sie das selbstsignierte Zertifikat.
 3. Bearbeiten Sie das exportierte Zertifikat in einem Texteditor:
 
- - Löschen Sie **-----BEGIN CERTIFICATE-----**
- - Löschen Sie **-----END CERTIFICATE-----**
- 
+   - Löschen Sie **-----BEGIN CERTIFICATE-----**
+   - Löschen Sie **-----END CERTIFICATE-----**
+
 Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 
 
@@ -88,13 +88,13 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 5. Speichern Sie die Datei, ohne ihren Namen zu ändern.
 6. Stellen Sie Ihrer App Berechtigungen für Microsoft Graph und die Microsoft Intune-API bereit.
 
- a. Wählen Sie für Microsoft Graph Folgendes aus:
+   ein. Wählen Sie für Microsoft Graph Folgendes aus:
     - **Anwendungsberechtigungen**: Lesen von Verzeichnisdaten
     - **Delegierte Berechtigungen**:
         - Jederzeit auf die Daten des Benutzers zugreifen
         - Benutzer anmelden
 
- b. Wählen Sie für die Microsoft Intune-API in **Anwendungsberechtigungen** **Abrufen des Gerätestatus und der Kompatibilität von Intune** aus.
+   b. Wählen Sie für die Microsoft Intune-API in **Anwendungsberechtigungen** **Abrufen des Gerätestatus und der Kompatibilität von Intune** aus.
 
 7. Wählen Sie **Endpunkte anzeigen** aus, und kopieren Sie die folgenden Werte für die Verwendung bei der Konfiguration der ISE-Einstellungen:
 
@@ -105,23 +105,40 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 |Code mit Client-ID aktualisieren|Client-ID|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Schritt 4: Hochladen des selbstsignierten Zertifikats aus ISE in die ISE-App, die Sie in Azure AD erstellt haben
-1.     Rufen Sie den base64-codierten Zertifikatswert und Fingerabdruck aus einer öffentlichen CER X509-Zertifikatsdatei ab. In diesem Beispiel wird PowerShell verwendet:
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Speichern Sie die Werte für „$base64Thumbprint“, „$base64Value“ und „$keyid“, die im nächsten Schritt verwendet werden.
-2.       Laden Sie das Zertifikat mithilfe der Manifestdatei hoch. Melden Sie sich beim [Azure-Verwaltungsportal](https://manage.windowsazure.com) an
-2.      Suchen Sie im Azure AD-Snap-In die Anwendung, die Sie mit einem X.509-Zertifikat konfigurieren möchten.
-3.      Laden Sie die Anwendungsmanifestdatei herunter. 
-5.      Ersetzen Sie die leere Eigenschaft „KeyCredentials“: [] durch den folgenden JSON-Code.  Der komplexe Typ „KeyCredentials“ ist in der [Entity and complex type reference (Referenz zu Entitäten und komplexen Typen)](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) dokumentiert.
+1. Rufen Sie den base64-codierten Zertifikatswert und Fingerabdruck aus einer öffentlichen CER X509-Zertifikatsdatei ab. In diesem Beispiel wird PowerShell verwendet:
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Laden Sie das Zertifikat mithilfe der Manifestdatei hoch. Melden Sie sich beim [Azure-Verwaltungsportal](https://manage.windowsazure.com) an
+3. Suchen Sie im Azure AD-Snap-In die Anwendung, die Sie mit einem X.509-Zertifikat konfigurieren möchten.
+4. Laden Sie die Anwendungsmanifestdatei herunter. 
+5. Ersetzen Sie die leere Eigenschaft „KeyCredentials“: [] durch den folgenden JSON-Code.  Der komplexe Typ „KeyCredentials“ ist in der [Entity and complex type reference (Referenz zu Entitäten und komplexen Typen)](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) dokumentiert.
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 Beispiel:
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Beispiel:
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Speichern Sie die Änderung an der Anwendungsmanifestdatei.
-7.      Laden Sie die bearbeitete Anwendungsmanifestdatei mithilfe des Azure-Verwaltungsportals hoch.
-8.      Optional: Laden Sie das Manifest erneut herunter, um zu überprüfen, ob Ihr X.509-Zertifikat in der Anwendung vorhanden ist.
+
+6. Speichern Sie die Änderung an der Anwendungsmanifestdatei.
+7. Laden Sie die bearbeitete Anwendungsmanifestdatei mithilfe des Azure-Verwaltungsportals hoch.
+8. Optional: Laden Sie das Manifest erneut herunter, um zu überprüfen, ob Ihr X.509-Zertifikat in der Anwendung vorhanden ist.
 
 >[!NOTE]
 >
@@ -187,6 +204,6 @@ Wenn der Benutzer sich für die Registrierung entscheidet, wird er zum Intune-Re
 Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a), die Sie verwenden können, um einen angepassten Leitfaden für Ihre Benutzerfreundlichkeit zu erstellen.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Cisco Identity Services Engine-Administratorhandbuch, Version 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

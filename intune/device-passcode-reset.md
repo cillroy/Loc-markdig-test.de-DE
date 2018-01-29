@@ -14,16 +14,16 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 591939c50ef093235b8b63589476012b69f204e1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Zurücksetzen und Entfernen der Kennung auf von Intune verwalteten Geräten
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Die Begriffe *entfernen* und *zurücksetzen* sind im Kontext dieses Artikels austauschbar.
 

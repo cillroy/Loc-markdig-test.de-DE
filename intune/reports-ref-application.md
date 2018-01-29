@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e80758f0fc96394a4f1c474037b7584fa39b1678
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 09778d0b7ec208b64f9575713123c725dcd63695
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
@@ -89,7 +89,7 @@ Die Entität **VppProgramTypes** führt mögliche VPP-Programmtypen für eine Ap
 |---------|------------|
 | VppProgramTypeID | ID für den Typen |
 | VppProgramTypeKey | Ersatzschlüssel für den Schlüssel |
-| VppProgramTypeName | Typ des VPP-Programms. |
+| VppProgramTypeName | VPP-Programmtyp |
 
 ### <a name="example"></a>Beispiel
 
@@ -115,23 +115,25 @@ Die Entität **ApplicationInventory** listet die Anwendungen auf, die zum Zeitpu
 
 ## <a name="mobileappinstallstate"></a>MobileAppInstallState
 
-Die **MobileAppInstallState** Entität den Installationsstatus für eine mobile Anwendung darstellt, nachdem sie eine Gruppe, die Geräte, Benutzer oder beides zugewiesen wurde.
+Die Entität **MobileAppInstallState** stellt den Installationsstatus für eine mobile Anwendung dar, nachdem sie einer Gruppe, die Geräte und/oder Benutzer enthält, zugewiesen haben.
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| AppInstallStateKey | Die eindeutige ID der app des Installationsstatus für Ihr Konto. |
-| AppInstallState | Enum-Wert, der die app-Installationsstatus. |
-| AppInstallStateName | Name des app-Installationsstatus. |
+| AppInstallStateKey | Die eindeutige ID des App-Installationsstatus für Ihr Konto |
+| AppInstallState | Enumerationswert des App-Installationsstatus |
+| AppInstallStateName | Name des App-Installationsstatus |
 
 ## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-Die **MobileAppDeviceUserInstallStatus** eine mobile app-Installationsstatus für ein angegebenes Gerät und den Benutzer darstellt.
+**MobileAppDeviceUserInstallStatus** stellt einen mobilen App-Installationsstatus für ein bestimmtes Gerät und einen bestimmten Benutzer dar.
 
-| Eigenschaft | Beschreibung |
-|---|---|
-| DateKey | Schlüssel, der das Datum aus, wenn der Installationsstatus die App, aufgezeichnet wurde. |
-| AppKey | Der Schlüssel der mobilen Anwendung verwendet, um eine Instanz eines AppRevision identifiziert. |
-| DeviceKey | Schlüssel des ein Zielgerät zum Identifizieren einer Instanz des Geräts verwendet. |
-| UserKey | Schlüssel des ein bestimmten Benutzer, die zum Identifizieren einer Instanz des Benutzers verwendet. |
-|AppInstallStateKey | Schlüssel der app-Installationsstatus verwendet, um eine Instanz eines MobileAppInstallState identifiziert. |
-| ErrorCode | Die von der app-Installer, der mobile-Plattform oder den Dienst bezieht sich auf die Installation der app zurückgegebene Fehlercode. |
+
+|      Eigenschaft      |                                                         Beschreibung                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Schlüssel des Datums, an dem der App-Installationsstatus erfasst wurde                                  |
+|       AppKey       |                             Schlüssel der mobilen App, mit der eine Instanz von AppRevision identifiziert wird                              |
+|     DeviceKey      |                              Schlüssel eines Zielgeräts, das zur Identifizierung einer Instanz von Device verwendet wird                               |
+|      UserKey       |                                Schlüssel eines Zielbenutzers, der zur Identifizierung einer Instanz von User verwendet wird                                 |
+| AppInstallStateKey |                     Schlüssel des App-Installationsstatus, der zur Identifizierung einer Instanz von MobileAppInstallState verwendet wird                     |
+|     ErrorCode      | Der vom App-Installer zurückgegebene Fehlercode, die mobile Plattform oder der Dienst zur Installation der App. |
+

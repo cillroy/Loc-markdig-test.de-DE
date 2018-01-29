@@ -14,15 +14,15 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1e9764e9f77d8902fe053952b302a36f9103457b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie müssen die Intune-Konformitätsrichtlinie für mobile Geräte und die Intune-Funktionen für die mobile Anwendungsverwaltung (Mobile Application Management, MAM) konfigurieren, um die Konformität mit dem bedingten Zugriff in Ihrer Organisation zu erzwingen. Im Folgenden werden gängige Möglichkeiten für die Verwendung des bedingten Zugriffs mit Intune erläutert.
 

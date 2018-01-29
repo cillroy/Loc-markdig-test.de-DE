@@ -15,40 +15,40 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 321ba7500605c66588cf9bacf7041934647fd6a0
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d6e3c6ee01a15dc403fefef00a1c1fe1d7537155
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="download-skycure-ios-app-configuration-policy"></a><span data-ttu-id="645b7-103">Herunterladen der Skycure iOS-App-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="645b7-103">Download Skycure iOS app configuration policy</span></span>
+# <a name="download-skycure-ios-app-configuration-policy"></a><span data-ttu-id="79821-103">Herunterladen der Skycure iOS-App-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="79821-103">Download Skycure iOS app configuration policy</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-## <a name="before-you-begin"></a><span data-ttu-id="645b7-104">Vorbereitung</span><span class="sxs-lookup"><span data-stu-id="645b7-104">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="79821-104">Vorbereitung</span><span class="sxs-lookup"><span data-stu-id="79821-104">Before you begin</span></span>
 
-<span data-ttu-id="645b7-105">Zur Ausführung der nächsten Schritte müssen Sie sich in der Skycure-Verwaltungskonsole anmelden.</span><span class="sxs-lookup"><span data-stu-id="645b7-105">You need to log in to the Skycure Management Console to perform the next steps.</span></span>
+<span data-ttu-id="79821-105">Zur Ausführung der nächsten Schritte müssen Sie sich in der Skycure-Verwaltungskonsole anmelden.</span><span class="sxs-lookup"><span data-stu-id="79821-105">You need to log in to the Skycure Management Console to perform the next steps.</span></span>
 
 > [!TIP] 
-> <span data-ttu-id="645b7-106">Wenn Sie Microsoft Internet Explorer 11 oder Edge verwenden, müssen Sie die Skycure-Verwaltungskonsole möglicherweise im privaten Modus öffnen.</span><span class="sxs-lookup"><span data-stu-id="645b7-106">If using Microsoft Internet explorer 11 or Edge, you might need to open the Skycure Management console using In-Private mode.</span></span>
+> <span data-ttu-id="79821-106">Wenn Sie Microsoft Internet Explorer 11 oder Edge verwenden, müssen Sie die Skycure-Verwaltungskonsole möglicherweise im privaten Modus öffnen.</span><span class="sxs-lookup"><span data-stu-id="79821-106">If using Microsoft Internet explorer 11 or Edge, you might need to open the Skycure Management console using In-Private mode.</span></span>
 
-## <a name="to-download-the-ios-app-configuration-policy"></a><span data-ttu-id="645b7-107">Herunterladen der iOS-App-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="645b7-107">To download the iOS app configuration policy</span></span>
+## <a name="to-download-the-ios-app-configuration-policy"></a><span data-ttu-id="79821-107">Herunterladen der iOS-App-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="79821-107">To download the iOS app configuration policy</span></span>
 
-1.  <span data-ttu-id="645b7-108">Gehen Sie zur [Skycure-Verwaltungskonsole](https://aad.skycure.com).</span><span class="sxs-lookup"><span data-stu-id="645b7-108">Go to [Skycure Management Console](https://aad.skycure.com).</span></span>
+1.  <span data-ttu-id="79821-108">Gehen Sie zur [Skycure-Verwaltungskonsole](https://aad.skycure.com).</span><span class="sxs-lookup"><span data-stu-id="79821-108">Go to [Skycure Management Console](https://aad.skycure.com).</span></span>
 
-2.  <span data-ttu-id="645b7-109">Geben Sie Ihre **Skycure-Administratoranmeldeinformationen** ein, und klicken Sie dann auf **Continue** (Weiter).</span><span class="sxs-lookup"><span data-stu-id="645b7-109">Enter your **Skycure admin credentials**, then click **Continue**.</span></span>
+2.  <span data-ttu-id="79821-109">Geben Sie Ihre **Skycure-Administratoranmeldeinformationen** ein, und klicken Sie dann auf **Continue** (Weiter).</span><span class="sxs-lookup"><span data-stu-id="79821-109">Enter your **Skycure admin credentials**, then click **Continue**.</span></span>
 
     ![Skycure-Verwaltungskonsolenanmeldung](../media/mtp/skycure-ios-app-1.png)
 
     > [!IMPORTANT] 
-    > <span data-ttu-id="645b7-111">Der Skycure-Administratorbenutzername ist ein E-Mail-Konto, das eine gültiges Benutzerkonto in Azure Active Directory sein muss, andernfalls schlägt die Anmeldung fehl.</span><span class="sxs-lookup"><span data-stu-id="645b7-111">The Skycure admin username is an e-mail account that must be a valid user account in the Azure Active Directory, otherwise the login will fail.</span></span> <span data-ttu-id="645b7-112">Skycure verwendet Azure Active Directory zum Authentifizieren des Administratorbenutzernamens mithilfe von einmaligem Anmelden (SSO).</span><span class="sxs-lookup"><span data-stu-id="645b7-112">Skycure uses Azure Active Directory to authenticate its admin username using Single Sign On (SSO).</span></span>
+    > <span data-ttu-id="79821-111">Der Skycure-Administratorbenutzername ist ein E-Mail-Konto, das eine gültiges Benutzerkonto in Azure Active Directory sein muss, andernfalls schlägt die Anmeldung fehl.</span><span class="sxs-lookup"><span data-stu-id="79821-111">The Skycure admin username is an e-mail account that must be a valid user account in the Azure Active Directory, otherwise the login will fail.</span></span> <span data-ttu-id="79821-112">Skycure verwendet Azure Active Directory zum Authentifizieren des Administratorbenutzernamens mithilfe von einmaligem Anmelden (SSO).</span><span class="sxs-lookup"><span data-stu-id="79821-112">Skycure uses Azure Active Directory to authenticate its admin username using Single Sign On (SSO).</span></span>
 
-3.  <span data-ttu-id="645b7-113">Wechseln Sie zu **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection** (Einstellungen > Geräteverwaltungsintegrationen > EMM-Integrationsauswahl), wählen Sie **Microsoft Intune** aus, und speichern Sie dann Ihre Auswahl.</span><span class="sxs-lookup"><span data-stu-id="645b7-113">Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.</span></span>
+3.  <span data-ttu-id="79821-113">Wechseln Sie zu **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection** (Einstellungen > Geräteverwaltungsintegrationen > EMM-Integrationsauswahl), wählen Sie **Microsoft Intune** aus, und speichern Sie dann Ihre Auswahl.</span><span class="sxs-lookup"><span data-stu-id="79821-113">Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.</span></span>
 
-2.  <span data-ttu-id="645b7-114">Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei.</span><span class="sxs-lookup"><span data-stu-id="645b7-114">Click on the **Integration setup files** link and save the generated \*.zip file.</span></span> <span data-ttu-id="645b7-115">Die ZIP-Datei enthält die Datei **skycure\_configuration.plist**, die zum Erstellen der iOS-App-Konfigurationsrichtlinie im klassischen Intune-Portal verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="645b7-115">The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in the Intune classic portal.</span></span>
+2.  <span data-ttu-id="79821-114">Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei.</span><span class="sxs-lookup"><span data-stu-id="79821-114">Click on the **Integration setup files** link and save the generated \*.zip file.</span></span> <span data-ttu-id="79821-115">Die ZIP-Datei enthält die Datei **skycure\_configuration.plist**, die zum Erstellen der iOS-App-Konfigurationsrichtlinie im klassischen Intune-Portal verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="79821-115">The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in the Intune classic portal.</span></span>
 
 ![Skycure-Integrationssetupdateien](../media/mtp/skycure-ios-app-2.png)
 
-## <a name="next-steps"></a><span data-ttu-id="645b7-117">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="645b7-117">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="79821-117">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="79821-117">Next steps</span></span>
 
-[<span data-ttu-id="645b7-118">Hinzufügen von Skycure-Apps, der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="645b7-118">Add Skycure apps, Microsoft Authenticator app and the iOS configuration policy</span></span>](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+[<span data-ttu-id="79821-118">Hinzufügen von Skycure-Apps, der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="79821-118">Add Skycure apps, Microsoft Authenticator app and the iOS configuration policy</span></span>](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)

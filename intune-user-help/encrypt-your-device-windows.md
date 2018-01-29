@@ -11,28 +11,29 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 1209136e140845395fd18124f0e22c9cee606d1e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="how-to-protect-your-windows-device-using-encryption"></a><span data-ttu-id="ba7bd-103">So schützen Sie Ihr Windows-Gerät mit Verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="ba7bd-103">How to protect your Windows device using encryption</span></span>
+# <a name="how-to-protect-your-windows-device-using-encryption"></a><span data-ttu-id="781b9-103">So schützen Sie Ihr Windows-Gerät mit Verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="781b9-103">How to protect your Windows device using encryption</span></span>
 
-<span data-ttu-id="ba7bd-104">Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-104">When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it.</span></span> <span data-ttu-id="ba7bd-105">Als Maßnahme zur Gewährleistung der Sicherheit Ihrer Informationen fordert Ihre Organisation Sie auf, Ihr Windows-Gerät zu verschlüsseln, um Unternehmens- oder Schul- oder Unidaten zu schützen.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-105">As a step towards making sure your information is secured, your organization is requiring you to encrypt your Windows device to protect company or school data.</span></span>
+<span data-ttu-id="781b9-104">Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert.</span><span class="sxs-lookup"><span data-stu-id="781b9-104">When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it.</span></span> <span data-ttu-id="781b9-105">Als Maßnahme zur Gewährleistung der Sicherheit Ihrer Informationen fordert Ihre Organisation Sie auf, Ihr Windows-Gerät zu verschlüsseln, um Unternehmens- oder Schul- oder Unidaten zu schützen.</span><span class="sxs-lookup"><span data-stu-id="781b9-105">As a step towards making sure your information is secured, your organization is requiring you to encrypt your Windows device to protect company or school data.</span></span>
 
 > [!Note]
-> <span data-ttu-id="ba7bd-106">Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Gerät automatisch verschlüsselt, wenn eine Verschlüsselung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-106">If you have a Windows phone and have enrolled it, your device will be encrypted automatically if encryption is required.</span></span>
+> <span data-ttu-id="781b9-106">Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Gerät automatisch verschlüsselt, wenn eine Verschlüsselung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="781b9-106">If you have a Windows phone and have enrolled it, your device will be encrypted automatically if encryption is required.</span></span>
 
-<span data-ttu-id="ba7bd-107">Wenn Sie ein Desktopgerät besitzen, folgen Sie zum Verschlüsseln den folgenden Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-107">If you have a desktop device, the following instructions describe how to encrypt it.</span></span>
+<span data-ttu-id="781b9-107">Wenn Sie ein Desktopgerät besitzen, folgen Sie zum Verschlüsseln den folgenden Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="781b9-107">If you have a desktop device, the following instructions describe how to encrypt it.</span></span>
 
-1.  <span data-ttu-id="ba7bd-108">Suchen und starten Sie die App **BitLocker verwalten**.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-108">Search for and then start the **Manage BitLocker** app.</span></span>
+1.  <span data-ttu-id="781b9-108">Suchen und starten Sie die App **BitLocker verwalten**.</span><span class="sxs-lookup"><span data-stu-id="781b9-108">Search for and then start the **Manage BitLocker** app.</span></span>
 
-2.  <span data-ttu-id="ba7bd-109">Wählen Sie **BitLocker aktivieren** aus, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-109">Choose **Turn on BitLocker**, and then follow the instructions to encrypt each of your drives.</span></span>
+2.  <span data-ttu-id="781b9-109">Wählen Sie **BitLocker aktivieren** aus, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.</span><span class="sxs-lookup"><span data-stu-id="781b9-109">Choose **Turn on BitLocker**, and then follow the instructions to encrypt each of your drives.</span></span>
 
-<span data-ttu-id="ba7bd-110">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="ba7bd-110">Still need help?</span></span> <span data-ttu-id="ba7bd-111">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="ba7bd-111">Contact your company support.</span></span> <span data-ttu-id="ba7bd-112">Die entsprechenden Kontaktinformationen finden Sie auf der [Website des Unternehmensportals](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="ba7bd-112">For contact information, see the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="781b9-110">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="781b9-110">Still need help?</span></span> <span data-ttu-id="781b9-111">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="781b9-111">Contact your company support.</span></span> <span data-ttu-id="781b9-112">Die entsprechenden Kontaktinformationen finden Sie auf der [Website des Unternehmensportals](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="781b9-112">For contact information, see the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

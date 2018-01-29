@@ -14,25 +14,25 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fc79727453d2ed918a052e91fee2aa8fa1431ed4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 0864545d7a2499ef8213dd994205526e3a01e462
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="choose-how-to-enroll-mobile-devices"></a><span data-ttu-id="91c81-103">Auswählen der Methode zum Registrieren mobiler Geräte</span><span class="sxs-lookup"><span data-stu-id="91c81-103">Choose how to enroll mobile devices</span></span>
+# <a name="choose-how-to-enroll-mobile-devices"></a><span data-ttu-id="cb5a9-103">Auswählen der Methode zum Registrieren mobiler Geräte</span><span class="sxs-lookup"><span data-stu-id="cb5a9-103">Choose how to enroll mobile devices</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="91c81-104">Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.</span><span class="sxs-lookup"><span data-stu-id="91c81-104">Your answers to this series of questions will help determine the best enrollment method for the devices you manage.</span></span>
+<span data-ttu-id="cb5a9-104">Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.</span><span class="sxs-lookup"><span data-stu-id="cb5a9-104">Your answers to this series of questions will help determine the best enrollment method for the devices you manage.</span></span>
 
-## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a><span data-ttu-id="91c81-105">**Bringen die Mitarbeiter ihre eigenen Geräte mit (BYOD), oder werden die Geräte von Ihrer Organisation bereitgestellt (COD)?**</span><span class="sxs-lookup"><span data-stu-id="91c81-105">**Do employees bring their own devices (BYOD) or are devices provided by your organization (COD)?**</span></span>
+## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a><span data-ttu-id="cb5a9-105">**Bringen die Mitarbeiter ihre eigenen Geräte mit (BYOD), oder werden die Geräte von Ihrer Organisation bereitgestellt (COD)?**</span><span class="sxs-lookup"><span data-stu-id="cb5a9-105">**Do employees bring their own devices (BYOD) or are devices provided by your organization (COD)?**</span></span>
 
 > [!div class="button"]
-> [<span data-ttu-id="91c81-106">BYOD ></span><span class="sxs-lookup"><span data-stu-id="91c81-106">BYOD ></span></span>](choose-how-to-enroll-devices2.md)
+> [<span data-ttu-id="cb5a9-106">BYOD ></span><span class="sxs-lookup"><span data-stu-id="cb5a9-106">BYOD ></span></span>](choose-how-to-enroll-devices2.md)
 > [!div class="button"]
-> [<span data-ttu-id="91c81-107">COD ></span><span class="sxs-lookup"><span data-stu-id="91c81-107">COD ></span></span>](choose-how-to-enroll-devices3.md)
+> [<span data-ttu-id="cb5a9-107">COD ></span><span class="sxs-lookup"><span data-stu-id="cb5a9-107">COD ></span></span>](choose-how-to-enroll-devices3.md)
 
-- <span data-ttu-id="91c81-108">**Geräte von Benutzern** – „BYOD“-Registrierung (Bring Your Own Device) – Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="91c81-108">**Users-owned devices** - "BYOD” (Bring your own device) enrollment – Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.</span></span>  
+- <span data-ttu-id="cb5a9-108">**Geräte von Benutzern** – „BYOD“-Registrierung (Bring Your Own Device) – Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="cb5a9-108">**Users-owned devices** - "BYOD” (Bring your own device) enrollment – Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.</span></span>  
 
-- <span data-ttu-id="91c81-109">**Dem Unternehmen gehörende Geräte** – Für die Registrierung von dem Unternehmen gehörenden Geräten (Company-Owned Device, COD) gibt es eine Vielzahl von Möglichkeiten, je nach den Anforderungen der Organisation und den Typen der zu verwaltenden Geräte.</span><span class="sxs-lookup"><span data-stu-id="91c81-109">**Company-owned devices** - Company-owned devices (COD) can be enrolled in a variety of ways, depending upon the needs of the organization and the types of devices being managed.</span></span>
+- <span data-ttu-id="cb5a9-109">**Dem Unternehmen gehörende Geräte** – Für die Registrierung von dem Unternehmen gehörenden Geräten (Company-Owned Device, COD) gibt es eine Vielzahl von Möglichkeiten, je nach den Anforderungen der Organisation und den Typen der zu verwaltenden Geräte.</span><span class="sxs-lookup"><span data-stu-id="cb5a9-109">**Company-owned devices** - Company-owned devices (COD) can be enrolled in a variety of ways, depending upon the needs of the organization and the types of devices being managed.</span></span>

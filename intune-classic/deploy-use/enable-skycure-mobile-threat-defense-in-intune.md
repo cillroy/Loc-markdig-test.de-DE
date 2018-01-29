@@ -15,31 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f033b01520aa047aea0a2b6c94582a454355816
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 73a2a8748f219bfc68b7e112c2003b9c31060c71
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="enable-skycure-mobile-threat-defense-in-intune"></a><span data-ttu-id="3a150-103">Aktivieren von Skycure Mobile Threat Defense in Intune</span><span class="sxs-lookup"><span data-stu-id="3a150-103">Enable Skycure Mobile Threat Defense in Intune</span></span>
+# <a name="enable-skycure-mobile-threat-defense-in-intune"></a><span data-ttu-id="e63d5-103">Aktivieren von Skycure Mobile Threat Defense in Intune</span><span class="sxs-lookup"><span data-stu-id="e63d5-103">Enable Skycure Mobile Threat Defense in Intune</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="3a150-104">Um die Verbindung mit Skycure Mobile Threat Defense zu aktivieren, muss der [Intune-Connector in der Skycure-Konsole] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune) bereits konfiguriert sein.</span><span class="sxs-lookup"><span data-stu-id="3a150-104">To enable the Skycure mobile threat defense, you should have already configured the [Intune Connector in the Skycure console] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).</span></span>
+<span data-ttu-id="e63d5-104">Um die mobile Abwehr Skycure zu aktivieren, Sie sollten bereits konfiguriert haben die [Intune-Connector in der Konsole Skycure](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).</span><span class="sxs-lookup"><span data-stu-id="e63d5-104">To enable the Skycure mobile threat defense, you should have already configured the [Intune Connector in the Skycure console](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).</span></span>
 
-## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a><span data-ttu-id="3a150-105">So aktivieren Sie die Skycure MTD-Verbindung in Intune</span><span class="sxs-lookup"><span data-stu-id="3a150-105">To enable the Skycure MTD connection in Intune</span></span>
+## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a><span data-ttu-id="e63d5-105">So aktivieren Sie die Skycure MTD-Verbindung in Intune</span><span class="sxs-lookup"><span data-stu-id="e63d5-105">To enable the Skycure MTD connection in Intune</span></span>
 
-1.  <span data-ttu-id="3a150-106">Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com/), und geben Sie Ihre Anmeldeinformationen ein.</span><span class="sxs-lookup"><span data-stu-id="3a150-106">Go to the [Intune classic portal](https://manage.microsoft.com/) then enter your credentials.</span></span>
+1.  <span data-ttu-id="e63d5-106">Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com/), und geben Sie Ihre Anmeldeinformationen ein.</span><span class="sxs-lookup"><span data-stu-id="e63d5-106">Go to the [Intune classic portal](https://manage.microsoft.com/) then enter your credentials.</span></span>
 
-2.  <span data-ttu-id="3a150-107">Wählen Sie **Admin** &gt; **Third Party Service Integration** (Integration von Drittanbieterdiensten), wählen Sie dann **Skycure-Status**, und aktivieren Sie mithilfe der Umschaltfläche **Synchronisierung mit MTD**.</span><span class="sxs-lookup"><span data-stu-id="3a150-107">Choose **Admin** &gt; **Third Party Service Integration**, then choose **Skycure Status** and enable **Synchronization with MTD** using the toggle button.</span></span>
+2.  <span data-ttu-id="e63d5-107">Wählen Sie **Admin** &gt; **Third Party Service Integration** (Integration von Drittanbieterdiensten), wählen Sie dann **Skycure-Status**, und aktivieren Sie mithilfe der Umschaltfläche **Synchronisierung mit MTD**.</span><span class="sxs-lookup"><span data-stu-id="e63d5-107">Choose **Admin** &gt; **Third Party Service Integration**, then choose **Skycure Status** and enable **Synchronization with MTD** using the toggle button.</span></span>
 
     ![Aktivieren der Skycure-Umschaltfläche im klassischen Intune-Portal](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
-> <span data-ttu-id="3a150-109">Sie müssen die Skycure-Apps konfigurieren, bevor Sie die Regeln der Kompatibilitätsrichtlinie erstellen und den bedingten Zugriff konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="3a150-109">You must configure the Skycure apps before creating compliance policy rules and configuring conditional access.</span></span> <span data-ttu-id="3a150-110">Dadurch wird sichergestellt, dass die App für die Installation durch Endbenutzer bereit und verfügbar ist, bevor sie Zugriff auf E-Mail oder andere Unternehmensressourcen erhalten.</span><span class="sxs-lookup"><span data-stu-id="3a150-110">This ensures that the app is ready and available for end users to install before they can get access to email or other company resources.</span></span>
+> <span data-ttu-id="e63d5-109">Sie müssen die Skycure-Apps konfigurieren, bevor Sie die Regeln der Kompatibilitätsrichtlinie erstellen und den bedingten Zugriff konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="e63d5-109">You must configure the Skycure apps before creating compliance policy rules and configuring conditional access.</span></span> <span data-ttu-id="e63d5-110">Dadurch wird sichergestellt, dass die App für die Installation durch Endbenutzer bereit und verfügbar ist, bevor sie Zugriff auf E-Mail oder andere Unternehmensressourcen erhalten.</span><span class="sxs-lookup"><span data-stu-id="e63d5-110">This ensures that the app is ready and available for end users to install before they can get access to email or other company resources.</span></span>
 
-<span data-ttu-id="3a150-111">Damit wird das Einrichten der Skycure- und Intune-Integration in der Intune-Administratorkonsole abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="3a150-111">This completes the setup of the Skycure and Intune integration in the Intune administrator console.</span></span> <span data-ttu-id="3a150-112">Die nächsten Schritte zum Implementieren dieser Lösung umfassen die Bereitstellung der Skycure for Work-Apps und das Einrichten der Kompatibilitätsrichtlinie.</span><span class="sxs-lookup"><span data-stu-id="3a150-112">The next few steps to implement this solution involve deploying the Skycure for Work apps and setting up the compliance policy.</span></span>
+<span data-ttu-id="e63d5-111">Damit wird das Einrichten der Skycure- und Intune-Integration in der Intune-Administratorkonsole abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="e63d5-111">This completes the setup of the Skycure and Intune integration in the Intune administrator console.</span></span> <span data-ttu-id="e63d5-112">Die nächsten Schritte zum Implementieren dieser Lösung umfassen die Bereitstellung der Skycure for Work-Apps und das Einrichten der Kompatibilitätsrichtlinie.</span><span class="sxs-lookup"><span data-stu-id="e63d5-112">The next few steps to implement this solution involve deploying the Skycure for Work apps and setting up the compliance policy.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="3a150-113">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="3a150-113">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="e63d5-113">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="e63d5-113">Next steps</span></span>
 
-[<span data-ttu-id="3a150-114">Erstellen der Mobile Threat Defense-Kompatibilitätsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="3a150-114">Create Skycure Mobile Threat Defense compliance policy</span></span>](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
+[<span data-ttu-id="e63d5-114">Erstellen der Mobile Threat Defense-Kompatibilitätsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="e63d5-114">Create Skycure Mobile Threat Defense compliance policy</span></span>](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

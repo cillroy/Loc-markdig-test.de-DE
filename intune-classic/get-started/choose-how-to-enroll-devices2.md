@@ -14,29 +14,29 @@ ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 654bced9d2543b649e2d06b59665efa88ed4e108
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 075b91e93845b48459d7c9bfcb2485106714851b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="choose-how-to-enroll-mobile-devices"></a><span data-ttu-id="fc056-103">Auswählen der Methode zum Registrieren mobiler Geräte</span><span class="sxs-lookup"><span data-stu-id="fc056-103">Choose how to enroll mobile devices</span></span>
+# <a name="choose-how-to-enroll-mobile-devices"></a><span data-ttu-id="4b0cc-103">Auswählen der Methode zum Registrieren mobiler Geräte</span><span class="sxs-lookup"><span data-stu-id="4b0cc-103">Choose how to enroll mobile devices</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="fc056-104">Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.</span><span class="sxs-lookup"><span data-stu-id="fc056-104">Your answers to this series of questions will help determine the best enrollment method for the devices you manage.</span></span>
+<span data-ttu-id="4b0cc-104">Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.</span><span class="sxs-lookup"><span data-stu-id="4b0cc-104">Your answers to this series of questions will help determine the best enrollment method for the devices you manage.</span></span>
 
-## <a name="which-byod-platform-do-you-want-to-enable"></a><span data-ttu-id="fc056-105">**Welche BYOD-Plattform möchten Sie aktivieren?**</span><span class="sxs-lookup"><span data-stu-id="fc056-105">**Which BYOD platform do you want to enable?**</span></span>
+## <a name="which-byod-platform-do-you-want-to-enable"></a><span data-ttu-id="4b0cc-105">**Welche BYOD-Plattform möchten Sie aktivieren?**</span><span class="sxs-lookup"><span data-stu-id="4b0cc-105">**Which BYOD platform do you want to enable?**</span></span>
 
 > [!div  class="button"]
-> [<span data-ttu-id="fc056-106">Android ></span><span class="sxs-lookup"><span data-stu-id="fc056-106">Android ></span></span>](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
+> [<span data-ttu-id="4b0cc-106">Android ></span><span class="sxs-lookup"><span data-stu-id="4b0cc-106">Android ></span></span>](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-> [<span data-ttu-id="fc056-107">iOS und Mac ></span><span class="sxs-lookup"><span data-stu-id="fc056-107">iOS and Mac ></span></span>](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+> [<span data-ttu-id="4b0cc-107">iOS und Mac ></span><span class="sxs-lookup"><span data-stu-id="4b0cc-107">iOS and Mac ></span></span>](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 > [!div class="button"]
-> [<span data-ttu-id="fc056-108">Windows-PCs ></span><span class="sxs-lookup"><span data-stu-id="fc056-108">Windows PCs ></span></span>](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [<span data-ttu-id="4b0cc-108">Windows-PCs ></span><span class="sxs-lookup"><span data-stu-id="4b0cc-108">Windows PCs ></span></span>](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 > [!div class="button"]
-> [<span data-ttu-id="fc056-109">Windows 10 Mobile und Windows Phone ></span><span class="sxs-lookup"><span data-stu-id="fc056-109">Windows 10 Mobile & Windows Phone ></span></span>](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+> [<span data-ttu-id="4b0cc-109">Windows 10 Mobile und Windows Phone ></span><span class="sxs-lookup"><span data-stu-id="4b0cc-109">Windows 10 Mobile & Windows Phone ></span></span>](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 > 
 > 
 > [!div class="button"]
-> [<span data-ttu-id="fc056-110">< Zurück</span><span class="sxs-lookup"><span data-stu-id="fc056-110">< Back</span></span>](choose-how-to-enroll-devices1.md)
+> [<span data-ttu-id="4b0cc-110">< Zurück</span><span class="sxs-lookup"><span data-stu-id="4b0cc-110">< Back</span></span>](choose-how-to-enroll-devices1.md)

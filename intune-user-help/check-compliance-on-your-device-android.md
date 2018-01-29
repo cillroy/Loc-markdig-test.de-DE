@@ -11,23 +11,24 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: d703a4c04ece936bd7e0f245feca0217d8432d09
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="check-compliance-on-your-android-device"></a><span data-ttu-id="807e2-102">Überprüfen der Kompatibilität auf Ihrem Android-Gerät</span><span class="sxs-lookup"><span data-stu-id="807e2-102">Check compliance on your Android device</span></span>
+# <a name="check-compliance-on-your-android-device"></a><span data-ttu-id="875cd-102">Überprüfen der Kompatibilität auf Ihrem Android-Gerät</span><span class="sxs-lookup"><span data-stu-id="875cd-102">Check compliance on your Android device</span></span>
 
-<span data-ttu-id="807e2-103">Wenn Ihr Gerät sich eine Zeit lang nicht bei Intune angemeldet hat, können Sie möglicherweise nicht auf Ihre Firmen- oder Schulressourcen zugreifen.</span><span class="sxs-lookup"><span data-stu-id="807e2-103">If your device hasn't checked in with Intune in a while, you might not be able to access your company or school resources.</span></span> <span data-ttu-id="807e2-104">Gehen Sie wie folgt vor, um wieder Zugriff zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="807e2-104">To regain access, try the following:</span></span>
+<span data-ttu-id="875cd-103">Wenn Ihr Gerät sich eine Zeit lang nicht bei Intune angemeldet hat, können Sie möglicherweise nicht auf Ihre Firmen- oder Schulressourcen zugreifen.</span><span class="sxs-lookup"><span data-stu-id="875cd-103">If your device hasn't checked in with Intune in a while, you might not be able to access your company or school resources.</span></span> <span data-ttu-id="875cd-104">Gehen Sie wie folgt vor, um wieder Zugriff zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="875cd-104">To regain access, try the following:</span></span>
 
-1. <span data-ttu-id="807e2-105">Öffnen Sie die Android-Unternehmensportal-App auf Ihrem Gerät.</span><span class="sxs-lookup"><span data-stu-id="807e2-105">Open the Android Company Portal app on your device.</span></span>
+1. <span data-ttu-id="875cd-105">Öffnen Sie die Android-Unternehmensportal-App auf Ihrem Gerät.</span><span class="sxs-lookup"><span data-stu-id="875cd-105">Open the Android Company Portal app on your device.</span></span>
 
-2. <span data-ttu-id="807e2-106">Tippen Sie auf **Kompatibilität prüfen**.</span><span class="sxs-lookup"><span data-stu-id="807e2-106">Tap **Check Compliance**.</span></span>
+2. <span data-ttu-id="875cd-106">Tippen Sie auf **Kompatibilität prüfen**.</span><span class="sxs-lookup"><span data-stu-id="875cd-106">Tap **Check Compliance**.</span></span>
 
-<span data-ttu-id="807e2-107">Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie den Support Ihres Unternehmens, es zurückzusetzen.</span><span class="sxs-lookup"><span data-stu-id="807e2-107">If you are unable to reset your lost or stolen device, ask your company support to reset it for you.</span></span> <span data-ttu-id="807e2-108">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="807e2-108">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="875cd-107">Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie den Support Ihres Unternehmens, es zurückzusetzen.</span><span class="sxs-lookup"><span data-stu-id="875cd-107">If you are unable to reset your lost or stolen device, ask your company support to reset it for you.</span></span> <span data-ttu-id="875cd-108">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="875cd-108">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

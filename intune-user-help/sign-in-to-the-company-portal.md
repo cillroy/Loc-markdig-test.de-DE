@@ -11,82 +11,83 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fc8dd1c9d549d2ecbd7eabb7c34589c02ac327e4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 05f1a258c450d3f8a0091dc801c29ba2eeb23a8f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a><span data-ttu-id="c0278-103">Wie melde ich mich bei der Unternehmensportal-App an?</span><span class="sxs-lookup"><span data-stu-id="c0278-103">How do I sign in to the Company Portal app?</span></span> <!--User Story 1132123-->
+# <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a><span data-ttu-id="c8294-103">Wie melde ich mich bei der Unternehmensportal-App an?</span><span class="sxs-lookup"><span data-stu-id="c8294-103">How do I sign in to the Company Portal app?</span></span> <!--User Story 1132123-->
 
-<span data-ttu-id="c0278-104">Mit der Unternehmensportal-App erhalten Sie Zugriff auf die Ressourcen Ihres Unternehmens, z.B. E-Mails und geschäftliche Apps.</span><span class="sxs-lookup"><span data-stu-id="c0278-104">You use the Company Portal app to access your company resources, like email and business apps.</span></span> <span data-ttu-id="c0278-105">Sie haben zwei Möglichkeiten, sich beim Unternehmensportal anzumelden:</span><span class="sxs-lookup"><span data-stu-id="c0278-105">There are two main ways that you can sign in to the Company Portal:</span></span>
+<span data-ttu-id="c8294-104">Mit der Unternehmensportal-App erhalten Sie Zugriff auf die Ressourcen Ihres Unternehmens, z.B. E-Mails und geschäftliche Apps.</span><span class="sxs-lookup"><span data-stu-id="c8294-104">You use the Company Portal app to access your company resources, like email and business apps.</span></span> <span data-ttu-id="c8294-105">Sie haben zwei Möglichkeiten, sich beim Unternehmensportal anzumelden:</span><span class="sxs-lookup"><span data-stu-id="c8294-105">There are two main ways that you can sign in to the Company Portal:</span></span>
 
-* <span data-ttu-id="c0278-106">Mit Ihrer geschäftlichen E-Mail-Adresse und Ihrem Kennwort</span><span class="sxs-lookup"><span data-stu-id="c0278-106">Using your work email address and password</span></span>
-* <span data-ttu-id="c0278-107">Anmelden über ein anderes Gerät</span><span class="sxs-lookup"><span data-stu-id="c0278-107">Signing in from another device</span></span>
+* <span data-ttu-id="c8294-106">Mit Ihrer geschäftlichen E-Mail-Adresse und Ihrem Kennwort</span><span class="sxs-lookup"><span data-stu-id="c8294-106">Using your work email address and password</span></span>
+* <span data-ttu-id="c8294-107">Anmelden über ein anderes Gerät</span><span class="sxs-lookup"><span data-stu-id="c8294-107">Signing in from another device</span></span>
 
-<span data-ttu-id="c0278-108">Die folgenden Screenshots wurden unter iOS gemacht. Die Vorgehensweise auf Android- und Windows-Geräten ist aber nahezu identisch.</span><span class="sxs-lookup"><span data-stu-id="c0278-108">Even though the following pictures are for iOS, the process is virtually identical for your Android and Windows devices.</span></span>
+<span data-ttu-id="c8294-108">Die folgenden Screenshots wurden unter iOS gemacht. Die Vorgehensweise auf Android- und Windows-Geräten ist aber nahezu identisch.</span><span class="sxs-lookup"><span data-stu-id="c8294-108">Even though the following pictures are for iOS, the process is virtually identical for your Android and Windows devices.</span></span>
 
-## <a name="signing-in-with-your-email-address-and-password"></a><span data-ttu-id="c0278-109">Anmelden mit Ihrer E-Mail-Adresse und Ihrem Passwort</span><span class="sxs-lookup"><span data-stu-id="c0278-109">Signing in with your email address and password</span></span>
+## <a name="signing-in-with-your-email-address-and-password"></a><span data-ttu-id="c8294-109">Anmelden mit Ihrer E-Mail-Adresse und Ihrem Passwort</span><span class="sxs-lookup"><span data-stu-id="c8294-109">Signing in with your email address and password</span></span>
 
-1. <span data-ttu-id="c0278-110">Öffnen Sie die Unternehmensportal-App auf dem Gerät, und tippen Sie auf **Anmelden**.</span><span class="sxs-lookup"><span data-stu-id="c0278-110">Open the Company Portal app on your device and tap **Sign in**.</span></span>
+1. <span data-ttu-id="c8294-110">Öffnen Sie die Unternehmensportal-App auf dem Gerät, und tippen Sie auf **Anmelden**.</span><span class="sxs-lookup"><span data-stu-id="c8294-110">Open the Company Portal app on your device and tap **Sign in**.</span></span>
 
    ![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website.](/intune/media/cp_ios_aad_signin_after_1704_001.png)
 
-   <span data-ttu-id="c0278-114">Sie haben die Unternehmensportal-App noch nicht installiert?</span><span class="sxs-lookup"><span data-stu-id="c0278-114">Don't have the Company Portal app?</span></span> <span data-ttu-id="c0278-115">Hier finden Sie die Anleitungen für den Download und die Installation unter [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) und [Android](install-the-company-portal-app-android.md).</span><span class="sxs-lookup"><span data-stu-id="c0278-115">Find out how to install and download it for [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) or [Android](install-the-company-portal-app-android.md).</span></span>
+   <span data-ttu-id="c8294-114">Sie haben die Unternehmensportal-App noch nicht installiert?</span><span class="sxs-lookup"><span data-stu-id="c8294-114">Don't have the Company Portal app?</span></span> <span data-ttu-id="c8294-115">Hier finden Sie die Anleitungen für den Download und die Installation unter [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) und [Android](install-the-company-portal-app-android.md).</span><span class="sxs-lookup"><span data-stu-id="c8294-115">Find out how to install and download it for [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) or [Android](install-the-company-portal-app-android.md).</span></span>
 
-2. <span data-ttu-id="c0278-116">Geben Sie den Namen Ihres **Geschäfts- oder Schulkontos** ein.</span><span class="sxs-lookup"><span data-stu-id="c0278-116">Enter your **Work or school account**.</span></span>
+2. <span data-ttu-id="c8294-116">Geben Sie den Namen Ihres **Geschäfts- oder Schulkontos** ein.</span><span class="sxs-lookup"><span data-stu-id="c8294-116">Enter your **Work or school account**.</span></span>
 
    ![Der Benutzer wird nur zur Eingabe der E-Mail-Adresse aufgefordert, nicht zur Eingabe von E-Mail-Adresse und Kennwort im gleichen Bildschirm.](/intune/media/cp_ios_aad_signin_after_1704_002.png)
 
-3. <span data-ttu-id="c0278-118">Warten Sie, bis Ihre E-Mail-Adresse akzeptiert wurde, und geben Sie dann Ihr Kennwort ein.</span><span class="sxs-lookup"><span data-stu-id="c0278-118">Wait a moment for your email address to be accepted, then enter your password.</span></span>
+3. <span data-ttu-id="c8294-118">Warten Sie, bis Ihre E-Mail-Adresse akzeptiert wurde, und geben Sie dann Ihr Kennwort ein.</span><span class="sxs-lookup"><span data-stu-id="c8294-118">Wait a moment for your email address to be accepted, then enter your password.</span></span>
 
    ![Der Benutzer wird erst zur Eingabe des Kennworts aufgefordert, wenn die E-Mail-Adresse akzeptiert wurde.](/intune/media/cp_ios_aad_signin_after_1704_003.png)
 
-4. <span data-ttu-id="c0278-120">Nachdem Ihre Anmeldedaten in der Unternehmensportal-App akzeptiert wurden, werden Sie angemeldet und können auf Ihre Unternehmensressourcen zugreifen.</span><span class="sxs-lookup"><span data-stu-id="c0278-120">Once the Company Portal accepts your login, it signs you in and you can begin to access your company resources.</span></span>   
+4. <span data-ttu-id="c8294-120">Nachdem Ihre Anmeldedaten in der Unternehmensportal-App akzeptiert wurden, werden Sie angemeldet und können auf Ihre Unternehmensressourcen zugreifen.</span><span class="sxs-lookup"><span data-stu-id="c8294-120">Once the Company Portal accepts your login, it signs you in and you can begin to access your company resources.</span></span>   
 
    ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App an und zeigt einen entsprechenden Ladebalken an.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="signing-in-with-certificate-based-authentication"></a><span data-ttu-id="c0278-122">Anmelden über die Zertifikat-basierte Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="c0278-122">Signing in with certificate-based authentication</span></span>
+## <a name="signing-in-with-certificate-based-authentication"></a><span data-ttu-id="c8294-122">Anmelden über die Zertifikat-basierte Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="c8294-122">Signing in with certificate-based authentication</span></span>
 
-1.  <span data-ttu-id="c0278-123">Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.</span><span class="sxs-lookup"><span data-stu-id="c0278-123">Open the Company Portal app on your device.</span></span>
+1.  <span data-ttu-id="c8294-123">Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.</span><span class="sxs-lookup"><span data-stu-id="c8294-123">Open the Company Portal app on your device.</span></span>
 
-2.  <span data-ttu-id="c0278-124">Geben Sie den Namen Ihres **Geschäfts- oder Schulkontos** ein.</span><span class="sxs-lookup"><span data-stu-id="c0278-124">Enter your **Work or school account**.</span></span>
+2.  <span data-ttu-id="c8294-124">Geben Sie den Namen Ihres **Geschäfts- oder Schulkontos** ein.</span><span class="sxs-lookup"><span data-stu-id="c8294-124">Enter your **Work or school account**.</span></span>
 
-3.  <span data-ttu-id="c0278-125">Tippen Sie auf den Link **Sign in with a certificate (Anmelden über ein Zertifikat)**.</span><span class="sxs-lookup"><span data-stu-id="c0278-125">Tap the **Sign in with a certificate** link.</span></span>
+3.  <span data-ttu-id="c8294-125">Tippen Sie auf den Link **Sign in with a certificate (Anmelden über ein Zertifikat)**.</span><span class="sxs-lookup"><span data-stu-id="c8294-125">Tap the **Sign in with a certificate** link.</span></span>
 
-4.  <span data-ttu-id="c0278-126">Tippen Sie auf **Fortfahren**, um das Zertifikat zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="c0278-126">Tap **Continue** to use the certificate.</span></span>
+4.  <span data-ttu-id="c8294-126">Tippen Sie auf **Fortfahren**, um das Zertifikat zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="c8294-126">Tap **Continue** to use the certificate.</span></span>
 
-## <a name="signing-in-from-another-device"></a><span data-ttu-id="c0278-127">Anmelden über ein anderes Gerät</span><span class="sxs-lookup"><span data-stu-id="c0278-127">Signing in from another device</span></span>
+## <a name="signing-in-from-another-device"></a><span data-ttu-id="c8294-127">Anmelden über ein anderes Gerät</span><span class="sxs-lookup"><span data-stu-id="c8294-127">Signing in from another device</span></span>
 
-<span data-ttu-id="c0278-128">Für den Zugriff auf Ihre Unternehmensressourcen können Sie statt einem Kennwort auch ein anderes Gerät verwenden, um zu bestätigen, dass Sie die richtige Person mit den richtigen Zugriffsrechten sind.</span><span class="sxs-lookup"><span data-stu-id="c0278-128">If you do not use a password to sign in to your company resources, you might use another device as the way to confirm you're the right person with the right levels of access.</span></span> <span data-ttu-id="c0278-129">Wenn in Ihrem Unternehmen der Computerzugriff per Smartcards geregelt wird, müssen Sie sich sehr wahrscheinlich über ein anderes Gerät anmelden.</span><span class="sxs-lookup"><span data-stu-id="c0278-129">If your company uses smartcards to access your computers, it's likely that you have to sign in using another device.</span></span>
+<span data-ttu-id="c8294-128">Für den Zugriff auf Ihre Unternehmensressourcen können Sie statt einem Kennwort auch ein anderes Gerät verwenden, um zu bestätigen, dass Sie die richtige Person mit den richtigen Zugriffsrechten sind.</span><span class="sxs-lookup"><span data-stu-id="c8294-128">If you do not use a password to sign in to your company resources, you might use another device as the way to confirm you're the right person with the right levels of access.</span></span> <span data-ttu-id="c8294-129">Wenn in Ihrem Unternehmen der Computerzugriff per Smartcards geregelt wird, müssen Sie sich sehr wahrscheinlich über ein anderes Gerät anmelden.</span><span class="sxs-lookup"><span data-stu-id="c8294-129">If your company uses smartcards to access your computers, it's likely that you have to sign in using another device.</span></span>
 
-1. <span data-ttu-id="c0278-130">Statt Ihre E-Mail-Adresse einzugeben, klicken Sie unter dem Textfeld für die E-Mail-Adresse auf den Link **Von anderem Gerät aus anmelden**.</span><span class="sxs-lookup"><span data-stu-id="c0278-130">Instead of entering in your email address, select the **Sign in from another device** link underneath the email text box.</span></span>
+1. <span data-ttu-id="c8294-130">Statt Ihre E-Mail-Adresse einzugeben, klicken Sie unter dem Textfeld für die E-Mail-Adresse auf den Link **Von anderem Gerät aus anmelden**.</span><span class="sxs-lookup"><span data-stu-id="c8294-130">Instead of entering in your email address, select the **Sign in from another device** link underneath the email text box.</span></span>
 
    ![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-2. <span data-ttu-id="c0278-134">Sie erhalten einen eindeutigen, einmal gültigen Code für die Anmeldung im Unternehmensportal.</span><span class="sxs-lookup"><span data-stu-id="c0278-134">You receive a unique, one-time code to sign in to the Company Portal.</span></span>
+2. <span data-ttu-id="c8294-134">Sie erhalten einen eindeutigen, einmal gültigen Code für die Anmeldung im Unternehmensportal.</span><span class="sxs-lookup"><span data-stu-id="c8294-134">You receive a unique, one-time code to sign in to the Company Portal.</span></span>
 
    ![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-3. <span data-ttu-id="c0278-136">Öffnen Sie auf Ihrem anderen Gerät einen Browser und gehen Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin), um den Code einzugeben.</span><span class="sxs-lookup"><span data-stu-id="c0278-136">On your other device, open your browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin) to enter the code.</span></span>
+3. <span data-ttu-id="c8294-136">Öffnen Sie auf Ihrem anderen Gerät einen Browser und gehen Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin), um den Code einzugeben.</span><span class="sxs-lookup"><span data-stu-id="c8294-136">On your other device, open your browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin) to enter the code.</span></span>
 
    ![Ein Bild des Browsers des Benutzers auf dem Arbeitscomputer statt in der Unternehmensportal-App.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. <span data-ttu-id="c0278-139">Sobald der auf der Seite **Geräteanmeldung** eingegebene Code überprüft wurde, klicken Sie auf __Weiter__, um dem Unternehmensportal die Anmeldung über Ihr anderes Gerät zu erlauben.</span><span class="sxs-lookup"><span data-stu-id="c0278-139">Once the **Device Login** page verifies the code, select __Continue__ to allow the Company Portal to sign in on your other device.</span></span>
+4. <span data-ttu-id="c8294-139">Sobald der auf der Seite **Geräteanmeldung** eingegebene Code überprüft wurde, klicken Sie auf __Weiter__, um dem Unternehmensportal die Anmeldung über Ihr anderes Gerät zu erlauben.</span><span class="sxs-lookup"><span data-stu-id="c8294-139">Once the **Device Login** page verifies the code, select __Continue__ to allow the Company Portal to sign in on your other device.</span></span>
 
    ![Der Benutzer hat den eindeutigen Code in das Feld eingegeben und wurde auf der Seite „Geräteanmeldung“ aufgefordert, zu bestätigen, dass das Intune-Unternehmensportal die App ist, die zur Anmeldung autorisiert werden soll.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
-5. <span data-ttu-id="c0278-141">Sobald der Code überprüft wurde, können Sie das Fenster schließen.</span><span class="sxs-lookup"><span data-stu-id="c0278-141">Once the code is verified, you can close the window.</span></span>
+5. <span data-ttu-id="c8294-141">Sobald der Code überprüft wurde, können Sie das Fenster schließen.</span><span class="sxs-lookup"><span data-stu-id="c8294-141">Once the code is verified, you can close the window.</span></span>
 
    ![Eine Bestätigungsseite informiert darüber, dass der Benutzer sich jetzt auf dem Gerät bei der Unternehmensportal-App angemeldet hat und dass diese Seite geschlossen werden kann.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. <span data-ttu-id="c0278-143">Auf Ihrem eigentlichen Gerät wird nur über die Unternehmensportal-App der Anmeldevorgang eingeleitet.</span><span class="sxs-lookup"><span data-stu-id="c0278-143">On your original device, the Company Portal app begins signing in.</span></span>
+6. <span data-ttu-id="c8294-143">Auf Ihrem eigentlichen Gerät wird nur über die Unternehmensportal-App der Anmeldevorgang eingeleitet.</span><span class="sxs-lookup"><span data-stu-id="c8294-143">On your original device, the Company Portal app begins signing in.</span></span>
 
    ![Nach Abschluss des Authentifizierungsprozesses meldet sich die Unternehmensportal-App Sie an und zeigt einen entsprechenden Ladebalken an.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-<span data-ttu-id="c0278-145">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="c0278-145">Still need help?</span></span> <span data-ttu-id="c0278-146">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="c0278-146">Contact your company support.</span></span> <span data-ttu-id="c0278-147">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="c0278-147">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="c8294-145">Benötigen Sie weitere Unterstützung?</span><span class="sxs-lookup"><span data-stu-id="c8294-145">Still need help?</span></span> <span data-ttu-id="c8294-146">Kontaktieren Sie den Support Ihres Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="c8294-146">Contact your company support.</span></span> <span data-ttu-id="c8294-147">Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).</span><span class="sxs-lookup"><span data-stu-id="c8294-147">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

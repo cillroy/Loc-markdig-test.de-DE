@@ -1,3 +1,4 @@
+
 {
   "build": {
     "content": [
@@ -36,6 +37,7 @@
     },
     "fileMetadata": {},
     "template": [],
+    "markdownEngineName": "markdig",
     "dest": "InTune-markdig-test"
   }
 }

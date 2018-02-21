@@ -1,6 +1,6 @@
-
 {
   "build": {
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -37,7 +37,6 @@
     },
     "fileMetadata": {},
     "template": [],
-    "markdownEngineName": "markdig",
-    "dest": "InTune-markdig-test"
+       "dest": "InTune-markdig-test"
   }
 }
